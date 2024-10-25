@@ -24,6 +24,7 @@
 /world/
 /screenshots/
 /.probe
+/.vscode
 
 # Client Configs
 config/abnormals_core-client.toml
@@ -100,4 +101,7 @@ config/upgrade_aquatic-client.toml
 rhino.local.properties
 
 # Other stuff
-
+emi.json
+patchouli_data.json
+usercache.json
+usernamecache.json
