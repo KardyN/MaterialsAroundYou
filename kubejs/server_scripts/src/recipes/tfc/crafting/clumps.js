@@ -1,4 +1,4 @@
-const oreTypes = [
+/*const oreTypes = [
     {id: "native_copper", color: "#d88854", type: "tfc_ore"},
     {id: "native_gold", color: "#c89d28", type: "tfc_ore"},
     {id: "hematite", color: "#b05e56", type: "tfc_ore"},
@@ -24,7 +24,7 @@ const oreTypes = [
     {id: "uraninite", color: "#7a9a65", type: "tfc_ie_ore"},
 
 ];
-
+*/
 ServerEvents.recipes(event => {
     oreTypes.forEach(item => {
         switch (item.type){
