@@ -3,6 +3,7 @@
 **/*.exe
 **/*.log
 **/*.zip
+**/*.jar
 /backups/
 /config/jei/world/local
 /crash-reports/
@@ -15,17 +16,14 @@
 /llibrary/
 /local/
 /logs/
-/mods/
-/profilekeys/
+/mods
 /resourcepacks
 /saves
 /saves/
 /world_backup/
 /world/
-config/emendatusenigmatica/default
-config/forgeendertech/Biomes/
-screenshots/
-.probe/
+/screenshots/
+/.probe
 
 # Client Configs
 config/abnormals_core-client.toml
@@ -100,3 +98,6 @@ config/travel_anchors-client.toml
 config/twilightforest-client.toml
 config/upgrade_aquatic-client.toml
 rhino.local.properties
+
+# Other stuff
+
