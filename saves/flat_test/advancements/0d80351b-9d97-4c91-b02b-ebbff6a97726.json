@@ -1,0 +1,81 @@
+{
+  "mekanism:root": {
+    "criteria": {
+      "automatic": "2024-10-24 18:43:03 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-10-24 18:43:06 +0300"
+    },
+    "done": true
+  },
+  "tfc:story/root": {
+    "criteria": {
+      "in_game_condition": "2024-10-24 18:43:06 +0300"
+    },
+    "done": true
+  },
+  "tfc:world/root": {
+    "criteria": {
+      "in_game_condition": "2024-10-24 18:43:06 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2024-10-24 18:43:07 +0300"
+    },
+    "done": false
+  },
+  "create:root": {
+    "criteria": {
+      "0": "2024-10-24 18:43:14 +0300"
+    },
+    "done": true
+  },
+  "tfc:world/nugget": {
+    "criteria": {
+      "nuggets": "2024-10-24 23:22:34 +0300"
+    },
+    "done": true
+  },
+  "tfc:story/red_steel": {
+    "criteria": {
+      "metal_item/red_steel": "2024-10-24 23:34:11 +0300"
+    },
+    "done": true
+  },
+  "tfc:world/metallurgist": {
+    "criteria": {
+      "red_steel": "2024-10-24 23:34:11 +0300"
+    },
+    "done": false
+  },
+  "create:recipes/misc/crafting/appliances/crafting_blueprint": {
+    "criteria": {
+      "has_item": "2024-10-24 23:36:24 +0300"
+    },
+    "done": true
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2024-10-24 23:36:24 +0300"
+    },
+    "done": true
+  },
+  "tfc:crafting/alabaster_brick": {
+    "criteria": {
+      "has_item": "2024-10-25 00:01:55 +0300"
+    },
+    "done": true
+  },
+  "tfc:world/minerologist": {
+    "criteria": {
+      "gypsum": "2024-10-25 00:01:55 +0300"
+    },
+    "done": false
+  },
+  "DataVersion": 3465
+}
