@@ -1,7 +1,4 @@
-//ServerEvents.genericLootTables(event => {
-
-//})
-rockTypes.array.forEach((item) => {
+oreTypes.array.forEach((item) => {
     LootJS.modifiers((event) => {
         event
             .addLootTableModifier("kubejs:dirty_dust_" + item.id)
