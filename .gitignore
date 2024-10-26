@@ -33,3 +33,5 @@ usercache.json
 usernamecache.json
 rhino.local.properties
 /saves/
+config/pneumaticcraft/ArmorFeatureStatus.cfg
+config/pneumaticcraft/ProgrammingPuzzleBlacklist.cfg
