@@ -1,4 +1,3 @@
-//priority: 1
 const oreTypes = [
     {
         id: "native_copper",
