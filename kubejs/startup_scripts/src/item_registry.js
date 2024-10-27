@@ -3,7 +3,7 @@ const oreTypes = [
         id: "native_copper",
         color: "#d88854",
         type: "tfc_ore",
-        colour: "pink",
+        sand: "pink",
         gem: "",
         secondary: "",
     },
@@ -11,7 +11,7 @@ const oreTypes = [
         id: "native_gold",
         color: "#c89d28",
         type: "tfc_ore",
-        colour: "yellow",
+        sand: "yellow",
         gem: "",
         secondary: "",
     },
@@ -19,7 +19,7 @@ const oreTypes = [
         id: "hematite",
         color: "#b05e56",
         type: "tfc_ore",
-        colour: "pink",
+        sand: "pink",
         gem: "",
         secondary: "",
     },
@@ -27,7 +27,7 @@ const oreTypes = [
         id: "native_silver",
         color: "#b4b7c4",
         type: "tfc_ore",
-        colour: "white",
+        sand: "white",
         gem: "",
         secondary: "",
     },
@@ -35,7 +35,7 @@ const oreTypes = [
         id: "cassiterite",
         color: "#6a6655",
         type: "tfc_ore",
-        colour: "green",
+        sand: "green",
         gem: "",
         secondary: "",
     },
@@ -43,7 +43,7 @@ const oreTypes = [
         id: "bismuthinite",
         color: "#416f3d",
         type: "tfc_ore",
-        colour: "green",
+        sand: "green",
         gem: "",
         secondary: "",
     },
@@ -51,7 +51,7 @@ const oreTypes = [
         id: "garnierite",
         color: "#3c5035",
         type: "tfc_ore",
-        colour: "green",
+        sand: "green",
         gem: "",
         secondary: "",
     },
@@ -59,7 +59,7 @@ const oreTypes = [
         id: "malachite",
         color: "#587e79",
         type: "tfc_ore",
-        colour: "green",
+        sand: "green",
         gem: "",
         secondary: "",
     },
@@ -67,7 +67,7 @@ const oreTypes = [
         id: "magnetite",
         color: "#3b3c3c",
         type: "tfc_ore",
-        colour: "black",
+        sand: "black",
         gem: "",
         secondary: "",
     },
@@ -75,7 +75,7 @@ const oreTypes = [
         id: "limonite",
         color: "#93714a",
         type: "tfc_ore",
-        colour: "yellow",
+        sand: "yellow",
         gem: "",
         secondary: "",
     },
@@ -83,7 +83,7 @@ const oreTypes = [
         id: "sphalerite",
         color: "#a4a3a3",
         type: "tfc_ore",
-        colour: "white",
+        sand: "white",
         gem: "",
         secondary: "",
     },
@@ -91,7 +91,7 @@ const oreTypes = [
         id: "tetrahedrite",
         color: "#838283",
         type: "tfc_ore",
-        colour: "black",
+        sand: "black",
         gem: "",
         secondary: "",
     },
@@ -99,7 +99,7 @@ const oreTypes = [
         id: "gypsum",
         color: "#977c62",
         type: "tfc_mineral",
-        colour: "brown",
+        sand: "brown",
         gem: "",
         secondary: "",
     },
@@ -107,7 +107,7 @@ const oreTypes = [
         id: "graphite",
         color: "#3a4249",
         type: "tfc_mineral",
-        colour: "black",
+        sand: "black",
         gem: "",
         secondary: "",
     },
@@ -115,7 +115,7 @@ const oreTypes = [
         id: "sulfur",
         color: "#aaa552",
         type: "tfc_mineral",
-        colour: "yellow",
+        sand: "yellow",
         gem: "",
         secondary: "",
     },
@@ -123,7 +123,7 @@ const oreTypes = [
         id: "cinnabar",
         color: "#ac161d",
         type: "tfc_mineral",
-        colour: "red",
+        sand: "red",
         gem: "",
         secondary: "",
     },
@@ -131,7 +131,7 @@ const oreTypes = [
         id: "cryolite",
         color: "#909191",
         type: "tfc_mineral",
-        colour: "white",
+        sand: "white",
         gem: "",
         secondary: "",
     },
@@ -139,7 +139,7 @@ const oreTypes = [
         id: "saltpeter",
         color: "#aaaaa9",
         type: "tfc_mineral",
-        colour: "white",
+        sand: "white",
         gem: "",
         secondary: "",
     },
@@ -147,7 +147,7 @@ const oreTypes = [
         id: "sylvite",
         color: "#b98761",
         type: "tfc_mineral",
-        colour: "yellow",
+        sand: "yellow",
         gem: "",
         secondary: "",
     },
@@ -155,7 +155,7 @@ const oreTypes = [
         id: "borax",
         color: "#a7a8a7",
         type: "tfc_mineral",
-        colour: "white",
+        sand: "white",
         gem: "",
         secondary: "",
     },
@@ -163,7 +163,7 @@ const oreTypes = [
         id: "bauxite",
         color: "#e77263",
         type: "tfc_ie_ore",
-        colour: "pink",
+        sand: "pink",
         gem: "",
         secondary: "",
     },
@@ -171,7 +171,7 @@ const oreTypes = [
         id: "galena",
         color: "#5f5764",
         type: "tfc_ie_ore",
-        colour: "black",
+        sand: "black",
         gem: "",
         secondary: "",
     },
@@ -179,7 +179,7 @@ const oreTypes = [
         id: "uraninite",
         color: "#7a9a65",
         type: "tfc_ie_ore",
-        colour: "green",
+        sand: "green",
         gem: "",
         secondary: "",
     },
@@ -187,10 +187,20 @@ const oreTypes = [
     //amethyst, diamond, emerald, lapis_lazuli, opal, pyrite, ruby, sapphire, topaz "gem"
 ];
 
+const sandTypes = [
+    { id: "black", color: "#383838" },
+    { id: "brown", color: "#927755" },
+    { id: "green", color: "#626c45" },
+    { id: "pink", color: "#96706d" },
+    { id: "red", color: "#93634f" },
+    { id: "white", color: "#c9c9c9" },
+    { id: "yellow", color: "#dacea2" },
+];
+
 StartupEvents.registry("item", (event) => {
     oreTypes.forEach((item) => {
         event
-            .create("clump_" + item.id)
+            .create("clump/" + item.id)
             .tooltip("Try grinding it!")
             .color(0, item.color)
             .color(1, "#222222")
@@ -199,7 +209,7 @@ StartupEvents.registry("item", (event) => {
                 layer1: "mekanism:item/clump_overlay",
             });
         event
-            .create("dirty_dust_" + item.id)
+            .create("dirty_dust/" + item.id)
             .tooltip("Try washing it!")
             .color(0, item.color)
             .color(1, "#222222")
@@ -208,9 +218,15 @@ StartupEvents.registry("item", (event) => {
                 layer1: "mekanism:item/dirty_dust_overlay",
             });
         event
-            .create("dust_" + item.id)
+            .create("dust/" + item.id)
             .tooltip("Try melting it!")
             .color(item.color)
             .texture("mekanism:item/dust");
+    });
+    sandTypes.forEach((item) => {
+        event
+            .create("powder/sand/" + item.id)
+            .color(item.color)
+            .texture("tfc:item/powder/salt");
     });
 });
