@@ -222,130 +222,156 @@ StartupEvents.registry("item", (event) => {
   /*****************************************************************************
    * Registering osmirite tools
    ****************************************************************************/
-  //PICKAXE
+
   event
     .create("metal/pickaxe/osmirite", "tfc:tool")
-    .unstackable()
     .tier("osmirite")
+    .attackDamageBaselineTFC(0.75)
+    .speedBaseline(-2.8)
+    .unstackable()
     .rarity("epic")
     .fireResistant(true)
     .texture("minecraft:item/netherite_pickaxe")
     .mineableBlocksTag("minecraft:mineable/pickaxe");
-  //PROPICK
+
   event
     .create("metal/propick/osmirite", "tfc:propick")
-    .unstackable()
     .tier("osmirite")
+    .attackDamageBaselineTFC(0.75)
+    .speedBaseline(-2.8)
+    .unstackable()
     .rarity("epic")
     .fireResistant(true)
     .texture("minecraft:item/netherite_pickaxe");
-  //AXE
+
   event
     .create("metal/axe/osmirite", "tfc:tool")
-    .unstackable()
     .tier("osmirite")
+    .attackDamageBaselineTFC(1.5)
+    .speedBaseline(-3.1)
+    .unstackable()
     .rarity("epic")
     .fireResistant(true)
     .texture("minecraft:item/netherite_axe")
     .mineableBlocksTag("minecraft:mineable/axe");
-  //SHOVEL
+
   event
     .create("metal/shovel/osmirite", "tfc:tool")
-    .unstackable()
     .tier("osmirite")
+    .attackDamageBaselineTFC(0.875)
+    .speedBaseline(-3.0)
+    .unstackable()
     .rarity("epic")
     .fireResistant(true)
     .texture("minecraft:item/netherite_shovel")
     .mineableBlocksTag("minecraft:mineable/shovel");
-  //HOE
+
   event
     .create("metal/hoe/osmirite", "tfc:hoe")
-    .unstackable()
     .tier("osmirite")
+    .attackDamageBaseline(-1) // NOT calculateVanillaAttackDamage
+    .speedBaseline(-2)
+    .unstackable()
     .rarity("epic")
     .fireResistant(true)
     .texture("minecraft:item/netherite_hoe");
-  //CHISEL
+
   event
     .create("metal/chisel/osmirite", "tfc:chisel")
-    .unstackable()
     .tier("osmirite")
+    .attackDamageBaselineTFC(0.27)
+    .speedBaseline(-1.5)
+    .unstackable()
     .rarity("epic")
     .fireResistant(true)
     .texture("minecraft:item/netherite_pickaxe");
-  //HAMMER
+
   event
     .create("metal/hammer/osmirite", "tfc:hammer")
-    .unstackable()
     .tier("osmirite")
+    .attackDamageBaselineTFC(1.0)
+    .speedBaseline(-3.0)
+    .unstackable()
     .rarity("epic")
     .fireResistant(true)
     .texture("minecraft:item/netherite_pickaxe");
   //.metalTexture(texture: string); <----------------------- TODO
   //auto hammer texture it is
-  //SAW
+
   event
     .create("metal/saw/osmirite", "tfc:tool")
-    .unstackable()
     .tier("osmirite")
+    .attackDamageBaselineTFC(0.5)
+    .speedBaseline(-3.0)
+    .unstackable()
     .rarity("epic")
     .fireResistant(true)
     .texture("minecraft:item/netherite_pickaxe");
-  //KNIFE
+
   event
     .create("metal/knife/osmirite", "tfc:tool")
-    .unstackable()
     .tier("osmirite")
+    .attackDamageBaselineTFC(0.6)
+    .speedBaseline(-2.0)
+    .unstackable()
     .rarity("epic")
     .fireResistant(true)
     .texture("minecraft:item/netherite_pickaxe")
     .knife()
     .mineableBlocksTag("tfc:mineable_with_knife")
     .mineableBlocksTag("tfc:mineable_with_sharp_tool");
-  //SCYTHE
+
   event
     .create("metal/scythe/osmirite", "tfc:scythe")
-    .unstackable()
     .tier("osmirite")
+    .attackDamageBaselineTFC(0.7)
+    .speedBaseline(-3.2)
+    .unstackable()
     .rarity("epic")
     .fireResistant(true)
     .texture("minecraft:item/netherite_pickaxe")
     .mineableBlocksTag("tfc:mineable_with_scythe")
     .mineableBlocksTag("tfc:mineable_with_sharp_tool"); //default value
-  //JAVELIN
+
   event
     .create("metal/javelin/osmirite", "tfc:javelin")
-    .unstackable()
     .tier("osmirite")
+    .attackDamageBaselineTFC(0.7)
+    .speedBaseline(-2.6)
+    .unstackable()
     .rarity("epic")
     .fireResistant(true)
     .texture("minecraft:item/netherite_pickaxe")
-    .thrownDamage(10);
+    .thrownDamage(17);
   //.skeletonWeapon()
   // .throwingModel(m: string)
   //.modelAtPerspective(perspective: ItemDisplayContext, model: string)
   //.guiModel(m: string)
-  //SWORD
+
   event
     .create("metal/sword/osmirite", "tfc:tool")
-    .unstackable()
     .tier("osmirite")
+    .attackDamageBaselineTFC(1.0)
+    .speedBaseline(-2.4)
+    .unstackable()
     .rarity("epic")
     .fireResistant(true)
     .texture("minecraft:item/netherite_sword");
-  //MACE
+
   event
     .create("metal/mace/osmirite", "tfc:mace")
-    .unstackable()
     .tier("osmirite")
+    .attackDamageBaselineTFC(1.3)
+    .speedBaseline(-3.0)
+    .unstackable()
     .rarity("epic")
     .fireResistant(true)
     .texture("minecraft:item/netherite_pickaxe");
-  //FISHING ROD
+
   event
     .create("metal/fishing_rod/osmirite", "tfc:fishing_rod")
-    .unstackable()
     .tier("osmirite")
+    .unstackable()
     .rarity("epic")
     .fireResistant(true)
     .texture("minecraft:item/fishing_rod")
@@ -355,11 +381,11 @@ StartupEvents.registry("item", (event) => {
     //.castTexture(t: string);
     .smallBait()
     .largeBait();
-  //SHEARS
+
   event
     .create("metal/shears/osmirite", "tfc:tool")
-    .unstackable()
     .tier("osmirite")
+    .unstackable()
     .rarity("epic")
     .fireResistant(true)
     .texture("minecraft:item/shears")

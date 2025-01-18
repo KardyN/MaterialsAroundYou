@@ -1,10 +1,10 @@
 ItemEvents.toolTierRegistry((event) => {
   event.add("osmirite", (tier) => {
     tier.uses = 10000;
-    tier.speed = 15.0;
-    tier.attackDamageBonus = 10.0;
+    tier.speed = 14.0;
+    tier.attackDamageBonus = 11.0;
     tier.level = 7;
-    tier.enchantmentValue = 15;
+    tier.enchantmentValue = 25;
     //tier.repairIngredient = '#forge:ingots/iron'
   });
 });
