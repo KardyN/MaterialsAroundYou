@@ -1,45 +1,6 @@
-const osmiriteToolsList = [
-  "pickaxe",
-  "sword",
-  "axe",
-  "shovel",
-  "hoe",
-  "chisel",
-  "hammer",
-  "saw",
-  "knife",
-  "scythe",
-  "javelin",
-  "propick",
-  "mace",
-];
-const commonTagList = [
-  "immersiveengineering:toolbox/tools",
-  "minecraft:breaks_decorated_pots",
-  "minecraft:tools",
-  "forge:tools",
-  "tfc:metal_item/osmirite_tools",
-  "tfc:metal_item/osmirite",
-  "tfc:usable_on_tool_rack",
-];
-const fishingRodTagList = [
-  "tfc:holds_small_fishing_bait",
-  "tfc:holds_large_fishing_bait",
-  "tfc:usable_on_tool_rack",
-  "tfc:metal_item/osmirite",
-  "forge:fishing_rods",
-  "forge:fishing_rods/osmirite",
-];
-const shearsTagList = [
-  "tfc:usable_on_tool_rack",
-  "tfc:metal_item/osmirite",
-  "forge:shears",
-  "tfc:shears",
-];
-
 ServerEvents.tags("item", (event) => {
-  osmiriteToolsList.forEach((toolType) => {
-    commonTagList.forEach((tag) => {
+  global.osmiriteToolList.forEach((toolType) => {
+    global.commonToolTagList.forEach((tag) => {
       event.add(tag, `kubejs:metal/${toolType}/osmirite`);
     });
 
@@ -81,11 +42,11 @@ ServerEvents.tags("item", (event) => {
       );
   });
 
-  fishingRodTagList.forEach((tag) => {
+  global.fishingRodTagList.forEach((tag) => {
     event.add(tag, "kubejs:metal/fishing_rod/osmirite");
   });
 
-  shearsTagList.forEach((tag) => {
+  global.shearsTagList.forEach((tag) => {
     event.add(tag, "kubejs:metal/shears/osmirite");
   });
 });
