@@ -1,3 +1,4 @@
+//priority: 99
 ItemEvents.toolTierRegistry((event) => {
   event.add("osmirite", (tier) => {
     tier.uses = 10000;
