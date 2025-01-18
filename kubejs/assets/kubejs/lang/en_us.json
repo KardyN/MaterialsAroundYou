@@ -86,7 +86,7 @@
   "item.kubejs.powder_cryolite": "Cryolite Powder",
 
   "item.kubejs.metal.pickaxe.osmirite": "Osmirite Pickaxe",
-  "item.kubejs.metal.propick.osmirite": "Osmirite Prospector's Pickaxe",
+  "item.kubejs.metal.propick.osmirite": "Osmirite Prospector's Multitool",
   "item.kubejs.metal.axe.osmirite": "Osmirite Axe",
   "item.kubejs.metal.shovel.osmirite": "Osmirite Shovel",
   "item.kubejs.metal.hoe.osmirite": "Osmirite Hoe",
@@ -99,5 +99,7 @@
   "item.kubejs.metal.sword.osmirite": "Osmirite Sword",
   "item.kubejs.metal.mace.osmirite": "Osmirite Mace",
   "item.kubejs.metal.fishing_rod.osmirite": "Osmirite Fishing Rod",
-  "item.kubejs.metal.shears.osmirite": "Osmirite Shears"
+  "item.kubejs.metal.shears.osmirite": "Osmirite Shears",
+  "fluid.kubejs.metal.osmirite": "Molten Osmirite",
+  "item.kubejs.metal.osmirite_bucket": "Molten Osmirite Bucket"
 }
