@@ -1,173 +1,9 @@
-const oreTypes = [
-  {
-    id: "native_copper",
-    color: "#d88854",
-    type: "tfc_ore",
-    sand: "pink",
-  },
-  {
-    id: "native_gold",
-    color: "#c89d28",
-    type: "tfc_ore",
-    sand: "yellow",
-  },
-  {
-    id: "hematite",
-    color: "#b05e56",
-    type: "tfc_ore",
-    sand: "pink",
-  },
-  {
-    id: "native_silver",
-    color: "#b4b7c4",
-    type: "tfc_ore",
-    sand: "white",
-  },
-  {
-    id: "cassiterite",
-    color: "#6a6655",
-    type: "tfc_ore",
-    sand: "green",
-  },
-  {
-    id: "bismuthinite",
-    color: "#416f3d",
-    type: "tfc_ore",
-    sand: "green",
-  },
-  {
-    id: "garnierite",
-    color: "#3c5035",
-    type: "tfc_ore",
-    sand: "green",
-  },
-  {
-    id: "malachite",
-    color: "#587e79",
-    type: "tfc_ore",
-    sand: "green",
-  },
-  {
-    id: "magnetite",
-    color: "#3b3c3c",
-    type: "tfc_ore",
-    sand: "black",
-  },
-  {
-    id: "limonite",
-    color: "#93714a",
-    type: "tfc_ore",
-    sand: "yellow",
-  },
-  {
-    id: "sphalerite",
-    color: "#a4a3a3",
-    type: "tfc_ore",
-    sand: "white",
-  },
-  {
-    id: "tetrahedrite",
-    color: "#838283",
-    type: "tfc_ore",
-    sand: "black",
-  },
-  {
-    id: "gypsum",
-    color: "#977c62",
-    type: "tfc_mineral",
-    sand: "brown",
-  },
-  {
-    id: "graphite",
-    color: "#3a4249",
-    type: "tfc_mineral",
-    sand: "black",
-  },
-  {
-    id: "sulfur",
-    color: "#aaa552",
-    type: "tfc_mineral",
-    sand: "yellow",
-  },
-  {
-    id: "cinnabar",
-    color: "#ac161d",
-    type: "tfc_mineral",
-    sand: "red",
-  },
-  {
-    id: "cryolite",
-    color: "#909191",
-    type: "tfc_mineral",
-    sand: "white",
-  },
-  {
-    id: "saltpeter",
-    color: "#aaaaa9",
-    type: "tfc_mineral",
-    sand: "white",
-  },
-  {
-    id: "sylvite",
-    color: "#b98761",
-    type: "tfc_mineral",
-    sand: "yellow",
-  },
-  {
-    id: "borax",
-    color: "#a7a8a7",
-    type: "tfc_mineral",
-    sand: "white",
-  },
-  {
-    id: "bauxite",
-    color: "#e77263",
-    type: "tfc_ie_ore",
-    sand: "pink",
-  },
-  {
-    id: "galena",
-    color: "#5f5764",
-    type: "tfc_ie_ore",
-    sand: "black",
-  },
-  {
-    id: "uraninite",
-    color: "#7a9a65",
-    type: "tfc_ie_ore",
-    sand: "green",
-  },
-  {
-    id: "chromite",
-    color: "#ebebe8",
-    type: "firmalife_ore",
-    sand: "white",
-  },
-  //black, brown, green, pink, red, white, yellow
-  //amethyst, diamond, emerald, lapis_lazuli, opal, pyrite, ruby, sapphire, topaz "gem"
-];
-
-const sandTypes = [
-  { id: "black", color: "#383838" },
-  { id: "brown", color: "#927755" },
-  { id: "green", color: "#626c45" },
-  { id: "pink", color: "#96706d" },
-  { id: "red", color: "#93634f" },
-  { id: "white", color: "#c9c9c9" },
-  { id: "yellow", color: "#dacea2" },
-];
-
-const powderTypes = [
-  { id: "chromite", color: "#ebebe8" },
-  { id: "gypsum", color: "#977c62" },
-  { id: "cryolite", color: "#909191" },
-];
-
+//priority: 99
 StartupEvents.registry("item", (event) => {
   /*****************************************************************************
    * Registering clumps, dusts, sand piles
    ****************************************************************************/
-  oreTypes.forEach((item) => {
+  global.oreTypes.forEach((item) => {
     event
       .create("clump_" + item.id)
       .tooltip("Try grinding it!")
@@ -193,7 +29,7 @@ StartupEvents.registry("item", (event) => {
       .texture("mekanism:item/dust");
   });
 
-  sandTypes.forEach((item) => {
+  global.sandTypes.forEach((item) => {
     event
       .create("powder_sand_" + item.id)
       .color(item.color)
@@ -209,7 +45,7 @@ StartupEvents.registry("item", (event) => {
       layer1: "mekanism:item/dirty_dust_overlay",
     });
 
-  powderTypes.forEach((item) => {
+  global.powderTypes.forEach((item) => {
     event
       .create("powder_" + item.id)
       .color(item.color)
@@ -219,10 +55,10 @@ StartupEvents.registry("item", (event) => {
           : "tfc:item/powder/salt"
       );
   });
+
   /*****************************************************************************
    * Registering osmirite tools
    ****************************************************************************/
-
   event
     .create("metal/pickaxe/osmirite", "tfc:tool")
     .tier("osmirite")
@@ -235,14 +71,19 @@ StartupEvents.registry("item", (event) => {
     .mineableBlocksTag("minecraft:mineable/pickaxe");
 
   event
-    .create("metal/propick/osmirite", "tfc:propick")
+    .create("metal/propick/osmirite", "precpros:custom")
     .tier("osmirite")
     .attackDamageBaselineTFC(0.75)
     .speedBaseline(-2.8)
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
-    .texture("minecraft:item/netherite_pickaxe");
+    .texture("minecraft:item/netherite_pickaxe")
+    .cooldown(10)
+    .primaryRadius(12)
+    .secondaryRadius(12)
+    .displacement(0);
+  //.prospectTag();
 
   event
     .create("metal/axe/osmirite", "tfc:tool")
@@ -388,4 +229,14 @@ StartupEvents.registry("item", (event) => {
     .rarity("epic")
     .fireResistant(true)
     .texture("minecraft:item/shears");
+
+  //NYI
+  //const metalItems = ["ingot", "double_ingot", "sheet", "double_sheet"];
+
+  global.metalToolHeads.forEach((item) => {
+    event
+      .create(`metal/${item}/osmirite`)
+      .color("#444444")
+      .texture(`tfc:item/metal/${item}/wrought_iron`); // <--------------- TODO
+  });
 });
