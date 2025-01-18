@@ -179,6 +179,9 @@ global.metalToolHeads = [
   "propick_head",
   "mace_head",
   "fish_hook",
+  "prospector_hammer_head",
+  "prospector_drill_head",
+  "mineral_prospector_head",
 ];
 
 global.osmiriteToolList = [
@@ -195,6 +198,9 @@ global.osmiriteToolList = [
   "javelin",
   "propick",
   "mace",
+  "prospector_hammer",
+  "prospector_drill",
+  "mineral_prospector",
 ];
 global.commonToolTagList = [
   "immersiveengineering:toolbox/tools",

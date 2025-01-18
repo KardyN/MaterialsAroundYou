@@ -230,6 +230,36 @@ StartupEvents.registry("item", (event) => {
     .fireResistant(true)
     .texture("minecraft:item/shears");
 
+  event
+    .create("metal/prospector_hammer", "precpros:hammer")
+    .tier("osmirite")
+    .attackDamageBaselineTFC(0.6)
+    .speedBaseline(-3.0)
+    .unstackable()
+    .rarity("epic")
+    .fireResistant(true)
+    .texture("minecraft:item/netherite_pickaxe");
+
+  event
+    .create("metal/prospector_drill", "precpros:drill")
+    .tier("osmirite")
+    .attackDamageBaselineTFC(0.6)
+    .speedBaseline(-3.0)
+    .unstackable()
+    .rarity("epic")
+    .fireResistant(true)
+    .texture("minecraft:item/netherite_pickaxe");
+
+  event
+    .create("metal/mineral_prospector", "precpros:mineral")
+    .tier("osmirite")
+    .attackDamageBaselineTFC(0.3)
+    .speedBaseline(-2.8)
+    .unstackable()
+    .rarity("epic")
+    .fireResistant(true)
+    .texture("minecraft:item/netherite_pickaxe");
+
   //NYI
   //const metalItems = ["ingot", "double_ingot", "sheet", "double_sheet"];
 
