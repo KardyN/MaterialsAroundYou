@@ -383,11 +383,9 @@ StartupEvents.registry("item", (event) => {
     .largeBait();
 
   event
-    .create("metal/shears/osmirite", "tfc:tool")
-    .tier("osmirite")
+    .create("metal/shears/osmirite", "shears")
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
-    .texture("minecraft:item/shears")
-    .mineableBlocksTag("tfc:mineable_with_sharp_tool");
+    .texture("minecraft:item/shears");
 });
