@@ -105,7 +105,7 @@ StartupEvents.registry("item", (event) => {
   event
     .create("metal/hoe/osmirite", "tfc:hoe")
     .tier("osmirite")
-    .attackDamageBaseline(-1) // NOT calculateVanillaAttackDamage
+    .attackDamageBaseline(-1) // not calculateVanillaAttackDamage
     .speedBaseline(-2)
     .unstackable()
     .rarity("epic")
@@ -131,7 +131,7 @@ StartupEvents.registry("item", (event) => {
     .rarity("epic")
     .fireResistant(true)
     .texture("kubejs:item/metal/hammer/osmirite");
-  //.metalTexture(texture: string); <----------------------- TODO
+  //.metalTexture(texture: string); <-------------------------------------- TODO
   //auto hammer texture it is
 
   event
@@ -167,7 +167,7 @@ StartupEvents.registry("item", (event) => {
     .fireResistant(true)
     .texture("kubejs:item/metal/scythe/osmirite")
     .mineableBlocksTag("tfc:mineable_with_scythe")
-    .mineableBlocksTag("tfc:mineable_with_sharp_tool"); //default value
+    .mineableBlocksTag("tfc:mineable_with_sharp_tool");
 
   event
     .create("metal/javelin/osmirite", "tfc:javelin")
@@ -181,7 +181,10 @@ StartupEvents.registry("item", (event) => {
     .thrownDamage(17);
   //.skeletonWeapon()
   // .throwingModel(m: string)
-  //.modelAtPerspective(perspective: ItemDisplayContext, model: string)
+  //.modelAtPerspective(
+  //   perspective: ItemDisplayContext,
+  //   model: string
+  //)
   //.guiModel(m: string)
 
   event
@@ -212,8 +215,8 @@ StartupEvents.registry("item", (event) => {
     .fireResistant(true)
     .texture("kubejs:item/metal/fishing_rod/osmirite")
     //.fishinfStrength() //default is tier
-    //.castModel(model: string) <----------------------------- TODO
-    //auto from kubejs:metal/fishing_rod/osmirite_cast texture
+    //.castModel(model: string) <------------------------------------------ TODO
+    //auto from kubejs:metal/fishing_rod/osmirite_cast
     //.castTexture(t: string);
     .smallBait()
     .largeBait();
@@ -256,15 +259,12 @@ StartupEvents.registry("item", (event) => {
     .fireResistant(true)
     .texture("kubejs:item/metal/mineral_prospector/osmirite");
 
-  //NYI
-  //const metalItems = ["ingot", "double_ingot", "sheet", "double_sheet"];
-
   global.metalToolHeads.forEach((item) => {
     event
       .create(`metal/${item}/osmirite`)
       .unstackable()
       .rarity("epic")
       .fireResistant(true)
-      .texture(`kubejs:item/metal/${item}/osmirite`); // <--------------- TODO
+      .texture(`kubejs:item/metal/${item}/osmirite`);
   });
 });
