@@ -25,6 +25,7 @@
 /screenshots/
 /.probe
 /.vscode
+/dev_textures/dump
 
 # Other stuff
 emi.json
