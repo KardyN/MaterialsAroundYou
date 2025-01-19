@@ -78,7 +78,7 @@ StartupEvents.registry("item", (event) => {
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
-    .texture("minecraft:item/netherite_pickaxe");
+    .texture("kubejs:item/metal/propick/osmirite");
 
   event
     .create("metal/axe/osmirite", "tfc:tool")
@@ -120,7 +120,7 @@ StartupEvents.registry("item", (event) => {
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
-    .texture("minecraft:item/netherite_pickaxe");
+    .texture("kubejs:item/metal/chisel/osmirite");
 
   event
     .create("metal/hammer/osmirite", "tfc:hammer")
@@ -130,7 +130,7 @@ StartupEvents.registry("item", (event) => {
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
-    .texture("minecraft:item/netherite_pickaxe");
+    .texture("kubejs:item/metal/hammer/osmirite");
   //.metalTexture(texture: string); <----------------------- TODO
   //auto hammer texture it is
 
@@ -142,7 +142,7 @@ StartupEvents.registry("item", (event) => {
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
-    .texture("minecraft:item/netherite_pickaxe");
+    .texture("kubejs:item/metal/saw/osmirite");
 
   event
     .create("metal/knife/osmirite", "tfc:tool")
@@ -152,7 +152,7 @@ StartupEvents.registry("item", (event) => {
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
-    .texture("minecraft:item/netherite_pickaxe")
+    .texture("kubejs:item/metal/knife/osmirite")
     .knife()
     .mineableBlocksTag("tfc:mineable_with_knife")
     .mineableBlocksTag("tfc:mineable_with_sharp_tool");
@@ -165,7 +165,7 @@ StartupEvents.registry("item", (event) => {
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
-    .texture("minecraft:item/netherite_pickaxe")
+    .texture("kubejs:item/metal/scythe/osmirite")
     .mineableBlocksTag("tfc:mineable_with_scythe")
     .mineableBlocksTag("tfc:mineable_with_sharp_tool"); //default value
 
@@ -177,7 +177,7 @@ StartupEvents.registry("item", (event) => {
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
-    .texture("minecraft:item/netherite_pickaxe")
+    .texture("kubejs:item/metal/javelin/osmirite")
     .thrownDamage(17);
   //.skeletonWeapon()
   // .throwingModel(m: string)
@@ -202,7 +202,7 @@ StartupEvents.registry("item", (event) => {
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
-    .texture("minecraft:item/netherite_pickaxe");
+    .texture("kubejs:item/metal/mace/osmirite");
 
   event
     .create("metal/fishing_rod/osmirite", "tfc:fishing_rod")
@@ -210,7 +210,7 @@ StartupEvents.registry("item", (event) => {
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
-    .texture("minecraft:item/fishing_rod")
+    .texture("kubejs:item/metal/fishing_rod/osmirite")
     //.fishinfStrength() //default is tier
     //.castModel(model: string) <----------------------------- TODO
     //auto from kubejs:metal/fishing_rod/osmirite_cast texture
@@ -223,7 +223,7 @@ StartupEvents.registry("item", (event) => {
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
-    .texture("minecraft:item/shears");
+    .texture("kubejs:item/metal/shears/osmirite");
 
   event
     .create("metal/prospector_hammer/osmirite", "precpros:hammer")
@@ -233,7 +233,7 @@ StartupEvents.registry("item", (event) => {
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
-    .texture("minecraft:item/netherite_pickaxe");
+    .texture("kubejs:item/metal/prospector_hammer/osmirite");
 
   event
     .create("metal/prospector_drill/osmirite", "precpros:drill")
@@ -243,7 +243,7 @@ StartupEvents.registry("item", (event) => {
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
-    .texture("minecraft:item/netherite_pickaxe");
+    .texture("kubejs:item/metal/prospector_drill/osmirite");
 
   event
     .create("metal/mineral_prospector/osmirite", "precpros:mineral")
@@ -253,7 +253,7 @@ StartupEvents.registry("item", (event) => {
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
-    .texture("minecraft:item/netherite_pickaxe");
+    .texture("kubejs:item/metal/mineral_prospector/osmirite");
 
   //NYI
   //const metalItems = ["ingot", "double_ingot", "sheet", "double_sheet"];
@@ -261,7 +261,9 @@ StartupEvents.registry("item", (event) => {
   global.metalToolHeads.forEach((item) => {
     event
       .create(`metal/${item}/osmirite`)
-      .color("#444444")
-      .texture(`tfc:item/metal/${item}/wrought_iron`); // <--------------- TODO
+      .unstackable()
+      .rarity("epic")
+      .fireResistant(true)
+      .texture(`kubejs:item/metal/${item}/osmirite`); // <--------------- TODO
   });
 });
