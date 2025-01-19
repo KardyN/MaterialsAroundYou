@@ -220,6 +220,7 @@ StartupEvents.registry("item", (event) => {
 
   event
     .create("metal/shears/osmirite", "shears")
+    .maxDamage(10000)
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
