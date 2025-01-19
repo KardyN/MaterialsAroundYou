@@ -71,19 +71,14 @@ StartupEvents.registry("item", (event) => {
     .mineableBlocksTag("minecraft:mineable/pickaxe");
 
   event
-    .create("metal/propick/osmirite", "precpros:custom")
+    .create("metal/prospector_pickaxe/osmirite", "tfc:propick")
     .tier("osmirite")
     .attackDamageBaselineTFC(0.75)
     .speedBaseline(-2.8)
     .unstackable()
     .rarity("epic")
     .fireResistant(true)
-    .texture("minecraft:item/netherite_pickaxe")
-    .cooldown(10)
-    .primaryRadius(12)
-    .secondaryRadius(12)
-    .displacement(0);
-  //.prospectTag();
+    .texture("minecraft:item/netherite_pickaxe");
 
   event
     .create("metal/axe/osmirite", "tfc:tool")
@@ -231,7 +226,7 @@ StartupEvents.registry("item", (event) => {
     .texture("minecraft:item/shears");
 
   event
-    .create("metal/prospector_hammer", "precpros:hammer")
+    .create("metal/prospector_hammer/osmirite", "precpros:hammer")
     .tier("osmirite")
     .attackDamageBaselineTFC(0.6)
     .speedBaseline(-3.0)
@@ -241,7 +236,7 @@ StartupEvents.registry("item", (event) => {
     .texture("minecraft:item/netherite_pickaxe");
 
   event
-    .create("metal/prospector_drill", "precpros:drill")
+    .create("metal/prospector_drill/osmirite", "precpros:drill")
     .tier("osmirite")
     .attackDamageBaselineTFC(0.6)
     .speedBaseline(-3.0)
@@ -251,7 +246,7 @@ StartupEvents.registry("item", (event) => {
     .texture("minecraft:item/netherite_pickaxe");
 
   event
-    .create("metal/mineral_prospector", "precpros:mineral")
+    .create("metal/mineral_prospector/osmirite", "precpros:mineral")
     .tier("osmirite")
     .attackDamageBaselineTFC(0.3)
     .speedBaseline(-2.8)
