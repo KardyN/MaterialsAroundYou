@@ -1,57 +1,19 @@
 //priority: 99
 StartupEvents.registry("item", (event) => {
   /*****************************************************************************
-   * Registering clumps, dusts, sand piles
+   * Registering dusts, sand piles
    ****************************************************************************/
   global.oreTypes.forEach((item) => {
     event
-      .create("clump_" + item.id)
-      .tooltip("Try grinding it!")
-      .color(0, item.color)
-      .color(1, "#222222")
-      .textureJson({
-        layer0: "mekanism:item/clump",
-        layer1: "mekanism:item/clump_overlay",
-      });
-    event
-      .create("dirty_dust_" + item.id)
-      .tooltip("Try washing it!")
-      .color(0, item.color)
-      .color(1, "#222222")
-      .textureJson({
-        layer0: "mekanism:item/dirty_dust",
-        layer1: "mekanism:item/dirty_dust_overlay",
-      });
-    event
-      .create("dust_" + item.id)
-      .tooltip("Try melting it!")
-      .color(item.color)
-      .texture("mekanism:item/dust");
+      .create("powder/dirty_" + item.name)
+      .texture("kubejs:item/powder/dirty_" + item.name);
   });
 
-  global.sandTypes.forEach((item) => {
+  global.sandColors.forEach((color) => {
     event
-      .create("powder_sand_" + item.id)
-      .color(item.color)
-      .texture("tfc:item/powder/salt");
+      .create(`powder/${color}_sand`)
+      .texture(`kubejs:item/powder/${color}_sand`);
   });
-
-  event
-    .create("dust_silver")
-    .color(0, "#f0f0ff")
-    .color(1, "#f0f0f0")
-    .textureJson({
-      layer0: "mekanism:item/dust_tin",
-      layer1: "mekanism:item/dirty_dust_overlay",
-    });
-
-  global.powderTypes.forEach((item) => {
-    event
-      .create("powder_" + item.id)
-      .color(item.color)
-      .texture("tfc:item/powder/native_silver");
-  });
-
   /*****************************************************************************
    * Registering osmirite tools
    ****************************************************************************/

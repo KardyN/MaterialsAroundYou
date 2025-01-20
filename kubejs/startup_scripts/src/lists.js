@@ -1,98 +1,82 @@
 //priority: 1000
 global.oreTypes = [
   {
-    id: "native_copper",
-    color: "#d88854",
+    name: "native_copper",
     type: "tfc_ore",
     sand: "pink",
   },
   {
-    id: "native_gold",
-    color: "#c89d28",
+    name: "native_gold",
     type: "tfc_ore",
     sand: "yellow",
   },
   {
-    id: "hematite",
-    color: "#b05e56",
+    name: "hematite",
     type: "tfc_ore",
     sand: "pink",
   },
   {
-    id: "native_silver",
-    color: "#b4b7c4",
+    name: "native_silver",
     type: "tfc_ore",
     sand: "white",
   },
   {
-    id: "cassiterite",
-    color: "#6a6655",
+    name: "cassiterite",
     type: "tfc_ore",
     sand: "green",
   },
   {
-    id: "bismuthinite",
-    color: "#416f3d",
+    name: "bismuthinite",
     type: "tfc_ore",
     sand: "green",
   },
   {
-    id: "garnierite",
-    color: "#3c5035",
+    name: "garnierite",
     type: "tfc_ore",
     sand: "green",
   },
   {
-    id: "malachite",
-    color: "#587e79",
+    name: "malachite",
     type: "tfc_ore",
     sand: "green",
   },
   {
-    id: "magnetite",
-    color: "#3b3c3c",
+    name: "magnetite",
     type: "tfc_ore",
     sand: "black",
   },
   {
-    id: "limonite",
-    color: "#93714a",
+    name: "limonite",
     type: "tfc_ore",
     sand: "yellow",
   },
   {
-    id: "sphalerite",
-    color: "#a4a3a3",
+    name: "sphalerite",
     type: "tfc_ore",
     sand: "white",
   },
   {
-    id: "tetrahedrite",
-    color: "#838283",
+    name: "tetrahedrite",
     type: "tfc_ore",
     sand: "black",
   },
   {
-    id: "bauxite",
-    color: "#e77263",
+    name: "bauxite",
     type: "tfc_ie_ore",
     sand: "pink",
   },
   {
-    id: "galena",
-    color: "#5f5764",
+    name: "galena",
     type: "tfc_ie_ore",
     sand: "black",
   },
   {
-    id: "uraninite",
-    color: "#7a9a65",
+    name: "uraninite",
     type: "tfc_ie_ore",
     sand: "green",
   },
   {
-    id: "chromite",
-    color: "#ebebe8",
+    name: "chromite",
     type: "firmalife_ore",
     sand: "white",
   },
@@ -100,17 +84,15 @@ global.oreTypes = [
   //amethyst, diamond, emerald, lapis_lazuli, opal, pyrite, ruby, sapphire, topaz "gem"
 ];
 
-global.sandTypes = [
-  { id: "black", color: "#383838" },
-  { id: "brown", color: "#927755" },
-  { id: "green", color: "#626c45" },
-  { id: "pink", color: "#96706d" },
-  { id: "red", color: "#93634f" },
-  { id: "white", color: "#c9c9c9" },
-  { id: "yellow", color: "#dacea2" },
+global.sandColors = [
+  "black",
+  "brown",
+  "green",
+  "pink",
+  "red",
+  "white",
+  "yellow",
 ];
-
-global.powderTypes = [{ id: "chromite", color: "#ebebe8" }];
 
 global.metalToolHeads = [
   "pickaxe_head",
