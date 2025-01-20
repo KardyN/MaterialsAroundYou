@@ -1,84 +1,101 @@
 //priority: 1000
-global.oreTypes = [
+global.oreList = [
+  // opal should drop from graphite and cinnabar
   {
     name: "native_copper",
-    type: "tfc_ore",
+    mod: "tfc",
     sand: "pink",
+    gems: [],
   },
   {
     name: "native_gold",
-    type: "tfc_ore",
+    mod: "tfc",
     sand: "yellow",
+    gems: [],
   },
   {
     name: "hematite",
-    type: "tfc_ore",
+    mod: "tfc",
     sand: "pink",
+    gems: ["amethyst"],
   },
   {
     name: "native_silver",
-    type: "tfc_ore",
+    mod: "tfc",
     sand: "white",
+    gems: [],
   },
   {
     name: "cassiterite",
-    type: "tfc_ore",
+    mod: "tfc",
     sand: "green",
+    gems: ["topaz"],
   },
   {
     name: "bismuthinite",
-    type: "tfc_ore",
+    mod: "tfc",
     sand: "green",
+    gems: [],
   },
   {
     name: "garnierite",
-    type: "tfc_ore",
+    mod: "tfc",
     sand: "green",
+    gems: [],
   },
   {
     name: "malachite",
-    type: "tfc_ore",
+    mod: "tfc",
     sand: "green",
+    gems: [],
   },
   {
     name: "magnetite",
-    type: "tfc_ore",
+    mod: "tfc",
     sand: "black",
+    gems: ["amethyst", "sapphire"],
   },
   {
     name: "limonite",
-    type: "tfc_ore",
+    mod: "tfc",
     sand: "yellow",
+    gems: ["amethyst"],
   },
   {
     name: "sphalerite",
-    type: "tfc_ore",
+    mod: "tfc",
     sand: "white",
+    gems: [],
   },
   {
     name: "tetrahedrite",
-    type: "tfc_ore",
+    mod: "tfc",
     sand: "black",
+    gems: ["pyrite"],
   },
   {
     name: "bauxite",
-    type: "tfc_ie_ore",
+    mod: "tfc_ie_addon",
     sand: "pink",
+    gems: [],
   },
   {
     name: "galena",
-    type: "tfc_ie_ore",
+    mod: "tfc_ie_addon",
     sand: "black",
+    gems: ["pyrite"],
   },
   {
     name: "uraninite",
-    type: "tfc_ie_ore",
+    mod: "tfc_ie_addon",
     sand: "green",
+    gems: [],
   },
   {
     name: "chromite",
-    type: "firmalife_ore",
+    mod: "firmalife",
     sand: "white",
+    gems: ["ruby", "sapphire"],
   },
   //black, brown, green, pink, red, white, yellow
   //amethyst, diamond, emerald, lapis_lazuli, opal, pyrite, ruby, sapphire, topaz "gem"
