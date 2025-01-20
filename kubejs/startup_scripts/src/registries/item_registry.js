@@ -1,12 +1,12 @@
 //priority: 99
 StartupEvents.registry("item", (event) => {
   /*****************************************************************************
-   * Registering dusts, sand piles
+   * Registering dirty powder, sand piles
    ****************************************************************************/
-  global.oreTypes.forEach((item) => {
+  global.oreList.forEach((ore) => {
     event
-      .create("powder/dirty_" + item.name)
-      .texture("kubejs:item/powder/dirty_" + item.name);
+      .create(`powder/dirty_${ore.name}`)
+      .texture(`kubejs:item/powder/dirty_${ore.name}`);
   });
 
   global.sandColors.forEach((color) => {
