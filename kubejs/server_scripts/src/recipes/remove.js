@@ -2,7 +2,7 @@
 ServerEvents.recipes((event) => {
   const recipes = [
     { id: /heating\/ore/ },
-    { id: /quern\/.+_.+$/ },
+    { id: /quern\/.+_.+$/ }, // ore
     { type: "immersiveengineering:crusher" },
     { type: "immersiveengineering:arc_furnace" },
   ];
