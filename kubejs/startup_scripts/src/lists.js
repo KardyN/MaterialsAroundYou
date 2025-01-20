@@ -73,12 +73,6 @@ global.oreTypes = [
     sand: "black",
   },
   {
-    id: "gypsum",
-    color: "#977c62",
-    type: "tfc_mineral",
-    sand: "brown",
-  },
-  {
     id: "graphite",
     color: "#3a4249",
     type: "tfc_mineral",
