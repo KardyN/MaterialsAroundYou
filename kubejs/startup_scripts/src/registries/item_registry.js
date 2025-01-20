@@ -14,6 +14,8 @@ StartupEvents.registry("item", (event) => {
       .create(`powder/${color}_sand`)
       .texture(`kubejs:item/powder/${color}_sand`);
   });
+
+  event.create("powder/chromite").texture("kubejs:item/powder/chromite");
   /*****************************************************************************
    * Registering osmirite tools
    ****************************************************************************/
