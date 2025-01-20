@@ -39,7 +39,6 @@ const wrapperAddJson = (event, ore) => {
       },
     ],
   };
-  newJson.pools[0].entries[0].children.push();
   gems.forEach((gem) => {
     newJson.pools[0].entries[0].children[1].children.push({
       type: "minecraft:item",
