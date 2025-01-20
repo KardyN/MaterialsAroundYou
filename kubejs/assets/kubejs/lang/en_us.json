@@ -23,6 +23,8 @@
   "item.kubejs.powder.dirty_uraninite": "Dirty Uraninite Powder",
   "item.kubejs.powder.dirty_chromite": "Dirty Chromite Powder",
 
+  "item.kubejs.powder.chromite": "Chromite Powder",
+
   "item.kubejs.powder.black_sand": "Black Sand Heap",
   "item.kubejs.powder.brown_sand": "Brown Sand Heap",
   "item.kubejs.powder.green_sand": "Green Sand Heap",
@@ -30,10 +32,6 @@
   "item.kubejs.powder.red_sand": "Red Sand Heap",
   "item.kubejs.powder.white_sand": "White Sand Heap",
   "item.kubejs.powder.yellow_sand": "Yellow Sand Heap",
-
-  "item.kubejs.powder_chromite": "Chromite Powder",
-  "item.kubejs.powder_gypsum": "Gypsum Powder",
-  "item.kubejs.powder_cryolite": "Cryolite Powder",
 
   "item.kubejs.metal.pickaxe.osmirite": "Osmirite Pickaxe",
   "item.kubejs.metal.axe.osmirite": "Osmirite Axe",
