@@ -73,48 +73,6 @@ global.oreTypes = [
     sand: "black",
   },
   {
-    id: "graphite",
-    color: "#3a4249",
-    type: "tfc_mineral",
-    sand: "black",
-  },
-  {
-    id: "sulfur",
-    color: "#aaa552",
-    type: "tfc_mineral",
-    sand: "yellow",
-  },
-  {
-    id: "cinnabar",
-    color: "#ac161d",
-    type: "tfc_mineral",
-    sand: "red",
-  },
-  {
-    id: "cryolite",
-    color: "#909191",
-    type: "tfc_mineral",
-    sand: "white",
-  },
-  {
-    id: "saltpeter",
-    color: "#aaaaa9",
-    type: "tfc_mineral",
-    sand: "white",
-  },
-  {
-    id: "sylvite",
-    color: "#b98761",
-    type: "tfc_mineral",
-    sand: "yellow",
-  },
-  {
-    id: "borax",
-    color: "#a7a8a7",
-    type: "tfc_mineral",
-    sand: "white",
-  },
-  {
     id: "bauxite",
     color: "#e77263",
     type: "tfc_ie_ore",
@@ -152,11 +110,7 @@ global.sandTypes = [
   { id: "yellow", color: "#dacea2" },
 ];
 
-global.powderTypes = [
-  { id: "chromite", color: "#ebebe8" },
-  { id: "gypsum", color: "#977c62" },
-  { id: "cryolite", color: "#909191" },
-];
+global.powderTypes = [{ id: "chromite", color: "#ebebe8" }];
 
 global.metalToolHeads = [
   "pickaxe_head",

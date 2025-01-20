@@ -49,11 +49,7 @@ StartupEvents.registry("item", (event) => {
     event
       .create("powder_" + item.id)
       .color(item.color)
-      .texture(
-        item.id == "chromite"
-          ? "tfc:item/powder/native_silver"
-          : "tfc:item/powder/salt"
-      );
+      .texture("tfc:item/powder/native_silver");
   });
 
   /*****************************************************************************
