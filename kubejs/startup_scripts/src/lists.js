@@ -101,6 +101,12 @@ global.oreList = [
   //amethyst, diamond, emerald, lapis_lazuli, opal, pyrite, ruby, sapphire, topaz "gem"
 ];
 
+global.smallOreYieldByQualityDictionary = {
+  poor: "2",
+  normal: "3",
+  rich: "4",
+};
+
 global.sandColors = [
   "black",
   "brown",
