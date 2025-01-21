@@ -1,20 +1,21 @@
-const swapToNext = (item, player) => {
-  let nextId = global.multitoolIds[global.multitoolIds.indexOf(item.id) + 1];
-  player.setMainHandItem(Item.of(nextId, `{Damage:${item.damageValue}}`));
-  player.cooldowns.addCooldown(nextId, 15);
+const swapToNext = (event) => {
+  const { player, item } = event;
+  if (
+    player.crouching &&
+    !player.cooldowns.isOnCooldown(item.id) &&
+    /^kubejs:metal\/.*prospector.*\/osmirite/.test(item.id)
+  ) {
+    let nextId = global.multitoolIds[global.multitoolIds.indexOf(item.id) + 1];
+    player.setMainHandItem(Item.of(nextId, `{Damage:${item.damageValue}}`));
+    player.cooldowns.addCooldown(nextId, 10);
+    // event.cancel();
+  }
 };
 
-BlockEvents.rightClicked(/kubejs:metal\/.*prospector.*\/osmirite/, (event) => {
-  const { item, player } = event;
-  if (player.crouching && !player.cooldowns.isOnCooldown(player.mainHandItem)) {
-    swapToNext(item, player);
-    event.cancel();
-  }
+BlockEvents.rightClicked((event) => {
+  event.hand == "MAIN_HAND" && swapToNext(event);
 });
 
-ItemEvents.rightClicked(/kubejs:metal\/.*prospector.*\/osmirite/, (event) => {
-  const { item, player } = event;
-  if (player.crouching && !player.cooldowns.isOnCooldown(player.mainHandItem)) {
-    swapToNext(item, player);
-  }
+ItemEvents.rightClicked((event) => {
+  event.hand == "MAIN_HAND" && swapToNext(event);
 });
