@@ -101,6 +101,73 @@ global.oreList = [
   //amethyst, diamond, emerald, lapis_lazuli, opal, pyrite, ruby, sapphire, topaz "gem"
 ];
 
+global.powderList = [
+  {
+    name: "native_copper",
+    mod: "tfc",
+  },
+  {
+    name: "native_gold",
+    mod: "tfc",
+  },
+  {
+    name: "hematite",
+    mod: "tfc",
+  },
+  {
+    name: "native_silver",
+    mod: "tfc",
+  },
+  {
+    name: "cassiterite",
+    mod: "tfc",
+  },
+  {
+    name: "bismuthinite",
+    mod: "tfc",
+  },
+  {
+    name: "garnierite",
+    mod: "tfc",
+  },
+  {
+    name: "malachite",
+    mod: "tfc",
+  },
+  {
+    name: "magnetite",
+    mod: "tfc",
+  },
+  {
+    name: "limonite",
+    mod: "tfc",
+  },
+  {
+    name: "sphalerite",
+    mod: "tfc",
+  },
+  {
+    name: "tetrahedrite",
+    mod: "tfc",
+  },
+  {
+    name: "bauxite",
+    mod: "tfc_ie_addon",
+  },
+  {
+    name: "galena",
+    mod: "tfc_ie_addon",
+  },
+  {
+    name: "uraninite",
+    mod: "tfc_ie_addon",
+  },
+  {
+    name: "chromite",
+    mod: "kubejs",
+  },
+];
+
 global.smallOreYieldByQualityDictionary = {
   poor: "2",
   normal: "3",
