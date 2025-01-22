@@ -33,6 +33,11 @@
   "item.kubejs.powder.white_sand": "White Sand Heap",
   "item.kubejs.powder.yellow_sand": "Yellow Sand Heap",
 
+  "fluid.kubejs.ore.cassiterite": "Molten Cassiterite",
+  "fluid.kubejs.ore.hematite": "Molten Hematite",
+  "fluid.kubejs.ore.magnetite": "Molten Magnetite",
+  "fluid.kubejs.ore.limonite": "Molten Limonite",
+
   "item.kubejs.metal.pickaxe.osmirite": "Osmirite Pickaxe",
   "item.kubejs.metal.axe.osmirite": "Osmirite Axe",
   "item.kubejs.metal.shovel.osmirite": "Osmirite Shovel",
