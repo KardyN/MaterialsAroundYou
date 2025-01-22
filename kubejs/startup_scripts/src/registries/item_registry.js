@@ -1,18 +1,22 @@
 //priority: 99
 StartupEvents.registry("item", (event) => {
   /*****************************************************************************
-   * Registering dirty powder, sand piles
+   * Registering dirty powder, sand piles, powder piles, compacted powders
    ****************************************************************************/
   global.oreList.forEach((ore) => {
     event
       .create(`powder/dirty_${ore.name}`)
-      .texture(`kubejs:item/powder/dirty_${ore.name}`);
+      .texture("mekanism:item/dirty_dust_copper");
+    event.create(`pile/${ore.name}`).texture("tfc:item/powder/charcoal");
+    event
+      .create(`briquette/${ore.name}`)
+      .texture("mekanism:item/crystal_copper");
   });
 
   global.sandColors.forEach((color) => {
     event
-      .create(`powder/${color}_sand`)
-      .texture(`kubejs:item/powder/${color}_sand`);
+      .create(`pile/${color}_sand`)
+      .texture(`kubejs:item/pile/${color}_sand`);
   });
 
   event.create("powder/chromite").texture("kubejs:item/powder/chromite");
