@@ -5,6 +5,7 @@ ServerEvents.recipes((event) => {
     { id: /quern\/.+_.+$/ }, // ore
     { type: "immersiveengineering:crusher" },
     { type: "immersiveengineering:arc_furnace" },
+    { type: "tfc:bloomery" },
   ];
 
   recipes.forEach((recipe) => {

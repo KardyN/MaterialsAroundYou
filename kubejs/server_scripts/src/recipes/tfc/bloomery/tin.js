@@ -7,6 +7,6 @@ ServerEvents.recipes((event) => {
       ingredient: { item: "tfc:powder/charcoal" },
       count: 3,
     },
-    duration: 15000,
+    duration: 6000,
   });
 });
