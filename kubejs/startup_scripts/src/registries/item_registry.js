@@ -7,10 +7,10 @@ StartupEvents.registry("item", (event) => {
     event
       .create(`powder/dirty_${ore.name}`)
       .texture("mekanism:item/dirty_dust_copper");
-    event.create(`pile/${ore.name}`).texture("tfc:item/powder/charcoal");
+    event.create(`pile/${ore.name}`).texture(`kubejs:item/pile/${ore.name}`);
     event
       .create(`briquette/${ore.name}`)
-      .texture("mekanism:item/crystal_copper");
+      .texture(`kubejs:item/briquette/${ore.name}`);
   });
 
   global.sandColors.forEach((color) => {
