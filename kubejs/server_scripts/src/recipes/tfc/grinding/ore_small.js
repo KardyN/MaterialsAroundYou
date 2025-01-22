@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
         item: `${ore.mod}:ore/small_${ore.name}`,
       },
       result: {
-        item: `kubejs:powder/dirty_${ore.name}`,
+        item: `kubejs:dirty_dust/${ore.name}`,
         count: 1,
       },
     });

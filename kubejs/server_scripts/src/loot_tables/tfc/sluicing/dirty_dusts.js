@@ -45,7 +45,7 @@ const wrapperAddJson = (event, ore) => {
       name: `tfc:powder/${gem}`,
     });
   });
-  event.addJson(`kubejs:powder/dirty_${name}`, newJson);
+  event.addJson(`kubejs:dirty_dust/${name}`, newJson);
 };
 
 ServerEvents.genericLootTables((event) => {
@@ -57,8 +57,8 @@ ServerEvents.genericLootTables((event) => {
 TFCEvents.data((event) => {
   global.oreList.forEach((ore) => {
     event.sluicing(
-      "kubejs:powder/dirty_" + ore.name,
-      "kubejs:powder/dirty_" + ore.name
+      "kubejs:dirty_dust/" + ore.name,
+      "kubejs:dirty_dust/" + ore.name
     );
   });
 });
