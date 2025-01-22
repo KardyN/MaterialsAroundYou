@@ -4,9 +4,10 @@ StartupEvents.registry("item", (event) => {
    * Registering dirty powder, sand piles, powder piles, compacted powders
    ****************************************************************************/
   global.oreList.forEach((ore) => {
-    event
-      .create(`powder/dirty_${ore.name}`)
-      .texture("mekanism:item/dirty_dust_copper");
+    event.create(`dirty_dust/${ore.name}`).textureJson({
+      layer0: `kubejs:item/dirty_dust/${ore.name}`,
+      layer1: "kubejs:item/dirty_dust/overlay",
+    });
     event.create(`pile/${ore.name}`).texture(`kubejs:item/pile/${ore.name}`);
     event
       .create(`briquette/${ore.name}`)
