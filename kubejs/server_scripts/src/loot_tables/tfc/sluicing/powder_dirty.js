@@ -33,7 +33,7 @@ const wrapperAddJson = (event, ore) => {
         entries: [
           {
             type: "minecraft:item",
-            name: `kubejs:powder/${sand}_sand`,
+            name: `kubejs:pile/${sand}_sand`,
           },
         ],
       },
