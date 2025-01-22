@@ -6,6 +6,7 @@ ServerEvents.recipes((event) => {
     { type: "immersiveengineering:crusher" },
     { type: "immersiveengineering:arc_furnace" },
     { type: "tfc:bloomery" },
+    { type: "tfc:alloy" },
   ];
 
   recipes.forEach((recipe) => {
