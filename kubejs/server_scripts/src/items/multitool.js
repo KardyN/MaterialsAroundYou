@@ -8,7 +8,7 @@ const swapToNext = (event) => {
     let nextId = global.multitoolIds[global.multitoolIds.indexOf(item.id) + 1];
     player.setMainHandItem(Item.of(nextId, `{Damage:${item.damageValue}}`));
     player.cooldowns.addCooldown(nextId, 10);
-    // event.cancel();
+    event.cancel(); // cancels finding event
   }
 };
 

@@ -246,9 +246,9 @@ global.shearsTagList = [
   "tfc:shears",
 ];
 global.multitoolIds = [
-  "kubejs:prospector_pickaxe/osmirite",
-  "kubejs:prospector_hammer/osmirite",
-  "kubejs:prospector_drill/osmirite",
-  "kubejs:mineral_prospector/osmirite",
-  "kubejs:prospector_pickaxe/osmirite",
+  "kubejs:metal/prospector_pickaxe/osmirite",
+  "kubejs:metal/prospector_hammer/osmirite",
+  "kubejs:metal/prospector_drill/osmirite",
+  "kubejs:metal/mineral_prospector/osmirite",
+  "kubejs:metal/prospector_pickaxe/osmirite",
 ];
