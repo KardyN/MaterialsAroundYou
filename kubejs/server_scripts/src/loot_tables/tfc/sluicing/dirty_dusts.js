@@ -53,12 +53,3 @@ ServerEvents.genericLootTables((event) => {
     wrapperAddJson(event, ore);
   });
 });
-
-TFCEvents.data((event) => {
-  global.oreList.forEach((ore) => {
-    event.sluicing(
-      "kubejs:dirty_dust/" + ore.name,
-      "kubejs:dirty_dust/" + ore.name
-    );
-  });
-});
