@@ -16,6 +16,7 @@ ServerEvents.recipes((event) => {
     { id: "tfc:quern/ruby" },
     { id: "tfc:quern/sapphire" },
     { id: "tfc:quern/topaz" },
+    { id: "tfc:quern/cryolite" },
     { type: "tfc:bloomery" },
     { type: "tfc:alloy" },
     { id: /tfc:crafting\/stone\/shovel\/.+/ },

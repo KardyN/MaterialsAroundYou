@@ -1,6 +1,6 @@
 // priority: 90
 ServerEvents.recipes((event) => {
-  const alloyRecipeList = [
+  let alloyRecipeList = [
     {
       result: "tfc:rose_gold",
       contents: [

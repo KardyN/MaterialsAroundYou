@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-  const recipes = [
+  let recipes = [
     {
       output: "create:andesite_alloy",
       pattern: ["ABA", "BCB", "ABA"],

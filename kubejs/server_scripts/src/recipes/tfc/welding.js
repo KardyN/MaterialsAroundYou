@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-  const recipes = [
+  let recipes = [
     {
       first_input: { item: "tfc:metal/ingot/weak_steel" },
       second_input: { item: "tfc:metal/ingot/steel" },

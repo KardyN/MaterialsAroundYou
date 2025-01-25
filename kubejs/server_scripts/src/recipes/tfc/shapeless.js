@@ -1,13 +1,5 @@
 ServerEvents.recipes((event) => {
-  const recipes = [
-    /*
-    {
-      output: "create:andesite_alloy",
-      inputs: ["2x create:andesite_alloy"],
-      id: "create:shapeless/andesite_alloy",
-    },
-    */
-  ];
+  let recipes = [];
 
   global.woodList.forEach((wood) => {
     recipes.push({

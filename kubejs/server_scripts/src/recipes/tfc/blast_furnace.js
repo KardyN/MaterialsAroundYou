@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-  const blastFurnaceRecipe = [
+  let blastFurnaceRecipe = [
     { input: "kubejs:ore/galena", output: "tfc_ie_addon:metal/lead" },
     { input: "kubejs:ore/native_silver", output: "tfc:metal/silver" },
     { input: "kubejs:ore/sphalerite", output: "tfc:metal/zinc" },
