@@ -222,33 +222,15 @@ global.osmiriteToolList = [
   "prospector_drill",
   "mineral_prospector",
 ];
-global.commonToolTagList = [
-  "immersiveengineering:toolbox/tools",
-  "minecraft:breaks_decorated_pots",
-  "minecraft:tools",
-  "forge:tools",
-  "tfc:metal_item/osmirite_tools",
-  "tfc:metal_item/osmirite",
-  "tfc:usable_on_tool_rack",
-];
-global.fishingRodTagList = [
-  "tfc:holds_small_fishing_bait",
-  "tfc:holds_large_fishing_bait",
-  "tfc:usable_on_tool_rack",
-  "tfc:metal_item/osmirite",
-  "forge:fishing_rods",
-  "forge:fishing_rods/osmirite",
-];
-global.shearsTagList = [
-  "tfc:usable_on_tool_rack",
-  "tfc:metal_item/osmirite",
-  "forge:shears",
-  "tfc:shears",
-];
-global.multitoolIds = [
-  "kubejs:metal/prospector_pickaxe/osmirite",
-  "kubejs:metal/prospector_hammer/osmirite",
-  "kubejs:metal/prospector_drill/osmirite",
-  "kubejs:metal/mineral_prospector/osmirite",
-  "kubejs:metal/prospector_pickaxe/osmirite",
+
+global.gemList = [
+  "amethyst",
+  "diamond",
+  "emerald",
+  "lapis_lazuli",
+  "opal",
+  "pyrite",
+  "ruby",
+  "sapphire",
+  "topaz",
 ];
