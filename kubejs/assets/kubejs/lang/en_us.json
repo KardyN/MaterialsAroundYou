@@ -126,5 +126,7 @@
   "item.kubejs.metal.propick_head.osmirite": "Osmirite Prospector's Multitool: Propick Head",
   "item.kubejs.metal.prospector_hammer_head.osmirite": "Osmirite Prospector's Multitool: Hammer Head",
   "item.kubejs.metal.prospector_drill_head.osmirite": "Osmirite Prospector's Multitool: Drill Head",
-  "item.kubejs.metal.mineral_prospector_head.osmirite": "Osmirite Prospector's Multitool: Mineralpick Head"
+  "item.kubejs.metal.mineral_prospector_head.osmirite": "Osmirite Prospector's Multitool: Mineralpick Head",
+
+  "metal.tfc.bearing_alloy": "Bearing Alloy"
 }

@@ -18,6 +18,14 @@ ServerEvents.recipes((event) => {
     { id: "tfc:quern/topaz" },
     { type: "tfc:bloomery" },
     { type: "tfc:alloy" },
+    { id: /tfc:crafting\/stone\/shovel\/.+/ },
+    { id: /tfc:crafting\/stone\/hammer\/.+/ },
+    { id: /tfc:rock_knapping\/shovel\/.+/ },
+    { id: /tfc:rock_knapping\/hammer\/.+/ },
+    { id: /tfc:casting\/weak.+/ },
+    { id: /tfc:casting\/high_carbon_.+steel/ },
+    { id: /tfc:welding\/high_carbon.+/ },
+    { id: /tfc:crafting\/wood\/.+axle/ },
     //immersive & addons
     { type: "immersiveengineering:crusher" },
     { type: "immersiveengineering:arc_furnace" },
@@ -27,12 +35,21 @@ ServerEvents.recipes((event) => {
     { id: "immersiveengineering:crafting/coke_to_coal_coke" },
     { id: "immersiveengineering:crafting/coal_coke_to_coke" },
     { id: "immersiveengineering:crafting/fluorescent_tube" },
+    { id: /immersiveengineering:crafting\/.*nugget.*/ },
     //create & addons
     { id: "create:crafting/kinetics/andesite_door" },
     { id: "firmalife:crafting/ashtray" },
     //mekanism & addons
     { id: "mekanism:charcoal" },
     { id: "mekanism:storage_blocks/charcoal" },
+    //farmer's delight &addons
+    { id: /farmersdelight:cutting\/.+wood/ },
+    { id: /farmersdelight:cutting\/.+log/ },
+    { id: /farmersdelight:cutting\/.+sign/ },
+    { id: /farmersdelight:cutting\/.+door/ },
+    { id: /farmersdelight:cutting\/.+stem/ },
+    { id: /farmersdelight:cutting\/.+hyphae/ },
+    { id: /farmersdelight:cutting\/.+block/ },
   ];
 
   recipes.forEach((recipe) => {
