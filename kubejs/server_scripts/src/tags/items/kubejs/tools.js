@@ -1,6 +1,30 @@
 ServerEvents.tags("item", (event) => {
+  const commonToolTagList = [
+    "immersiveengineering:toolbox/tools",
+    "minecraft:breaks_decorated_pots",
+    "minecraft:tools",
+    "forge:tools",
+    "tfc:metal_item/osmirite_tools",
+    "tfc:metal_item/osmirite",
+    "tfc:usable_on_tool_rack",
+  ];
+  const fishingRodTagList = [
+    "tfc:holds_small_fishing_bait",
+    "tfc:holds_large_fishing_bait",
+    "tfc:usable_on_tool_rack",
+    "tfc:metal_item/osmirite",
+    "forge:fishing_rods",
+    "forge:fishing_rods/osmirite",
+  ];
+  const shearsTagList = [
+    "tfc:usable_on_tool_rack",
+    "tfc:metal_item/osmirite",
+    "forge:shears",
+    "tfc:shears",
+  ];
+
   global.osmiriteToolList.forEach((toolType) => {
-    global.commonToolTagList.forEach((tag) => {
+    commonToolTagList.forEach((tag) => {
       event.add(tag, `kubejs:metal/${toolType}/osmirite`);
     });
 
@@ -42,11 +66,11 @@ ServerEvents.tags("item", (event) => {
       );
   });
 
-  global.fishingRodTagList.forEach((tag) => {
+  fishingRodTagList.forEach((tag) => {
     event.add(tag, "kubejs:metal/fishing_rod/osmirite");
   });
 
-  global.shearsTagList.forEach((tag) => {
+  shearsTagList.forEach((tag) => {
     event.add(tag, "kubejs:metal/shears/osmirite");
   });
 });
