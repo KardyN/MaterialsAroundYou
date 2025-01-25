@@ -1,7 +1,8 @@
 ServerEvents.recipes((event) => {
+  let recipes = [];
+
   global.powderList.forEach((powder) => {
-    event.custom({
-      type: "create:compacting",
+    recipes.push({
       ingredients: [
         {
           item: `kubejs:pile/${powder.name}`,
@@ -24,6 +25,12 @@ ServerEvents.recipes((event) => {
           item: `kubejs:briquette/${powder.name}`,
         },
       ],
+      id: `create:compacting/briquette/${powder.name}`,
     });
+  });
+
+  recipes.forEach((recipe) => {
+    recipe.type = "create:compacting";
+    event.custom(recipe).id(recipe.id);
   });
 });

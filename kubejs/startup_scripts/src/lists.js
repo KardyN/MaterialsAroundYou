@@ -168,11 +168,11 @@ global.powderList = [
   },
 ];
 
-global.smallOreYieldByQualityDictionary = {
-  poor: "2",
-  normal: "3",
-  rich: "4",
-};
+global.smallOreYield = [
+  { quality: "poor", amount: "2" },
+  { quality: "normal", amount: "3" },
+  { quality: "rich", amount: "4" },
+];
 
 global.sandColors = [
   "black",
