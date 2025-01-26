@@ -27,6 +27,10 @@ ServerEvents.recipes((event) => {
     { id: /tfc:casting\/high_carbon_.+steel/ },
     { id: /tfc:welding\/high_carbon.+/ },
     { id: /tfc:crafting\/wood\/.+axle/ },
+    { id: /tfc:crafting\/wood\/.+support/ },
+    { id: /tfc:crafting\/wood\/.+clutch/ },
+    { id: /tfc:crafting\/wood\/.+gear_box/ },
+    { id: "tfc:wattle" },
     //immersive & addons
     { type: "immersiveengineering:crusher" },
     { type: "immersiveengineering:arc_furnace" },
