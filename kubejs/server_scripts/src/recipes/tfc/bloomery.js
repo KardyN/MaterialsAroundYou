@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
   let recipes = [
     {
-      result: { item: "tfc:metal/ingot/wrought_iron" },
+      result: { item: "tfc:raw_iron_bloom" },
       fluid: { ingredient: `kubejs:ore/hematite`, amount: 100 },
       catalyst: {
         ingredient: { item: "tfc:powder/charcoal" },
@@ -11,7 +11,7 @@ ServerEvents.recipes((event) => {
       id: "tfc:bloomery/wrought_iron_hematite",
     },
     {
-      result: { item: "tfc:metal/ingot/wrought_iron" },
+      result: { item: "tfc:raw_iron_bloom" },
       fluid: { ingredient: `kubejs:ore/magnetite`, amount: 100 },
       catalyst: {
         ingredient: { item: "tfc:powder/charcoal" },
@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
       id: "tfc:bloomery/wrought_iron_magnetite",
     },
     {
-      result: { item: "tfc:metal/ingot/wrought_iron" },
+      result: { item: "tfc:raw_iron_bloom" },
       fluid: { ingredient: `kubejs:ore/limonite`, amount: 100 },
       catalyst: {
         ingredient: { item: "tfc:powder/charcoal" },
@@ -31,7 +31,7 @@ ServerEvents.recipes((event) => {
       id: "tfc:bloomery/wrought_iron_limonite",
     },
     {
-      result: { item: "tfc:metal/ingot/tin" },
+      result: { item: "kubejs:raw_tin_bloom" },
       fluid: { ingredient: `kubejs:ore/cassiterite`, amount: 100 },
       catalyst: {
         ingredient: { item: "tfc:powder/charcoal" },
@@ -39,6 +39,16 @@ ServerEvents.recipes((event) => {
       },
       duration: 6000,
       id: "tfc:bloomery/tin",
+    },
+    {
+      result: { item: "kubejs:raw_copper_bloom" },
+      fluid: { ingredient: `kubejs:ore/malachite`, amount: 100 },
+      catalyst: {
+        ingredient: { item: "tfc:powder/charcoal" },
+        count: 3,
+      },
+      duration: 6000,
+      id: "tfc:bloomery/copper",
     },
   ];
 
