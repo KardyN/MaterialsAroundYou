@@ -1,5 +1,14 @@
 ServerEvents.recipes((event) => {
-  let recipes = [];
+  let recipes = [
+    {
+      recipe: {
+        type: "minecraft:crafting_shapeless",
+        ingredients: [{ tag: "tfc:firepit_logs" }, { tag: "tfc:saws" }],
+        result: { item: "tfc:wattle", count: 8 },
+      },
+      id: "tfc:shapeless/wattle",
+    },
+  ];
 
   global.oreList.forEach((ore) => {
     global.smallOreYield.forEach((smallOre) => {
@@ -104,14 +113,6 @@ ServerEvents.recipes((event) => {
           result: { item: `tfc:wood/gear_box/${wood}` },
         },
         id: `tfc:shapeless/gear_box/${wood}`,
-      },
-      {
-        recipe: {
-          type: "minecraft:crafting_shapeless",
-          ingredients: [{ tag: "tfc:firepit_logs" }, { tag: "tfc:saws" }],
-          result: { item: "tfc:wattle", count: 8 },
-        },
-        id: "tfc:shapeless/wattle",
       }
     );
   });
