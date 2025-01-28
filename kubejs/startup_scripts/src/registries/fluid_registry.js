@@ -7,7 +7,7 @@ StartupEvents.registry("fluid", (event) => {
   });
   event
     .create("metal/bearing_alloy")
-    .thickTexture("#444444")
+    .thickTexture("#7f9789")
     .noBlock()
     .noBucket();
 });
