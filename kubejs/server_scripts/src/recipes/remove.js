@@ -44,6 +44,7 @@ ServerEvents.recipes((event) => {
     //create & addons
     { id: "create:crafting/kinetics/andesite_door" },
     { id: "firmalife:crafting/ashtray" },
+    { id: /create:.+\/andesite_alloy.*/ },
     //mekanism & addons
     { id: "mekanism:charcoal" },
     { id: "mekanism:storage_blocks/charcoal" },
