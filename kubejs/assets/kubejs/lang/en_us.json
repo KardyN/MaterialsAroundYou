@@ -1,4 +1,9 @@
 {
+  "item.kubejs.raw_tin_bloom": "Raw Tin Bloom",
+  "item.kubejs.refined_tin_bloom": "Refined Tin Bloom",
+  "item.kubejs.raw_copper_bloom": "Raw Copper Bloom",
+  "item.kubejs.refined_copper_bloom": "Refined Copper Bloom",
+
   "item.kubejs.powder.dirty_native_copper": "Dirty Native Copper Powder",
   "item.kubejs.powder.dirty_native_gold": "Dirty Native Gold Powder",
   "item.kubejs.powder.dirty_hematite": "Dirty Hematite Powder",
@@ -84,10 +89,21 @@
   "item.kubejs.dirty_dust.uraninite": "Uraninite Dirty Dust",
   "item.kubejs.dirty_dust.chromite": "Chromite Dirty Dust",
 
-  "fluid.kubejs.ore.cassiterite": "Molten Cassiterite",
   "fluid.kubejs.ore.hematite": "Molten Hematite",
+  "fluid.kubejs.ore.native_silver": "Molten Native Silver",
+  "fluid.kubejs.ore.cassiterite": "Molten Cassiterite",
+  "fluid.kubejs.ore.bismuthinite": "Molten Bismuthinite",
+  "fluid.kubejs.ore.garnierite": "Molten Garnierite",
+  "fluid.kubejs.ore.malachite": "Molten Malachite",
   "fluid.kubejs.ore.magnetite": "Molten Magnetite",
   "fluid.kubejs.ore.limonite": "Molten Limonite",
+  "fluid.kubejs.ore.sphalerite": "Molten Sphalerite",
+  "fluid.kubejs.ore.tetrahedrite": "Molten Tetrahedrite",
+  "fluid.kubejs.ore.bauxite": "Molten Bauxite",
+  "fluid.kubejs.ore.galena": "Molten Galena",
+  "fluid.kubejs.ore.uraninite": "Molten Uraninite",
+  "fluid.kubejs.ore.chromite": "Molten Chromite",
+
   "fluid.kubejs.metal.bearing_alloy": "Bearing Alloy",
 
   "item.kubejs.metal.pickaxe.osmirite": "Osmirite Pickaxe",
