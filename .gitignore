@@ -5,7 +5,6 @@
 **/*.zip
 **/*.jar
 /backups
-/config
 /crash-reports
 /data
 /downloads
