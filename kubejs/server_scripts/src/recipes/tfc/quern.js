@@ -1,5 +1,16 @@
 ServerEvents.recipes((event) => {
-  let recipes = [];
+  let recipes = [
+    {
+      ingredient: {
+        item: "tfc:ore/cryolite",
+      },
+      result: {
+        item: "kubejs:powder/cryolite",
+        count: 4,
+      },
+      id: "tfc:quern/cryolite",
+    },
+  ];
 
   global.gemList.forEach((gem) => {
     recipes.push({
