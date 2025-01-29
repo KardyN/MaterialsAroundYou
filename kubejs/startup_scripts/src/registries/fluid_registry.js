@@ -3,7 +3,12 @@ StartupEvents.registry("fluid", (event) => {
   //metals
   event.create("metal/osmirite").thickTexture("#444444").noBlock().noBucket();
   global.oreList.forEach((ore) => {
-    event.create(`ore/${ore.name}`).thickTexture(ore.sand).noBlock().noBucket();
+    ore.color &&
+      event
+        .create(`ore/${ore.name}`)
+        .thickTexture(ore.color)
+        .noBlock()
+        .noBucket();
   });
   event
     .create("metal/bearing_alloy")
