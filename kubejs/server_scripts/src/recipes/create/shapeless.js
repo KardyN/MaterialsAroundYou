@@ -1,9 +1,14 @@
 ServerEvents.recipes((event) => {
   const recipes = [
     {
-      output: "create:andesite_alloy",
-      inputs: ["2x create:andesite_alloy"],
-      id: "create:shapeless/andesite_alloy",
+      output: "create:cogwheel",
+      inputs: ["create:shaft", "kubejs:wooden_gear"],
+      id: "create:shapeless/cogwheel",
+    },
+    {
+      output: "create:large_cogwheel",
+      inputs: ["create:shaft", "kubejs:large_wooden_gear"],
+      id: "create:shapeless/large_cogwheel",
     },
   ];
 

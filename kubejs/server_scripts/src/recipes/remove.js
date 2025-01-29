@@ -31,6 +31,7 @@ ServerEvents.recipes((event) => {
     { id: /tfc:crafting\/wood\/.+clutch/ },
     { id: /tfc:crafting\/wood\/.+gear_box/ },
     { id: "tfc:wattle" },
+    { id: "firmalife:crafting/ashtray" },
     //immersive & addons
     { type: "immersiveengineering:crusher" },
     { type: "immersiveengineering:arc_furnace" },
@@ -41,14 +42,17 @@ ServerEvents.recipes((event) => {
     { id: "immersiveengineering:crafting/coal_coke_to_coke" },
     { id: "immersiveengineering:crafting/fluorescent_tube" },
     { id: /immersiveengineering:crafting\/.*nugget.*/ },
+    { id: /tfc_ie_addon:metalpress\/.+/ },
     //create & addons
     { id: "create:crafting/kinetics/andesite_door" },
-    { id: "firmalife:crafting/ashtray" },
+    { id: "create:crafting/kinetics/shaft" },
+    { id: /create:crafting\/kinetics\/.*cogwheel.*/ },
+    { id: /create:deploying\/.*cogwheel/ },
     { id: /create:.+\/andesite_alloy.*/ },
     //mekanism & addons
     { id: "mekanism:charcoal" },
     { id: "mekanism:storage_blocks/charcoal" },
-    //farmer's delight &addons
+    //farmer's delight & addons
     { id: /farmersdelight:cutting\/.+wood/ },
     { id: /farmersdelight:cutting\/.+log/ },
     { id: /farmersdelight:cutting\/.+sign/ },
@@ -56,6 +60,7 @@ ServerEvents.recipes((event) => {
     { id: /farmersdelight:cutting\/.+stem/ },
     { id: /farmersdelight:cutting\/.+hyphae/ },
     { id: /farmersdelight:cutting\/.+block/ },
+    { id: "farmersdelight:cooking/turtle_stew" },
   ];
 
   recipes.forEach((recipe) => {
