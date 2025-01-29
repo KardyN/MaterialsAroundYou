@@ -21,6 +21,7 @@ StartupEvents.registry("item", (event) => {
   });
 
   event.create("powder/chromite").texture("kubejs:item/powder/chromite");
+  event.create("powder/cryolite").texture("kubejs:item/powder/cryolite");
 
   event.create("raw_tin_bloom").texture("kubejs:item/blooms/tin/unrefined");
   event.create("refined_tin_bloom").texture("kubejs:item/blooms/tin/refined");
@@ -30,6 +31,8 @@ StartupEvents.registry("item", (event) => {
   event
     .create("refined_copper_bloom")
     .texture("kubejs:item/blooms/copper/refined");
+  event.create("wooden_gear").texture("kubejs:item/wooden_gear");
+  event.create("large_wooden_gear").texture("kubejs:item/large_wooden_gear");
   /*****************************************************************************
    * Registering osmirite tools
    ****************************************************************************/
