@@ -91,28 +91,6 @@ ServerEvents.recipes((event) => {
           result: { item: `tfc:wood/encased_axle/${wood}` },
         },
         id: `tfc:shapeless/encased_axle/${wood}`,
-      },
-      {
-        recipe: {
-          type: "minecraft:crafting_shapeless",
-          ingredients: [
-            { item: `tfc:wood/encased_axle/${wood}` },
-            { item: "create:cogwheel", count: 2 },
-          ],
-          result: { item: `tfc:wood/clutch/${wood}` },
-        },
-        id: `tfc:shapeless/clutch/${wood}`,
-      },
-      {
-        recipe: {
-          type: "minecraft:crafting_shapeless",
-          ingredients: [
-            { item: `tfc:wood/encased_axle/${wood}` },
-            { item: "create:cogwheel", count: 4 },
-          ],
-          result: { item: `tfc:wood/gear_box/${wood}` },
-        },
-        id: `tfc:shapeless/gear_box/${wood}`,
       }
     );
   });
