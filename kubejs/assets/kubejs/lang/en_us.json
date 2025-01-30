@@ -144,7 +144,23 @@
   "item.kubejs.metal.prospector_drill_head.osmirite": "Osmirite Prospector's Multitool: Drill Head",
   "item.kubejs.metal.mineral_prospector_head.osmirite": "Osmirite Prospector's Multitool: Mineralpick Head",
 
+  "item.kubejs.powder.cryolite": "Cryolite Powder",
+
   "metal.tfc.bearing_alloy": "Bearing Alloy",
+  "metal.tfc.bismuthinite": "Bismuthinite",
+  "metal.tfc.hematite": "Hematite",
+  "metal.tfc.limonite": "Limonite",
+  "metal.tfc.magnetite": "Magnetite",
+  "metal.tfc.malachite": "Malachite",
+  "metal.tfc.garnierite": "Garnierite",
+  "metal.tfc.native_silver": "Native Silver",
+  "metal.tfc.cassiterite": "Cassiterite",
+  "metal.tfc.sphalerite": "Sphalerite",
+  "metal.tfc.tetrahedrite": "Tetrahedrite",
+  "metal.tfc.bauxite": "Bauxite",
+  "metal.tfc.galena": "Galena",
+  "metal.tfc.uraninite": "Uraninite",
+  "metal.tfc.chromite": "Chromite",
 
   "tfc.jei.lumber_knapping": "Lumber Knapping Recipe"
 }

@@ -5,7 +5,7 @@ StartupEvents.registry("fluid", (event) => {
   global.oreList.forEach((ore) => {
     ore.color &&
       event
-        .create(`ore/${ore.name}`)
+        .create(`metal/${ore.name}`)
         .thickTexture(ore.color)
         .noBlock()
         .noBucket();

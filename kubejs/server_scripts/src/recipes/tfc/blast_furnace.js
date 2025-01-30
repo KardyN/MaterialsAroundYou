@@ -1,9 +1,9 @@
 ServerEvents.recipes((event) => {
   let blastFurnaceRecipe = [
-    { input: "kubejs:ore/galena", output: "tfc_ie_addon:metal/lead" },
-    { input: "kubejs:ore/native_silver", output: "tfc:metal/silver" },
-    { input: "kubejs:ore/sphalerite", output: "tfc:metal/zinc" },
-    { input: "kubejs:ore/bismuthinite", output: "tfc:metal/bismuth" },
+    { input: "kubejs:metal/galena", output: "tfc_ie_addon:metal/lead" },
+    { input: "kubejs:metal/native_silver", output: "tfc:metal/silver" },
+    { input: "kubejs:metal/sphalerite", output: "tfc:metal/zinc" },
+    { input: "kubejs:metal/bismuthinite", output: "tfc:metal/bismuth" },
   ];
 
   blastFurnaceRecipe.forEach((ore) => {

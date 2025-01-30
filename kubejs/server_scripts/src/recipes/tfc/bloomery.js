@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
   let recipes = [
     {
       result: { item: "tfc:raw_iron_bloom" },
-      fluid: { ingredient: `kubejs:ore/hematite`, amount: 100 },
+      fluid: { ingredient: `kubejs:metal/hematite`, amount: 100 },
       catalyst: {
         ingredient: { item: "tfc:powder/charcoal" },
         count: 5,
@@ -12,7 +12,7 @@ ServerEvents.recipes((event) => {
     },
     {
       result: { item: "tfc:raw_iron_bloom" },
-      fluid: { ingredient: `kubejs:ore/magnetite`, amount: 100 },
+      fluid: { ingredient: `kubejs:metal/magnetite`, amount: 100 },
       catalyst: {
         ingredient: { item: "tfc:powder/charcoal" },
         count: 5,
@@ -22,7 +22,7 @@ ServerEvents.recipes((event) => {
     },
     {
       result: { item: "tfc:raw_iron_bloom" },
-      fluid: { ingredient: `kubejs:ore/limonite`, amount: 100 },
+      fluid: { ingredient: `kubejs:metal/limonite`, amount: 100 },
       catalyst: {
         ingredient: { item: "tfc:powder/charcoal" },
         count: 5,
@@ -32,7 +32,7 @@ ServerEvents.recipes((event) => {
     },
     {
       result: { item: "kubejs:raw_tin_bloom" },
-      fluid: { ingredient: `kubejs:ore/cassiterite`, amount: 100 },
+      fluid: { ingredient: `kubejs:metal/cassiterite`, amount: 100 },
       catalyst: {
         ingredient: { item: "tfc:powder/charcoal" },
         count: 3,
@@ -42,7 +42,7 @@ ServerEvents.recipes((event) => {
     },
     {
       result: { item: "kubejs:raw_copper_bloom" },
-      fluid: { ingredient: `kubejs:ore/malachite`, amount: 100 },
+      fluid: { ingredient: `kubejs:metal/malachite`, amount: 100 },
       catalyst: {
         ingredient: { item: "tfc:powder/charcoal" },
         count: 3,
