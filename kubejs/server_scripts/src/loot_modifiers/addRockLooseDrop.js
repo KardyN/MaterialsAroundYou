@@ -39,4 +39,7 @@ LootJS.modifiers((event) => {
       })
     );
   });
+  event
+    .addBlockLootModifier("#tfc:kaolin_clay")
+    .addLoot(LootEntry.of("1x tfc:kaolin_clay"));
 });

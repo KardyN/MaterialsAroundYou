@@ -1,5 +1,15 @@
 ServerEvents.recipes((event) => {
-  let recipes = [];
+  let recipes = [
+    {
+      output: "tfc:fire_clay",
+      inputs: [
+        "tfc:powder/kaolinite",
+        "tfc:powder/graphite",
+        "minecraft:clay_ball",
+      ],
+      id: "tfc:crafting/fire_clay",
+    },
+  ];
 
   global.powderList.forEach((powder) => {
     recipes.push(

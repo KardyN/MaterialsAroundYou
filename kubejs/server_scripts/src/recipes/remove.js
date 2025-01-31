@@ -32,6 +32,8 @@ ServerEvents.recipes((event) => {
     { id: /tfc:crafting\/wood\/.+gear_box/ },
     { id: "tfc:wattle" },
     { id: "firmalife:crafting/ashtray" },
+    { id: "tfc:heating/kaolin_clay" },
+    { id: "tfc:crafting/fire_clay" },
     //immersive & addons
     { type: "immersiveengineering:crusher" },
     { type: "immersiveengineering:arc_furnace" },

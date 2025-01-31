@@ -6,6 +6,13 @@ ServerEvents.recipes((event) => {
       temperature: 460,
       id: "tfc:heating/andesite_alloy",
     },
+    {
+      ingredient: { item: "tfc:kaolin_clay" },
+      result_item: { item: "tfc:powder/kaolinite" },
+      temperature: 500,
+      chance: 0.5,
+      id: "tfc:heating/kaolin_clay",
+    },
   ];
 
   let oreList = [
