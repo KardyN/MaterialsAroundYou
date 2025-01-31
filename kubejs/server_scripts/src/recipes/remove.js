@@ -46,8 +46,28 @@ ServerEvents.recipes((event) => {
     { id: /immersiveengineering:crafting\/.*nugget.*/ },
     { id: /tfc_ie_addon:metalpress\/.+/ },
     //create & addons
+    { id: /create:crafting\/appliances\/.*backtank.*/ },
+    { id: /create:crafting\/appliances\/.*controller.*/ },
     { id: "create:crafting/kinetics/andesite_door" },
     { id: "create:crafting/kinetics/shaft" },
+    { id: "create:crafting/kinetics/wrench" },
+    { id: "create:crafting/kinetics/clutch" },
+    { id: "create:crafting/kinetics/gearshift" },
+    { id: "create:crafting/kinetics/encased_chain_drive" },
+    { id: "create:crafting/kinetics/encased_chain_drive" },
+    { id: "create:crafting/kinetics/adjustable_chain_gearshift" },
+    { id: "create:crafting/kinetics/nozzle" },
+    { id: "create:crafting/kinetics/turntable" },
+    { id: "create:crafting/kinetics/hand_crank" },
+    { id: "create:crafting/kinetics/millstone" },
+    { id: "create:crafting/kinetics/mechanical_press" },
+    { id: "create:crafting/kinetics/basin" },
+    { id: "create:crafting/kinetics/empty_blaze_burner" },
+    { id: "create:crafting/kinetics/depot" },
+    { id: "create:crafting/kinetics/chute" },
+    { id: "create:crafting/kinetics/smart_chute" },
+    { type: "create:mechanical_crafting" },
+    { id: /create:crafting\/schematics\/.+/ },
     { id: /create:crafting\/kinetics\/.*cogwheel.*/ },
     { id: /create:deploying\/.*cogwheel/ },
     { id: /create:.+\/andesite_alloy.*/ },
@@ -63,6 +83,8 @@ ServerEvents.recipes((event) => {
     { id: /farmersdelight:cutting\/.+hyphae/ },
     { id: /farmersdelight:cutting\/.+block/ },
     { id: "farmersdelight:cooking/turtle_stew" },
+    // AE2 & addons
+    { id: /ae2:tools\/.+/ },
   ];
 
   recipes.forEach((recipe) => {

@@ -48,6 +48,38 @@ ServerEvents.recipes((event) => {
       ],
       id: "create:item_application/large_gear",
     },
+    {
+      ingredients: [
+        {
+          item: "minecraft:cauldron",
+        },
+        {
+          item: "create:andesite_alloy",
+        },
+      ],
+      results: [
+        {
+          item: "create:basin",
+        },
+      ],
+      id: "create:item_application/basin",
+    },
+    {
+      ingredients: [
+        {
+          item: "minecraft:andesite_casing",
+        },
+        {
+          item: "create:turntable",
+        },
+      ],
+      results: [
+        {
+          item: "create:depot",
+        },
+      ],
+      id: "create:item_application/depot",
+    },
   ];
 
   recipes.forEach((recipe) => {
