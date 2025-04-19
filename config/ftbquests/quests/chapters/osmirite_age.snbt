@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "osmirite_age"
+	group: "1F7A98B2F2F3E985"
+	icon: "mekanismgenerators:fission_fuel_assembly"
+	id: "64B63C5FC5BDB7F4"
+	order_index: 7
+	quest_links: [ ]
+	quests: [ ]
+	title: "Nuclear Age"
+}

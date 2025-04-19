@@ -1,0 +1,18 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "exploration"
+	group: ""
+	icon: {
+		Count: 1
+		id: "minecraft:leather_boots"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "761236C27A39A0B0"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Exploration"
+}

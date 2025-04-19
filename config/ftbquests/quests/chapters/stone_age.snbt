@@ -1,0 +1,366 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "stone_age"
+	group: "1F7A98B2F2F3E985"
+	icon: "tfc:rock/loose/granite"
+	id: "615435B2725727CF"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "79C8765E3515FF00"
+			tasks: [
+				{
+					id: "257EA7F9A7F323AF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:rock_knapping"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "697B0CA21F1DAD67"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:tag"
+									tag: {
+										value: "tfc:twigs"
+									}
+								}
+								{
+									Count: 1b
+									ForgeCaps: {
+										"tfc:item_heat": {
+											heat: 0.0f
+											ticks: 0L
+										}
+									}
+									id: "minecraft:stick"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Loose Stuff"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["79C8765E3515FF00"]
+			id: "22B81F6C9042288A"
+			tasks: [{
+				id: "32FCE77E217E5EB4"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:inefficient_logging_axes"
+					}
+				}
+				title: "Any #tfc:inefficient_logging_axes"
+				type: "item"
+			}]
+			title: "Axe"
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["79C8765E3515FF00"]
+			id: "6D2846592D136264"
+			tasks: [{
+				id: "61BDBC574D6D4816"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "tfc:hoes"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "tfc:igneous_extrusive_items"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "tfc:igneous_intrusive_items"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "tfc:sedimentary_items"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "tfc:metamorphic_items"
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Hoe"
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["79C8765E3515FF00"]
+			id: "3450CEF27FAFE49E"
+			tasks: [{
+				id: "644BE80496DEA2C5"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "tfc:igneous_extrusive_items"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "tfc:igneous_intrusive_items"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "tfc:sedimentary_items"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "tfc:metamorphic_items"
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "tfc:javelins"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Javelin"
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["79C8765E3515FF00"]
+			id: "6BCDF21635D3AAD6"
+			tasks: [{
+				id: "774410ADA84FD1F5"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "tfc:igneous_extrusive_items"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "tfc:igneous_intrusive_items"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "tfc:sedimentary_items"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "tfc:metamorphic_items"
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "tfc:knives"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Knife"
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["22B81F6C9042288A"]
+			id: "1077DF67CFDD10C9"
+			tasks: [{
+				id: "5A7A8D5D74E38B82"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tfc:wood/log/acacia"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/ash"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/aspen"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/birch"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/blackwood"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/chestnut"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/douglas_fir"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/hickory"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/kapok"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/mangrove"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/maple"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/oak"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/palm"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/pine"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/rosewood"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/sequoia"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/spruce"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/sycamore"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/white_cedar"
+							}
+							{
+								Count: 1b
+								id: "tfc:wood/log/willow"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Logs"
+			x: 3.0d
+			y: 4.0d
+		}
+	]
+	title: "Stone Age"
+}

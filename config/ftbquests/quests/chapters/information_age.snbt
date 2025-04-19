@@ -1,0 +1,16 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "information_age"
+	group: "1F7A98B2F2F3E985"
+	icon: {
+		Count: 1
+		id: "ae2:item_storage_cell_256k"
+		tag: { }
+	}
+	id: "7E1A15410188A2FA"
+	order_index: 8
+	quest_links: [ ]
+	quests: [ ]
+	title: "Information Age"
+}
