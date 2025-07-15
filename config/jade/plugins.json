@@ -132,16 +132,6 @@
     "goggles.detailed": false,
     "placard": true
   },
-  "mekanism": {
-    "infuse_type": true,
-    "gas": true,
-    "remove_builtin": true,
-    "pigment": true,
-    "fluid": true,
-    "slurry": true,
-    "energy": true,
-    "tooltip_renderer": true
-  },
   "pneumaticcraft": {
     "pneumatic": true,
     "tube_module": true,
@@ -161,16 +151,7 @@
     "registry_name": "OFF",
     "mod_name": true
   },
-  "ae2": {
-    "part_icon": true,
-    "charger": true,
-    "debug": true,
-    "part_tooltip": true,
-    "grid_node_state": true,
-    "pattern_provider": true,
-    "part_mod_name": true,
-    "power_storage": true,
-    "crafting_monitor": true,
-    "part_name": true
+  "afc": {
+    "tap": true
   }
 }
