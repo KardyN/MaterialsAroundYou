@@ -12,7 +12,10 @@ const wrapperAddJson = (event, ore) => {
             children: [
               {
                 type: "minecraft:item",
-                name: `${mod}:powder/${name}`,
+                name:
+                  name == "chromite"
+                    ? `kubejs:powder/${name}`
+                    : `${mod}:powder/${name}`,
                 conditions: [
                   {
                     condition: "minecraft:random_chance",
