@@ -18,9 +18,15 @@ LootJS.modifiers((event) => {
     let rockType = /[a-z]+$/.exec(blockId)[0];
     if (coals.includes(oreType)) {
       event.addBlockLootModifier(blockId).addLoot(
-        LootEntry.of(`5x tfc:ore/${oreType}`),
+        LootEntry.of(`3x tfc:ore/${oreType}`),
+        LootEntry.of(`1x tfc:ore/${oreType}`).when((c) => {
+          c.randomChance(0.75);
+        }),
         LootEntry.of(`1x tfc:ore/${oreType}`).when((c) => {
           c.randomChance(0.5);
+        }),
+        LootEntry.of(`1x tfc:ore/${oreType}`).when((c) => {
+          c.randomChance(0.25);
         })
       );
     }
@@ -28,14 +34,23 @@ LootJS.modifiers((event) => {
       event.addBlockLootModifier(blockId).addLoot(
         LootEntry.of(`2x tfc:ore/${oreType}`),
         LootEntry.of(`1x tfc:ore/${oreType}`).when((c) => {
-          c.randomChance(0.5);
+          c.randomChance(0.75);
+        }),
+        LootEntry.of(`1x tfc:ore/${oreType}`).when((c) => {
+          c.randomChance(0.25);
         })
       );
     }
     event.addBlockLootModifier(blockId).addLoot(
-      LootEntry.of(`3x tfc:rock/loose/${rockType}`),
+      LootEntry.of(`2x tfc:rock/loose/${rockType}`),
+      LootEntry.of(`1x tfc:rock/loose/${rockType}`).when((c) => {
+        c.randomChance(0.75);
+      }),
       LootEntry.of(`1x tfc:rock/loose/${rockType}`).when((c) => {
         c.randomChance(0.5);
+      }),
+      LootEntry.of(`1x tfc:rock/loose/${rockType}`).when((c) => {
+        c.randomChance(0.25);
       })
     );
   });
