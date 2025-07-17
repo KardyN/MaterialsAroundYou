@@ -31,7 +31,7 @@ const customMetalList = [
   },
   {
     fluid: "kubejs:metal/malachite",
-    melt_temperature: 1080,
+    melt_temperature: 200,
     specific_heat_capacity: 0.00857,
   },
   {
@@ -46,7 +46,7 @@ const customMetalList = [
   },
   {
     fluid: "kubejs:metal/cassiterite",
-    melt_temperature: 230,
+    melt_temperature: 1500,
     specific_heat_capacity: 0.02143,
   },
   {
