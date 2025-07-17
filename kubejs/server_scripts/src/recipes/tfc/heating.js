@@ -41,7 +41,7 @@ ServerEvents.recipes((event) => {
     {
       name: "cassiterite",
       mod: "tfc",
-      temperature: 230,
+      temperature: 1500,
     },
     {
       name: "bismuthinite",
@@ -56,7 +56,7 @@ ServerEvents.recipes((event) => {
     {
       name: "malachite",
       mod: "tfc",
-      temperature: 1080,
+      temperature: 200,
     },
     {
       name: "magnetite",
