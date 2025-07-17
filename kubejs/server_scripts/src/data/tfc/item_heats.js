@@ -5,6 +5,14 @@ const itemHeatList = [
     forging_temperature: 276,
     welding_temperature: 368,
   },
+  {
+    ingredient: { item: "kubejs:raw_tin_bloom" },
+    heat_capacity: 1.667,
+  },
+  {
+    ingredient: { item: "kubejs:raw_copper_bloom" },
+    heat_capacity: 1.667,
+  },
 ];
 
 ServerEvents.highPriorityData((event) => {

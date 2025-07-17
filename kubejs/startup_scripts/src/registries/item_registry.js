@@ -24,13 +24,13 @@ StartupEvents.registry("item", (event) => {
   event.create("powder/cryolite").texture("kubejs:item/powder/cryolite");
 
   event.create("raw_tin_bloom").texture("kubejs:item/blooms/tin/unrefined");
-  event.create("refined_tin_bloom").texture("kubejs:item/blooms/tin/refined");
+  //event.create("refined_tin_bloom").texture("kubejs:item/blooms/tin/refined");
   event
     .create("raw_copper_bloom")
     .texture("kubejs:item/blooms/copper/unrefined");
-  event
-    .create("refined_copper_bloom")
-    .texture("kubejs:item/blooms/copper/refined");
+  //event
+  //  .create("refined_copper_bloom")
+  //  .texture("kubejs:item/blooms/copper/refined");
   event.create("wooden_gear").texture("kubejs:item/wooden_gear");
   event.create("large_wooden_gear").texture("kubejs:item/large_wooden_gear");
   /*****************************************************************************
