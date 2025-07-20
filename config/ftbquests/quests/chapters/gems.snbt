@@ -6,8 +6,99 @@
 	hide_quest_until_deps_complete: true
 	icon: "tfc:gem/diamond"
 	id: "7588FCFA29D190BE"
-	order_index: 2
+	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "74BD993D889DFFF2"
+			tasks: [{
+				id: "2E6AB7788FC5FFFE"
+				item: "tfc:gem/sapphire"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			id: "405D392C81221474"
+			tasks: [{
+				id: "6AD01CEF1ADAE165"
+				item: "tfc:gem/lapis_lazuli"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			id: "52248E609F9F895E"
+			tasks: [{
+				id: "6A2B370779510318"
+				item: "tfc:gem/amethyst"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "29F1584E88008D0E"
+			tasks: [{
+				id: "4C80977BA07DEBAF"
+				item: "tfc:gem/diamond"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			id: "141B5D5B939DA0D8"
+			tasks: [{
+				id: "15D63B05BFE6AE44"
+				item: "tfc:gem/emerald"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "1AF914A598A3D22C"
+			tasks: [{
+				id: "4770E0CA92623E7F"
+				item: "tfc:gem/opal"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "48F70BB976A4A5A4"
+			tasks: [{
+				id: "2B6595B753B4674D"
+				item: "tfc:gem/pyrite"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			id: "3A43A6687910A0FC"
+			tasks: [{
+				id: "4A637E1E36815D3D"
+				item: "tfc:gem/ruby"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			id: "431512E09DE4E8E0"
+			tasks: [{
+				id: "1182281A25425FB7"
+				item: "tfc:gem/topaz"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+	]
 	title: "Gems"
 }

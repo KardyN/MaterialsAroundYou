@@ -1,20 +1,20 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "food_2"
+	filename: "food"
 	group: "154A008FBDFC4739"
 	hide_quest_until_deps_complete: true
 	icon: {
 		Count: 1
 		ForgeCaps: {
 			"tfc:food": {
-				creationDate: 6000L
+				creationDate: 126000L
 				traits: [ ]
 			}
 		}
 		id: "farmersdelight:chicken_sandwich"
 	}
-	id: "0EAC7C7C9B361876"
+	id: "2B84C20FA9DCE601"
 	order_index: 0
 	quest_links: [ ]
 	quests: [ ]

@@ -16,6 +16,72 @@
 	id: "6F18CDD52B46A03E"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "7A3810116653E050"
+			tasks: [{
+				id: "12B190FF40D61CE5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/saw/copper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "4C54510407C13ABA"
+			tasks: [{
+				id: "31C63DC3D9FDF0B8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/pickaxe/copper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "76142216D24338FE"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "2EC8F0B548FD37C2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/copper"
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+	]
 	title: "Copper Age"
 }

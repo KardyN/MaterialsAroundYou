@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "bronze_age"
 	group: "1F7A98B2F2F3E985"
+	hide_quest_until_deps_complete: true
 	icon: {
 		Count: 1
 		ForgeCaps: {
@@ -16,6 +17,66 @@
 	id: "57BC50079B3C1309"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "023378E10A023AFE"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "19C4D83DA05F8966"
+				item: "tfc:bloomery"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			id: "392D0D2BE9080CCF"
+			tasks: [{
+				id: "7BD6FAFA62A02206"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/anvil/bismuth_bronze"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/anvil/bronze"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/anvil/black_bronze"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: -0.5d
+		}
+	]
 	title: "Bronze Age"
 }
