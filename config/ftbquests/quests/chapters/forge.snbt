@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "forge"
+	group: "154A008FBDFC4739"
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f
+				ticks: 0L
+			}
+		}
+		id: "tfc:metal/ingot/red_steel"
+	}
+	id: "64BEA5D9A6E874D5"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Forge"
+}

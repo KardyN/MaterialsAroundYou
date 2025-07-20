@@ -10,10 +10,16 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "79C8765E3515FF00"
+			description: [
+				"Actually, there are a lot of useful resources just around you!"
+				"Firstly, take a look under your feet. It could be something we can use right now!"
+			]
+			icon: "tfc:rock/loose/granite"
+			id: "66957E1A37C5468C"
 			tasks: [
 				{
-					id: "257EA7F9A7F323AF"
+					count: 2L
+					id: "391A59BE0DB8B16A"
 					item: {
 						Count: 1
 						id: "itemfilters:tag"
@@ -24,19 +30,12 @@
 					type: "item"
 				}
 				{
-					id: "697B0CA21F1DAD67"
+					id: "1D3F692F20932160"
 					item: {
 						Count: 1
 						id: "itemfilters:or"
 						tag: {
 							items: [
-								{
-									Count: 1b
-									id: "itemfilters:tag"
-									tag: {
-										value: "tfc:twigs"
-									}
-								}
 								{
 									Count: 1b
 									ForgeCaps: {
@@ -47,40 +46,29 @@
 									}
 									id: "minecraft:stick"
 								}
+								{
+									Count: 1b
+									id: "itemfilters:tag"
+									tag: {
+										value: "tfc:twigs"
+									}
+								}
 							]
 						}
 					}
 					type: "item"
 				}
 			]
-			title: "Loose Stuff"
-			x: 2.0d
-			y: 1.0d
+			title: "Materials Around You"
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["79C8765E3515FF00"]
-			id: "22B81F6C9042288A"
+			dependencies: ["66957E1A37C5468C"]
+			description: ["Now, try to knap some basic tools heads"]
+			id: "28EFE456A7B11D06"
 			tasks: [{
-				id: "32FCE77E217E5EB4"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "tfc:inefficient_logging_axes"
-					}
-				}
-				title: "Any #tfc:inefficient_logging_axes"
-				type: "item"
-			}]
-			title: "Axe"
-			x: 3.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["79C8765E3515FF00"]
-			id: "6D2846592D136264"
-			tasks: [{
-				id: "61BDBC574D6D4816"
+				id: "5C49CC8C7D7C1882"
 				item: {
 					Count: 1
 					id: "itemfilters:and"
@@ -90,43 +78,69 @@
 								Count: 1b
 								id: "itemfilters:tag"
 								tag: {
-									value: "tfc:hoes"
+									value: "tfc:stone_tools"
 								}
 							}
 							{
 								Count: 1b
-								id: "itemfilters:or"
+								id: "itemfilters:not"
 								tag: {
-									items: [
-										{
-											Count: 1b
-											id: "itemfilters:tag"
-											tag: {
-												value: "tfc:igneous_extrusive_items"
-											}
+									items: [{
+										Count: 1b
+										id: "itemfilters:or"
+										tag: {
+											items: [
+												{
+													Count: 1b
+													id: "tfc:stone/hoe_head/sedimentary"
+												}
+												{
+													Count: 1b
+													id: "tfc:stone/hoe_head/metamorphic"
+												}
+												{
+													Count: 1b
+													id: "tfc:stone/hoe_head/igneous_intrusive"
+												}
+												{
+													Count: 1b
+													id: "tfc:stone/hoe_head/igneous_extrusive"
+												}
+												{
+													Count: 1b
+													id: "tfc:stone/hammer_head/igneous_extrusive"
+												}
+												{
+													Count: 1b
+													id: "tfc:stone/hammer_head/igneous_intrusive"
+												}
+												{
+													Count: 1b
+													id: "tfc:stone/hammer_head/sedimentary"
+												}
+												{
+													Count: 1b
+													id: "tfc:stone/hammer_head/metamorphic"
+												}
+												{
+													Count: 1b
+													id: "tfc:stone/javelin_head/igneous_extrusive"
+												}
+												{
+													Count: 1b
+													id: "tfc:stone/javelin_head/igneous_intrusive"
+												}
+												{
+													Count: 1b
+													id: "tfc:stone/javelin_head/metamorphic"
+												}
+												{
+													Count: 1b
+													id: "tfc:stone/javelin_head/sedimentary"
+												}
+											]
 										}
-										{
-											Count: 1b
-											id: "itemfilters:tag"
-											tag: {
-												value: "tfc:igneous_intrusive_items"
-											}
-										}
-										{
-											Count: 1b
-											id: "itemfilters:tag"
-											tag: {
-												value: "tfc:sedimentary_items"
-											}
-										}
-										{
-											Count: 1b
-											id: "itemfilters:tag"
-											tag: {
-												value: "tfc:metamorphic_items"
-											}
-										}
-									]
+									}]
 								}
 							}
 						]
@@ -134,139 +148,323 @@
 				}
 				type: "item"
 			}]
-			title: "Hoe"
-			x: 0.5d
+			title: "First Tools"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2430CD512F1CF76B"]
+			description: [
+				"Clay is essential resource for early-game tools crafting."
+				""
+				"Try to find some on rivers shores, WAILA or minimap! "
+			]
+			id: "2CFE4433B67D7795"
+			tasks: [{
+				count: 15L
+				id: "7CB4B53D85E5B635"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			title: "Clay"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2CFE4433B67D7795"]
+			description: ["To make some decent tool for early game, you will need clay molds to pour melted metal in."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:ceramic/unfired_pickaxe_head_mold"
+			}
+			id: "4922E265A5E18230"
+			tasks: [
+				{
+					id: "61EB7C3697364EE0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ceramic/unfired_vessel"
+					}
+					type: "item"
+				}
+				{
+					id: "4516F5D9D18BE114"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ceramic/unfired_pickaxe_head_mold"
+					}
+					type: "item"
+				}
+				{
+					id: "57C36004F553775F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ceramic/unfired_pan"
+					}
+					type: "item"
+				}
+				{
+					id: "55462CD70DCF77D0"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:tag"
+									tag: {
+										value: "tfc:unfired_molds"
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:not"
+									tag: {
+										items: [{
+											Count: 1b
+											ForgeCaps: {
+												"tfc:item_heat": {
+													heat: 0.0f
+													ticks: 0L
+												}
+											}
+											id: "tfc:ceramic/unfired_pickaxe_head_mold"
+										}]
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:not"
+									tag: {
+										items: [{
+											Count: 1b
+											ForgeCaps: {
+												"tfc:item_heat": {
+													heat: 0.0f
+													ticks: 0L
+												}
+											}
+											id: "tfc:ceramic/unfired_fire_ingot_mold"
+										}]
+									}
+								}
+							]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Clay Knapping"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2CFE4433B67D7795"]
+			description: [
+				"Jug is useful to keep with you and drink from."
+				"It holds some water for you not to thirst!"
+			]
+			id: "62A464FC854D802D"
+			tasks: [{
+				id: "670CD2C5F4BF843F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:ceramic/unfired_jug"
+				}
+				type: "item"
+			}]
+			title: "Jug"
+			x: 6.0d
 			y: 1.0d
 		}
 		{
-			dependencies: ["79C8765E3515FF00"]
-			id: "3450CEF27FAFE49E"
+			dependencies: ["2CFE4433B67D7795"]
+			description: ["Holds some items inside.\\nMay be sealed, so the food will spoil slower"]
+			id: "05690465F069F363"
 			tasks: [{
-				id: "644BE80496DEA2C5"
+				id: "59D21CD10EDB6F0E"
 				item: {
 					Count: 1
-					id: "itemfilters:and"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "itemfilters:or"
-								tag: {
-									items: [
-										{
-											Count: 1b
-											id: "itemfilters:tag"
-											tag: {
-												value: "tfc:igneous_extrusive_items"
-											}
-										}
-										{
-											Count: 1b
-											id: "itemfilters:tag"
-											tag: {
-												value: "tfc:igneous_intrusive_items"
-											}
-										}
-										{
-											Count: 1b
-											id: "itemfilters:tag"
-											tag: {
-												value: "tfc:sedimentary_items"
-											}
-										}
-										{
-											Count: 1b
-											id: "itemfilters:tag"
-											tag: {
-												value: "tfc:metamorphic_items"
-											}
-										}
-									]
-								}
-							}
-							{
-								Count: 1b
-								id: "itemfilters:tag"
-								tag: {
-									value: "tfc:javelins"
-								}
-							}
-						]
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
 					}
+					id: "tfc:ceramic/unfired_large_vessel"
 				}
 				type: "item"
 			}]
-			title: "Javelin"
-			x: 3.5d
-			y: 1.0d
+			title: "Large Vessel"
+			x: 6.0d
+			y: -1.0d
 		}
 		{
-			dependencies: ["79C8765E3515FF00"]
-			id: "6BCDF21635D3AAD6"
+			dependencies: [
+				"62A464FC854D802D"
+				"05690465F069F363"
+				"4922E265A5E18230"
+				"21F3A0260EB7BA2D"
+				"33F89D27567095DD"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Dig up one block pit. Put there items to fire using 'V' (by default). You can put up to 4 small or 1 big item in the pit."
+				""
+				"Right-click pit 8 times with straw and then 8 times with logs. Then fire it up and wait!"
+				""
+				"Watch out for spreading fire!"
+			]
+			icon: {
+				Count: 1
+				id: "tfc:firestarter"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5088FE89AA482117"
+			min_required_dependencies: 3
+			tasks: [
+				{
+					id: "5C8CB0EACEBC33A7"
+					item: {
+						Count: 1
+						id: "tfc:firestarter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E2CD4BD98B1A95C"
+					title: "Got it!"
+					type: "checkmark"
+				}
+			]
+			title: "Pit Kiln"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5088FE89AA482117"]
+			description: [
+				"Sometimes ores are hard to find. Use a pan then!"
+				""
+				"Find some water and some gravel or even ore deposits in the river. Click a block with a pan, then hold RMB while standing in the water."
+				"There it is! Shiny! "
+			]
+			icon: "tfc:pan/empty"
+			id: "636C659C4A65C556"
+			tasks: [
+				{
+					id: "0F8AC40B94BA44A5"
+					item: "tfc:pan/empty"
+					type: "item"
+				}
+				{
+					id: "323E26BFD9DF5AD0"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:ore_deposits"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Ores Panning"
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5088FE89AA482117"]
+			description: [
+				"While walking around, watch out for some ores chunks laying around. Collect them."
+				"And mark for future needs."
+				""
+				"Currently the copper is essential. Try to find some."
+			]
+			id: "3874DA1EB70053F8"
 			tasks: [{
-				id: "774410ADA84FD1F5"
+				id: "5C421B513AFBB3B2"
 				item: {
 					Count: 1
-					id: "itemfilters:and"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "itemfilters:or"
-								tag: {
-									items: [
-										{
-											Count: 1b
-											id: "itemfilters:tag"
-											tag: {
-												value: "tfc:igneous_extrusive_items"
-											}
-										}
-										{
-											Count: 1b
-											id: "itemfilters:tag"
-											tag: {
-												value: "tfc:igneous_intrusive_items"
-											}
-										}
-										{
-											Count: 1b
-											id: "itemfilters:tag"
-											tag: {
-												value: "tfc:sedimentary_items"
-											}
-										}
-										{
-											Count: 1b
-											id: "itemfilters:tag"
-											tag: {
-												value: "tfc:metamorphic_items"
-											}
-										}
-									]
-								}
-							}
-							{
-								Count: 1b
-								id: "itemfilters:tag"
-								tag: {
-									value: "tfc:knives"
-								}
-							}
-						]
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
 					}
+					id: "tfc:ore/small_native_copper"
 				}
 				type: "item"
 			}]
-			title: "Knife"
-			x: 1.0d
-			y: 2.5d
+			x: 11.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["22B81F6C9042288A"]
-			id: "1077DF67CFDD10C9"
+			dependencies: [
+				"3874DA1EB70053F8"
+				"636C659C4A65C556"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Grab a multiple of 100mb of copper, put it into the vessel. Put the vessel into the pit kiln, fill and fire it up!"
+				""
+				"Don't forget about a pit. Immediately after the pit went out - grab the vessel, open it with right-click. Put any fired mold in the slot and watch the copper flow!"
+				""
+				"Congrats, now you have a copper tool or whatever!"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/ingot/copper"
+			}
+			id: "29B54FAB02DE3E0D"
+			shape: "gear"
+			size: 2.0d
 			tasks: [{
-				id: "5A7A8D5D74E38B82"
+				id: "5A7FBD30F114B1AA"
 				item: {
 					Count: 1
 					id: "itemfilters:or"
@@ -274,92 +472,475 @@
 						items: [
 							{
 								Count: 1b
-								id: "tfc:wood/log/acacia"
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/pickaxe_head/copper"
 							}
 							{
 								Count: 1b
-								id: "tfc:wood/log/ash"
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/axe_head/copper"
 							}
 							{
 								Count: 1b
-								id: "tfc:wood/log/aspen"
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/knife_blade/copper"
 							}
 							{
 								Count: 1b
-								id: "tfc:wood/log/birch"
-							}
-							{
-								Count: 1b
-								id: "tfc:wood/log/blackwood"
-							}
-							{
-								Count: 1b
-								id: "tfc:wood/log/chestnut"
-							}
-							{
-								Count: 1b
-								id: "tfc:wood/log/douglas_fir"
-							}
-							{
-								Count: 1b
-								id: "tfc:wood/log/hickory"
-							}
-							{
-								Count: 1b
-								id: "tfc:wood/log/kapok"
-							}
-							{
-								Count: 1b
-								id: "tfc:wood/log/mangrove"
-							}
-							{
-								Count: 1b
-								id: "tfc:wood/log/maple"
-							}
-							{
-								Count: 1b
-								id: "tfc:wood/log/oak"
-							}
-							{
-								Count: 1b
-								id: "tfc:wood/log/palm"
-							}
-							{
-								Count: 1b
-								id: "tfc:wood/log/pine"
-							}
-							{
-								Count: 1b
-								id: "tfc:wood/log/rosewood"
-							}
-							{
-								Count: 1b
-								id: "tfc:wood/log/sequoia"
-							}
-							{
-								Count: 1b
-								id: "tfc:wood/log/spruce"
-							}
-							{
-								Count: 1b
-								id: "tfc:wood/log/sycamore"
-							}
-							{
-								Count: 1b
-								id: "tfc:wood/log/white_cedar"
-							}
-							{
-								Count: 1b
-								id: "tfc:wood/log/willow"
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/ingot/copper"
 							}
 						]
 					}
 				}
 				type: "item"
 			}]
-			title: "Logs"
-			x: 3.0d
+			title: "Copper"
+			x: 12.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"20DF0FF5E072E0DD"
+				"66957E1A37C5468C"
+			]
+			description: ["Probably it's a good idea to start a farm and store some food before the winter comes."]
+			icon: {
+				Count: 1
+				id: "tfc:stone/hoe/igneous_extrusive"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "58BB4A24361CE43C"
+			tasks: [
+				{
+					id: "7566475394E14645"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "tfc:stone/hoe_head/igneous_extrusive"
+								}
+								{
+									Count: 1b
+									id: "tfc:stone/hoe_head/igneous_intrusive"
+								}
+								{
+									Count: 1b
+									id: "tfc:stone/hoe_head/metamorphic"
+								}
+								{
+									Count: 1b
+									id: "tfc:stone/hoe_head/sedimentary"
+								}
+							]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "513456B69D095A4B"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "tfc:stone/hoe/igneous_extrusive"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "tfc:stone/hoe/metamorphic"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "tfc:stone/hoe/sedimentary"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "tfc:stone/hoe/igneous_intrusive"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Farming Time"
+			x: 1.5d
 			y: 4.0d
+		}
+		{
+			description: [
+				"You can find a lot of wild crops around. Not good, but at least it is edible."
+				""
+				"Sometimes you will need a knife to collect yield from a crop."
+			]
+			icon: "tfc:wild_crop/wheat"
+			id: "20DF0FF5E072E0DD"
+			tasks: [{
+				id: "4D2FF819F53D9B8E"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "tfc:seeds"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										ForgeCaps: {
+											"tfc:food": {
+												creationDate: 102000L
+												traits: [ ]
+											}
+										}
+										id: "farmersdelight:rice"
+									}]
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Wild Crops"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["66957E1A37C5468C"]
+			description: [
+				"The javelin makes more damage, has better range and you even can throw it!"
+				"Suits the best for hunting!"
+				""
+				"But watch out for predators!"
+			]
+			icon: {
+				Count: 1
+				id: "tfc:stone/javelin/igneous_extrusive"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "412981055399DAAA"
+			tasks: [
+				{
+					id: "33E286FF6403C441"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "tfc:stone/javelin_head/igneous_extrusive"
+								}
+								{
+									Count: 1b
+									id: "tfc:stone/javelin_head/igneous_intrusive"
+								}
+								{
+									Count: 1b
+									id: "tfc:stone/javelin_head/metamorphic"
+								}
+								{
+									Count: 1b
+									id: "tfc:stone/javelin_head/sedimentary"
+								}
+							]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5EB0EEA7B93A319E"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "tfc:stone/javelin/igneous_extrusive"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "tfc:stone/javelin/metamorphic"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "tfc:stone/javelin/sedimentary"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "tfc:stone/javelin/igneous_intrusive"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Hunting Time"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"412981055399DAAA"
+				"58BB4A24361CE43C"
+			]
+			dependency_requirement: "one_completed"
+			icon: "tfc:medium_prepared_hide"
+			id: "23B641FC902B77AD"
+			shape: "gear"
+			size: 2.0d
+			title: "Farming"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["28EFE456A7B11D06"]
+			description: ["You definitely need something to start with!"]
+			icon: {
+				Count: 1
+				id: "tfc:stone/axe/igneous_extrusive"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2430CD512F1CF76B"
+			tasks: [{
+				id: "54B31B5F0489339B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tfc:stone/axe/igneous_extrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/axe/metamorphic"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/axe/sedimentary"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/axe/igneous_intrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "First Tools: Shovel"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["28EFE456A7B11D06"]
+			id: "36F88B9D6E0D7A68"
+			tasks: [{
+				id: "097379C422606363"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tfc:stone/axe/igneous_extrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/axe/metamorphic"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/axe/sedimentary"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/axe/igneous_intrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "First Tools: Axe"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["28EFE456A7B11D06"]
+			id: "09D19F81065B31B8"
+			tasks: [{
+				id: "17A620E691DC5B8F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tfc:stone/knife/igneous_extrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/knife/metamorphic"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/knife/sedimentary"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/knife/igneous_intrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "First Tools: Knife"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["09D19F81065B31B8"]
+			icon: "tfc:straw"
+			id: "33F89D27567095DD"
+			tasks: [{
+				count: 8L
+				id: "7BE66BE80E3C1009"
+				item: { Count: 8, id: "tfc:straw" }
+				type: "item"
+			}]
+			title: "Straw"
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["36F88B9D6E0D7A68"]
+			icon: "tfc:wood/log/maple"
+			id: "21F3A0260EB7BA2D"
+			tasks: [{
+				id: "1BE66B4ECFA7F876"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:pit_kiln_logs"
+					}
+				}
+				type: "item"
+			}]
+			title: "Logs"
+			x: 6.0d
+			y: -2.5d
 		}
 	]
 	title: "Stone Age"
