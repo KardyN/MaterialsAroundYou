@@ -6,11 +6,7 @@ const itemHeatList = [
     welding_temperature: 368,
   },
   {
-    ingredient: { item: "kubejs:raw_tin_bloom" },
-    heat_capacity: 2.857,
-  },
-  {
-    ingredient: { item: "kubejs:raw_copper_bloom" },
+    ingredient: { tag: "may:blooms" },
     heat_capacity: 2.857,
   },
 ];
