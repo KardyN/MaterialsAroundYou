@@ -7,11 +7,11 @@ const itemHeatList = [
   },
   {
     ingredient: { item: "kubejs:raw_tin_bloom" },
-    heat_capacity: 1.667,
+    heat_capacity: 2.857,
   },
   {
     ingredient: { item: "kubejs:raw_copper_bloom" },
-    heat_capacity: 1.667,
+    heat_capacity: 2.857,
   },
 ];
 
