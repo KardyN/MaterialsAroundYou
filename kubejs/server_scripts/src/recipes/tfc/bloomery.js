@@ -37,7 +37,7 @@ ServerEvents.recipes((event) => {
         ingredient: { item: "tfc:powder/charcoal" },
         count: 3,
       },
-      duration: 6000,
+      duration: 4000,
       id: "tfc:bloomery/tin",
     },
     {
@@ -47,7 +47,7 @@ ServerEvents.recipes((event) => {
         ingredient: { item: "tfc:powder/charcoal" },
         count: 3,
       },
-      duration: 6000,
+      duration: 8000,
       id: "tfc:bloomery/copper",
     },
   ];

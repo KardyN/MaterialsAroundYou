@@ -13,6 +13,18 @@ ServerEvents.recipes((event) => {
       chance: 0.5,
       id: "tfc:heating/kaolin_clay",
     },
+    {
+      ingredient: { item: "kubejs:raw_tin_bloom" },
+      result_fluid: { fluid: "tfc:metal/tin", amount: 100 },
+      temperature: 200,
+      id: "tfc:heating/raw_tin_bloom",
+    },
+    {
+      ingredient: { item: "kubejs:raw_copper_bloom" },
+      result_fluid: { fluid: "tfc:metal/copper", amount: 100 },
+      temperature: 1080,
+      id: "tfc:heating/raw_copper_bloom",
+    },
   ];
 
   let oreList = [
