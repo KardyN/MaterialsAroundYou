@@ -13,7 +13,7 @@ ServerEvents.genericLootTables((event) => {
                 {
                   type: "minecraft:group",
                   conditions: [
-                    { condition: "minecraft:random_chance", chance: 0.5 },
+                    { condition: "minecraft:random_chance", chance: 0.25 },
                   ],
                   children: [],
                 },
@@ -21,21 +21,21 @@ ServerEvents.genericLootTables((event) => {
                   type: "minecraft:item",
                   name: `tfc:rock/loose/${deposit.rock}`,
                   conditions: [
-                    { condition: "minecraft:random_chance", chance: 0.5 },
+                    { condition: "minecraft:random_chance", chance: 0.6667 },
                   ],
                 },
                 {
                   type: "minecraft:item",
                   name: deposit.secondary,
                   conditions: [
-                    { condition: "minecraft:random_chance", chance: 0.25 },
+                    { condition: "minecraft:random_chance", chance: 0.2 },
                   ],
                 },
                 {
                   type: "minecraft:item",
                   name: deposit.tertiary,
                   conditions: [
-                    { condition: "minecraft:random_chance", chance: 0.0533 },
+                    { condition: "minecraft:random_chance", chance: 0.025 },
                   ],
                 },
               ],
