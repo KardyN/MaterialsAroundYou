@@ -65,7 +65,10 @@
 		}
 		{
 			dependencies: ["66957E1A37C5468C"]
-			description: ["Now, try to knap some basic tools heads"]
+			description: [
+				"Now, try to knap some basic tools heads."
+				"Click in the air with at least 2 stones in the hand. Check recipes in the JEI."
+			]
 			id: "28EFE456A7B11D06"
 			tasks: [{
 				id: "5C49CC8C7D7C1882"
@@ -160,6 +163,12 @@
 				"Try to find some on rivers shores, WAILA or minimap! "
 			]
 			id: "2CFE4433B67D7795"
+			rewards: [{
+				count: 15
+				id: "0CF63201F7616478"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
 			tasks: [{
 				count: 15L
 				id: "7CB4B53D85E5B635"
@@ -355,7 +364,6 @@
 				}
 			}
 			id: "5088FE89AA482117"
-			min_required_dependencies: 3
 			tasks: [
 				{
 					id: "5C8CB0EACEBC33A7"
@@ -409,39 +417,9 @@
 			]
 			title: "Ores Panning"
 			x: 10.0d
-			y: -2.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["5088FE89AA482117"]
-			description: [
-				"While walking around, watch out for some ores chunks laying around. Collect them."
-				"And mark for future needs."
-				""
-				"Currently the copper is essential. Try to find some."
-			]
-			id: "3874DA1EB70053F8"
-			tasks: [{
-				id: "5C421B513AFBB3B2"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:ore/small_native_copper"
-				}
-				type: "item"
-			}]
-			x: 11.5d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"3874DA1EB70053F8"
-				"636C659C4A65C556"
-			]
 			dependency_requirement: "one_completed"
 			description: [
 				"Grab a multiple of 100mb of copper, put it into the vessel. Put the vessel into the pit kiln, fill and fire it up!"
@@ -516,8 +494,8 @@
 				type: "item"
 			}]
 			title: "Copper"
-			x: 12.5d
-			y: -3.0d
+			x: 17.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -913,6 +891,12 @@
 			dependencies: ["09D19F81065B31B8"]
 			icon: "tfc:straw"
 			id: "33F89D27567095DD"
+			rewards: [{
+				count: 16
+				id: "127C4FE42A9B6C2B"
+				item: "tfc:straw"
+				type: "item"
+			}]
 			tasks: [{
 				count: 8L
 				id: "7BE66BE80E3C1009"
@@ -927,7 +911,14 @@
 			dependencies: ["36F88B9D6E0D7A68"]
 			icon: "tfc:wood/log/maple"
 			id: "21F3A0260EB7BA2D"
+			rewards: [{
+				count: 8
+				id: "3A916E0A05BC728A"
+				item: "tfc:wood/log/maple"
+				type: "item"
+			}]
 			tasks: [{
+				count: 8L
 				id: "1BE66B4ECFA7F876"
 				item: {
 					Count: 1
@@ -941,6 +932,98 @@
 			title: "Logs"
 			x: 6.0d
 			y: -2.5d
+		}
+		{
+			id: "5C21D02AC02032F2"
+			tasks: [{
+				id: "50B89FD1130C0539"
+				title: "Basic building materials"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			id: "0C50E2CBCA786F4A"
+			tasks: [{
+				id: "3C8D8D3372FAC90D"
+				title: "Campfire"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			id: "649819B5D7C6C985"
+			tasks: [{
+				id: "7F7F85B2A2D7CAE5"
+				title: "Bed"
+				type: "custom"
+			}]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			id: "71C5CA6C069FF124"
+			tasks: [
+				{
+					id: "5507E9290EDA71FF"
+					item: "tfc:quern"
+					type: "item"
+				}
+				{
+					id: "3BF7722FFDFC7640"
+					item: {
+						Count: 1
+						id: "tfc:handstone"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 0.0d
+		}
+		{
+			id: "6F4D91A39D6475C8"
+			tasks: [{
+				id: "557B36916C95E749"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:sluices"
+					}
+				}
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			id: "135C7F57C351544F"
+			tasks: [{
+				count: 5L
+				id: "13BD2A6236FC8872"
+				item: "kubejs:pile/native_copper"
+				type: "item"
+			}]
+			title: "Copper Dust"
+			x: 14.5d
+			y: 0.0d
+		}
+		{
+			id: "735A03DBBA2F2A15"
+			optional: true
+			tasks: [{
+				id: "605BBB6517D3D490"
+				item: "kubejs:briquette/native_copper"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -1.5d
 		}
 	]
 	title: "Stone Age"

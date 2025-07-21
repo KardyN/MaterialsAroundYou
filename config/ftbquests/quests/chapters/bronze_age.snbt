@@ -31,6 +31,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["76142216D24338FE"]
 			id: "392D0D2BE9080CCF"
 			tasks: [{
 				id: "7BD6FAFA62A02206"
@@ -74,8 +75,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: -0.5d
+			x: -3.5d
+			y: 0.0d
 		}
 	]
 	title: "Bronze Age"
