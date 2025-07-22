@@ -17,24 +17,24 @@ ServerEvents.recipes((event) => {
   global.woodList.forEach((wood) => {
     recipes.push(
       {
-        output: `tfc:wood/clutch/${wood}`,
+        output: wood.splice(4, "wood/clutch/"),
         pattern: [" C ", "BAB", "   "],
         key: {
-          A: `tfc:wood/encased_axle/${wood}`,
+          A: wood.splice(4, "wood/encased_axle/"),
           B: "kubejs:wooden_gear",
           C: "tfc:glue",
         },
-        id: `tfc:shapeless/clutch/${wood}`,
+        id: wood.splice(4, "shapeless/clutch/"),
       },
       {
-        output: `tfc:wood/gear_box/${wood}`,
+        output: wood.splice(4, "wood/gear_box/"),
         pattern: ["CB ", "BAB", " B "],
         key: {
-          A: `tfc:wood/encased_axle/${wood}`,
+          A: wood.splice(4, "wood/encased_axle/"),
           B: "kubejs:wooden_gear",
           C: "tfc:glue",
         },
-        id: `tfc:shapeless/gear_box/${wood}`,
+        id: wood.splice(4, "shapeless/gear_box/"),
       }
     );
   });

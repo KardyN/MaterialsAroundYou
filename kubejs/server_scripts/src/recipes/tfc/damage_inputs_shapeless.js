@@ -3,8 +3,8 @@ ServerEvents.recipes((event) => {
     {
       recipe: {
         type: "minecraft:crafting_shapeless",
-        ingredients: [{ tag: "tfc:firepit_logs" }, { tag: "tfc:saws" }],
-        result: { item: "tfc:wattle", count: 8 },
+        ingredients: [{ tag: "tfc:lumber" }, { tag: "tfc:saws" }],
+        result: { item: "tfc:wattle", count: 1 },
       },
       id: "tfc:shapeless/wattle",
     },
@@ -49,48 +49,56 @@ ServerEvents.recipes((event) => {
         recipe: {
           type: "minecraft:crafting_shapeless",
           ingredients: [
-            { item: `tfc:wood/support/${wood}` },
+            { item: wood.splice(4, "wood/support/") },
             { item: "tfc:glue" },
             { item: "create:sand_paper" },
           ],
-          result: { item: `tfc:wood/axle/${wood}` },
+          result: { item: wood.splice(4, "wood/axle/") },
         },
-        id: `tfc:shapeless/axle/${wood}`,
+        id: wood.splice(4, "shapeless/axle/"),
       },
       {
         recipe: {
           type: "minecraft:crafting_shapeless",
           ingredients: [
-            { item: `tfc:wood/axle/${wood}` },
+            { item: wood.splice(4, "wood/axle/") },
             { tag: "tfc:hammers" },
             { tag: "tfc:pileable_ingots" },
           ],
-          result: { item: `tfc:wood/bladed_axle/${wood}` },
+          result: { item: wood.splice(4, "wood/bladed_axle/") },
         },
-        id: `tfc:shapeless/bladed_axle/${wood}`,
+        id: wood.splice(4, "shapeless/bladed_axle/"),
+      },
+      {
+        recipe: {
+          type: "minecraft:crafting_shapeless",
+          ingredients: [{ tag: wood + "_logs" }, { tag: "tfc:saws" }],
+          result: { item: wood.splice(4, "wood/support/"), count: 4 },
+        },
+        id: wood.splice(4, "shapeless/support/"),
       },
       {
         recipe: {
           type: "minecraft:crafting_shapeless",
           ingredients: [
-            { item: `tfc:wood/stripped_log/${wood}` },
+            { item: wood.splice(4, "wood/axle/") },
+            { tag: "tfc:chisels" },
+            { item: wood.splice(4, "wood/stripped_log/") },
+          ],
+          result: { item: wood.splice(4, "wood/encased_axle/") },
+        },
+        id: wood.splice(4, "shapeless/encased_axle/"),
+      },
+      {
+        recipe: {
+          type: "minecraft:crafting_shapeless",
+          ingredients: [
+            { item: wood.splice(4, "wood/support/") },
             { tag: "tfc:saws" },
           ],
-          result: { item: `tfc:wood/support/${wood}`, count: 4 },
+          result: { item: wood.splice(4, "wood/lumber/"), count: 4 },
         },
-        id: `tfc:shapeless/support/${wood}`,
-      },
-      {
-        recipe: {
-          type: "minecraft:crafting_shapeless",
-          ingredients: [
-            { item: `tfc:wood/axle/${wood}` },
-            { tag: "tfc:chisels" },
-            { item: `tfc:wood/stripped_log/${wood}` },
-          ],
-          result: { item: `tfc:wood/encased_axle/${wood}` },
-        },
-        id: `tfc:shapeless/encased_axle/${wood}`,
+        id: wood.splice(4, "shapeless/lumber/"),
       }
     );
   });
