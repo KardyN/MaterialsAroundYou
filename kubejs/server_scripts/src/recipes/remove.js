@@ -49,6 +49,8 @@ ServerEvents.recipes((event) => {
     { id: "immersiveengineering:crafting/fluorescent_tube" },
     { id: /immersiveengineering:crafting\/.*nugget.*/ },
     { id: /tfc_ie_addon:metalpress\/.+/ },
+    { id: /tfc_ie_addon:cokeoven\/.+/ },
+    { id: /immersivegeology:coking\/.+/ },
     //create & addons
     { id: /create:crafting\/appliances\/.*backtank.*/ },
     { id: /create:crafting\/appliances\/.*controller.*/ },
