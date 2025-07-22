@@ -64,6 +64,27 @@ ServerEvents.tags("item", (event) => {
         "tfc:deals_piercing_damage",
         `kubejs:metal/${toolType}/osmirite`
       );
+
+    toolType == "prospector_hammer" &&
+      event.add(
+        "precisionprospecting:prospector_hammers",
+        `kubejs:metal/${toolType}/osmirite`
+      );
+
+    toolType == "prospector_drill" &&
+      event.add(
+        "precisionprospecting:prospector_drills",
+        `kubejs:metal/${toolType}/osmirite`
+      );
+
+    toolType == "mineral_prospector" &&
+      event.add(
+        "precisionprospecting:mineral_prospectors",
+        `kubejs:metal/${toolType}/osmirite`
+      );
+
+    toolType == "propick" &&
+      event.add("tfc:propicks", `kubejs:metal/${toolType}/osmirite`);
   });
 
   fishingRodTagList.forEach((tag) => {

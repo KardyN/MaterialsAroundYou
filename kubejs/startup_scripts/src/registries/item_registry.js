@@ -48,7 +48,7 @@ StartupEvents.registry("item", (event) => {
     .mineableBlocksTag("minecraft:mineable/pickaxe");
 
   event
-    .create("metal/prospector_pickaxe/osmirite", "tfc:propick")
+    .create("metal/propick/osmirite", "tfc:propick")
     .tier("osmirite")
     .attackDamageBaselineTFC(0.75)
     .speedBaseline(-2.8)
