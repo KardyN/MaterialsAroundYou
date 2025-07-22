@@ -51,6 +51,6 @@ ServerEvents.genericLootTables((event) => {
       });
     });
     //console.log(JSON.stringify(newJson, null, 4));
-    event.addJson(`kubejs:panning/gravel/${deposit.rock}`, newJson);
+    event.addJson(`may:panning/gravel/${deposit.rock}`, newJson);
   });
 });

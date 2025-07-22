@@ -110,6 +110,6 @@ ServerEvents.recipes((event) => {
   alloyRecipeList.forEach((alloy) => {
     event
       .custom(jsonBuilder(alloy))
-      .id(`tfc:alloy/${/[a-z_]+$/.exec(alloy.result)[0]}`);
+      .id(`may:alloy/${/[a-z_]+$/.exec(alloy.result)[0]}`);
   });
 });

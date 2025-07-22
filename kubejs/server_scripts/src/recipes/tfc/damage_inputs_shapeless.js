@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
         ingredients: [{ tag: "tfc:lumber" }, { tag: "tfc:saws" }],
         result: { item: "tfc:wattle", count: 1 },
       },
-      id: "tfc:shapeless/wattle",
+      id: "may:shapeless/wattle",
     },
   ];
 
@@ -24,7 +24,7 @@ ServerEvents.recipes((event) => {
             count: smallOre.amount,
           },
         },
-        id: `tfc:shapeless/ore/${smallOre.quality}_to_small_${ore.name}`,
+        id: `may:shapeless/ore/${smallOre.quality}_to_small_${ore.name}`,
       });
     });
   });
@@ -39,7 +39,7 @@ ServerEvents.recipes((event) => {
         ],
         result: { item: `kubejs:pile/${powder.name}`, count: 5 },
       },
-      id: `tfc:shapeless/briquette_to_pile/${powder.name}`,
+      id: `may:shapeless/briquette_to_pile/${powder.name}`,
     });
   });
 
@@ -55,7 +55,7 @@ ServerEvents.recipes((event) => {
           ],
           result: { item: wood.splice(4, "wood/axle/") },
         },
-        id: wood.splice(4, "shapeless/axle/"),
+        id: "may:shapeless/axle/" + wood.slice(4),
       },
       {
         recipe: {
@@ -67,7 +67,7 @@ ServerEvents.recipes((event) => {
           ],
           result: { item: wood.splice(4, "wood/bladed_axle/") },
         },
-        id: wood.splice(4, "shapeless/bladed_axle/"),
+        id: "may:shapeless/bladed_axle/" + wood.slice(4),
       },
       {
         recipe: {
@@ -75,7 +75,7 @@ ServerEvents.recipes((event) => {
           ingredients: [{ tag: wood + "_logs" }, { tag: "tfc:saws" }],
           result: { item: wood.splice(4, "wood/support/"), count: 4 },
         },
-        id: wood.splice(4, "shapeless/support/"),
+        id: "may:shapeless/support/" + wood.slice(4),
       },
       {
         recipe: {
@@ -87,7 +87,7 @@ ServerEvents.recipes((event) => {
           ],
           result: { item: wood.splice(4, "wood/encased_axle/") },
         },
-        id: wood.splice(4, "shapeless/encased_axle/"),
+        id: "may:shapeless/encased_axle/" + wood.slice(4),
       },
       {
         recipe: {
@@ -98,7 +98,7 @@ ServerEvents.recipes((event) => {
           ],
           result: { item: wood.splice(4, "wood/lumber/"), count: 4 },
         },
-        id: wood.splice(4, "shapeless/lumber/"),
+        id: "may:shapeless/lumber/" + wood.slice(4),
       }
     );
   });

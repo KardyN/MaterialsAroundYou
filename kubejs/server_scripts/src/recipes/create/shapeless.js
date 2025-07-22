@@ -3,12 +3,12 @@ ServerEvents.recipes((event) => {
     {
       output: "create:cogwheel",
       inputs: ["create:shaft", "kubejs:wooden_gear"],
-      id: "create:shapeless/cogwheel",
+      id: "may:shapeless/cogwheel",
     },
     {
       output: "create:large_cogwheel",
       inputs: ["create:shaft", "kubejs:large_wooden_gear"],
-      id: "create:shapeless/large_cogwheel",
+      id: "may:shapeless/large_cogwheel",
     },
     {
       output: "create:netherite_backtank",
@@ -16,7 +16,7 @@ ServerEvents.recipes((event) => {
         "create:copper_backtank",
         "pneumaticcraft:compressed_iron_block",
       ],
-      id: "create:shapeless/netherite_backtank",
+      id: "may:shapeless/netherite_backtank",
     },
     {
       output: "create:hand_crank",
@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
         "#tfc:lumber",
         "tfc:metal/rod/wrought_iron",
       ],
-      id: "create:shapeless/hand_crank",
+      id: "may:shapeless/hand_crank",
     },
   ];
 

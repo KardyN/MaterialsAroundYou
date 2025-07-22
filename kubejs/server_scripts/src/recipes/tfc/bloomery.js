@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
         count: 5,
       },
       duration: 15000,
-      id: "tfc:bloomery/wrought_iron_hematite",
+      id: "may:bloomery/wrought_iron_hematite",
     },
     {
       result: { item: "tfc:raw_iron_bloom" },
@@ -18,7 +18,7 @@ ServerEvents.recipes((event) => {
         count: 5,
       },
       duration: 15000,
-      id: "tfc:bloomery/wrought_iron_magnetite",
+      id: "may:bloomery/wrought_iron_magnetite",
     },
     {
       result: { item: "tfc:raw_iron_bloom" },
@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
         count: 5,
       },
       duration: 15000,
-      id: "tfc:bloomery/wrought_iron_limonite",
+      id: "may:bloomery/wrought_iron_limonite",
     },
     {
       result: { item: "kubejs:raw_tin_bloom" },
@@ -38,7 +38,7 @@ ServerEvents.recipes((event) => {
         count: 3,
       },
       duration: 4000,
-      id: "tfc:bloomery/tin",
+      id: "may:bloomery/tin",
     },
     {
       result: { item: "kubejs:raw_copper_bloom" },
@@ -48,7 +48,7 @@ ServerEvents.recipes((event) => {
         count: 3,
       },
       duration: 8000,
-      id: "tfc:bloomery/copper",
+      id: "may:bloomery/copper",
     },
   ];
 

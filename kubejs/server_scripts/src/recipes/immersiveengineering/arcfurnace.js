@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
       ],
       slag: { item: "immersiveengineering:slag" },
       time: 400,
-      id: "immersiveengineering:arc_furnace/arc_garnierite_briquette_to_ferronickel_ingot",
+      id: "may:arc_furnace/arc_garnierite_briquette_to_ferronickel_ingot",
     },
     {
       additives: [
@@ -40,7 +40,7 @@ ServerEvents.recipes((event) => {
       ],
       slag: { item: "immersiveengineering:slag" },
       time: 400,
-      id: "immersiveengineering:arc_furnace/arc_chromite_briquette_to_ferrochrome_ingot",
+      id: "may:arc_furnace/arc_chromite_briquette_to_ferrochrome_ingot",
     },
     {
       additives: [
@@ -69,7 +69,7 @@ ServerEvents.recipes((event) => {
       ],
       slag: { item: "immersiveengineering:slag" },
       time: 400,
-      id: "immersiveengineering:arc_furnace/arc_bauxite_briquette_to_aluminum_ingot",
+      id: "may:arc_furnace/arc_bauxite_briquette_to_aluminum_ingot",
     },
     {
       additives: [
@@ -87,7 +87,7 @@ ServerEvents.recipes((event) => {
       ],
       slag: { item: "immersiveengineering:slag" },
       time: 400,
-      id: "immersiveengineering:arc_furnace/arc_aluminum_ingot_to_ferroaluminum_ingot",
+      id: "may:arc_furnace/arc_aluminum_ingot_to_ferroaluminum_ingot",
     },
     {
       additives: [
@@ -108,7 +108,7 @@ ServerEvents.recipes((event) => {
       ],
       slag: { item: "immersiveengineering:slag" },
       time: 400,
-      id: "immersiveengineering:arc_furnace/arc_tetrahedrite_briquette_to_copper_ingot",
+      id: "may:arc_furnace/arc_tetrahedrite_briquette_to_copper_ingot",
     },
   ];
 

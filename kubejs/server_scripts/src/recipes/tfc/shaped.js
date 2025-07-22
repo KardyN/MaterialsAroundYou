@@ -24,7 +24,7 @@ ServerEvents.recipes((event) => {
           B: "kubejs:wooden_gear",
           C: "tfc:glue",
         },
-        id: wood.splice(4, "shapeless/clutch/"),
+        id: "may:shapeless/clutch/" + wood.slice(4),
       },
       {
         output: wood.splice(4, "wood/gear_box/"),
@@ -34,7 +34,7 @@ ServerEvents.recipes((event) => {
           B: "kubejs:wooden_gear",
           C: "tfc:glue",
         },
-        id: wood.splice(4, "shapeless/gear_box/"),
+        id: "may:shapeless/gear_box/" + wood.slice(4),
       }
     );
   });

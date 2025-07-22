@@ -14,6 +14,6 @@ ServerEvents.recipes((event) => {
         result: { fluid: ore.output, amount: 1 },
         catalyst: { tag: ore.flux ? ore.flux : "tfc:flux" },
       })
-      .id(`tfc:blast_furnace/${/[a-z_]+$/.exec(ore.output)[0]}.json`);
+      .id(`may:blast_furnace/${/[a-z_]+$/.exec(ore.output)[0]}.json`);
   });
 });

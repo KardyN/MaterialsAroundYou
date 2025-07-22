@@ -49,6 +49,6 @@ ServerEvents.genericLootTables((event) => {
         name: `tfc:powder/${gem}`,
       });
     });
-    event.addJson(`kubejs:sluicing/dirty_dust/${name}`, newJson);
+    event.addJson(`may:sluicing/dirty_dust/${name}`, newJson);
   });
 });

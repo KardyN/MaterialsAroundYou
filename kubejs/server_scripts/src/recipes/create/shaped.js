@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
         B: "create:cogwheel",
         C: "tfc:brass_mechanisms",
       },
-      id: "create:shaped/wrench",
+      id: "may:shaped/wrench",
     },
     {
       output: "create:clutch",
@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
         C: "create:andesite_alloy",
         D: "create:shaft",
       },
-      id: "create:shaped/clutch",
+      id: "may:shaped/clutch",
     },
     {
       output: "create:gearshift",
@@ -29,7 +29,7 @@ ServerEvents.recipes((event) => {
         B: "create:cogwheel",
         C: "create:andesite_alloy",
       },
-      id: "create:shaped/gearshift",
+      id: "may:shaped/gearshift",
     },
     {
       output: "create:encased_chain_drive",
@@ -39,7 +39,7 @@ ServerEvents.recipes((event) => {
         B: "create:cogwheel",
         C: "create:andesite_casing",
       },
-      id: "create:shaped/encased_chain_drive",
+      id: "may:shaped/encased_chain_drive",
     },
     {
       output: "create:nozzle",
@@ -48,7 +48,7 @@ ServerEvents.recipes((event) => {
         A: "create:sail_frame",
         B: "tfc:silk_cloth",
       },
-      id: "create:shaped/nozzle",
+      id: "may:shaped/nozzle",
     },
     {
       output: "create:turntable",
@@ -57,7 +57,7 @@ ServerEvents.recipes((event) => {
         A: "#tfc:lumber",
         B: "create:andesite_alloy",
       },
-      id: "create:shaped/turntable",
+      id: "may:shaped/turntable",
     },
     {
       output: "create:millstone",
@@ -67,7 +67,7 @@ ServerEvents.recipes((event) => {
         B: "tfc:handstone",
         C: "tfc:quern",
       },
-      id: "create:shaped/millstone",
+      id: "may:shaped/millstone",
     },
     {
       output: "create:mechanical_press",
@@ -77,7 +77,7 @@ ServerEvents.recipes((event) => {
         B: "create:andesite_casing",
         C: "tfc:metal/double_ingot/wrought_iron",
       },
-      id: "create:shaped/mechanical_press",
+      id: "may:shaped/mechanical_press",
     },
   ];
 

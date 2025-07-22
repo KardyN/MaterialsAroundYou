@@ -4,26 +4,26 @@ ServerEvents.recipes((event) => {
       ingredient: { item: "create:andesite_alloy" },
       result_fluid: { fluid: "kubejs:metal/bearing_alloy", amount: 50 },
       temperature: 460,
-      id: "tfc:heating/andesite_alloy",
+      id: "may:heating/andesite_alloy",
     },
     {
       ingredient: { item: "tfc:kaolin_clay" },
       result_item: { item: "tfc:powder/kaolinite" },
       temperature: 500,
       chance: 0.5,
-      id: "tfc:heating/kaolin_clay",
+      id: "may:heating/kaolin_clay",
     },
     {
       ingredient: { item: "kubejs:raw_tin_bloom" },
       result_fluid: { fluid: "tfc:metal/tin", amount: 100 },
       temperature: 200,
-      id: "tfc:heating/raw_tin_bloom",
+      id: "may:heating/raw_tin_bloom",
     },
     {
       ingredient: { item: "kubejs:raw_copper_bloom" },
       result_fluid: { fluid: "tfc:metal/copper", amount: 100 },
       temperature: 1080,
-      id: "tfc:heating/raw_copper_bloom",
+      id: "may:heating/raw_copper_bloom",
     },
   ];
 
@@ -123,7 +123,7 @@ ServerEvents.recipes((event) => {
           amount: 5,
         },
         temperature: ore.temperature,
-        id: `tfc:heating/powder/${ore.name}`,
+        id: `may:heating/powder/${ore.name}`,
       },
       {
         ingredient: { item: `kubejs:pile/${ore.name}` },
@@ -134,7 +134,7 @@ ServerEvents.recipes((event) => {
           amount: 20,
         },
         temperature: ore.temperature,
-        id: `tfc:heating/pile/${ore.name}`,
+        id: `may:heating/pile/${ore.name}`,
       },
       {
         ingredient: { item: `kubejs:briquette/${ore.name}` },
@@ -145,7 +145,7 @@ ServerEvents.recipes((event) => {
           amount: 100,
         },
         temperature: ore.temperature,
-        id: `tfc:heating/briquette/${ore.name}`,
+        id: `may:heating/briquette/${ore.name}`,
       }
     );
   });

@@ -14,7 +14,7 @@ ServerEvents.recipes((event) => {
           item: "create:shaft",
         },
       ],
-      id: "create:item_application/shaft",
+      id: "may:item_application/shaft",
     },
     {
       ingredients: [
@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
           item: "create:cogwheel",
         },
       ],
-      id: "create:item_application/gear",
+      id: "may:item_application/gear",
     },
     {
       ingredients: [
@@ -46,7 +46,7 @@ ServerEvents.recipes((event) => {
           item: "create:large_cogwheel",
         },
       ],
-      id: "create:item_application/large_gear",
+      id: "may:item_application/large_gear",
     },
     {
       ingredients: [
@@ -62,7 +62,7 @@ ServerEvents.recipes((event) => {
           item: "create:basin",
         },
       ],
-      id: "create:item_application/basin",
+      id: "may:item_application/basin",
     },
     {
       ingredients: [
@@ -78,7 +78,7 @@ ServerEvents.recipes((event) => {
           item: "create:depot",
         },
       ],
-      id: "create:item_application/depot",
+      id: "may:item_application/depot",
     },
   ];
 

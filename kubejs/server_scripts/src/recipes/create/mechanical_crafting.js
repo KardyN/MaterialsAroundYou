@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
         count: 2,
         item: "create:crushing_wheel",
       },
-      id: "create:mechanical_crafting/crushing_wheel",
+      id: "may:mechanical_crafting/crushing_wheel",
     },
   ];
 

@@ -27,7 +27,7 @@ ServerEvents.recipes((event) => {
           item: `tfc:gem/${gem}`,
         },
       ],
-      id: `create/sandpaper_polishing/${gem}`,
+      id: `may/sandpaper_polishing/${gem}`,
     });
   });
 

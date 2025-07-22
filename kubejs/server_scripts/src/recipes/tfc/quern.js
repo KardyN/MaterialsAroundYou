@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
         item: "kubejs:powder/cryolite",
         count: 4,
       },
-      id: "tfc:quern/cryolite",
+      id: "may:quern/cryolite",
     },
   ];
 
@@ -21,7 +21,7 @@ ServerEvents.recipes((event) => {
         item: `tfc:powder/${gem}`,
         count: 1,
       },
-      id: `tfc:quern/${gem}`,
+      id: `may:quern/${gem}`,
     });
   });
 
@@ -34,7 +34,7 @@ ServerEvents.recipes((event) => {
         item: `kubejs:dirty_dust/${ore.name}`,
         count: 1,
       },
-      id: `tfc:quern/${ore.name}`,
+      id: `may:quern/${ore.name}`,
     });
   });
 

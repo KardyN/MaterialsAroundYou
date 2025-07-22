@@ -7,7 +7,7 @@ ServerEvents.lowPriorityData((event) => {
         `tfc:item/pan/cassiterite/${deposit.rock}_half`,
         `tfc:item/pan/cassiterite/result`,
       ],
-      loot_table: `kubejs:panning/gravel/${deposit.rock}`,
+      loot_table: `may:panning/gravel/${deposit.rock}`,
     });
   });
 });

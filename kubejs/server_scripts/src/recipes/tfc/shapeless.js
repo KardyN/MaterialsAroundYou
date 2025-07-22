@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
         "tfc:powder/graphite",
         "minecraft:clay_ball",
       ],
-      id: "tfc:crafting/fire_clay",
+      id: "may:crafting/fire_clay",
     },
   ];
 
@@ -16,12 +16,12 @@ ServerEvents.recipes((event) => {
       {
         output: `4x ${powder.mod}:powder/${powder.name}`,
         inputs: [`kubejs:pile/${powder.name}`],
-        id: `tfc:shapeless/pile_to_powder/${powder.name}`,
+        id: `may:shapeless/pile_to_powder/${powder.name}`,
       },
       {
         output: `kubejs:pile/${powder.name}`,
         inputs: [`4x ${powder.mod}:powder/${powder.name}`],
-        id: `tfc:shapeless/powder_to_pile/${powder.name}`,
+        id: `may:shapeless/powder_to_pile/${powder.name}`,
       }
     );
   });
@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
     recipes.push({
       output: `tfc:sand/${color}`,
       inputs: [`4x kubejs:pile/${color}_sand`],
-      id: `tfc:shapeless/${color}_sand`,
+      id: `may:shapeless/${color}_sand`,
     });
   });
 

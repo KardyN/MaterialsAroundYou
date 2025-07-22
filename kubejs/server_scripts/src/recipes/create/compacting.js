@@ -25,7 +25,7 @@ ServerEvents.recipes((event) => {
           item: `kubejs:briquette/${powder.name}`,
         },
       ],
-      id: `create:compacting/briquette/${powder.name}`,
+      id: `may:compacting/briquette/${powder.name}`,
     });
   });
 
