@@ -36,8 +36,8 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
-			y: -1.0d
+			x: 0.5d
+			y: 5.0d
 		}
 		{
 			id: "4C54510407C13ABA"
@@ -58,8 +58,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: -1.0d
+			x: -1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["7A1F9767F054AC56"]
@@ -274,6 +274,7 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["1F2192C21814F3D0"]
 			id: "0D3034BAC522694C"
 			tasks: [{
 				count: 7L
@@ -315,6 +316,24 @@
 			title: "Forge"
 			x: 0.5d
 			y: 0.0d
+		}
+		{
+			id: "1F2192C21814F3D0"
+			tasks: [{
+				id: "73CD04C97A9372E6"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:fluxstone"
+					}
+				}
+				title: "Flux stones"
+				type: "item"
+			}]
+			title: "Flux Stones"
+			x: -1.0d
+			y: 3.0d
 		}
 	]
 	title: "Copper Age"

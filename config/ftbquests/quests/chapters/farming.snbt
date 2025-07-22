@@ -16,6 +16,410 @@
 	id: "667EF740D374A9B2"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "6149CA516931EC96"
+			tasks: [{
+				id: "26A3D511339F4C68"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: 252000L
+							traits: [ ]
+						}
+					}
+					id: "tfc:food/barley_grain"
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: -2.0d
+		}
+		{
+			id: "068265674F1A47D9"
+			tasks: [{
+				id: "0DA2687C88AC2E77"
+				title: "Breeding"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			id: "4A7243D195C655B0"
+			tasks: [{
+				id: "5BE11976DDCD7BF2"
+				item: "tfc:large_raw_hide"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 3.0d
+		}
+		{
+			id: "32B956D275843CED"
+			tasks: [{
+				id: "3E5E21496AF3EE85"
+				item: "tfc:large_prepared_hide"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 6.0d
+		}
+		{
+			id: "59AB2052786BDD0D"
+			tasks: [{
+				id: "05B9EB7FC519A41B"
+				item: "tfc:large_soaked_hide"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			id: "34883B45EFAAB45B"
+			tasks: [{
+				id: "119B2A46662598BE"
+				item: "tfc:large_scraped_hide"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 5.0d
+		}
+		{
+			id: "19D13398DCC33807"
+			tasks: [{
+				id: "14BAA5E47C8BAB37"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 7.0d
+		}
+		{
+			id: "7AF7C2AB916080AF"
+			tasks: [{
+				id: "59D65902000B4B66"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:makes_tannin"
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: 6.0d
+		}
+		{
+			id: "4959DC7914B7F789"
+			tasks: [{
+				id: "665407044DC90CE2"
+				item: "tfc:wood/barrel/douglas_fir"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 1.5d
+		}
+		{
+			id: "731AA11C29588B3C"
+			tasks: [{
+				id: "1ACAE54F9F5AF26B"
+				item: "tfc:nest_box"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			id: "69D8991DDD18366A"
+			tasks: [{
+				id: "0B6E6DEC934FC22A"
+				item: "firmalife:beehive"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			id: "4A7CF8B0A6445EC1"
+			tasks: [{
+				id: "6F7B44A5672595B6"
+				item: "firmalife:treated_wood_greenhouse_wall"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			id: "4C3EB8E62E5304F2"
+			tasks: [{
+				id: "08B3185540CF3467"
+				title: "Livestock"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			id: "5CBBEC476938C210"
+			tasks: [{
+				id: "21BA74DB8E516008"
+				item: "minecraft:saddle"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			id: "343A88B9B1BC4832"
+			tasks: [{
+				id: "7E2ED74724C212C6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: 252000L
+							traits: [ ]
+						}
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:food/pork"
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			id: "692C1AA2F56FDBF6"
+			tasks: [{
+				id: "675D02732C3A1520"
+				item: "minecraft:milk_bucket"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			id: "3E49EDC4AB73AA8A"
+			tasks: [{
+				id: "7BA8D7C75ADE8D89"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:egg": {
+							creationDate: 252000L
+							traits: [ ]
+						}
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "minecraft:egg"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			id: "2EE6F0C9673CF606"
+			tasks: [{
+				id: "726E7E2C5E904065"
+				item: "tfc:wool"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			id: "57450CDA1ABE0DC7"
+			tasks: [{
+				id: "0B750FEFDF2A7225"
+				title: "Seeding"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			id: "7F993A4EE39D7AF0"
+			tasks: [{
+				id: "6343C2ED22055693"
+				item: "tfc:composter"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -3.0d
+		}
+		{
+			id: "04992CC4E70D15F6"
+			tasks: [{
+				id: "3721111584A05E92"
+				item: "firmalife:seed_ball"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -4.0d
+		}
+		{
+			id: "15278CC6AEA26104"
+			tasks: [{
+				id: "561B69C05787F3C7"
+				item: "firmalife:oven_bottom"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 4.5d
+		}
+		{
+			id: "3CE5DCE2933B192B"
+			tasks: [{
+				id: "70A9AB402FA71AB1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: 258000L
+							traits: [ ]
+						}
+					}
+					id: "tfc:food/barley_flour"
+				}
+				type: "item"
+			}]
+			x: -9.5d
+			y: 2.5d
+		}
+		{
+			id: "28275BBA60478509"
+			tasks: [{
+				id: "1E27272C011B03C5"
+				item: "firmalife:mixing_bowl"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 2.5d
+		}
+		{
+			id: "3686EE1F8D337CFC"
+			tasks: [{
+				id: "0E0F4AE2C6D67F46"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: 258000L
+							traits: [ ]
+						}
+					}
+					id: "tfc:food/red_apple"
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: 0.5d
+		}
+		{
+			id: "0DBC4C69CCAA97AF"
+			tasks: [{
+				id: "1B3B46FA79559E50"
+				item: "firmalife:bucket/yeast_starter"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 1.5d
+		}
+		{
+			id: "520EC155A25365F1"
+			tasks: [{
+				id: "2DB04CA845D606E3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: 258000L
+							traits: [ ]
+						}
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "firmalife:food/rice_dough"
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: 3.5d
+		}
+		{
+			id: "09F863F516839226"
+			tasks: [{
+				id: "3E33C92828478D85"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: 258000L
+							traits: [ ]
+						}
+					}
+					id: "minecraft:bread"
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: 5.5d
+		}
+		{
+			id: "1372A70AAFB595AD"
+			tasks: [{
+				id: "65511FC4EF97984D"
+				item: "farmersdelight:cutting_board"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 6.5d
+		}
+		{
+			id: "2E9234AB8D446E0B"
+			tasks: [{
+				id: "07C4AB862FB9E148"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: -2L
+							foodData: {
+								dairy: 0.0f
+								decay: 0.0f
+								food: 0
+								fruit: 0.0f
+								grain: 0.0f
+								meat: 0.0f
+								sat: 0.0f
+								veg: 0.0f
+								water: 0.0f
+							}
+							ingredients: [ ]
+							traits: [ ]
+						}
+					}
+					id: "tfc:food/barley_bread_sandwich"
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: 7.5d
+		}
+	]
 	title: "Farming"
 }

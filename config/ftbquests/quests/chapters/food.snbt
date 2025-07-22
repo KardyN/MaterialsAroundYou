@@ -15,7 +15,7 @@
 		id: "farmersdelight:chicken_sandwich"
 	}
 	id: "2B84C20FA9DCE601"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [ ]
 	title: "Food"

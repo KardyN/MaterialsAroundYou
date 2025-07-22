@@ -27,6 +27,7 @@
 							value: "tfc:rock_knapping"
 						}
 					}
+					title: "Rocks"
 					type: "item"
 				}
 				{
@@ -56,6 +57,7 @@
 							]
 						}
 					}
+					title: "Sticks"
 					type: "item"
 				}
 			]
@@ -149,6 +151,7 @@
 						]
 					}
 				}
+				title: "Tool heads"
 				type: "item"
 			}]
 			title: "First Tools"
@@ -286,6 +289,7 @@
 						}
 					}
 					optional_task: true
+					title: "Other clay molds"
 					type: "item"
 				}
 			]
@@ -400,6 +404,7 @@
 				{
 					id: "0F8AC40B94BA44A5"
 					item: "tfc:pan/empty"
+					title: "Pan"
 					type: "item"
 				}
 				{
@@ -412,6 +417,7 @@
 						}
 					}
 					optional_task: true
+					title: "Ore Depositst"
 					type: "item"
 				}
 			]
@@ -420,6 +426,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["2164F89ED1657624"]
 			dependency_requirement: "one_completed"
 			description: [
 				"Grab a multiple of 100mb of copper, put it into the vessel. Put the vessel into the pit kiln, fill and fire it up!"
@@ -491,10 +498,11 @@
 						]
 					}
 				}
+				title: "Copper tool heads"
 				type: "item"
 			}]
 			title: "Copper"
-			x: 17.0d
+			x: 14.0d
 			y: 0.0d
 		}
 		{
@@ -539,6 +547,7 @@
 						}
 					}
 					optional_task: true
+					title: "Hoe heads"
 					type: "item"
 				}
 				{
@@ -579,6 +588,7 @@
 							]
 						}
 					}
+					title: "Hoes"
 					type: "item"
 				}
 			]
@@ -627,6 +637,7 @@
 						]
 					}
 				}
+				title: "Seeds"
 				type: "item"
 			}]
 			title: "Wild Crops"
@@ -677,6 +688,7 @@
 						}
 					}
 					optional_task: true
+					title: "Javelin heads"
 					type: "item"
 				}
 				{
@@ -717,6 +729,7 @@
 							]
 						}
 					}
+					title: "Javelins"
 					type: "item"
 				}
 			]
@@ -743,7 +756,7 @@
 			description: ["You definitely need something to start with!"]
 			icon: {
 				Count: 1
-				id: "tfc:stone/axe/igneous_extrusive"
+				id: "tfc:stone/shovel/igneous_extrusive"
 				tag: {
 					Damage: 0
 				}
@@ -758,28 +771,28 @@
 						items: [
 							{
 								Count: 1b
-								id: "tfc:stone/axe/igneous_extrusive"
+								id: "tfc:stone/shovel/igneous_extrusive"
 								tag: {
 									Damage: 0
 								}
 							}
 							{
 								Count: 1b
-								id: "tfc:stone/axe/metamorphic"
+								id: "tfc:stone/shovel/igneous_intrusive"
 								tag: {
 									Damage: 0
 								}
 							}
 							{
 								Count: 1b
-								id: "tfc:stone/axe/sedimentary"
+								id: "tfc:stone/shovel/metamorphic"
 								tag: {
 									Damage: 0
 								}
 							}
 							{
 								Count: 1b
-								id: "tfc:stone/axe/igneous_intrusive"
+								id: "tfc:stone/shovel/sedimentary"
 								tag: {
 									Damage: 0
 								}
@@ -787,6 +800,7 @@
 						]
 					}
 				}
+				title: "Shovels"
 				type: "item"
 			}]
 			title: "First Tools: Shovel"
@@ -834,11 +848,12 @@
 						]
 					}
 				}
+				title: "Axes"
 				type: "item"
 			}]
 			title: "First Tools: Axe"
 			x: 3.0d
-			y: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["28EFE456A7B11D06"]
@@ -881,11 +896,12 @@
 						]
 					}
 				}
+				title: "Knives"
 				type: "item"
 			}]
 			title: "First Tools: Knife"
 			x: 3.0d
-			y: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["09D19F81065B31B8"]
@@ -905,7 +921,7 @@
 			}]
 			title: "Straw"
 			x: 6.0d
-			y: 2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["36F88B9D6E0D7A68"]
@@ -927,11 +943,12 @@
 						value: "tfc:pit_kiln_logs"
 					}
 				}
+				title: "8x Logs"
 				type: "item"
 			}]
 			title: "Logs"
 			x: 6.0d
-			y: -2.5d
+			y: 2.5d
 		}
 		{
 			id: "5C21D02AC02032F2"
@@ -964,66 +981,152 @@
 			y: -3.5d
 		}
 		{
-			id: "71C5CA6C069FF124"
-			tasks: [
-				{
-					id: "5507E9290EDA71FF"
-					item: "tfc:quern"
-					type: "item"
-				}
-				{
-					id: "3BF7722FFDFC7640"
-					item: {
-						Count: 1
-						id: "tfc:handstone"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
+			dependencies: ["20DF0FF5E072E0DD"]
+			description: [
+				"Raw cereals will spoil very soon. To prevent it, just use the knife to get grains and some straw."
+				"Grains will spoil very slow especially if you put them into sealed Large Vessel."
 			]
+			id: "4202B7F2F739AB22"
+			tasks: [{
+				id: "6B01E7D2A4362F7E"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:food": {
+										creationDate: 210000L
+										traits: [ ]
+									}
+								}
+								id: "tfc:food/barley_grain"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:food": {
+										creationDate: 210000L
+										traits: [ ]
+									}
+								}
+								id: "tfc:food/maize_grain"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:food": {
+										creationDate: 210000L
+										traits: [ ]
+									}
+								}
+								id: "tfc:food/oat_grain"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:food": {
+										creationDate: 210000L
+										traits: [ ]
+									}
+								}
+								id: "tfc:food/rye_grain"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:food": {
+										creationDate: 210000L
+										traits: [ ]
+									}
+								}
+								id: "tfc:food/rice_grain"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:food": {
+										creationDate: 210000L
+										traits: [ ]
+									}
+								}
+								id: "tfc:food/wheat_grain"
+							}
+						]
+					}
+				}
+				title: "Grains"
+				type: "item"
+			}]
+			title: "Grain"
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["636C659C4A65C556"]
+			description: [
+				"You need 100mb of copper to make a copper tool. So, go pan some copper powder!"
+				""
+				"TIP: you can try to find some other ores to make bronze tools right away."
+			]
+			icon: "tfc:powder/native_copper"
+			id: "2164F89ED1657624"
+			tasks: [{
+				count: 20L
+				id: "62114FD059B05898"
+				item: { Count: 20, id: "tfc:powder/native_copper" }
+				type: "item"
+			}]
+			title: "Copper Powder"
 			x: 11.5d
 			y: 0.0d
 		}
 		{
-			id: "6F4D91A39D6475C8"
+			dependencies: [
+				"21F3A0260EB7BA2D"
+				"5088FE89AA482117"
+			]
+			icon: "tfc:firepit"
+			id: "3C22F23867AB0AFC"
 			tasks: [{
-				id: "557B36916C95E749"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "tfc:sluices"
-					}
-				}
-				type: "item"
+				id: "7A7560FEDD9F7B04"
+				title: "Got it!"
+				type: "checkmark"
 			}]
-			x: 13.0d
-			y: 0.0d
+			title: "Firepit"
+			x: 8.5d
+			y: 2.5d
 		}
 		{
-			id: "135C7F57C351544F"
+			dependencies: ["3C22F23867AB0AFC"]
+			icon: "tfc:ceramic/pot"
+			id: "00796B8B300CF70E"
 			tasks: [{
-				count: 5L
-				id: "13BD2A6236FC8872"
-				item: "kubejs:pile/native_copper"
+				id: "4759336C59BC95D1"
+				item: "tfc:ceramic/pot"
 				type: "item"
 			}]
-			title: "Copper Dust"
-			x: 14.5d
-			y: 0.0d
+			title: "Pot"
+			x: 10.0d
+			y: 2.5d
 		}
 		{
-			id: "735A03DBBA2F2A15"
-			optional: true
+			dependencies: [
+				"00796B8B300CF70E"
+				"62A464FC854D802D"
+			]
+			icon: "minecraft:water_bucket"
+			id: "650979F04DA06D44"
 			tasks: [{
-				id: "605BBB6517D3D490"
-				item: "kubejs:briquette/native_copper"
-				type: "item"
+				id: "06F581786765ACA5"
+				title: "Got it!"
+				type: "checkmark"
 			}]
-			x: 14.5d
-			y: -1.5d
+			title: "Boiled Water"
+			x: 11.5d
+			y: 2.5d
 		}
 	]
 	title: "Stone Age"
