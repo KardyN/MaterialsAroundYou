@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
       ],
       slag: { item: "immersiveengineering:slag" },
       time: 400,
-      id: "may:arc_furnace/arc_garnierite_briquette_to_ferronickel_ingot",
+      id: "may:arc_furnace/garnierite_briquette_to_ferronickel_ingot",
     },
     {
       additives: [
@@ -40,7 +40,7 @@ ServerEvents.recipes((event) => {
       ],
       slag: { item: "immersiveengineering:slag" },
       time: 400,
-      id: "may:arc_furnace/arc_chromite_briquette_to_ferrochrome_ingot",
+      id: "may:arc_furnace/chromite_briquette_to_ferrochrome_ingot",
     },
     {
       additives: [
@@ -69,25 +69,28 @@ ServerEvents.recipes((event) => {
       ],
       slag: { item: "immersiveengineering:slag" },
       time: 400,
-      id: "may:arc_furnace/arc_bauxite_briquette_to_aluminum_ingot",
+      id: "may:arc_furnace/bauxite_briquette_to_aluminum_ingot",
     },
     {
       additives: [
         { base_ingredient: { item: "tfc:metal/ingot/wrought_iron" }, count: 1 },
         { base_ingredient: { item: "tfc:powder/flux" }, count: 1 },
       ],
-      energy: 204800,
+      energy: 409600,
       input: {
         item: "immersiveengineering:ingot_aluminum",
       },
       results: [
         {
-          item: "tfc:metal/ingot/weak_red_steel",
+          base_ingredient: {
+            item: "tfc:metal/ingot/weak_red_steel",
+          },
+          count: 2,
         },
       ],
       slag: { item: "immersiveengineering:slag" },
-      time: 400,
-      id: "may:arc_furnace/arc_aluminum_ingot_to_ferroaluminum_ingot",
+      time: 800,
+      id: "may:arc_furnace/aluminum_ingot_to_ferroaluminum_ingot",
     },
     {
       additives: [
@@ -108,7 +111,36 @@ ServerEvents.recipes((event) => {
       ],
       slag: { item: "immersiveengineering:slag" },
       time: 400,
-      id: "may:arc_furnace/arc_tetrahedrite_briquette_to_copper_ingot",
+      id: "may:arc_furnace/tetrahedrite_briquette_to_copper_ingot",
+    },
+    {
+      additives: [
+        {
+          base_ingredient: { item: "immersiveengineering:dust_coke" },
+          count: 1,
+        },
+        {
+          base_ingredient: { item: "tfc:metal/ingot/weak_blue_steel" },
+          count: 1,
+        },
+        { base_ingredient: { item: "tfc:metal/ingot/nickel" }, count: 1 },
+      ],
+      energy: 1843200,
+      input: {
+        base_ingredient: {
+          item: "tfc:metal/ingot/steel",
+        },
+        count: 7,
+      },
+      results: [
+        {
+          base_ingredient: { item: "firmalife:metal/ingot/stainless_steel" },
+          count: 9,
+        },
+      ],
+      slag: { item: "immersiveengineering:slag" },
+      time: 3600,
+      id: "may:arc_furnace/stainless_steel_block",
     },
   ];
 
