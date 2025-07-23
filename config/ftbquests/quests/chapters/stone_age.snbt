@@ -4,6 +4,7 @@
 	disable_toast: true
 	filename: "stone_age"
 	group: "1F7A98B2F2F3E985"
+	hide_quest_until_deps_complete: true
 	icon: "tfc:rock/loose/granite"
 	id: "615435B2725727CF"
 	order_index: 0
@@ -356,7 +357,7 @@
 			description: [
 				"Dig up one block pit. Put there items to fire using 'V' (by default). You can put up to 4 small or 1 big item in the pit."
 				""
-				"Right-click pit 8 times with straw and then 8 times with logs. Then fire it up and wait!"
+				"Right-click pit 8 times with straw and then 8 times with logs. Then hold right-click with Firestarter to light it up!"
 				""
 				"Watch out for spreading fire!"
 			]
@@ -502,8 +503,8 @@
 				type: "item"
 			}]
 			title: "Copper"
-			x: 14.0d
-			y: 0.0d
+			x: 13.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -642,7 +643,7 @@
 			}]
 			title: "Wild Crops"
 			x: 0.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["66957E1A37C5468C"]
@@ -741,6 +742,7 @@
 			dependencies: [
 				"412981055399DAAA"
 				"58BB4A24361CE43C"
+				"4202B7F2F739AB22"
 			]
 			dependency_requirement: "one_completed"
 			icon: "tfc:medium_prepared_hide"
@@ -948,37 +950,7 @@
 			}]
 			title: "Logs"
 			x: 6.0d
-			y: 2.5d
-		}
-		{
-			id: "5C21D02AC02032F2"
-			tasks: [{
-				id: "50B89FD1130C0539"
-				title: "Basic building materials"
-				type: "custom"
-			}]
-			x: 2.0d
-			y: -2.5d
-		}
-		{
-			id: "0C50E2CBCA786F4A"
-			tasks: [{
-				id: "3C8D8D3372FAC90D"
-				title: "Campfire"
-				type: "custom"
-			}]
-			x: 2.0d
-			y: -5.0d
-		}
-		{
-			id: "649819B5D7C6C985"
-			tasks: [{
-				id: "7F7F85B2A2D7CAE5"
-				title: "Bed"
-				type: "custom"
-			}]
-			x: 4.0d
-			y: -3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["20DF0FF5E072E0DD"]
@@ -1062,7 +1034,7 @@
 			}]
 			title: "Grain"
 			x: 1.5d
-			y: 5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["636C659C4A65C556"]
@@ -1088,6 +1060,12 @@
 				"21F3A0260EB7BA2D"
 				"5088FE89AA482117"
 			]
+			description: [
+				"Drop couple of logs on the ground and some sticks."
+				"Drop couple of sticks there too and use a Firestarter. And keep trying!"
+				""
+				"TIP: Add some Straw to increase chances."
+			]
 			icon: "tfc:firepit"
 			id: "3C22F23867AB0AFC"
 			tasks: [{
@@ -1097,7 +1075,7 @@
 			}]
 			title: "Firepit"
 			x: 8.5d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3C22F23867AB0AFC"]
@@ -1110,7 +1088,7 @@
 			}]
 			title: "Pot"
 			x: 10.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1126,7 +1104,63 @@
 			}]
 			title: "Boiled Water"
 			x: 11.5d
-			y: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3C22F23867AB0AFC"]
+			description: [
+				"Processing sticks in the firepit gives you torches."
+				""
+				"But keep in mind, they will go out. To light them up, use a Firestarter."
+			]
+			id: "2A6F12150A407BDE"
+			tasks: [{
+				id: "767F3627354A81BE"
+				item: "tfc:torch"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["62A464FC854D802D"]
+			id: "1D8C501B98343EA2"
+			tasks: [{
+				id: "3A21E6847139E97A"
+				item: "minecraft:mud"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1D8C501B98343EA2"]
+			id: "265518059B629EB1"
+			tasks: [
+				{
+					id: "0BD9835D79CD7FE0"
+					item: "tfc:drying_bricks/silt"
+					type: "item"
+				}
+				{
+					id: "00DE51D9B3CC7D99"
+					item: "tfc:mud_brick/silt"
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["265518059B629EB1"]
+			id: "2339DF6F33663E5D"
+			tasks: [{
+				id: "6596EB2F0E2DB9F5"
+				item: "tfc:mud_bricks/silt"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 1.5d
 		}
 	]
 	title: "Stone Age"

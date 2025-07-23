@@ -18,99 +18,189 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["23B641FC902B77AD"]
 			id: "6149CA516931EC96"
 			tasks: [{
-				id: "26A3D511339F4C68"
-				item: {
+				count: 8L
+				icon: {
 					Count: 1
 					ForgeCaps: {
 						"tfc:food": {
-							creationDate: 252000L
+							creationDate: 210000L
 							traits: [ ]
 						}
 					}
-					id: "tfc:food/barley_grain"
+					id: "tfc:food/wheat_grain"
 				}
+				id: "26A3D511339F4C68"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:food": {
+										creationDate: 210000L
+										traits: [ ]
+									}
+								}
+								id: "tfc:food/barley_grain"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:food": {
+										creationDate: 210000L
+										traits: [ ]
+									}
+								}
+								id: "tfc:food/maize_grain"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:food": {
+										creationDate: 210000L
+										traits: [ ]
+									}
+								}
+								id: "tfc:food/oat_grain"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:food": {
+										creationDate: 210000L
+										traits: [ ]
+									}
+								}
+								id: "tfc:food/rye_grain"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:food": {
+										creationDate: 210000L
+										traits: [ ]
+									}
+								}
+								id: "tfc:food/rice_grain"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:food": {
+										creationDate: 210000L
+										traits: [ ]
+									}
+								}
+								id: "tfc:food/wheat_grain"
+							}
+						]
+					}
+				}
+				title: "Grains"
 				type: "item"
 			}]
-			x: -11.0d
-			y: -2.0d
+			title: "Animal food"
+			x: -8.0d
+			y: -0.5d
 		}
 		{
+			dependencies: ["6149CA516931EC96"]
 			id: "068265674F1A47D9"
 			tasks: [{
 				id: "0DA2687C88AC2E77"
 				title: "Breeding"
 				type: "checkmark"
 			}]
+			title: "Breeding"
 			x: -6.5d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
+			dependencies: ["4C3EB8E62E5304F2"]
+			icon: "tfc:large_raw_hide"
 			id: "4A7243D195C655B0"
 			tasks: [{
 				id: "5BE11976DDCD7BF2"
 				item: "tfc:large_raw_hide"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 3.0d
+			title: "Raw Hide"
+			x: -5.0d
+			y: 2.5d
 		}
 		{
+			dependencies: ["34883B45EFAAB45B"]
 			id: "32B956D275843CED"
 			tasks: [{
 				id: "3E5E21496AF3EE85"
 				item: "tfc:large_prepared_hide"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 6.0d
+			title: "Prepared Hide"
+			x: -5.0d
+			y: 7.0d
 		}
 		{
+			dependencies: [
+				"4A7243D195C655B0"
+				"7E29EAC162DD477A"
+			]
+			icon: "tfc:large_soaked_hide"
 			id: "59AB2052786BDD0D"
 			tasks: [{
 				id: "05B9EB7FC519A41B"
 				item: "tfc:large_soaked_hide"
 				type: "item"
 			}]
-			x: -6.5d
+			title: "Soaked Hide"
+			x: -5.0d
 			y: 4.0d
 		}
 		{
+			dependencies: ["59AB2052786BDD0D"]
+			icon: "tfc:large_scraped_hide"
 			id: "34883B45EFAAB45B"
 			tasks: [{
 				id: "119B2A46662598BE"
 				item: "tfc:large_scraped_hide"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 5.0d
+			title: "Scraped Hide"
+			x: -5.0d
+			y: 5.5d
 		}
 		{
+			dependencies: [
+				"7AF7C2AB916080AF"
+				"32B956D275843CED"
+			]
+			icon: "minecraft:leather"
 			id: "19D13398DCC33807"
 			tasks: [{
 				id: "14BAA5E47C8BAB37"
 				item: "minecraft:leather"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 7.0d
+			title: "Leather"
+			x: -5.0d
+			y: 8.5d
 		}
 		{
+			icon: "tfc:bucket/tannin"
 			id: "7AF7C2AB916080AF"
 			tasks: [{
-				id: "59D65902000B4B66"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "tfc:makes_tannin"
-					}
-				}
-				type: "item"
+				id: "5AB54C20DFB480EC"
+				title: "Got it!"
+				type: "checkmark"
 			}]
-			x: -7.5d
-			y: 6.0d
+			title: "Tannin"
+			x: -3.5d
+			y: 7.0d
 		}
 		{
 			id: "4959DC7914B7F789"
@@ -119,60 +209,83 @@
 				item: "tfc:wood/barrel/douglas_fir"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 1.5d
+			x: -13.0d
+			y: -3.0d
 		}
 		{
+			dependencies: ["068265674F1A47D9"]
 			id: "731AA11C29588B3C"
 			tasks: [{
 				id: "1ACAE54F9F5AF26B"
 				item: "tfc:nest_box"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -0.5d
+			x: -5.0d
+			y: -2.0d
 		}
 		{
+			dependencies: ["23B641FC902B77AD"]
 			id: "69D8991DDD18366A"
 			tasks: [{
 				id: "0B6E6DEC934FC22A"
 				item: "firmalife:beehive"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -3.5d
+			title: "Beehive"
+			x: -9.5d
+			y: -2.0d
 		}
 		{
+			dependencies: ["14AADB481BAD9AAD"]
 			id: "4A7CF8B0A6445EC1"
 			tasks: [{
 				id: "6F7B44A5672595B6"
 				item: "firmalife:treated_wood_greenhouse_wall"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -2.0d
+			title: "Basic Greenhouse"
+			x: -9.5d
+			y: -6.5d
 		}
 		{
+			dependencies: ["068265674F1A47D9"]
 			id: "4C3EB8E62E5304F2"
 			tasks: [{
 				id: "08B3185540CF3467"
 				title: "Livestock"
 				type: "checkmark"
 			}]
-			x: -5.5d
-			y: 0.5d
+			x: -5.0d
+			y: 1.0d
 		}
 		{
+			dependencies: ["4C3EB8E62E5304F2"]
 			id: "5CBBEC476938C210"
 			tasks: [{
 				id: "21BA74DB8E516008"
 				item: "minecraft:saddle"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -1.0d
+			title: "Horse riding"
+			x: -5.0d
+			y: -0.5d
 		}
 		{
+			dependencies: ["4C3EB8E62E5304F2"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 252000L
+						traits: [ ]
+					}
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:food/pork"
+			}
 			id: "343A88B9B1BC4832"
 			tasks: [{
 				id: "7E2ED74724C212C6"
@@ -192,20 +305,24 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
-			y: 0.0d
+			title: "Meat"
+			x: -6.5d
+			y: 2.5d
 		}
 		{
+			dependencies: ["4C3EB8E62E5304F2"]
 			id: "692C1AA2F56FDBF6"
 			tasks: [{
 				id: "675D02732C3A1520"
 				item: "minecraft:milk_bucket"
 				type: "item"
 			}]
+			title: "Milk"
 			x: -3.5d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
+			dependencies: ["731AA11C29588B3C"]
 			id: "3E49EDC4AB73AA8A"
 			tasks: [{
 				id: "7BA8D7C75ADE8D89"
@@ -226,60 +343,73 @@
 				}
 				type: "item"
 			}]
+			title: "Eggs"
 			x: -3.5d
-			y: 2.0d
+			y: -2.0d
 		}
 		{
+			dependencies: ["4C3EB8E62E5304F2"]
 			id: "2EE6F0C9673CF606"
 			tasks: [{
 				id: "726E7E2C5E904065"
 				item: "tfc:wool"
 				type: "item"
 			}]
+			title: "Wool"
 			x: -3.5d
-			y: 3.0d
+			y: 1.0d
 		}
 		{
+			dependencies: ["6149CA516931EC96"]
 			id: "57450CDA1ABE0DC7"
 			tasks: [{
 				id: "0B750FEFDF2A7225"
 				title: "Seeding"
 				type: "checkmark"
 			}]
-			x: -6.5d
+			x: -8.0d
 			y: -2.0d
 		}
 		{
+			dependencies: ["57450CDA1ABE0DC7"]
+			icon: "tfc:composter"
 			id: "7F993A4EE39D7AF0"
 			tasks: [{
 				id: "6343C2ED22055693"
 				item: "tfc:composter"
 				type: "item"
 			}]
+			title: "Composter"
 			x: -6.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
+			dependencies: ["7F993A4EE39D7AF0"]
+			icon: "firmalife:seed_ball"
 			id: "04992CC4E70D15F6"
 			tasks: [{
 				id: "3721111584A05E92"
 				item: "firmalife:seed_ball"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -4.0d
+			title: "Seed ball"
+			x: -5.0d
+			y: -3.5d
 		}
 		{
+			dependencies: ["520EC155A25365F1"]
 			id: "15278CC6AEA26104"
 			tasks: [{
 				id: "561B69C05787F3C7"
 				item: "firmalife:oven_bottom"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 4.5d
+			title: "Oven"
+			x: -9.5d
+			y: 5.5d
 		}
 		{
+			dependencies: ["6149CA516931EC96"]
 			id: "3CE5DCE2933B192B"
 			tasks: [{
 				id: "70A9AB402FA71AB1"
@@ -295,7 +425,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.5d
+			title: "Flour"
+			x: -8.0d
 			y: 2.5d
 		}
 		{
@@ -305,10 +436,12 @@
 				item: "firmalife:mixing_bowl"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 2.5d
+			title: "Mixing Bowl"
+			x: -13.0d
+			y: -4.0d
 		}
 		{
+			dependencies: ["23B641FC902B77AD"]
 			id: "3686EE1F8D337CFC"
 			tasks: [{
 				id: "0E0F4AE2C6D67F46"
@@ -324,20 +457,28 @@
 				}
 				type: "item"
 			}]
-			x: -10.0d
-			y: 0.5d
+			title: "Fruits and berries"
+			x: -9.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["3686EE1F8D337CFC"]
+			icon: "firmalife:bucket/yeast_starter"
 			id: "0DBC4C69CCAA97AF"
 			tasks: [{
-				id: "1B3B46FA79559E50"
-				item: "firmalife:bucket/yeast_starter"
-				type: "item"
+				id: "472C29B95C049AA0"
+				title: "Got it!"
+				type: "checkmark"
 			}]
-			x: -10.0d
-			y: 1.5d
+			title: "Yeast starter"
+			x: -9.5d
+			y: 2.5d
 		}
 		{
+			dependencies: [
+				"3CE5DCE2933B192B"
+				"0DBC4C69CCAA97AF"
+			]
 			id: "520EC155A25365F1"
 			tasks: [{
 				id: "2DB04CA845D606E3"
@@ -357,10 +498,22 @@
 				}
 				type: "item"
 			}]
-			x: -10.0d
-			y: 3.5d
+			title: "Dough"
+			x: -9.5d
+			y: 4.0d
 		}
 		{
+			dependencies: ["15278CC6AEA26104"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: 258000L
+						traits: [ ]
+					}
+				}
+				id: "minecraft:bread"
+			}
 			id: "09F863F516839226"
 			tasks: [{
 				id: "3E33C92828478D85"
@@ -376,20 +529,51 @@
 				}
 				type: "item"
 			}]
-			x: -10.0d
-			y: 5.5d
+			title: "Bread"
+			x: -9.5d
+			y: 7.0d
 		}
 		{
+			dependencies: [
+				"343A88B9B1BC4832"
+				"09F863F516839226"
+			]
+			dependency_requirement: "one_completed"
+			icon: "farmersdelight:cutting_board"
 			id: "1372A70AAFB595AD"
 			tasks: [{
 				id: "65511FC4EF97984D"
 				item: "farmersdelight:cutting_board"
 				type: "item"
 			}]
-			x: -10.0d
-			y: 6.5d
+			title: "Cutting board"
+			x: -8.0d
+			y: 8.5d
 		}
 		{
+			dependencies: ["1372A70AAFB595AD"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: -2L
+						foodData: {
+							dairy: 0.0f
+							decay: 0.0f
+							food: 0
+							fruit: 0.0f
+							grain: 0.0f
+							meat: 0.0f
+							sat: 0.0f
+							veg: 0.0f
+							water: 0.0f
+						}
+						ingredients: [ ]
+						traits: [ ]
+					}
+				}
+				id: "tfc:food/barley_bread_sandwich"
+			}
 			id: "2E9234AB8D446E0B"
 			tasks: [{
 				id: "07C4AB862FB9E148"
@@ -417,8 +601,327 @@
 				}
 				type: "item"
 			}]
-			x: -10.0d
-			y: 7.5d
+			title: "Sandwich"
+			x: -8.0d
+			y: 10.0d
+		}
+		{
+			icon: "tfc:bucket/limewater"
+			id: "7E29EAC162DD477A"
+			tasks: [{
+				id: "0ADF56A0620BE36A"
+				title: "Got it!"
+				type: "checkmark"
+			}]
+			title: "Limewater"
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["23B641FC902B77AD"]
+			id: "4C98F5474CF5C8DE"
+			tasks: [{
+				id: "329C29D3BA57C503"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/fishing_rod/bismuth_bronze"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -14.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7DC26004B2D800A9"]
+			id: "47F60096BF7F28A9"
+			tasks: [{
+				id: "7A1DC8457A4DF948"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:wrought_iron_grill"
+				}
+				type: "item"
+			}]
+			title: "Grill"
+			x: -12.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["23B641FC902B77AD"]
+			icon: "tfc:firepit"
+			id: "7DC26004B2D800A9"
+			tasks: [{
+				id: "48480825194F1708"
+				title: "Got it!"
+				type: "checkmark"
+			}]
+			title: "Firepit"
+			x: -11.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7DC26004B2D800A9"]
+			id: "798D00CFC7A33E4C"
+			tasks: [{
+				id: "5F45B4584E68DE1D"
+				item: "tfc:ceramic/pot"
+				type: "item"
+			}]
+			title: "Pot"
+			x: -12.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["798D00CFC7A33E4C"]
+			id: "23021FFF79D2E260"
+			tasks: [{
+				id: "6FCE45E68A89DFFE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: -2L
+							foodData: {
+								dairy: 0.0f
+								decay: 0.0f
+								food: 0
+								fruit: 0.0f
+								grain: 0.0f
+								meat: 0.0f
+								sat: 0.0f
+								veg: 0.0f
+								water: 0.0f
+							}
+							ingredients: [ ]
+							traits: [ ]
+						}
+					}
+					id: "tfc:food/grain_soup"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Soup"
+			x: -14.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["098BC649D84839B6"]
+			icon: "firmalife:treated_lumber"
+			id: "14AADB481BAD9AAD"
+			tasks: [{
+				id: "2D63FECF48922FA4"
+				item: "firmalife:treated_lumber"
+				type: "item"
+			}]
+			title: "Treated Lumber"
+			x: -9.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["098BC649D84839B6"]
+			id: "4191E5DBEFF72CA7"
+			tasks: [{
+				id: "5A5730DB81CAB569"
+				item: "firmalife:sealed_door"
+				type: "item"
+			}]
+			title: "Cellar"
+			x: -11.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["77BBADAAEA3CDEF0"]
+			icon: "firmalife:quad_planter"
+			id: "196FF566FA99B5DC"
+			tasks: [{
+				id: "469799C8BB028BBA"
+				item: "firmalife:large_planter"
+				type: "item"
+			}]
+			title: "Planters"
+			x: -8.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["4A7CF8B0A6445EC1"]
+			icon: {
+				Count: 1
+				id: "firmalife:watering_can"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "77BBADAAEA3CDEF0"
+			tasks: [{
+				id: "25F6B6C2888D724C"
+				item: {
+					Count: 1
+					id: "firmalife:watering_can"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Watering Can"
+			x: -8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"2EE6F0C9673CF606"
+				"698BADE359485F58"
+			]
+			dependency_requirement: "one_completed"
+			id: "1BE9AF9854820893"
+			tasks: [{
+				id: "104BDD80519145FE"
+				item: "tfc:wood/planks/acacia_loom"
+				type: "item"
+			}]
+			title: "Loom"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1BE9AF9854820893"]
+			id: "784B47D80E379B1E"
+			tasks: [{
+				id: "7377C3C799AC2358"
+				item: "tfc:silk_cloth"
+				type: "item"
+			}]
+			title: "Silk Cloth"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["784B47D80E379B1E"]
+			icon: "firmalife:cheesecloth"
+			id: "0BAE632A8F83D914"
+			tasks: [{
+				id: "1BDDD282671B8B18"
+				item: "firmalife:cheesecloth"
+				type: "item"
+			}]
+			title: "Cheesecloth"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"692C1AA2F56FDBF6"
+				"0BAE632A8F83D914"
+			]
+			icon: "ad_astra:cheese"
+			id: "377E276A6CF6BC69"
+			tasks: [{
+				id: "0DC1C52B76F11D48"
+				item: "ad_astra:cheese"
+				type: "item"
+			}]
+			title: "Cheese"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			id: "698BADE359485F58"
+			tasks: [{
+				id: "02A01B695B2EAD9F"
+				item: "tfc:jute_fiber"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["69D8991DDD18366A"]
+			icon: "firmalife:beeswax"
+			id: "098BC649D84839B6"
+			tasks: [{
+				id: "33F1D7C185C4F948"
+				item: "firmalife:beeswax"
+				type: "item"
+			}]
+			title: "Beeswax"
+			x: -9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1BE9AF9854820893"]
+			id: "724670BA4D4C19B6"
+			tasks: [{
+				id: "55F7557A592C35FD"
+				item: "tfc:burlap_cloth"
+				type: "item"
+			}]
+			title: "Cloth"
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["57450CDA1ABE0DC7"]
+			id: "14F05677B34D854A"
+			tasks: [{
+				id: "3D6466E3CE438445"
+				item: "tfc:ceramic/large_vessel"
+				type: "item"
+			}]
+			title: "Large Vessel"
+			x: -8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4191E5DBEFF72CA7"]
+			id: "3EA00398B1131C35"
+			tasks: [{
+				id: "34FD0B35B99B3092"
+				item: "firmalife:wood/hanger/acacia"
+				type: "item"
+			}]
+			title: "Cellar Capacity"
+			x: -11.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["58C5C9159AD2857C"]
+			id: "198AE5FF20802FAC"
+			tasks: [{
+				id: "2AE1159A7CA05553"
+				item: "firmalife:stainless_steel_greenhouse_door"
+				type: "item"
+			}]
+			title: "Modern Greenhouse"
+			x: -9.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["4A7CF8B0A6445EC1"]
+			id: "58C5C9159AD2857C"
+			tasks: [{
+				id: "435303106AB356E7"
+				item: "firmalife:copper_greenhouse_door"
+				type: "item"
+			}]
+			title: "Advanced Greenhouse"
+			x: -9.5d
+			y: -8.0d
 		}
 	]
 	title: "Farming"
