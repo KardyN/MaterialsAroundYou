@@ -391,6 +391,16 @@
 			x: -9.5d
 			y: 3.0d
 		}
+		{
+			id: "6F3A2D0962A56135"
+			tasks: [{
+				id: "65128314E633691F"
+				title: "TODO: Drills?"
+				type: "custom"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
 	]
 	title: "Mining"
 }

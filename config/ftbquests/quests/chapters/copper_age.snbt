@@ -18,50 +18,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "7A3810116653E050"
-			tasks: [{
-				id: "12B190FF40D61CE5"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/saw/copper"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 0.5d
-			y: 5.0d
-		}
-		{
-			id: "4C54510407C13ABA"
-			tasks: [{
-				id: "31C63DC3D9FDF0B8"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/pickaxe/copper"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -1.0d
-			y: 5.0d
-		}
-		{
 			dependencies: ["7A1F9767F054AC56"]
 			icon: {
 				Count: 1
@@ -235,9 +191,9 @@
 		}
 		{
 			dependencies: [
-				"18742141311ECFB7"
 				"0D3034BAC522694C"
 				"1170062E1DCC047B"
+				"18742141311ECFB7"
 			]
 			description: [
 				"For progression you need a better anvil. For better anvil you need double ingots."
@@ -308,11 +264,19 @@
 		{
 			dependencies: ["6FE2992AEE98301E"]
 			id: "1170062E1DCC047B"
-			tasks: [{
-				id: "06C00AA4B1001A4F"
-				item: "mekanism:block_charcoal"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "06C00AA4B1001A4F"
+					item: "mekanism:block_charcoal"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "38C142992C689D4E"
+					item: "tfc:rock/raw/limestone"
+					type: "item"
+				}
+			]
 			title: "Forge"
 			x: 0.5d
 			y: 0.0d

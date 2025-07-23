@@ -78,6 +78,28 @@
 			x: -3.5d
 			y: 0.0d
 		}
+		{
+			id: "1ADD6685147CE94D"
+			tasks: [{
+				id: "44212FD1A61DC78B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/hammer/black_bronze"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
 	]
 	title: "Bronze Age"
 }

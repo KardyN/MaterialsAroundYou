@@ -7,7 +7,7 @@
 		Count: 1
 		ForgeCaps: {
 			"tfc:food": {
-				creationDate: 60000L
+				creationDate: -9223372036854775808L
 				traits: [ ]
 			}
 		}
@@ -276,7 +276,7 @@
 				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: 252000L
+						creationDate: -9223372036854775808L
 						traits: [ ]
 					}
 					"tfc:item_heat": {
@@ -380,7 +380,7 @@
 				type: "item"
 			}]
 			title: "Composter"
-			x: -6.5d
+			x: -5.0d
 			y: -3.5d
 		}
 		{
@@ -393,7 +393,7 @@
 				type: "item"
 			}]
 			title: "Seed ball"
-			x: -5.0d
+			x: -3.5d
 			y: -3.5d
 		}
 		{
@@ -462,7 +462,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["3686EE1F8D337CFC"]
+			dependencies: [
+				"3686EE1F8D337CFC"
+				"3CE5DCE2933B192B"
+			]
 			icon: "firmalife:bucket/yeast_starter"
 			id: "0DBC4C69CCAA97AF"
 			tasks: [{
@@ -508,7 +511,7 @@
 				Count: 1
 				ForgeCaps: {
 					"tfc:food": {
-						creationDate: 258000L
+						creationDate: -9223372036854775808L
 						traits: [ ]
 					}
 				}
@@ -521,11 +524,15 @@
 					Count: 1
 					ForgeCaps: {
 						"tfc:food": {
-							creationDate: 258000L
+							creationDate: 1674000L
 							traits: [ ]
 						}
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
 					}
-					id: "minecraft:bread"
+					id: "tfc:food/wheat_bread"
 				}
 				type: "item"
 			}]
@@ -718,7 +725,7 @@
 			}]
 			title: "Soup"
 			x: -14.0d
-			y: -0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["098BC649D84839B6"]
@@ -922,6 +929,80 @@
 			title: "Advanced Greenhouse"
 			x: -9.5d
 			y: -8.0d
+		}
+		{
+			dependencies: ["7DC26004B2D800A9"]
+			id: "24BB2235242CD775"
+			tasks: [{
+				id: "4FB796F32E966EFE"
+				title: "Kettle"
+				type: "custom"
+			}]
+			title: "TODO: Kettle??"
+			x: -12.5d
+			y: 0.5d
+		}
+		{
+			id: "4163F9F208F4E3F5"
+			tasks: [{
+				id: "0AE7DB60DB171C7F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: 1680000L
+							traits: [ ]
+						}
+					}
+					id: "tfc:jar/blackberry"
+				}
+				type: "item"
+			}]
+			x: -14.0d
+			y: -0.5d
+		}
+		{
+			id: "51C5470FC5168594"
+			tasks: [{
+				id: "059D349CB2C9B18C"
+				title: "TODO: Leather product??"
+				type: "custom"
+			}]
+			x: -5.0d
+			y: 10.0d
+		}
+		{
+			id: "2CDC1A97777826E0"
+			tasks: [{
+				id: "5A181F03BBD2137A"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			title: "Fertilizers"
+			x: -6.5d
+			y: -3.5d
+		}
+		{
+			id: "7A95E44400530D7B"
+			tasks: [{
+				id: "6A0DFCC840B6BD30"
+				item: "tfc:bucket/vinegar"
+				type: "item"
+			}]
+			title: "TODO: Vines and Vodkas"
+			x: -11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["69D8991DDD18366A"]
+			id: "4CC184167C863601"
+			tasks: [{
+				id: "2E4C5F47C8808DB6"
+				item: "firmalife:jar/honey"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -3.5d
 		}
 	]
 	title: "Farming"

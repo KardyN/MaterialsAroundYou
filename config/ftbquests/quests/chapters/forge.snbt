@@ -30,7 +30,7 @@
 							ticks: 0L
 						}
 					}
-					id: "minecraft:copper_ingot"
+					id: "tfc:metal/ingot/copper"
 				}
 				type: "item"
 			}]
@@ -532,6 +532,16 @@
 			}]
 			x: 1.0d
 			y: 5.5d
+		}
+		{
+			id: "70D8565CDDF60248"
+			tasks: [{
+				id: "69F3EBC03DC6374F"
+				title: "TODO??"
+				type: "custom"
+			}]
+			x: 4.0d
+			y: 5.0d
 		}
 	]
 	title: "Forge"
