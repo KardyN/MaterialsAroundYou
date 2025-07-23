@@ -15,4 +15,10 @@ StartupEvents.registry("fluid", (event) => {
     .thickTexture("#7f9789")
     .noBlock()
     .noBucket();
+  event
+    .create("boiled_water")
+    .stillTexture("minecraft:block/water_still")
+    .flowingTexture("minecraft:block/water_flow")
+    .color("#3F76E4")
+    .bucketColor("#3F76E4");
 });

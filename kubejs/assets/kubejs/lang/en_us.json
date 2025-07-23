@@ -161,5 +161,8 @@
   "metal.tfc.uraninite": "Uraninite",
   "metal.tfc.chromite": "Chromite",
 
-  "tfc.jei.lumber_knapping": "Lumber Knapping Recipe"
+  "tfc.jei.lumber_knapping": "Lumber Knapping Recipe",
+
+  "fluid.kubejs.water.boiled": "Boiled Water",
+  "item.kubejs.water.boiled_bucket": "Boiled Water Bucket"
 }
