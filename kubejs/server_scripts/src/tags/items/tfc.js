@@ -13,4 +13,5 @@ ServerEvents.tags("item", (event) => {
   event.add("tfc:lumber", /.+treated_wood_lumber/);
   event.add("tfc:lumber_knapping", /.*lumber.*/);
   event.add("tfc:any_knapping", /.*lumber.*/);
+  event.remove("tfc:axles", /afc:wood\/encased_axle\/.+/);
 });
