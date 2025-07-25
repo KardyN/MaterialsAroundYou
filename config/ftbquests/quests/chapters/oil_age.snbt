@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "blacksteel__oil"
+	filename: "oil_age"
 	group: "1F7A98B2F2F3E985"
 	icon: "pneumaticcraft:oil_bucket"
 	id: "0BCCC21B3A68214E"

@@ -1,0 +1,302 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ores_processing"
+	group: "4973B82BE2AB46A8"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f
+				ticks: 0L
+			}
+		}
+		id: "tfc:ore/rich_tetrahedrite"
+	}
+	id: "672DA51081B4C28C"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["29B54FAB02DE3E0D"]
+			description: [""]
+			icon: "tfc:quern"
+			id: "040D411E1996731C"
+			tasks: [
+				{
+					id: "3DEB08BAE33D0837"
+					item: {
+						Count: 1
+						id: "tfc:handstone"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B6BDB63BDA81018"
+					item: "tfc:quern"
+					type: "item"
+				}
+			]
+			title: "Quern"
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["22CEBF4458C8E6A9"]
+			id: "13769A224ED6A325"
+			tasks: [{
+				id: "757EDDD23883877E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:sluices"
+					}
+				}
+				type: "item"
+			}]
+			title: "Sluice"
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["040D411E1996731C"]
+			id: "22CEBF4458C8E6A9"
+			tasks: [{
+				id: "408C0CF343A624ED"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "may:dirty_dusts"
+					}
+				}
+				type: "item"
+			}]
+			title: "Dirty Dusts"
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["13769A224ED6A325"]
+			id: "6E1399D1E455E2CB"
+			tasks: [{
+				id: "3049007F956F0C11"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "tfc:gem_powders"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "tfc:powders"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:or"
+										tag: {
+											items: [
+												{
+													Count: 1b
+													id: "minecraft:sugar"
+												}
+												{
+													Count: 1b
+													id: "tfc:powder/coke"
+												}
+												{
+													Count: 1b
+													id: "tfc:powder/salt"
+												}
+												{
+													Count: 1b
+													id: "tfc:powder/sylvite"
+												}
+												{
+													Count: 1b
+													id: "tfc:powder/charcoal"
+												}
+												{
+													Count: 1b
+													ForgeCaps: {
+														"tfc:item_heat": {
+															heat: 0.0f
+															ticks: 0L
+														}
+													}
+													id: "tfc:powder/flux"
+												}
+												{
+													Count: 1b
+													id: "tfc:powder/lime"
+												}
+												{
+													Count: 1b
+													id: "tfc:powder/wood_ash"
+												}
+												{
+													Count: 1b
+													id: "tfc:powder/saltpeter"
+												}
+												{
+													Count: 1b
+													id: "tfc:powder/soda_ash"
+												}
+												{
+													Count: 1b
+													id: "minecraft:blaze_powder"
+												}
+												{
+													Count: 1b
+													id: "minecraft:glowstone_dust"
+												}
+												{
+													Count: 1b
+													id: "minecraft:redstone"
+												}
+												{
+													Count: 1b
+													id: "minecraft:gunpowder"
+												}
+												{
+													Count: 1b
+													id: "tfc:powder/sulfur"
+												}
+												{
+													Count: 1b
+													id: "tfc:powder/graphite"
+												}
+												{
+													Count: 1b
+													id: "tfc:powder/kaolinite"
+												}
+												{
+													Count: 1b
+													id: "kubejs:powder/cryolite"
+												}
+											]
+										}
+									}]
+								}
+							}
+						]
+					}
+				}
+				title: "Powders"
+				type: "item"
+			}]
+			title: "Powders"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4D5B990EA4CE47EA"]
+			id: "2E787B4424D3F01D"
+			tasks: [{
+				id: "08FB08F589B9734F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "may:briquettes"
+					}
+				}
+				type: "item"
+			}]
+			title: "Compacting: Briquettes"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6E1399D1E455E2CB"]
+			id: "4D5B990EA4CE47EA"
+			tasks: [{
+				id: "5DA193CA4C736DC2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "may:piles"
+					}
+				}
+				type: "item"
+			}]
+			title: "Compacting: Piles"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["040D411E1996731C"]
+			id: "60ED534800A2168D"
+			tasks: [
+				{
+					id: "1DAF920F0F1CE702"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:axles"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "29D32D65FB826C0A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:water_wheels"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Mechanical Power"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["60ED534800A2168D"]
+			id: "2B827812630F8A1A"
+			tasks: [{
+				id: "040AF38B5577F858"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:default_windmill_blades"
+					}
+				}
+				type: "item"
+			}]
+			title: "Windmill"
+			x: -4.5d
+			y: 1.0d
+		}
+	]
+	title: "Ores Processing"
+}

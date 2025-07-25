@@ -30,8 +30,6 @@
 				id: "tfc:metal/anvil/copper"
 			}
 			id: "76142216D24338FE"
-			shape: "gear"
-			size: 2.0d
 			tasks: [{
 				id: "2EC8F0B548FD37C2"
 				item: {
@@ -47,7 +45,7 @@
 				type: "item"
 			}]
 			title: "Copper Anvil"
-			x: 4.0d
+			x: 3.5d
 			y: 1.5d
 		}
 		{
@@ -298,6 +296,183 @@
 			title: "Flux Stones"
 			x: -1.0d
 			y: 3.0d
+		}
+		{
+			id: "62523937EBCC53BF"
+			tasks: [{
+				id: "5EE993AE9D6540DA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/saw/copper"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/saw/bismuth_bronze"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/saw/black_bronze"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Saw"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["62523937EBCC53BF"]
+			id: "11E09B425935ABFE"
+			tasks: [{
+				count: 16L
+				id: "0D1DE877D626521A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:lumber"
+					}
+				}
+				title: "Lumber"
+				type: "item"
+			}]
+			title: "Lumber"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["11E09B425935ABFE"]
+			id: "29A6D2FE4F3AD73A"
+			tasks: [{
+				id: "21D48EBEC29C11D5"
+				item: "tfc:wooden_bucket"
+				type: "item"
+			}]
+			title: "Wooden Bucket"
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["11E09B425935ABFE"]
+			id: "1851DE318031D1D6"
+			tasks: [{
+				id: "5D6E0CE9A288079A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:barrels"
+					}
+				}
+				title: "Barrel"
+				type: "item"
+			}]
+			title: "Barrel"
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["11E09B425935ABFE"]
+			id: "55DE17ECAE51C9EE"
+			tasks: [{
+				id: "771B05438F871F75"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:sluices"
+					}
+				}
+				type: "item"
+			}]
+			title: "Sluice"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["76142216D24338FE"]
+			id: "469B4B63209610CE"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "38C6FAF2F9F8CABE"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/ingot/black_bronze"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/ingot/bismuth_bronze"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/ingot/bronze"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Bronze Age"
+			x: 6.0d
+			y: 1.5d
 		}
 	]
 	title: "Copper Age"

@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "mining"
 	group: "4973B82BE2AB46A8"
+	hide_quest_until_deps_complete: true
 	icon: {
 		Count: 1
 		id: "immersiveengineering:pickaxe_steel"
@@ -15,6 +16,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["29B54FAB02DE3E0D"]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -51,6 +53,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["29B54FAB02DE3E0D"]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -324,6 +327,7 @@
 			dependencies: [
 				"23802C9DF7121654"
 				"3A04CF4E38B05335"
+				"11E09B425935ABFE"
 			]
 			dependency_requirement: "one_completed"
 			icon: "tfc:wood/support/oak"
@@ -393,6 +397,7 @@
 		}
 		{
 			id: "6F3A2D0962A56135"
+			invisible: true
 			tasks: [{
 				id: "65128314E633691F"
 				title: "TODO: Drills?"

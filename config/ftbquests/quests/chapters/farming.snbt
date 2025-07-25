@@ -26,7 +26,7 @@
 					Count: 1
 					ForgeCaps: {
 						"tfc:food": {
-							creationDate: 210000L
+							creationDate: -9223372036854775808L
 							traits: [ ]
 						}
 					}
@@ -213,18 +213,26 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["068265674F1A47D9"]
+			dependencies: [
+				"068265674F1A47D9"
+				"11E09B425935ABFE"
+			]
+			icon: "tfc:nest_box"
 			id: "731AA11C29588B3C"
 			tasks: [{
 				id: "1ACAE54F9F5AF26B"
 				item: "tfc:nest_box"
 				type: "item"
 			}]
+			title: "Nest Box"
 			x: -5.0d
 			y: -2.0d
 		}
 		{
-			dependencies: ["23B641FC902B77AD"]
+			dependencies: [
+				"23B641FC902B77AD"
+				"11E09B425935ABFE"
+			]
 			id: "69D8991DDD18366A"
 			tasks: [{
 				id: "0B6E6DEC934FC22A"
@@ -943,21 +951,20 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["798D00CFC7A33E4C"]
 			id: "4163F9F208F4E3F5"
 			tasks: [{
 				id: "0AE7DB60DB171C7F"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						"tfc:food": {
-							creationDate: 1680000L
-							traits: [ ]
-						}
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:sealed_jars"
 					}
-					id: "tfc:jar/blackberry"
 				}
 				type: "item"
 			}]
+			title: "Jam"
 			x: -14.0d
 			y: -0.5d
 		}
@@ -972,6 +979,8 @@
 			y: 10.0d
 		}
 		{
+			dependencies: ["57450CDA1ABE0DC7"]
+			icon: "minecraft:bone_meal"
 			id: "2CDC1A97777826E0"
 			tasks: [{
 				id: "5A181F03BBD2137A"

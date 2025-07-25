@@ -7,14 +7,14 @@
 		Count: 1
 		ForgeCaps: {
 			"tfc:food": {
-				creationDate: 1680000L
+				creationDate: -9223372036854775808L
 				traits: [ ]
 			}
 		}
 		id: "farmersdelight:chicken_sandwich"
 	}
 	id: "0FDE09202F7CF2DD"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [ ]
 	title: "Food"

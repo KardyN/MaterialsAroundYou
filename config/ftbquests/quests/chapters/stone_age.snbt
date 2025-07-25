@@ -4,7 +4,6 @@
 	disable_toast: true
 	filename: "stone_age"
 	group: "1F7A98B2F2F3E985"
-	hide_quest_until_deps_complete: true
 	icon: "tfc:rock/loose/granite"
 	id: "615435B2725727CF"
 	order_index: 0
@@ -463,7 +462,7 @@
 				}
 				type: "item"
 			}]
-			title: "Copper"
+			title: "Copper Age"
 			x: 13.0d
 			y: -1.0d
 		}

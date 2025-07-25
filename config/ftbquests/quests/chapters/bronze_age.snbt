@@ -19,19 +19,20 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["392D0D2BE9080CCF"]
+			icon: "tfc:bloomery"
 			id: "023378E10A023AFE"
-			shape: "gear"
-			size: 2.0d
 			tasks: [{
 				id: "19C4D83DA05F8966"
 				item: "tfc:bloomery"
 				type: "item"
 			}]
-			x: 2.5d
+			title: "Bloomery"
+			x: -4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["76142216D24338FE"]
+			dependencies: ["469B4B63209610CE"]
 			id: "392D0D2BE9080CCF"
 			tasks: [{
 				id: "7BD6FAFA62A02206"
@@ -75,7 +76,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
+			title: "Bronze Anvil"
+			x: -5.5d
 			y: 0.0d
 		}
 		{
@@ -97,7 +99,100 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["023378E10A023AFE"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:raw_iron_bloom"
+			}
+			id: "034F982B448DCCBE"
+			tasks: [{
+				id: "30573BEEF51441E2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:raw_iron_bloom"
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["034F982B448DCCBE"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:refined_iron_bloom"
+			}
+			id: "0735D7A13B0923EA"
+			tasks: [{
+				id: "4862BE2D1A1C723B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:refined_iron_bloom"
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0735D7A13B0923EA"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/ingot/wrought_iron"
+			}
+			id: "71FEB557BAFC042C"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "2429FBA60137A31A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/wrought_iron"
+				}
+				type: "item"
+			}]
+			title: "Iron Age"
+			x: 1.5d
 			y: 0.0d
 		}
 	]
