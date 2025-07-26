@@ -7,6 +7,16 @@
 	id: "7C06954096A65B2D"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "46EC9EF35A235DDA"
+		tasks: [{
+			id: "185131241A36AC39"
+			title: "Let's go!"
+			type: "checkmark"
+		}]
+		title: "Adventure Awaits!"
+		x: 0.5d
+		y: 2.0d
+	}]
 	title: "About The Modpack"
 }

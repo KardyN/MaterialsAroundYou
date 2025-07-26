@@ -396,6 +396,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["2F2AA5C78E8498CD"]
 			id: "6F3A2D0962A56135"
 			invisible: true
 			tasks: [{

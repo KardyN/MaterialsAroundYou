@@ -1,0 +1,12 @@
+{
+	id: "0D58A31FA67C86BC"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 32, item: "tfc:mud_bricks/silt" }
+		{ count: 32, item: "tfc:mud_bricks/loam" }
+		{ count: 32, item: "tfc:mud_bricks/sandy_loam" }
+		{ count: 32, item: "tfc:mud_bricks/silty_loam" }
+	]
+	title: "Mud Bricks"
+}

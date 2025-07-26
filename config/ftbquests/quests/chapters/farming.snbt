@@ -1,4 +1,5 @@
 {
+	autofocus_id: "0856F166D8DCD855"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "farming"
@@ -18,7 +19,11 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["23B641FC902B77AD"]
+			dependencies: ["699BA015E84655F0"]
+			description: [
+				"Raw cereals will spoil very soon. To prevent it, just use the knife to get grains and some straw."
+				"Grains will spoil very slow especially if you put them into sealed Large Vessel."
+			]
 			id: "6149CA516931EC96"
 			tasks: [{
 				count: 8L
@@ -104,7 +109,7 @@
 				title: "Grains"
 				type: "item"
 			}]
-			title: "Animal food"
+			title: "Grain"
 			x: -8.0d
 			y: -0.5d
 		}
@@ -206,11 +211,19 @@
 			id: "4959DC7914B7F789"
 			tasks: [{
 				id: "665407044DC90CE2"
-				item: "tfc:wood/barrel/douglas_fir"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:barrels"
+					}
+				}
+				title: "Barrels"
 				type: "item"
 			}]
-			x: -13.0d
-			y: -3.0d
+			title: "Barrel"
+			x: -14.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -229,10 +242,8 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"23B641FC902B77AD"
-				"11E09B425935ABFE"
-			]
+			dependencies: ["11E09B425935ABFE"]
+			icon: "firmalife:beehive"
 			id: "69D8991DDD18366A"
 			tasks: [{
 				id: "0B6E6DEC934FC22A"
@@ -240,8 +251,8 @@
 				type: "item"
 			}]
 			title: "Beehive"
-			x: -9.5d
-			y: -2.0d
+			x: -11.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["14AADB481BAD9AAD"]
@@ -252,8 +263,8 @@
 				type: "item"
 			}]
 			title: "Basic Greenhouse"
-			x: -9.5d
-			y: -6.5d
+			x: -11.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["068265674F1A47D9"]
@@ -299,18 +310,102 @@
 				id: "7E2ED74724C212C6"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						"tfc:food": {
-							creationDate: 252000L
-							traits: [ ]
-						}
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "tfc:foods/raw_meats"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "firmalife:foods/raw_fish"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "forge:raw_fishes"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:or"
+										tag: {
+											items: [
+												{
+													Count: 1b
+													ForgeCaps: {
+														"tfc:food": {
+															creationDate: 2352000L
+															traits: [ ]
+														}
+														"tfc:item_heat": {
+															heat: 0.0f
+															ticks: 0L
+														}
+													}
+													id: "farmersdelight:minced_beef"
+												}
+												{
+													Count: 1b
+													ForgeCaps: {
+														"tfc:food": {
+															creationDate: 2352000L
+															traits: [ ]
+														}
+														"tfc:item_heat": {
+															heat: 0.0f
+															ticks: 0L
+														}
+													}
+													id: "tfc:food/calamari"
+												}
+												{
+													Count: 1b
+													ForgeCaps: {
+														"tfc:food": {
+															creationDate: 2352000L
+															traits: [ ]
+														}
+														"tfc:item_heat": {
+															heat: 0.0f
+															ticks: 0L
+														}
+													}
+													id: "tfc:food/frog_legs"
+												}
+											]
+										}
+									}]
+								}
+							}
+						]
 					}
-					id: "tfc:food/pork"
 				}
+				title: "Meats"
 				type: "item"
 			}]
 			title: "Meat"
@@ -407,14 +502,27 @@
 		{
 			dependencies: ["520EC155A25365F1"]
 			id: "15278CC6AEA26104"
-			tasks: [{
-				id: "561B69C05787F3C7"
-				item: "firmalife:oven_bottom"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "561B69C05787F3C7"
+					item: "firmalife:oven_bottom"
+					type: "item"
+				}
+				{
+					id: "120832D2E322DEE0"
+					item: "firmalife:oven_top"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "74FBD079BBC5AE92"
+					item: { Count: 2, id: "firmalife:oven_chimney" }
+					type: "item"
+				}
+			]
 			title: "Oven"
 			x: -9.5d
-			y: 5.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6149CA516931EC96"]
@@ -423,19 +531,17 @@
 				id: "70A9AB402FA71AB1"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						"tfc:food": {
-							creationDate: 258000L
-							traits: [ ]
-						}
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:foods/flour"
 					}
-					id: "tfc:food/barley_flour"
 				}
+				title: "Flours"
 				type: "item"
 			}]
 			title: "Flour"
 			x: -8.0d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
 			id: "28275BBA60478509"
@@ -445,11 +551,11 @@
 				type: "item"
 			}]
 			title: "Mixing Bowl"
-			x: -13.0d
-			y: -4.0d
+			x: -14.5d
+			y: -5.5d
 		}
 		{
-			dependencies: ["23B641FC902B77AD"]
+			dependencies: ["02DE14F0E3F5083A"]
 			id: "3686EE1F8D337CFC"
 			tasks: [{
 				id: "0E0F4AE2C6D67F46"
@@ -467,7 +573,7 @@
 			}]
 			title: "Fruits and berries"
 			x: -9.5d
-			y: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -483,7 +589,7 @@
 			}]
 			title: "Yeast starter"
 			x: -9.5d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -495,23 +601,17 @@
 				id: "2DB04CA845D606E3"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						"tfc:food": {
-							creationDate: 258000L
-							traits: [ ]
-						}
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:foods/dough"
 					}
-					id: "firmalife:food/rice_dough"
 				}
+				title: "Doughs"
 				type: "item"
 			}]
 			title: "Dough"
 			x: -9.5d
-			y: 4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["15278CC6AEA26104"]
@@ -530,29 +630,34 @@
 				id: "3E33C92828478D85"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						"tfc:food": {
-							creationDate: 1674000L
-							traits: [ ]
-						}
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "firmalife:foods/flatbreads"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "tfc:foods/breads"
+								}
+							}
+						]
 					}
-					id: "tfc:food/wheat_bread"
 				}
+				title: "Breads"
 				type: "item"
 			}]
 			title: "Bread"
 			x: -9.5d
-			y: 7.0d
+			y: 8.5d
 		}
 		{
-			dependencies: [
-				"343A88B9B1BC4832"
-				"09F863F516839226"
-			]
 			dependency_requirement: "one_completed"
 			icon: "farmersdelight:cutting_board"
 			id: "1372A70AAFB595AD"
@@ -562,11 +667,14 @@
 				type: "item"
 			}]
 			title: "Cutting board"
-			x: -8.0d
-			y: 8.5d
+			x: -14.5d
+			y: -6.5d
 		}
 		{
-			dependencies: ["1372A70AAFB595AD"]
+			dependencies: [
+				"343A88B9B1BC4832"
+				"09F863F516839226"
+			]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -617,10 +725,11 @@
 				type: "item"
 			}]
 			title: "Sandwich"
-			x: -8.0d
+			x: -6.5d
 			y: 10.0d
 		}
 		{
+			dependencies: ["0D3034BAC522694C"]
 			icon: "tfc:bucket/limewater"
 			id: "7E29EAC162DD477A"
 			tasks: [{
@@ -633,27 +742,21 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["23B641FC902B77AD"]
 			id: "4C98F5474CF5C8DE"
 			tasks: [{
 				id: "329C29D3BA57C503"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/fishing_rod/bismuth_bronze"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
+						value: "forge:fishing_rods"
 					}
 				}
+				title: "Fishing Rod"
 				type: "item"
 			}]
-			x: -14.0d
-			y: -3.5d
+			x: -15.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7DC26004B2D800A9"]
@@ -673,20 +776,15 @@
 				type: "item"
 			}]
 			title: "Grill"
-			x: -12.5d
-			y: -1.5d
+			x: -15.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["23B641FC902B77AD"]
+			dependencies: ["3C22F23867AB0AFC"]
 			icon: "tfc:firepit"
 			id: "7DC26004B2D800A9"
-			tasks: [{
-				id: "48480825194F1708"
-				title: "Got it!"
-				type: "checkmark"
-			}]
 			title: "Firepit"
-			x: -11.0d
+			x: -14.0d
 			y: -0.5d
 		}
 		{
@@ -698,7 +796,7 @@
 				type: "item"
 			}]
 			title: "Pot"
-			x: -12.5d
+			x: -15.5d
 			y: -0.5d
 		}
 		{
@@ -708,32 +806,17 @@
 				id: "6FCE45E68A89DFFE"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						"tfc:food": {
-							creationDate: -2L
-							foodData: {
-								dairy: 0.0f
-								decay: 0.0f
-								food: 0
-								fruit: 0.0f
-								grain: 0.0f
-								meat: 0.0f
-								sat: 0.0f
-								veg: 0.0f
-								water: 0.0f
-							}
-							ingredients: [ ]
-							traits: [ ]
-						}
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:soups"
 					}
-					id: "tfc:food/grain_soup"
-					tag: { }
 				}
+				title: "Soups"
 				type: "item"
 			}]
 			title: "Soup"
-			x: -14.0d
-			y: -1.5d
+			x: -17.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["098BC649D84839B6"]
@@ -745,8 +828,8 @@
 				type: "item"
 			}]
 			title: "Treated Lumber"
-			x: -9.5d
-			y: -5.0d
+			x: -11.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["098BC649D84839B6"]
@@ -757,8 +840,8 @@
 				type: "item"
 			}]
 			title: "Cellar"
-			x: -11.0d
-			y: -5.0d
+			x: -12.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["77BBADAAEA3CDEF0"]
@@ -770,8 +853,8 @@
 				type: "item"
 			}]
 			title: "Planters"
-			x: -8.0d
-			y: -9.5d
+			x: -9.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["4A7CF8B0A6445EC1"]
@@ -795,13 +878,13 @@
 				type: "item"
 			}]
 			title: "Watering Can"
-			x: -8.0d
-			y: -8.0d
+			x: -9.5d
+			y: -9.5d
 		}
 		{
 			dependencies: [
-				"2EE6F0C9673CF606"
 				"698BADE359485F58"
+				"6F1E5BFC1D5AF938"
 			]
 			dependency_requirement: "one_completed"
 			id: "1BE9AF9854820893"
@@ -811,7 +894,7 @@
 				type: "item"
 			}]
 			title: "Loom"
-			x: -2.0d
+			x: -0.5d
 			y: 1.0d
 		}
 		{
@@ -823,7 +906,7 @@
 				type: "item"
 			}]
 			title: "Silk Cloth"
-			x: -0.5d
+			x: 1.0d
 			y: 1.0d
 		}
 		{
@@ -836,7 +919,7 @@
 				type: "item"
 			}]
 			title: "Cheesecloth"
-			x: 1.0d
+			x: 2.5d
 			y: 1.0d
 		}
 		{
@@ -852,7 +935,7 @@
 				type: "item"
 			}]
 			title: "Cheese"
-			x: 2.5d
+			x: 4.0d
 			y: -0.5d
 		}
 		{
@@ -862,8 +945,8 @@
 				item: "tfc:jute_fiber"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 2.5d
+			x: -0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["69D8991DDD18366A"]
@@ -875,8 +958,8 @@
 				type: "item"
 			}]
 			title: "Beeswax"
-			x: -9.5d
-			y: -3.5d
+			x: -11.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["1BE9AF9854820893"]
@@ -887,7 +970,7 @@
 				type: "item"
 			}]
 			title: "Cloth"
-			x: -0.5d
+			x: 1.0d
 			y: 2.5d
 		}
 		{
@@ -911,8 +994,8 @@
 				type: "item"
 			}]
 			title: "Cellar Capacity"
-			x: -11.0d
-			y: -6.5d
+			x: -12.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["58C5C9159AD2857C"]
@@ -923,8 +1006,8 @@
 				type: "item"
 			}]
 			title: "Modern Greenhouse"
-			x: -9.5d
-			y: -9.5d
+			x: -11.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["4A7CF8B0A6445EC1"]
@@ -935,8 +1018,8 @@
 				type: "item"
 			}]
 			title: "Advanced Greenhouse"
-			x: -9.5d
-			y: -8.0d
+			x: -11.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["7DC26004B2D800A9"]
@@ -946,9 +1029,9 @@
 				title: "Kettle"
 				type: "custom"
 			}]
-			title: "TODO: Kettle??"
-			x: -12.5d
-			y: 0.5d
+			title: "Kettle"
+			x: -15.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["798D00CFC7A33E4C"]
@@ -965,18 +1048,8 @@
 				type: "item"
 			}]
 			title: "Jam"
-			x: -14.0d
+			x: -17.0d
 			y: -0.5d
-		}
-		{
-			id: "51C5470FC5168594"
-			tasks: [{
-				id: "059D349CB2C9B18C"
-				title: "TODO: Leather product??"
-				type: "custom"
-			}]
-			x: -5.0d
-			y: 10.0d
 		}
 		{
 			dependencies: ["57450CDA1ABE0DC7"]
@@ -1000,18 +1073,271 @@
 			}]
 			title: "TODO: Vines and Vodkas"
 			x: -11.0d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["69D8991DDD18366A"]
+			icon: "firmalife:jar/honey"
 			id: "4CC184167C863601"
 			tasks: [{
 				id: "2E4C5F47C8808DB6"
 				item: "firmalife:jar/honey"
 				type: "item"
 			}]
+			title: "Honey"
+			x: -12.5d
+			y: -5.0d
+		}
+		{
+			id: "64A7506BC6E0F53B"
+			tasks: [
+				{
+					id: "718204B9F0017FFB"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:sewing_tables"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6ACD682B73727079"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:sewing_needles"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Sewing"
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["19D13398DCC33807"]
+			id: "2C31B21D30B8B7BA"
+			tasks: [{
+				id: "4D4A0839E7C88E0D"
+				item: {
+					Count: 1
+					id: "waterflasks:leather_flask"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Flask"
+			x: -5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["13F48469301627C2"]
+			description: [
+				"You can find a lot of wild crops around. Not good, but at least it is edible."
+				""
+				"Sometimes you will need a knife to collect yield from a crop."
+			]
+			icon: "tfc:wild_crop/wheat"
+			id: "0856F166D8DCD855"
+			tasks: [{
+				id: "4B01EACA700115AC"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "tfc:seeds"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										ForgeCaps: {
+											"tfc:food": {
+												creationDate: 102000L
+												traits: [ ]
+											}
+										}
+										id: "farmersdelight:rice"
+									}]
+								}
+							}
+						]
+					}
+				}
+				title: "Seeds"
+				type: "item"
+			}]
+			title: "Wild Crops"
 			x: -11.0d
-			y: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0856F166D8DCD855"]
+			description: ["Probably it's a good idea to start a farm and store some food before the winter comes."]
+			icon: {
+				Count: 1
+				id: "tfc:stone/hoe/igneous_extrusive"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "699BA015E84655F0"
+			tasks: [{
+				id: "2697CC6BEE2B51DE"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tfc:stone/hoe/igneous_extrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/hoe/metamorphic"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/hoe/sedimentary"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/hoe/igneous_intrusive"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Hoes"
+				type: "item"
+			}]
+			title: "First Tools: Hoe"
+			x: -9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["13F48469301627C2"]
+			id: "02DE14F0E3F5083A"
+			tasks: [{
+				id: "44A084E3BBB8B376"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:wild_fruits"
+					}
+				}
+				type: "item"
+			}]
+			title: "Saplings"
+			x: -11.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["15278CC6AEA26104"]
+			description: [
+				"You can also cook more dishes like apple or pumpkin pies or even pizzas!"
+				"Go check &6Collections/Food&r chapter"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:food": {
+						creationDate: -2L
+						foodData: {
+							dairy: 0.0f
+							decay: 0.0f
+							food: 0
+							fruit: 0.0f
+							grain: 0.0f
+							meat: 0.0f
+							sat: 0.0f
+							veg: 0.0f
+							water: 0.0f
+						}
+						ingredients: [ ]
+						traits: [ ]
+					}
+				}
+				id: "firmalife:food/cooked_pizza"
+			}
+			id: "02C6B8106CA895B0"
+			tasks: [{
+				id: "026A794041186863"
+				title: "Got it!"
+				type: "checkmark"
+			}]
+			title: "Pie, pizza and more"
+			x: -11.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["24BB2235242CD775"]
+			id: "5D1AFCC878A2E274"
+			tasks: [
+				{
+					id: "74B7D1405D31B178"
+					item: {
+						Count: 1
+						id: "farmersdelight:skillet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0DBC34F641ED7C28"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+			]
+			title: "Cookware"
+			x: -17.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2EE6F0C9673CF606"]
+			id: "6F1E5BFC1D5AF938"
+			tasks: [{
+				id: "19144C28B2D0E39F"
+				item: {
+					Count: 1
+					id: "tfc:spindle"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
 		}
 	]
 	title: "Farming"

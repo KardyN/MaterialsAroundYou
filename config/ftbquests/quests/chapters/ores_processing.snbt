@@ -249,20 +249,10 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["040D411E1996731C"]
+			dependencies: ["69751D73CC834A6A"]
+			icon: "tfc:wood/water_wheel/ash"
 			id: "60ED534800A2168D"
 			tasks: [
-				{
-					id: "1DAF920F0F1CE702"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "tfc:axles"
-						}
-					}
-					type: "item"
-				}
 				{
 					id: "29D32D65FB826C0A"
 					item: {
@@ -274,10 +264,21 @@
 					}
 					type: "item"
 				}
+				{
+					id: "7AE57ADE188021C7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:gear_boxes"
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "Mechanical Power"
-			x: -4.5d
-			y: -0.5d
+			x: -6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["60ED534800A2168D"]
@@ -294,8 +295,132 @@
 				type: "item"
 			}]
 			title: "Windmill"
-			x: -4.5d
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["040D411E1996731C"]
+			id: "2BD4DFB1CCCB03E2"
+			tasks: [{
+				id: "1325C1803E2871F2"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["040D411E1996731C"]
+			id: "1293EE67D4CCBB86"
+			tasks: [{
+				id: "01BFA4F82313DE86"
+				item: "tfc:glue"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"2BD4DFB1CCCB03E2"
+				"1293EE67D4CCBB86"
+			]
+			id: "69751D73CC834A6A"
+			tasks: [{
+				id: "4141862E0A35F1E2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:axles"
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
 			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0D5D250D7D353B29"
+				"0D459C0CC21CF528"
+			]
+			icon: "tfc:crucible"
+			id: "0E47B42D4FBE6480"
+			tasks: [{
+				id: "3FB87E985B30282F"
+				item: "tfc:crucible"
+				type: "item"
+			}]
+			title: "Crucible"
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2E787B4424D3F01D"]
+			icon: "tfc:powder/kaolinite"
+			id: "0D459C0CC21CF528"
+			tasks: [{
+				count: 5L
+				id: "2D402FA57E7BA16F"
+				item: "tfc:powder/kaolinite"
+				type: "item"
+			}]
+			title: "Kaolinite Powder"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2E787B4424D3F01D"]
+			icon: "tfc:powder/graphite"
+			id: "0D5D250D7D353B29"
+			tasks: [{
+				count: 5L
+				id: "2595F7978FEB7DD2"
+				item: "tfc:powder/graphite"
+				type: "item"
+			}]
+			title: "Graphite Powder"
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0E47B42D4FBE6480"]
+			id: "75B3CD020A4C68A7"
+			tasks: [{
+				id: "48202187F26AE3FC"
+				title: "TODO: Casting Channels"
+				type: "custom"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["25DC366C64A4CE4B"]
+			icon: "immersiveengineering:cokebrick"
+			id: "36F2106C10C58AB8"
+			tasks: [
+				{
+					count: 27L
+					id: "50AB5700D44ED557"
+					item: "immersiveengineering:cokebrick"
+					type: "item"
+				}
+				{
+					id: "74DD0AD308803F60"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Coke Oven"
+			x: -4.5d
+			y: -4.5d
 		}
 	]
 	title: "Ores Processing"

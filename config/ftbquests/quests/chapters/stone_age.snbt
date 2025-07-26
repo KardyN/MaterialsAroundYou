@@ -69,7 +69,7 @@
 			dependencies: ["66957E1A37C5468C"]
 			description: [
 				"Now, try to knap some basic tools heads."
-				"Click in the air with at least 2 stones in the hand. Check recipes in the JEI."
+				"Click in the air with at least &32 Rocks&r in the hand. Check recipes in the JEI."
 			]
 			id: "28EFE456A7B11D06"
 			tasks: [{
@@ -161,9 +161,9 @@
 		{
 			dependencies: ["2430CD512F1CF76B"]
 			description: [
-				"Clay is essential resource for early-game tools crafting."
+				"&3Clay&r is essential resource for early-game tools crafting."
 				""
-				"Try to find some on rivers shores, WAILA or minimap! "
+				"Try to find some on the hillsides, rivers shores, or try look on WAILA or minimap! "
 			]
 			id: "2CFE4433B67D7795"
 			rewards: [{
@@ -184,7 +184,7 @@
 		}
 		{
 			dependencies: ["2CFE4433B67D7795"]
-			description: ["To make some decent tool for early game, you will need clay molds to pour melted metal in."]
+			description: ["To make some decent tool for early game, you will need &3Clay Molds&r to pour melted metal in."]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -300,7 +300,7 @@
 		{
 			dependencies: ["2CFE4433B67D7795"]
 			description: [
-				"Jug is useful to keep with you and drink from."
+				"&3Jug&r is useful to keep with you and drink from."
 				"It holds some water for you not to thirst!"
 			]
 			id: "62A464FC854D802D"
@@ -320,11 +320,11 @@
 			}]
 			title: "Jug"
 			x: 6.0d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2CFE4433B67D7795"]
-			description: ["Holds some items inside.\\nMay be sealed, so the food will spoil slower"]
+			description: ["Holds some items inside.\\nMay be sealed, so the food will spoil slower!"]
 			id: "05690465F069F363"
 			tasks: [{
 				id: "59D21CD10EDB6F0E"
@@ -342,7 +342,7 @@
 			}]
 			title: "Large Vessel"
 			x: 6.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -354,9 +354,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Dig up one block pit. Put there items to fire using 'V' (by default). You can put up to 4 small or 1 big item in the pit."
+				"Dig up one block pit. Put there items to fire &eusing 'V'&r (by default). You can put up to 4 small or 1 big item in the pit."
 				""
-				"Right-click pit 8 times with straw and then 8 times with logs. Then hold right-click with Firestarter to light it up!"
+				"Right-click pit 8 times with straw and then 8 times with logs. Then hold right-click with &3Firestarter&r to light it up!"
 				""
 				"Watch out for spreading fire!"
 			]
@@ -393,13 +393,21 @@
 		{
 			dependencies: ["5088FE89AA482117"]
 			description: [
-				"Sometimes ores are hard to find. Use a pan then!"
+				"We still cannot mine an ore. But there are some &3Ore Powders&r in the common &3Gravel&r!"
+				"Try use a &3Pan&r to obtain &3Ore Powder&r!"
 				""
-				"Find some water and some gravel or even ore deposits in the river. Click a block with a pan, then hold RMB while standing in the water."
-				"There it is! Shiny! "
+				"Find some water and some &3Gravel&r or better - &3Ore Deposits&r in the river."
+				"Click a block with a &3Pan&r, then hold RMB while standing in the water."
+				""
 			]
 			icon: "tfc:pan/empty"
 			id: "636C659C4A65C556"
+			rewards: [{
+				count: 4
+				id: "09B94D17C67F0054"
+				item: "tfc:deposit/native_copper/shale"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "0F8AC40B94BA44A5"
@@ -429,11 +437,13 @@
 			dependencies: ["2164F89ED1657624"]
 			dependency_requirement: "one_completed"
 			description: [
-				"Grab a multiple of 100mb of copper, put it into the vessel. Put the vessel into the pit kiln, fill and fire it up!"
+				"Grab a multiple of &3100mb of Copper&r, put it into the &3Vessel&r (depending on the count of items you want to make). Put the &3Vessel&r into the &3Pit Kiln&r, fill and fire it up!"
 				""
-				"Don't forget about a pit. Immediately after the pit went out - grab the vessel, open it with right-click. Put any fired mold in the slot and watch the copper flow!"
+				"Don't forget about a pit! Molten metal will lose it's temperature with time after the pit goes out. So, grab the &3Vessel&r as soon as the pit is done, open it's interface via RMB. Place any &3Fired Mold&r in the Vessel slot and watch the metal flow!"
 				""
-				"Congrats, now you have a copper tool or whatever!"
+				"Congrats, now you have your &cfirst pickaxe&r!"
+				""
+				"&8TIP: if you want to proceed with Bronze tools - you can just melt the pickaxe or it's head alone to get your 100mb of Copper back.&r"
 			]
 			icon: {
 				Count: 1
@@ -446,6 +456,20 @@
 				id: "tfc:metal/ingot/copper"
 			}
 			id: "29B54FAB02DE3E0D"
+			rewards: [{
+				id: "56FAB8F46A429FA8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: 2442000L
+							traits: [ ]
+						}
+					}
+					id: "farmersdelight:roast_chicken_block"
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
@@ -463,152 +487,13 @@
 				type: "item"
 			}]
 			title: "Copper Age"
-			x: 13.0d
+			x: 14.0d
 			y: -1.0d
-		}
-		{
-			dependencies: [
-				"20DF0FF5E072E0DD"
-				"66957E1A37C5468C"
-			]
-			description: ["Probably it's a good idea to start a farm and store some food before the winter comes."]
-			icon: {
-				Count: 1
-				id: "tfc:stone/hoe/igneous_extrusive"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "58BB4A24361CE43C"
-			tasks: [
-				{
-					id: "7566475394E14645"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "tfc:stone/hoe_head/igneous_extrusive"
-								}
-								{
-									Count: 1b
-									id: "tfc:stone/hoe_head/igneous_intrusive"
-								}
-								{
-									Count: 1b
-									id: "tfc:stone/hoe_head/metamorphic"
-								}
-								{
-									Count: 1b
-									id: "tfc:stone/hoe_head/sedimentary"
-								}
-							]
-						}
-					}
-					optional_task: true
-					title: "Hoe heads"
-					type: "item"
-				}
-				{
-					id: "513456B69D095A4B"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "tfc:stone/hoe/igneous_extrusive"
-									tag: {
-										Damage: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "tfc:stone/hoe/metamorphic"
-									tag: {
-										Damage: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "tfc:stone/hoe/sedimentary"
-									tag: {
-										Damage: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "tfc:stone/hoe/igneous_intrusive"
-									tag: {
-										Damage: 0
-									}
-								}
-							]
-						}
-					}
-					title: "Hoes"
-					type: "item"
-				}
-			]
-			title: "Farming Time"
-			x: -3.5d
-			y: 6.5d
-		}
-		{
-			description: [
-				"You can find a lot of wild crops around. Not good, but at least it is edible."
-				""
-				"Sometimes you will need a knife to collect yield from a crop."
-			]
-			icon: "tfc:wild_crop/wheat"
-			id: "20DF0FF5E072E0DD"
-			tasks: [{
-				id: "4D2FF819F53D9B8E"
-				item: {
-					Count: 1
-					id: "itemfilters:and"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "itemfilters:tag"
-								tag: {
-									value: "tfc:seeds"
-								}
-							}
-							{
-								Count: 1b
-								id: "itemfilters:not"
-								tag: {
-									items: [{
-										Count: 1b
-										ForgeCaps: {
-											"tfc:food": {
-												creationDate: 102000L
-												traits: [ ]
-											}
-										}
-										id: "farmersdelight:rice"
-									}]
-								}
-							}
-						]
-					}
-				}
-				title: "Seeds"
-				type: "item"
-			}]
-			title: "Wild Crops"
-			x: -5.0d
-			y: 7.0d
 		}
 		{
 			dependencies: ["66957E1A37C5468C"]
 			description: [
-				"The javelin makes more damage, has better range and you even can throw it!"
+				"The javelin makes more damage than a knife, has better range and you even can throw it!"
 				"Suits the best for hunting!"
 				""
 				"But watch out for predators!"
@@ -621,101 +506,53 @@
 				}
 			}
 			id: "412981055399DAAA"
-			tasks: [
-				{
-					id: "33E286FF6403C441"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "tfc:stone/javelin_head/igneous_extrusive"
+			tasks: [{
+				id: "5EB0EEA7B93A319E"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tfc:stone/javelin/igneous_extrusive"
+								tag: {
+									Damage: 0
 								}
-								{
-									Count: 1b
-									id: "tfc:stone/javelin_head/igneous_intrusive"
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/javelin/metamorphic"
+								tag: {
+									Damage: 0
 								}
-								{
-									Count: 1b
-									id: "tfc:stone/javelin_head/metamorphic"
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/javelin/sedimentary"
+								tag: {
+									Damage: 0
 								}
-								{
-									Count: 1b
-									id: "tfc:stone/javelin_head/sedimentary"
+							}
+							{
+								Count: 1b
+								id: "tfc:stone/javelin/igneous_intrusive"
+								tag: {
+									Damage: 0
 								}
-							]
-						}
+							}
+						]
 					}
-					optional_task: true
-					title: "Javelin heads"
-					type: "item"
 				}
-				{
-					id: "5EB0EEA7B93A319E"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "tfc:stone/javelin/igneous_extrusive"
-									tag: {
-										Damage: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "tfc:stone/javelin/metamorphic"
-									tag: {
-										Damage: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "tfc:stone/javelin/sedimentary"
-									tag: {
-										Damage: 0
-									}
-								}
-								{
-									Count: 1b
-									id: "tfc:stone/javelin/igneous_intrusive"
-									tag: {
-										Damage: 0
-									}
-								}
-							]
-						}
-					}
-					title: "Javelins"
-					type: "item"
-				}
-			]
-			title: "Hunting Time"
-			x: -3.5d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"412981055399DAAA"
-				"58BB4A24361CE43C"
-				"4202B7F2F739AB22"
-			]
-			dependency_requirement: "one_completed"
-			icon: "tfc:medium_prepared_hide"
-			id: "23B641FC902B77AD"
-			shape: "gear"
-			size: 2.0d
-			title: "Farming"
-			x: -1.0d
-			y: 6.5d
+				title: "Javelins"
+				type: "item"
+			}]
+			title: "First Tools: Javelin"
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["28EFE456A7B11D06"]
-			description: ["You definitely need something to start with!"]
 			icon: {
 				Count: 1
 				id: "tfc:stone/shovel/igneous_extrusive"
@@ -819,6 +656,7 @@
 		}
 		{
 			dependencies: ["28EFE456A7B11D06"]
+			description: [""]
 			id: "09D19F81065B31B8"
 			tasks: [{
 				id: "17A620E691DC5B8F"
@@ -883,10 +721,11 @@
 			}]
 			title: "Straw"
 			x: 6.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["36F88B9D6E0D7A68"]
+			description: ["How much wood would a woodchuck chuck if a woodchuck could chuck wood?"]
 			icon: "tfc:wood/log/maple"
 			id: "21F3A0260EB7BA2D"
 			rewards: [{
@@ -913,95 +752,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["20DF0FF5E072E0DD"]
-			description: [
-				"Raw cereals will spoil very soon. To prevent it, just use the knife to get grains and some straw."
-				"Grains will spoil very slow especially if you put them into sealed Large Vessel."
-			]
-			id: "4202B7F2F739AB22"
-			tasks: [{
-				id: "6B01E7D2A4362F7E"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:food": {
-										creationDate: 210000L
-										traits: [ ]
-									}
-								}
-								id: "tfc:food/barley_grain"
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:food": {
-										creationDate: 210000L
-										traits: [ ]
-									}
-								}
-								id: "tfc:food/maize_grain"
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:food": {
-										creationDate: 210000L
-										traits: [ ]
-									}
-								}
-								id: "tfc:food/oat_grain"
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:food": {
-										creationDate: 210000L
-										traits: [ ]
-									}
-								}
-								id: "tfc:food/rye_grain"
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:food": {
-										creationDate: 210000L
-										traits: [ ]
-									}
-								}
-								id: "tfc:food/rice_grain"
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:food": {
-										creationDate: 210000L
-										traits: [ ]
-									}
-								}
-								id: "tfc:food/wheat_grain"
-							}
-						]
-					}
-				}
-				title: "Grains"
-				type: "item"
-			}]
-			title: "Grain"
-			x: -3.5d
-			y: 7.5d
-		}
-		{
 			dependencies: ["636C659C4A65C556"]
 			description: [
-				"You need 100mb of copper to make a copper tool. So, go pan some copper powder!"
+				"You need &3100mb of Copper&r to make a copper tool. So, go pan some copper powder!"
 				""
-				"TIP: you can try to find some other ores to make bronze tools right away."
+				"&8TIP: you can try to find some other ores to make bronze tools right away.&r"
 			]
 			icon: "tfc:powder/native_copper"
 			id: "2164F89ED1657624"
@@ -1021,13 +776,26 @@
 				"5088FE89AA482117"
 			]
 			description: [
-				"Drop couple of logs on the ground and some sticks."
-				"Drop couple of sticks there too and use a Firestarter. And keep trying!"
+				"Drop &3couple of Logs&r on the ground and some sticks."
+				"Drop &3couple of Sticks&r there too and use a &3Firestarter&r."
 				""
-				"TIP: Add some Straw to increase chances."
+				"Didn't work? Check that it is enough &3Logs and Sticks&r are on the same block and keep trying!"
+				""
+				"&8TIP: Add some Straw to increase chances.&r"
 			]
 			icon: "tfc:firepit"
 			id: "3C22F23867AB0AFC"
+			rewards: [{
+				id: "7B7B21E29A4836C2"
+				item: {
+					Count: 1
+					id: "tfc:firestarter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "7A7560FEDD9F7B04"
 				title: "Got it!"
@@ -1055,7 +823,8 @@
 				"00796B8B300CF70E"
 				"62A464FC854D802D"
 			]
-			icon: "minecraft:water_bucket"
+			description: [""]
+			icon: "kubejs:boiled_water_bucket"
 			id: "650979F04DA06D44"
 			tasks: [{
 				id: "06F581786765ACA5"
@@ -1069,11 +838,18 @@
 		{
 			dependencies: ["3C22F23867AB0AFC"]
 			description: [
-				"Processing sticks in the firepit gives you torches."
+				"Processing &3Sticks&r in the &3Firepit&r gives you &3Torches&r."
 				""
-				"But keep in mind, they will go out. To light them up, use a Firestarter."
+				"But keep in mind, they will go out!"
+				"To light them up, use a Firestarter."
 			]
 			id: "2A6F12150A407BDE"
+			rewards: [{
+				count: 7
+				id: "11CB20D3B5957CCC"
+				item: "tfc:torch"
+				type: "item"
+			}]
 			tasks: [{
 				id: "767F3627354A81BE"
 				item: "tfc:torch"
@@ -1084,49 +860,142 @@
 		}
 		{
 			dependencies: ["62A464FC854D802D"]
+			description: [
+				"Due to physics you can't just build a shelter with &3Dirt.&r It will fall!"
+				"Meanwhile, &3Logs&r are hard to get and we have too little to waste it on the shelter."
+				"&3Planks&r will be obtainable much later."
+				""
+				"Hence, to build a basic shelter you will need to get some &3Mud&r."
+			]
 			id: "1D8C501B98343EA2"
 			tasks: [{
 				id: "3A21E6847139E97A"
-				item: "tfc:mud/silty_loam"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:mud"
+					}
+				}
+				title: "Mud"
 				type: "item"
 			}]
-			title: "TODO: Mud"
+			title: "Mud"
 			x: 10.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["1D8C501B98343EA2"]
+			description: [
+				"Make some &3Wet Bricks&r and leave them to dry."
+				"Just click RMB with a brick on the ground."
+				""
+				"Then collect &3Dried Bricks&r."
+			]
+			icon: "tfc:mud_brick/sandy_loam"
 			id: "265518059B629EB1"
 			tasks: [
 				{
+					count: 4L
 					id: "0BD9835D79CD7FE0"
-					item: "tfc:drying_bricks/silt"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "tfc:drying_bricks/silt"
+								}
+								{
+									Count: 1b
+									id: "tfc:drying_bricks/loam"
+								}
+								{
+									Count: 1b
+									id: "tfc:drying_bricks/sandy_loam"
+								}
+								{
+									Count: 1b
+									id: "tfc:drying_bricks/silty_loam"
+								}
+							]
+						}
+					}
+					title: "Wet Bricks"
 					type: "item"
 				}
 				{
+					count: 4L
 					id: "00DE51D9B3CC7D99"
-					item: "tfc:mud_brick/silt"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "tfc:mud_brick/loam"
+								}
+								{
+									Count: 1b
+									id: "tfc:mud_brick/silt"
+								}
+								{
+									Count: 1b
+									id: "tfc:mud_brick/silty_loam"
+								}
+								{
+									Count: 1b
+									id: "tfc:mud_brick/sandy_loam"
+								}
+							]
+						}
+					}
+					title: "Dried Bricks"
 					type: "item"
 				}
 			]
+			title: "Bricks"
 			x: 11.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["265518059B629EB1"]
+			description: ["Finally you can make some decent blocks, that won't fall, crushing your head!"]
 			id: "2339DF6F33663E5D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "33DE6E4B1040D823"
+				table_id: 961697876776093372L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "6596EB2F0E2DB9F5"
-				item: "tfc:mud_bricks/silt"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:mud_bricks"
+					}
+				}
+				title: "Mud Bricks"
 				type: "item"
 			}]
+			title: "Mud Bricks"
 			x: 13.0d
 			y: 1.5d
 		}
 		{
+			dependencies: ["412981055399DAAA"]
+			description: [
+				"First bed will allow you to set the spawnpoint."
+				"Simply place two &3Thatches&r on the ground and click with a &3Large Raw Hide&r on it."
+			]
 			id: "183BAD6A404E9605"
 			tasks: [
 				{
+					count: 2L
 					id: "3B9FD4A0E2C6DBDC"
 					item: "tfc:thatch"
 					type: "item"
@@ -1138,8 +1007,8 @@
 				}
 			]
 			title: "Basic Bed"
-			x: 14.5d
-			y: 1.5d
+			x: 6.0d
+			y: -4.5d
 		}
 	]
 	title: "Stone Age"
