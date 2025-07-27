@@ -81,6 +81,7 @@ ServerEvents.recipes((event) => {
     { id: /farmersdelight:cutting\/.+hyphae/ },
     { id: /farmersdelight:cutting\/.+block/ },
     { id: "farmersdelight:cooking/turtle_stew" },
+    { id: /farmersrespite:.+\/water_cup/ },
     // AE2 & addons
     { id: /ae2:tools\/.+/ },
   ];
