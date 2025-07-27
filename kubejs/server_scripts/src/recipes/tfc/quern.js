@@ -13,16 +13,28 @@ ServerEvents.recipes((event) => {
   ];
 
   global.gemList.forEach((gem) => {
-    recipes.push({
-      ingredient: {
-        item: `tfc:ore/${gem}`,
+    recipes.push(
+      {
+        ingredient: {
+          item: `tfc:ore/${gem}`,
+        },
+        result: {
+          item: `tfc:powder/${gem}`,
+          count: 1,
+        },
+        id: `may:quern/${gem}_powder`,
       },
-      result: {
-        item: `tfc:powder/${gem}`,
-        count: 1,
-      },
-      id: `may:quern/${gem}`,
-    });
+      {
+        ingredient: {
+          item: `tfc:gem/${gem}`,
+        },
+        result: {
+          item: `tfc:powder/${gem}`,
+          count: 1,
+        },
+        id: `may:quern/cut_${gem}_powder`,
+      }
+    );
   });
 
   global.oreList.forEach((ore) => {
