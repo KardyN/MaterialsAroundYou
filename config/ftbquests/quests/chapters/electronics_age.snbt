@@ -1,11 +1,11 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "rbsteel__plastic"
+	filename: "electronics_age"
 	group: "1F7A98B2F2F3E985"
 	icon: "pneumaticcraft:printed_circuit_board"
 	id: "104737B93B9F2A38"
-	order_index: 6
+	order_index: 5
 	quest_links: [ ]
 	quests: [ ]
 	title: "Electronics Age"

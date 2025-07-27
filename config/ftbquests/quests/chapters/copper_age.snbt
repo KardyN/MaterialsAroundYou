@@ -16,6 +16,810 @@
 	id: "6F18CDD52B46A03E"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["7A1F9767F054AC56"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/anvil/copper"
+			}
+			id: "76142216D24338FE"
+			tasks: [{
+				id: "2EC8F0B548FD37C2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/anvil/copper"
+				}
+				type: "item"
+			}]
+			title: "Copper Anvil"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7BE56F33FA2FF720"]
+			description: ["To work with Copper you will need a &3Hammer&r."]
+			id: "585DD15DB024A3D1"
+			tasks: [{
+				id: "639332535F7465DC"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/hammer/copper"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/hammer/bronze"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/hammer/bismuth_bronze"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/hammer/black_bronze"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Hammers"
+				type: "item"
+			}]
+			title: "Forge Hammer"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["585DD15DB024A3D1"]
+			description: [
+				"Breaking all adjacent blocks, causes &3Raw Stone&r to drop. Gather one &3Raw Igneous Stone&r, bring it to the base and right-click with a &3Hammer&r."
+				""
+				"That's your first &3Anvil&r!"
+				""
+				"&8TIP: you can search $igneous in JEI to find suitable rocks.&r"
+			]
+			icon: "tfc:rock/raw/andesite"
+			id: "18742141311ECFB7"
+			tasks: [{
+				id: "36812695FE554121"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:stone"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "tfc:igneous_intrusive_items"
+											}
+										}
+										{
+											Count: 1b
+											id: "itemfilters:tag"
+											tag: {
+												value: "tfc:igneous_extrusive_items"
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Stone Anvil"
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"0D3034BAC522694C"
+				"1170062E1DCC047B"
+				"18742141311ECFB7"
+			]
+			description: [
+				"For progression you need a better anvil. For better anvil you need double ingots."
+				""
+				"Heat ingots up to \"Can Weld\" state, then put them into the anvil and shift-right-click with a hammer."
+				"You also need flux in the anvil for welding."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/double_ingot/copper"
+			}
+			id: "7A1F9767F054AC56"
+			tasks: [{
+				id: "67281A0EC27BC9D3"
+				item: {
+					Count: 7
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/double_ingot/copper"
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"1F2192C21814F3D0"
+				"585DD15DB024A3D1"
+			]
+			id: "0D3034BAC522694C"
+			tasks: [{
+				count: 7L
+				id: "581A2967592DE67C"
+				item: {
+					Count: 7
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:powder/flux"
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7BE56F33FA2FF720"]
+			description: [
+				"To make &3Charcoal&r simply gather a lot of &3Logs&r. Then dig a pit. Shift-right-click with &3Logs&r into the pit. Make sure all &3Piles&r are holding &316 Logs&r each. It will affect &3Charcoal&r output. Then cover the pit with dirt, leaving one &3Pile&r visible to you. Use a &3Firestarter&r on it. When the fire has started cover the last &3Pile&r with dirt."
+				""
+				"Wait some time until dirt goes down. You will find &3Charcoal Piles&r there. Use a hand or a shovel to collect it."
+				""
+				"See &5TFC Guidebook: Advanced Mechanics: Charcoal Pit&r for more."
+			]
+			id: "6FE2992AEE98301E"
+			tasks: [{
+				id: "39E6D64ADC25786B"
+				item: "minecraft:charcoal"
+				title: "Charcoal"
+				type: "item"
+			}]
+			title: "Charcoal"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6FE2992AEE98301E"]
+			id: "1170062E1DCC047B"
+			tasks: [
+				{
+					count: 7L
+					id: "06C00AA4B1001A4F"
+					item: "minecraft:charcoal"
+					title: "Charcoal"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "38C142992C689D4E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "tfc:rock/raw"
+						}
+					}
+					title: "Raw Stones"
+					type: "item"
+				}
+			]
+			title: "Forge"
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7BE56F33FA2FF720"]
+			id: "1F2192C21814F3D0"
+			tasks: [{
+				id: "73CD04C97A9372E6"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:fluxstone"
+					}
+				}
+				title: "Flux stones"
+				type: "item"
+			}]
+			title: "Flux Stones"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["29B54FAB02DE3E0D"]
+			id: "62523937EBCC53BF"
+			tasks: [{
+				id: "5EE993AE9D6540DA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/saw/copper"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/saw/bismuth_bronze"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/saw/black_bronze"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Saw"
+				type: "item"
+			}]
+			title: "Saw"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["62523937EBCC53BF"]
+			id: "11E09B425935ABFE"
+			tasks: [{
+				count: 16L
+				id: "0D1DE877D626521A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:lumber"
+					}
+				}
+				title: "Lumber"
+				type: "item"
+			}]
+			title: "Lumber"
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["11E09B425935ABFE"]
+			id: "29A6D2FE4F3AD73A"
+			tasks: [{
+				id: "21D48EBEC29C11D5"
+				item: "tfc:wooden_bucket"
+				type: "item"
+			}]
+			title: "Wooden Bucket"
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["11E09B425935ABFE"]
+			description: [
+				"&3Barrels&r can store any fluids."
+				"Also it can be sealed with some recipe to convert fluids into another fluids!"
+				""
+				"Go check &6Farming&r chapther for recipes."
+			]
+			id: "1851DE318031D1D6"
+			tasks: [{
+				id: "5D6E0CE9A288079A"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:barrels"
+					}
+				}
+				title: "Barrel"
+				type: "item"
+			}]
+			title: "Barrel"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["11E09B425935ABFE"]
+			description: [
+				"&3Sluice&r is essential when speaking of increasing ores output."
+				""
+				"Check out the &6Ores Processing&r chapter for more."
+			]
+			id: "55DE17ECAE51C9EE"
+			tasks: [{
+				id: "771B05438F871F75"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:sluices"
+					}
+				}
+				type: "item"
+			}]
+			title: "Sluice"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["76142216D24338FE"]
+			id: "469B4B63209610CE"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "38C6FAF2F9F8CABE"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/ingot/black_bronze"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/ingot/bismuth_bronze"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/ingot/bronze"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Bronze Age"
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["392D0D2BE9080CCF"]
+			icon: "tfc:bloomery"
+			id: "023378E10A023AFE"
+			tasks: [
+				{
+					id: "19C4D83DA05F8966"
+					item: "tfc:bloomery"
+					type: "item"
+				}
+				{
+					id: "127D6F96953A7573"
+					item: "minecraft:stone"
+					type: "item"
+				}
+			]
+			title: "Bloomery"
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["469B4B63209610CE"]
+			id: "392D0D2BE9080CCF"
+			tasks: [{
+				id: "7BD6FAFA62A02206"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/anvil/bismuth_bronze"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/anvil/bronze"
+							}
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/anvil/black_bronze"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Bronze Anvil"
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"023378E10A023AFE"
+				"367311D0BC54F698"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:raw_iron_bloom"
+			}
+			id: "034F982B448DCCBE"
+			tasks: [
+				{
+					id: "30573BEEF51441E2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:raw_iron_bloom"
+					}
+					type: "item"
+				}
+				{
+					id: "4463C01C5599AFE7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:refined_iron_bloom"
+					}
+					type: "item"
+				}
+			]
+			title: "Iron Bloom"
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["034F982B448DCCBE"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/ingot/wrought_iron"
+			}
+			id: "71FEB557BAFC042C"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "2429FBA60137A31A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/wrought_iron"
+				}
+				type: "item"
+			}]
+			title: "Iron Age"
+			x: 13.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["11E09B425935ABFE"]
+			id: "74F00B6BC1917CE3"
+			tasks: [{
+				id: "0C32FEAE4FCE35D8"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:tool_racks"
+					}
+				}
+				title: "Tool racks"
+				type: "item"
+			}]
+			title: "Tool Rack"
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1170062E1DCC047B"]
+			id: "60A5E12F241F13F8"
+			rewards: [{
+				id: "76C086CF5AB330FB"
+				item: "tfc:bellows"
+				type: "item"
+			}]
+			tasks: [{
+				id: "44EA2C08A5E90067"
+				item: "tfc:bellows"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["60A5E12F241F13F8"]
+			description: [
+				"&3Crucible&r will allow you to make alloys and ingots easier."
+				""
+				"Go check &6Ores Processing&r chapter for more detailed guide."
+			]
+			id: "54AA278A4FB73E8C"
+			tasks: [{
+				id: "39A45765D468C72B"
+				item: "tfc:crucible"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["29B54FAB02DE3E0D"]
+			description: [
+				"To work with metals you will need a Forge."
+				"It's gonna be quite big, so find a place for it and start your preparations!"
+			]
+			id: "7BE56F33FA2FF720"
+			tasks: [{
+				id: "023D0F289A900000"
+				title: "Got it!"
+				type: "checkmark"
+			}]
+			title: "Working with Metals"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5719E48BB80CC88A"]
+			id: "17527074CEFB9B75"
+			tasks: [
+				{
+					id: "0B15B7FCF77057F8"
+					item: "tfc:quern"
+					type: "item"
+				}
+				{
+					id: "08E249BA4EDD14E2"
+					item: {
+						Count: 1
+						id: "tfc:handstone"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Quern"
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["17527074CEFB9B75"]
+			dependency_requirement: "one_completed"
+			icon: "tfc:powder/charcoal"
+			id: "367311D0BC54F698"
+			tasks: [{
+				count: 4L
+				id: "6E1C95CC273C5B15"
+				item: "tfc:powder/charcoal"
+				type: "item"
+			}]
+			title: "Charcoal Powder"
+			x: 9.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["11E09B425935ABFE"]
+			id: "464694061D4896F5"
+			tasks: [{
+				id: "1B4B1920FE8B5C76"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "forge:chests/wooden"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "forge:chests/trapped"
+										}
+									}]
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Chest"
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6FE2992AEE98301E"]
+			id: "5719E48BB80CC88A"
+			tasks: [{
+				id: "13BE9B5D9671B3DB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/chisel/black_bronze"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+	]
 	title: "Copper Age"
 }

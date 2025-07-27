@@ -1,0 +1,289 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "trees"
+	group: "154A008FBDFC4739"
+	hide_quest_until_deps_complete: true
+	icon: "tfc:plant/orange_sapling"
+	id: "1E0AB5800B80C05C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "6DC3146D536C3674"
+			tasks: [{
+				id: "0E96AC6DB6334BEE"
+				item: "tfc:plant/blueberry_bush"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "0E754B105DEF406E"
+			tasks: [{
+				id: "1D06D41B5E1285A9"
+				item: "tfc:plant/elderberry_bush"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "5552196FB9DBBCB3"
+			tasks: [{
+				id: "7DC31EB4C8AB57D8"
+				item: "tfc:plant/snowberry_bush"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "1126B9E05D2725F0"
+			tasks: [{
+				id: "3AC79702E793C02D"
+				item: "tfc:plant/bunchberry_bush"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "00DB78D12ABAA876"
+			tasks: [{
+				id: "583E208412715201"
+				item: "tfc:plant/wintergreen_berry_bush"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "193B79548EFEABEF"
+			tasks: [{
+				id: "72C02D9B5B90531F"
+				item: "tfc:plant/cranberry_bush"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "656018799621FF56"
+			tasks: [{
+				id: "74894725D3EEBE73"
+				item: "firmalife:plant/pineapple_bush"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "7EAE0D652F552C57"
+			tasks: [{
+				id: "52399829E038483C"
+				item: "firmalife:plant/nightshade_bush"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "15E2D07A9838CF4B"
+			tasks: [{
+				id: "38DA22CB16500D93"
+				item: "tfc:plant/raspberry_bush"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "7A03FFAA1626B368"
+			tasks: [{
+				id: "356A4B149B7AB0AD"
+				item: "tfc:plant/cloudberry_bush"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "13B815AC2AE94F0F"
+			tasks: [{
+				id: "39DAC5C3961A19EE"
+				item: "tfc:plant/gooseberry_bush"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "63B192A0ACB66196"
+			tasks: [{
+				id: "394247D46D71ED79"
+				item: "tfc:plant/strawberry_bush"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "759CADC632FC1438"
+			tasks: [{
+				id: "40D371C5F95F3738"
+				item: "tfc:plant/blackberry_bush"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "35E5B1934916A9D9"
+			tasks: [{
+				id: "4F3C4BD19E1C32D7"
+				item: "tfc:plant/cherry_sapling"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "54FD1953E2992EFF"
+			tasks: [{
+				id: "5596B019B7D45416"
+				item: "tfc:plant/green_apple_sapling"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "47916EAC3A8FCA48"
+			tasks: [{
+				id: "2FD528E75C41B783"
+				item: "tfc:plant/lemon_sapling"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "51A533811699476C"
+			tasks: [{
+				id: "455165B00D3D84E7"
+				item: "tfc:plant/olive_sapling"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "27854FBF57D4FF47"
+			tasks: [{
+				id: "0E8727A5AEDCFA7D"
+				item: "tfc:plant/orange_sapling"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "678DA62F2D9D28D7"
+			tasks: [{
+				id: "17ADDA42EB0D5FE0"
+				item: "tfc:plant/peach_sapling"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "59F658BF503EC614"
+			tasks: [{
+				id: "43F2B6C94D939CAB"
+				item: "tfc:plant/plum_sapling"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "6607EC2BF54A9A9E"
+			tasks: [{
+				id: "2F2F10AAC9AF6B3D"
+				item: "tfc:plant/red_apple_sapling"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "5CBD5A05B2A85CEA"
+			tasks: [{
+				id: "06D62B33FD829196"
+				item: "tfc:plant/banana_sapling"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "5A2F41D3224469CD"
+			tasks: [{
+				id: "376D0E65670A59E7"
+				item: "firmalife:plant/cocoa_sapling"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "3C819B98A8ED5B62"
+			tasks: [{
+				id: "5318C32E271985A6"
+				item: "firmalife:plant/fig_sapling"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1407604CA40BA83F"]
+			id: "5FDC6B4A1C02F59C"
+			tasks: [{
+				id: "3B552AB1BAA0F542"
+				title: "TODO: Trees saplings"
+				type: "custom"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+	]
+	title: "Trees"
+}

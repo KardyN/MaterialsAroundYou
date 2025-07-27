@@ -1,18 +1,24 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "immersive_engineering"
+	filename: "combat"
 	group: "4973B82BE2AB46A8"
 	icon: {
 		Count: 1
-		id: "immersiveengineering:hammer"
+		ForgeCaps: {
+			"tfc:item_heat": {
+				heat: 0.0f
+				ticks: 0L
+			}
+		}
+		id: "tfc:metal/sword/wrought_iron"
 		tag: {
 			Damage: 0
 		}
 	}
-	id: "6F7C756541BE383E"
+	id: "53823609F0EA3181"
 	order_index: 3
 	quest_links: [ ]
 	quests: [ ]
-	title: "Immersive"
+	title: "Combat"
 }
