@@ -21,8 +21,9 @@
 		{
 			dependencies: ["699BA015E84655F0"]
 			description: [
-				"Raw cereals will spoil very soon. To prevent it, just use the knife to get grains and some straw."
-				"Grains will spoil very slow especially if you put them into sealed Large Vessel."
+				"&3Raw Cereals&r will spoil very soon. To prevent it, just use the &3Knife&r to get &3Grains and Straw&r."
+				""
+				"&3Grains&r will spoil very slow especially if you put them into &3sealed Large Vessel&r."
 			]
 			id: "6149CA516931EC96"
 			tasks: [{
@@ -110,11 +111,18 @@
 				type: "item"
 			}]
 			title: "Grain"
-			x: -8.0d
-			y: -0.5d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6149CA516931EC96"]
+			description: [
+				"To breed animals you will need at least two species. Young male and young female (old animals won't breed)."
+				""
+				"Keep feeding them each day. It will raise their &5Familiarity&r (check WAILA while looking at animal)."
+				""
+				"With increased Familiarity you will be able to milk, shear and breed animals."
+			]
 			id: "068265674F1A47D9"
 			tasks: [{
 				id: "0DA2687C88AC2E77"
@@ -122,8 +130,8 @@
 				type: "checkmark"
 			}]
 			title: "Breeding"
-			x: -6.5d
-			y: -0.5d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4C3EB8E62E5304F2"]
@@ -135,8 +143,8 @@
 				type: "item"
 			}]
 			title: "Raw Hide"
-			x: -5.0d
-			y: 2.5d
+			x: 6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["34883B45EFAAB45B"]
@@ -147,8 +155,8 @@
 				type: "item"
 			}]
 			title: "Prepared Hide"
-			x: -5.0d
-			y: 7.0d
+			x: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -163,8 +171,8 @@
 				type: "item"
 			}]
 			title: "Soaked Hide"
-			x: -5.0d
-			y: 4.0d
+			x: 6.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["59AB2052786BDD0D"]
@@ -176,8 +184,8 @@
 				type: "item"
 			}]
 			title: "Scraped Hide"
-			x: -5.0d
-			y: 5.5d
+			x: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -192,8 +200,8 @@
 				type: "item"
 			}]
 			title: "Leather"
-			x: -5.0d
-			y: 8.5d
+			x: 6.5d
+			y: 9.0d
 		}
 		{
 			icon: "tfc:bucket/tannin"
@@ -204,8 +212,8 @@
 				type: "checkmark"
 			}]
 			title: "Tannin"
-			x: -3.5d
-			y: 7.0d
+			x: 8.0d
+			y: 7.5d
 		}
 		{
 			id: "4959DC7914B7F789"
@@ -222,8 +230,8 @@
 				type: "item"
 			}]
 			title: "Barrel"
-			x: -14.5d
-			y: -4.5d
+			x: -3.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -238,8 +246,8 @@
 				type: "item"
 			}]
 			title: "Nest Box"
-			x: -5.0d
-			y: -2.0d
+			x: 6.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["11E09B425935ABFE"]
@@ -251,8 +259,8 @@
 				type: "item"
 			}]
 			title: "Beehive"
-			x: -11.0d
-			y: -3.5d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["14AADB481BAD9AAD"]
@@ -263,8 +271,8 @@
 				type: "item"
 			}]
 			title: "Basic Greenhouse"
-			x: -11.0d
-			y: -8.0d
+			x: 0.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["068265674F1A47D9"]
@@ -274,8 +282,8 @@
 				title: "Livestock"
 				type: "checkmark"
 			}]
-			x: -5.0d
-			y: 1.0d
+			x: 6.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4C3EB8E62E5304F2"]
@@ -286,8 +294,8 @@
 				type: "item"
 			}]
 			title: "Horse riding"
-			x: -5.0d
-			y: -0.5d
+			x: 6.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4C3EB8E62E5304F2"]
@@ -409,8 +417,8 @@
 				type: "item"
 			}]
 			title: "Meat"
-			x: -6.5d
-			y: 2.5d
+			x: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4C3EB8E62E5304F2"]
@@ -421,8 +429,8 @@
 				type: "item"
 			}]
 			title: "Milk"
-			x: -3.5d
-			y: -0.5d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["731AA11C29588B3C"]
@@ -447,8 +455,8 @@
 				type: "item"
 			}]
 			title: "Eggs"
-			x: -3.5d
-			y: -2.0d
+			x: 8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4C3EB8E62E5304F2"]
@@ -459,19 +467,24 @@
 				type: "item"
 			}]
 			title: "Wool"
-			x: -3.5d
-			y: 1.0d
+			x: 8.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6149CA516931EC96"]
+			description: [
+				"When starting a farm pay attention to crops growth seasons and nutrients."
+				""
+				"Check &5TFC Guidebook: Advanced Mechanics: Crops&r for more."
+			]
 			id: "57450CDA1ABE0DC7"
 			tasks: [{
 				id: "0B750FEFDF2A7225"
 				title: "Seeding"
 				type: "checkmark"
 			}]
-			x: -8.0d
-			y: -2.0d
+			x: 3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["57450CDA1ABE0DC7"]
@@ -483,8 +496,8 @@
 				type: "item"
 			}]
 			title: "Composter"
-			x: -5.0d
-			y: -3.5d
+			x: 6.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7F993A4EE39D7AF0"]
@@ -496,8 +509,8 @@
 				type: "item"
 			}]
 			title: "Seed ball"
-			x: -3.5d
-			y: -3.5d
+			x: 8.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["520EC155A25365F1"]
@@ -521,8 +534,8 @@
 				}
 			]
 			title: "Oven"
-			x: -9.5d
-			y: 7.0d
+			x: 1.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6149CA516931EC96"]
@@ -540,8 +553,8 @@
 				type: "item"
 			}]
 			title: "Flour"
-			x: -8.0d
-			y: 4.0d
+			x: 3.5d
+			y: 5.5d
 		}
 		{
 			id: "28275BBA60478509"
@@ -551,11 +564,21 @@
 				type: "item"
 			}]
 			title: "Mixing Bowl"
-			x: -14.5d
-			y: -5.5d
+			x: -3.5d
+			y: -5.0d
 		}
 		{
-			dependencies: ["02DE14F0E3F5083A"]
+			dependencies: [
+				"02DE14F0E3F5083A"
+				"43D1B5A5E07B09E3"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"You can plant collected sapling to provide some food on your base."
+				"But mind the seasons. &3Bushes and Trees&r have different periods of growth and fruiting."
+				""
+				"Check out the &5TFC Guidebook: The World&r."
+			]
 			id: "3686EE1F8D337CFC"
 			tasks: [{
 				id: "0E0F4AE2C6D67F46"
@@ -572,8 +595,8 @@
 				type: "item"
 			}]
 			title: "Fruits and berries"
-			x: -9.5d
-			y: 2.5d
+			x: 1.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -588,8 +611,8 @@
 				type: "checkmark"
 			}]
 			title: "Yeast starter"
-			x: -9.5d
-			y: 4.0d
+			x: 1.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -610,8 +633,8 @@
 				type: "item"
 			}]
 			title: "Dough"
-			x: -9.5d
-			y: 5.5d
+			x: 1.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["15278CC6AEA26104"]
@@ -654,8 +677,8 @@
 				type: "item"
 			}]
 			title: "Bread"
-			x: -9.5d
-			y: 8.5d
+			x: 1.5d
+			y: 10.0d
 		}
 		{
 			dependency_requirement: "one_completed"
@@ -667,8 +690,8 @@
 				type: "item"
 			}]
 			title: "Cutting board"
-			x: -14.5d
-			y: -6.5d
+			x: -3.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -725,8 +748,8 @@
 				type: "item"
 			}]
 			title: "Sandwich"
-			x: -6.5d
-			y: 10.0d
+			x: 5.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["0D3034BAC522694C"]
@@ -738,8 +761,8 @@
 				type: "checkmark"
 			}]
 			title: "Limewater"
-			x: -3.5d
-			y: 2.5d
+			x: 8.0d
+			y: 3.0d
 		}
 		{
 			id: "4C98F5474CF5C8DE"
@@ -755,11 +778,16 @@
 				title: "Fishing Rod"
 				type: "item"
 			}]
-			x: -15.5d
-			y: -5.0d
+			x: -4.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["7DC26004B2D800A9"]
+			description: [
+				"&3Grill&r helps you handle more items at a time. Useful in preparing large amounts if meat."
+				""
+				"Click on the&3 Firepit&r to set up."
+			]
 			id: "47F60096BF7F28A9"
 			tasks: [{
 				id: "7A1DC8457A4DF948"
@@ -775,20 +803,25 @@
 				}
 				type: "item"
 			}]
-			title: "Grill"
-			x: -15.5d
-			y: -2.0d
+			title: "Firepit with Grill"
+			x: -4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3C22F23867AB0AFC"]
 			icon: "tfc:firepit"
 			id: "7DC26004B2D800A9"
 			title: "Firepit"
-			x: -14.0d
-			y: -0.5d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7DC26004B2D800A9"]
+			description: [
+				"&3Pot&r will allow you to cook a few complex dishes on the &3Firepit&r."
+				""
+				"Click on the Firepit to set it up."
+			]
 			id: "798D00CFC7A33E4C"
 			tasks: [{
 				id: "5F45B4584E68DE1D"
@@ -796,11 +829,12 @@
 				type: "item"
 			}]
 			title: "Pot"
-			x: -15.5d
-			y: -0.5d
+			x: -4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["798D00CFC7A33E4C"]
+			description: ["Simple food from accessible ingredients."]
 			id: "23021FFF79D2E260"
 			tasks: [{
 				id: "6FCE45E68A89DFFE"
@@ -815,8 +849,8 @@
 				type: "item"
 			}]
 			title: "Soup"
-			x: -17.0d
-			y: -2.0d
+			x: -6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["098BC649D84839B6"]
@@ -828,8 +862,8 @@
 				type: "item"
 			}]
 			title: "Treated Lumber"
-			x: -11.0d
-			y: -6.5d
+			x: 0.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["098BC649D84839B6"]
@@ -840,8 +874,8 @@
 				type: "item"
 			}]
 			title: "Cellar"
-			x: -12.5d
-			y: -6.5d
+			x: -1.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["77BBADAAEA3CDEF0"]
@@ -853,8 +887,8 @@
 				type: "item"
 			}]
 			title: "Planters"
-			x: -9.5d
-			y: -11.0d
+			x: 1.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["4A7CF8B0A6445EC1"]
@@ -878,8 +912,8 @@
 				type: "item"
 			}]
 			title: "Watering Can"
-			x: -9.5d
-			y: -9.5d
+			x: 1.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -894,8 +928,8 @@
 				type: "item"
 			}]
 			title: "Loom"
-			x: -0.5d
-			y: 1.0d
+			x: 11.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1BE9AF9854820893"]
@@ -906,8 +940,8 @@
 				type: "item"
 			}]
 			title: "Silk Cloth"
-			x: 1.0d
-			y: 1.0d
+			x: 12.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["784B47D80E379B1E"]
@@ -919,8 +953,8 @@
 				type: "item"
 			}]
 			title: "Cheesecloth"
-			x: 2.5d
-			y: 1.0d
+			x: 14.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -935,8 +969,8 @@
 				type: "item"
 			}]
 			title: "Cheese"
-			x: 4.0d
-			y: -0.5d
+			x: 15.5d
+			y: 0.0d
 		}
 		{
 			id: "698BADE359485F58"
@@ -945,8 +979,8 @@
 				item: "tfc:jute_fiber"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -3.5d
+			x: 11.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["69D8991DDD18366A"]
@@ -958,8 +992,8 @@
 				type: "item"
 			}]
 			title: "Beeswax"
-			x: -11.0d
-			y: -5.0d
+			x: 0.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1BE9AF9854820893"]
@@ -970,11 +1004,16 @@
 				type: "item"
 			}]
 			title: "Cloth"
-			x: 1.0d
-			y: 2.5d
+			x: 12.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["57450CDA1ABE0DC7"]
+			description: [
+				"If you seal the &3Large Vessel&r, it will slow down food spoiling."
+				""
+				"A good way to store some food for the winter."
+			]
 			id: "14F05677B34D854A"
 			tasks: [{
 				id: "3D6466E3CE438445"
@@ -982,8 +1021,8 @@
 				type: "item"
 			}]
 			title: "Large Vessel"
-			x: -8.0d
-			y: -3.5d
+			x: 5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["4191E5DBEFF72CA7"]
@@ -994,8 +1033,8 @@
 				type: "item"
 			}]
 			title: "Cellar Capacity"
-			x: -12.5d
-			y: -8.0d
+			x: -1.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["58C5C9159AD2857C"]
@@ -1006,8 +1045,8 @@
 				type: "item"
 			}]
 			title: "Modern Greenhouse"
-			x: -11.0d
-			y: -11.0d
+			x: 0.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["4A7CF8B0A6445EC1"]
@@ -1018,8 +1057,8 @@
 				type: "item"
 			}]
 			title: "Advanced Greenhouse"
-			x: -11.0d
-			y: -9.5d
+			x: 0.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["7DC26004B2D800A9"]
@@ -1030,11 +1069,16 @@
 				type: "custom"
 			}]
 			title: "Kettle"
-			x: -15.5d
-			y: 1.0d
+			x: -4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["798D00CFC7A33E4C"]
+			description: [
+				"&3Sealed Jam Bottles&r will keep contains fresh for a long period."
+				""
+				"It's a good way to store some food."
+			]
 			id: "4163F9F208F4E3F5"
 			tasks: [{
 				id: "0AE7DB60DB171C7F"
@@ -1048,11 +1092,11 @@
 				type: "item"
 			}]
 			title: "Jam"
-			x: -17.0d
-			y: -0.5d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["57450CDA1ABE0DC7"]
+			dependencies: ["7F993A4EE39D7AF0"]
 			icon: "minecraft:bone_meal"
 			id: "2CDC1A97777826E0"
 			tasks: [{
@@ -1061,19 +1105,33 @@
 				type: "item"
 			}]
 			title: "Fertilizers"
-			x: -6.5d
-			y: -3.5d
+			x: 6.5d
+			y: -4.5d
 		}
 		{
+			dependencies: ["3686EE1F8D337CFC"]
+			description: [
+				"Using collected fruits, berries and vegetables you can make alchogol."
+				""
+				"Go check &6Collections: Food&r chapter for recipes."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: { }
+				}
+				id: "firmalife:olivine_wine_bottle"
+				tag: { }
+			}
 			id: "7A95E44400530D7B"
 			tasks: [{
-				id: "6A0DFCC840B6BD30"
-				item: "tfc:bucket/vinegar"
-				type: "item"
+				id: "598EDBB3F2B8E081"
+				title: "Got it!"
+				type: "checkmark"
 			}]
-			title: "TODO: Vines and Vodkas"
-			x: -11.0d
-			y: 4.0d
+			title: "Alchogol"
+			x: 0.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["69D8991DDD18366A"]
@@ -1085,8 +1143,8 @@
 				type: "item"
 			}]
 			title: "Honey"
-			x: -12.5d
-			y: -5.0d
+			x: -1.5d
+			y: -4.5d
 		}
 		{
 			id: "64A7506BC6E0F53B"
@@ -1115,8 +1173,8 @@
 				}
 			]
 			title: "Sewing"
-			x: -2.0d
-			y: 10.0d
+			x: 9.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["19D13398DCC33807"]
@@ -1133,18 +1191,20 @@
 				type: "item"
 			}]
 			title: "Flask"
-			x: -5.0d
-			y: 10.0d
+			x: 6.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["13F48469301627C2"]
 			description: [
-				"You can find a lot of wild crops around. Not good, but at least it is edible."
+				"You can find a lot of &3Wild Crops&r around. Not good, but at least it is edible."
 				""
-				"Sometimes you will need a knife to collect yield from a crop."
+				"Use a Knife to harvest crops faster."
 			]
 			icon: "tfc:wild_crop/wheat"
 			id: "0856F166D8DCD855"
+			shape: "gear"
+			size: 2.0d
 			tasks: [{
 				id: "4B01EACA700115AC"
 				item: {
@@ -1182,8 +1242,8 @@
 				type: "item"
 			}]
 			title: "Wild Crops"
-			x: -11.0d
-			y: -0.5d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0856F166D8DCD855"]
@@ -1238,32 +1298,60 @@
 				type: "item"
 			}]
 			title: "First Tools: Hoe"
-			x: -9.5d
-			y: -0.5d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["13F48469301627C2"]
+			description: [
+				"There are a lot of &3Berries Bushes&r and &3Fruit Trees&r in the world."
+				""
+				"To collect sapling from &3Fruit Trees&r, chop the branches with leaves and leave the roots be. It will grow new branches then."
+				""
+				"To collect &3Bushes&r simply use a Knife."
+			]
 			id: "02DE14F0E3F5083A"
 			tasks: [{
 				id: "44A084E3BBB8B376"
 				item: {
 					Count: 1
-					id: "itemfilters:tag"
+					id: "itemfilters:and"
 					tag: {
-						value: "tfc:wild_fruits"
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:not"
+								tag: {
+									items: [{
+										Count: 1b
+										id: "itemfilters:tag"
+										tag: {
+											value: "minecraft:saplings"
+										}
+									}]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "tfc:wild_fruits"
+								}
+							}
+						]
 					}
 				}
 				type: "item"
 			}]
 			title: "Saplings"
-			x: -11.0d
-			y: 1.5d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["15278CC6AEA26104"]
 			description: [
 				"You can also cook more dishes like apple or pumpkin pies or even pizzas!"
-				"Go check &6Collections/Food&r chapter"
+				"Go check &6Collections: Food&r chapter"
 			]
 			icon: {
 				Count: 1
@@ -1294,8 +1382,8 @@
 				type: "checkmark"
 			}]
 			title: "Pie, pizza and more"
-			x: -11.0d
-			y: 8.5d
+			x: 0.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["24BB2235242CD775"]
@@ -1319,8 +1407,8 @@
 				}
 			]
 			title: "Cookware"
-			x: -17.0d
-			y: 1.0d
+			x: -6.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2EE6F0C9673CF606"]
@@ -1336,8 +1424,120 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: 1.0d
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["57450CDA1ABE0DC7"]
+			description: [
+				"If you are struggling with leading water to the crops, try to use &3Aqueducts&r."
+				""
+				"They require full water block in the beginning and then you can lead water as far as you want. Just leave empty block on the end."
+				"But keep in mind, that you can only pour water down from &3Aqueducts&r. Not raise it up."
+			]
+			id: "0EC6E0059F86A38E"
+			tasks: [{
+				id: "53FDD0D779D8A652"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:rock/aqueducts"
+					}
+				}
+				title: "Aqueducts"
+				type: "item"
+			}]
+			title: "Aqueducts"
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			id: "72A33BEB5857E45B"
+			tasks: [{
+				id: "36936653548019BD"
+				item: "firmalife:vat"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			id: "4AC5790A541C8990"
+			tasks: [{
+				id: "1EC42E6AA744780C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "firmalife:stomping_barrels"
+					}
+				}
+				type: "item"
+			}]
+			title: "Stomping Barrel"
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"2C31B21D30B8B7BA"
+				"71FEB557BAFC042C"
+			]
+			id: "718B387AE62DBE66"
+			tasks: [{
+				id: "2FDDEF3CED041FF8"
+				item: {
+					Count: 1
+					id: "waterflasks:iron_flask"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["13F48469301627C2"]
+			description: [
+				"There are a lot of &3Berries Bushes&r and &3Fruit Trees&r in the world."
+				""
+				"To collect sapling from &3Fruit Trees&r, chop the branches with leaves and leave the roots be. It will grow new branches then."
+				""
+				"To collect &3Bushes&r simply use a Knife."
+			]
+			id: "43D1B5A5E07B09E3"
+			tasks: [{
+				id: "1DECB8ED995D813D"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "tfc:wild_fruits"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "minecraft:saplings"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Saplings"
+			x: 1.5d
+			y: 2.5d
 		}
 	]
 	title: "Farming"

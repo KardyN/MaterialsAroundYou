@@ -19,8 +19,11 @@
 	quests: [
 		{
 			dependencies: ["29B54FAB02DE3E0D"]
-			description: [""]
-			icon: "tfc:quern"
+			description: [
+				"To increase ores output you need to start with crushing the ore."
+				""
+				"Build a &3Quern&r for it."
+			]
 			id: "040D411E1996731C"
 			tasks: [
 				{
@@ -46,6 +49,11 @@
 		}
 		{
 			dependencies: ["22CEBF4458C8E6A9"]
+			description: [
+				"To make profit from &3Dirty Dusts&r you need to clean it first. Use a &3Sluice&r."
+				""
+				"To work, &3Sluice&r needs a flowing water on it's edge. Then simply drop an item on the &3Sluice&r."
+			]
 			id: "13769A224ED6A325"
 			tasks: [{
 				id: "757EDDD23883877E"
@@ -82,6 +90,7 @@
 		}
 		{
 			dependencies: ["13769A224ED6A325"]
+			description: ["Now you have smeltable &3Powders&r."]
 			id: "6E1399D1E455E2CB"
 			tasks: [{
 				id: "3049007F956F0C11"
@@ -227,11 +236,12 @@
 				type: "item"
 			}]
 			title: "Compacting: Briquettes"
-			x: 1.5d
-			y: -3.5d
+			x: 0.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6E1399D1E455E2CB"]
+			description: ["With time you will gather a lot of different &3Powders&r. To reduce storage use, craft &3Powders&r into the &3Piles&r."]
 			id: "4D5B990EA4CE47EA"
 			tasks: [{
 				id: "5DA193CA4C736DC2"
@@ -249,7 +259,10 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["69751D73CC834A6A"]
+			dependencies: [
+				"69751D73CC834A6A"
+				"3CB5CB6BED5AC720"
+			]
 			icon: "tfc:wood/water_wheel/ash"
 			id: "60ED534800A2168D"
 			tasks: [
@@ -353,11 +366,11 @@
 				type: "item"
 			}]
 			title: "Crucible"
-			x: 4.5d
+			x: 3.0d
 			y: -3.5d
 		}
 		{
-			dependencies: ["2E787B4424D3F01D"]
+			dependencies: ["4D5B990EA4CE47EA"]
 			icon: "tfc:powder/kaolinite"
 			id: "0D459C0CC21CF528"
 			tasks: [{
@@ -367,11 +380,11 @@
 				type: "item"
 			}]
 			title: "Kaolinite Powder"
-			x: 3.0d
+			x: 1.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["2E787B4424D3F01D"]
+			dependencies: ["4D5B990EA4CE47EA"]
 			icon: "tfc:powder/graphite"
 			id: "0D5D250D7D353B29"
 			tasks: [{
@@ -381,7 +394,7 @@
 				type: "item"
 			}]
 			title: "Graphite Powder"
-			x: 3.0d
+			x: 1.5d
 			y: -4.0d
 		}
 		{
@@ -392,7 +405,7 @@
 				title: "TODO: Casting Channels"
 				type: "custom"
 			}]
-			x: 6.5d
+			x: 5.0d
 			y: -3.5d
 		}
 		{
@@ -421,6 +434,59 @@
 			title: "Coke Oven"
 			x: -4.5d
 			y: -4.5d
+		}
+		{
+			dependencies: ["36F2106C10C58AB8"]
+			id: "6ACF90697DC24FAB"
+			tasks: [{
+				count: 64L
+				id: "54AF81642D8F7080"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			title: "Charcoal Production"
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["29B54FAB02DE3E0D"]
+			id: "3CB5CB6BED5AC720"
+			tasks: [{
+				id: "5853E335E56D7835"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:chisels"
+					}
+				}
+				title: "Chisels"
+				type: "item"
+			}]
+			title: "Chisel"
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["36F2106C10C58AB8"]
+			id: "60BAE5EEBFE24BF3"
+			tasks: [{
+				id: "03055DFA3ACA7005"
+				item: "immersiveengineering:coal_coke"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			id: "72CB48B63E15378F"
+			tasks: [{
+				id: "1DB6F3047AEB653C"
+				item: "tfc:trip_hammer"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.0d
 		}
 	]
 	title: "Ores Processing"

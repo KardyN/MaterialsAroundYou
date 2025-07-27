@@ -608,6 +608,7 @@
 		}
 		{
 			dependencies: ["28EFE456A7B11D06"]
+			description: ["To cut trees you need an &3Axe&r."]
 			id: "36F88B9D6E0D7A68"
 			tasks: [{
 				id: "097379C422606363"
@@ -656,7 +657,7 @@
 		}
 		{
 			dependencies: ["28EFE456A7B11D06"]
-			description: [""]
+			description: ["To gather &3Straw&r you will need a &3Knife&r."]
 			id: "09D19F81065B31B8"
 			tasks: [{
 				id: "17A620E691DC5B8F"
@@ -807,6 +808,11 @@
 		}
 		{
 			dependencies: ["3C22F23867AB0AFC"]
+			description: [
+				"To make drinkable water that won't poison you, you will need a &3Pot&r."
+				""
+				"Place it on the &3Firepit&r, put some water into the &3Pot&r and start boiling."
+			]
 			icon: "tfc:ceramic/pot"
 			id: "00796B8B300CF70E"
 			tasks: [{
@@ -823,13 +829,31 @@
 				"00796B8B300CF70E"
 				"62A464FC854D802D"
 			]
-			description: [""]
-			icon: "kubejs:boiled_water_bucket"
+			description: ["Take some boiled water with you, using a &3Jug&r."]
+			icon: {
+				Count: 1
+				id: "tfc:ceramic/jug"
+				tag: {
+					fluid: {
+						Amount: 100
+						FluidName: "kubejs:boiled_water"
+					}
+				}
+			}
 			id: "650979F04DA06D44"
 			tasks: [{
-				id: "06F581786765ACA5"
-				title: "Got it!"
-				type: "checkmark"
+				id: "0334526B599C335A"
+				item: {
+					Count: 1
+					id: "tfc:ceramic/jug"
+					tag: {
+						fluid: {
+							Amount: 100
+							FluidName: "kubejs:boiled_water"
+						}
+					}
+				}
+				type: "item"
 			}]
 			title: "Boiled Water"
 			x: 11.5d

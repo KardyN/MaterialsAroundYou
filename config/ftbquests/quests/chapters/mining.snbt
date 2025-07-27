@@ -17,56 +17,6 @@
 	quests: [
 		{
 			dependencies: ["29B54FAB02DE3E0D"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "tfc:metal/pickaxe/copper"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "23802C9DF7121654"
-			tasks: [{
-				id: "52A2FB0CA0B9BCA0"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/pickaxe/copper"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "Copper Pickaxe"
-			x: -11.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["29B54FAB02DE3E0D"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "tfc:metal/pickaxe/black_bronze"
-				tag: {
-					Damage: 0
-				}
-			}
 			id: "3A04CF4E38B05335"
 			tasks: [{
 				id: "6269700479FB3596"
@@ -75,6 +25,19 @@
 					id: "itemfilters:or"
 					tag: {
 						items: [
+							{
+								Count: 1b
+								ForgeCaps: {
+									"tfc:item_heat": {
+										heat: 0.0f
+										ticks: 0L
+									}
+								}
+								id: "tfc:metal/pickaxe/copper"
+								tag: {
+									Damage: 0
+								}
+							}
 							{
 								Count: 1b
 								ForgeCaps: {
@@ -96,7 +59,7 @@
 										ticks: 0L
 									}
 								}
-								id: "tfc:metal/pickaxe/black_bronze"
+								id: "tfc:metal/pickaxe/bismuth_bronze"
 								tag: {
 									Damage: 0
 								}
@@ -109,7 +72,7 @@
 										ticks: 0L
 									}
 								}
-								id: "tfc:metal/pickaxe/bismuth_bronze"
+								id: "tfc:metal/pickaxe/black_bronze"
 								tag: {
 									Damage: 0
 								}
@@ -117,12 +80,12 @@
 						]
 					}
 				}
-				title: "Bronze Pickaxe"
+				title: "Pickaxes"
 				type: "item"
 			}]
-			title: "Bronze Pickaxe"
+			title: "Pickaxe"
 			x: -11.5d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -266,24 +229,8 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"23802C9DF7121654"
-				"3A04CF4E38B05335"
-			]
+			dependencies: ["3A04CF4E38B05335"]
 			dependency_requirement: "one_completed"
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "precisionprospecting:metal/prospector_drill/black_bronze"
-				tag: {
-					Damage: 0
-				}
-			}
 			id: "09A640EEC11D129E"
 			tasks: [{
 				id: "59CADEBE16AE3E93"
@@ -325,7 +272,6 @@
 		}
 		{
 			dependencies: [
-				"23802C9DF7121654"
 				"3A04CF4E38B05335"
 				"11E09B425935ABFE"
 			]
@@ -351,19 +297,6 @@
 		}
 		{
 			dependencies: ["09A640EEC11D129E"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "precisionprospecting:metal/mineral_prospector/steel"
-				tag: {
-					Damage: 0
-				}
-			}
 			id: "4EB1F97A5E162BF3"
 			tasks: [{
 				id: "59D9A265BC832F33"
