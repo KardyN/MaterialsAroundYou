@@ -7,4 +7,5 @@ ServerEvents.tags("item", (event) => {
   event.add("may:briquettes", /kubejs:briquette.+/);
   event.add("may:heap/sand", /kubejs:pile\/.+sand/);
   event.add("may:blooms", /kubejs:raw.+bloom/);
+  event.add("may:encased_axles", /.fc:wood\/encased_axle\/.+/);
 });
