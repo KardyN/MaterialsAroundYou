@@ -1,17 +1,14 @@
 ServerEvents.recipes((event) => {
   let recipes = [
-    /*
     {
-      output: "create:andesite_alloy",
-      pattern: ["ABA", "BCB", "ABA"],
+      output: Item.of("tfc:fire_bricks", 4),
+      pattern: ["ABA", "BAB", "ABA"],
       key: {
-        A: "create:andesite_alloy",
-        B: "create:andesite_alloy",
-        C: "create:andesite_alloy",
+        A: "tfc:ceramic/fire_brick",
+        B: "tfc:mortar",
       },
-      id: "create:shaped/andesite_alloy",
+      id: "may:shaped/fire_bricks",
     },
-    */
   ];
 
   global.woodList.forEach((wood) => {
@@ -24,7 +21,7 @@ ServerEvents.recipes((event) => {
           B: "kubejs:wooden_gear",
           C: "tfc:glue",
         },
-        id: "may:shapeless/clutch/" + wood.slice(4),
+        id: "may:shaped/clutch/" + wood.slice(4),
       },
       {
         output: wood.splice(4, "wood/gear_box/"),
@@ -34,7 +31,7 @@ ServerEvents.recipes((event) => {
           B: "kubejs:wooden_gear",
           C: "tfc:glue",
         },
-        id: "may:shapeless/gear_box/" + wood.slice(4),
+        id: "may:shaped/gear_box/" + wood.slice(4),
       }
     );
   });
