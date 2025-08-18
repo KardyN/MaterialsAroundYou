@@ -405,18 +405,21 @@
 				title: "TODO: Casting Channels"
 				type: "custom"
 			}]
-			x: 5.0d
+			x: 4.5d
 			y: -3.5d
 		}
 		{
-			dependencies: ["25DC366C64A4CE4B"]
-			icon: "immersiveengineering:cokebrick"
+			dependencies: [
+				"25DC366C64A4CE4B"
+				"0C55A28662800481"
+			]
+			icon: "immersiveengineering:coke_oven"
 			id: "36F2106C10C58AB8"
 			tasks: [
 				{
 					count: 27L
 					id: "50AB5700D44ED557"
-					item: "immersiveengineering:cokebrick"
+					item: "tfc:fire_bricks"
 					type: "item"
 				}
 				{
@@ -432,8 +435,8 @@
 				}
 			]
 			title: "Coke Oven"
-			x: -4.5d
-			y: -4.5d
+			x: 4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["36F2106C10C58AB8"]
@@ -444,9 +447,9 @@
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
-			title: "Charcoal Production"
-			x: -3.0d
-			y: -4.0d
+			title: "Efficient Charcoal Production"
+			x: 6.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["29B54FAB02DE3E0D"]
@@ -475,8 +478,8 @@
 				item: "immersiveengineering:coal_coke"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -5.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			id: "72CB48B63E15378F"
@@ -487,6 +490,19 @@
 			}]
 			x: -3.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["0D459C0CC21CF528"]
+			id: "0C55A28662800481"
+			tasks: [{
+				count: 35L
+				id: "0531CBCC519782CB"
+				item: "tfc:ceramic/fire_brick"
+				type: "item"
+			}]
+			title: "Fire Bricks"
+			x: 3.0d
+			y: -2.0d
 		}
 	]
 	title: "Ores Processing"
