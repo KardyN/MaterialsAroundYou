@@ -51,3 +51,4 @@ config/fml.toml
 profileImage/server-icon.png
 /xaero
 config/fml.toml
+config/oculus.properties
