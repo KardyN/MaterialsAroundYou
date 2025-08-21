@@ -70,6 +70,7 @@ ServerEvents.recipes((event) => {
     //mekanism & addons
     { id: "mekanism:charcoal" },
     { id: "mekanism:storage_blocks/charcoal" },
+    { id: /mekanism:sawing\/.+/ },
     //farmer's delight & addons
     { id: /farmersdelight:cutting\/.+wood/ },
     { id: /farmersdelight:cutting\/.+log/ },
