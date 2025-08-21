@@ -11,45 +11,75 @@ ServerEvents.genericLootTables((event) => {
               type: "minecraft:alternatives",
               children: [
                 {
-                  type: "minecraft:group",
+                  type: "minecraft:item",
+                  name: "tfc:powder/native_copper",
                   conditions: [
-                    { condition: "minecraft:random_chance", chance: 0.25 },
+                    {
+                      condition: "minecraft:random_chance",
+                      chance: 0.4,
+                    },
                   ],
-                  children: [],
+                },
+                {
+                  type: "minecraft:item",
+                  name: "tfc:powder/native_silver",
+                  conditions: [
+                    {
+                      condition: "minecraft:random_chance",
+                      chance: 0.2,
+                    },
+                  ],
+                },
+                {
+                  type: "minecraft:item",
+                  name: "tfc:powder/native_gold",
+                  conditions: [
+                    {
+                      condition: "minecraft:random_chance",
+                      chance: 0.1,
+                    },
+                  ],
                 },
                 {
                   type: "minecraft:item",
                   name: `tfc:rock/loose/${deposit.rock}`,
                   conditions: [
-                    { condition: "minecraft:random_chance", chance: 0.6667 },
+                    { condition: "minecraft:random_chance", chance: 0.6 },
                   ],
                 },
                 {
                   type: "minecraft:item",
                   name: deposit.secondary,
                   conditions: [
-                    { condition: "minecraft:random_chance", chance: 0.2 },
+                    { condition: "minecraft:random_chance", chance: 0.3 },
                   ],
                 },
                 {
                   type: "minecraft:item",
                   name: deposit.tertiary,
                   conditions: [
-                    { condition: "minecraft:random_chance", chance: 0.025 },
+                    { condition: "minecraft:random_chance", chance: 0.1 },
                   ],
                 },
               ],
             },
           ],
         },
+        // DEBUG CODE
+        /*
+        {
+          name: "loot_pool",
+          rolls: 1,
+          entries: [
+            {
+              type: "minecraft:item",
+              name: "minecraft:stick",
+            },
+          ],
+        },
+        */
       ],
     };
-    deposit.ores.forEach((ore) => {
-      newJson.pools[0].entries[0].children[0].children.push({
-        type: "minecraft:item",
-        name: ore,
-      });
-    });
     //console.log(JSON.stringify(newJson, null, 4));
     event.addJson(`may:panning/gravel/${deposit.rock}`, newJson);
   });

@@ -5,4 +5,11 @@ ServerEvents.lowPriorityData((event) => {
       loot_table: `may:sluicing/dirty_dust/${ore.name}`,
     });
   });
+
+  global.panningList.forEach((deposit) => {
+    event.addJson(`tfc:tfc/sluicing/gravel/${deposit.rock}`, {
+      ingredient: { item: `tfc:rock/gravel/${deposit.rock}` },
+      loot_table: `may:sluicing/gravel/${deposit.rock}`,
+    });
+  });
 });
