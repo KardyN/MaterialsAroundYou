@@ -20,12 +20,13 @@ ServerEvents.recipes((event) => {
     },
     {
       output: "create:hand_crank",
-      inputs: [
-        "create:andesite_alloy",
-        "#tfc:lumber",
-        "tfc:metal/rod/wrought_iron",
-      ],
+      inputs: ["create:andesite_alloy", "#tfc:lumber", "#forge:rods"],
       id: "may:shapeless/hand_crank",
+    },
+    {
+      output: "create:fluid_valve",
+      inputs: ["create:fluid_pipe", "create:shaft", "#forge:sheets"],
+      id: "may:shapeless/fluid_valve",
     },
   ];
 
