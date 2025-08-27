@@ -8,14 +8,14 @@ ServerEvents.recipes((event) => {
           tag: "forge:dusts/sulfur",
         },
         {
-          amount: 1000,
+          amount: 250,
           fluid: "afc:latex",
           nbt: {},
         },
       ],
       results: [
         {
-          item: "create:belt_connector",
+          item: "afc:rubber_bar",
         },
       ],
     },

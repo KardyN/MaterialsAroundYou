@@ -38,6 +38,7 @@ ServerEvents.recipes((event) => {
     { id: "immersiveengineering:crafting/coke_to_coal_coke" },
     { id: "immersiveengineering:crafting/coal_coke_to_coke" },
     { id: "immersiveengineering:crafting/fluorescent_tube" },
+    { id: /immersiveengineering:crafting\/.*hammer.*/ },
     { id: /immersiveengineering:crafting\/.*nugget.*/ },
     { id: /tfc_ie_addon:metalpress\/.+/ },
     { id: /tfc_ie_addon:cokeoven\/.+/ },
@@ -76,11 +77,19 @@ ServerEvents.recipes((event) => {
     { id: "create:crafting/kinetics/fluid_tank" },
     { id: "create:crafting/kinetics/hose_pulley" },
     { id: "create:crafting/kinetics/item_drain" },
+    { id: "create:crafting/kinetics/steam_engine" },
+    { id: "create:crafting/kinetics/steam_whistle" },
+    { id: "create:crafting/kinetics/elevator_pulley" },
     { type: "create:mechanical_crafting" },
     { id: /create:crafting\/schematics\/.+/ },
     { id: /create:crafting\/kinetics\/.*cogwheel.*/ },
     { id: /create:deploying\/.*cogwheel/ },
     { id: /create:.+\/andesite_alloy.*/ },
+    { id: /railways:.*locometal.*/ },
+    { id: /railways:sequenced_assembly\/track.+/ },
+    { id: "create:sequenced_assembly/track" },
+    { id: "create:sequenced_assembly/precision_mechanism" },
+    { id: "create:pressing/copper_ingot" },
     //mekanism & addons
     { id: "mekanism:charcoal" },
     { id: "mekanism:storage_blocks/charcoal" },
@@ -97,6 +106,9 @@ ServerEvents.recipes((event) => {
     { id: /farmersrespite:.+\/water_cup/ },
     // AE2 & addons
     { id: /ae2:tools\/.+/ },
+    { id: /ae2:transform\/.+/ },
+    //Pneumatic Craft\
+    { id: "pneumaticcraft:amadron_tablet" },
   ];
 
   recipes.forEach((recipe) => {

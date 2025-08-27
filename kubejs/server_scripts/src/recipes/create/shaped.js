@@ -169,6 +169,23 @@ ServerEvents.recipes((event) => {
       },
       id: "may:shaped/item_drain",
     },
+    {
+      output: "create:belt_connector",
+      pattern: ["AAA", "AAA"],
+      key: {
+        A: "afc:rubber_bar",
+      },
+      id: "may:shaped/belt_connector",
+    },
+    {
+      output: "create:crushing_wheel",
+      pattern: ["AAA", "ABA", "AAA"],
+      key: {
+        A: "tfc:metal/sheet/wrought_iron",
+        B: "create:andesite_casing",
+      },
+      id: "may:shaped/crushing_wheel",
+    },
   ];
 
   recipes.forEach((recipe) => {
