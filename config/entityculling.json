@@ -1,6 +1,6 @@
 {
   "configVersion": 7,
-  "renderNametagsThroughWalls": true,
+  "renderNametagsThroughWalls": false,
   "blockEntityWhitelist": [
     "create:rope_pulley",
     "botania:flame_ring",
@@ -21,7 +21,7 @@
   "hitboxLimit": 50,
   "captureRate": 5,
   "skipMarkerArmorStands": true,
-  "tickCulling": true,
+  "tickCulling": false,
   "tickCullingWhitelist": [
     "minecraft:block_display",
     "alexscaves:gum_worm",
@@ -61,7 +61,7 @@
     "minecraft:bamboo_chest_raft",
     "minecraft:mangrove_chest_boat"
   ],
-  "disableF3": false,
+  "disableF3": true,
   "skipEntityCulling": false,
   "skipBlockEntityCulling": false
 }
