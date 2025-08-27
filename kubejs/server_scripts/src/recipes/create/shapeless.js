@@ -11,14 +11,6 @@ ServerEvents.recipes((event) => {
       id: "may:shapeless/large_cogwheel",
     },
     {
-      output: "create:netherite_backtank",
-      inputs: [
-        "create:copper_backtank",
-        "pneumaticcraft:compressed_iron_block",
-      ],
-      id: "may:shapeless/netherite_backtank",
-    },
-    {
       output: "create:hand_crank",
       inputs: ["create:andesite_alloy", "#tfc:lumber", "#forge:rods"],
       id: "may:shapeless/hand_crank",

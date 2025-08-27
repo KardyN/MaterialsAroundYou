@@ -40,6 +40,9 @@ jei.items.hide = [
   /mekanism:.*ore.*/,
   /railways:track.*/,
   "create:track",
+  /ae2:.*((axe)|(knife)|(shovel)|(hoe)|(sword)).*/,
+  "immersiveengineering:pickaxe_steel",
+  /minecraft:.*((axe)|(shovel)|(hoe)|(sword)).*/,
 ];
 
 jei.items.add = [

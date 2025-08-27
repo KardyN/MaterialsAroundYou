@@ -44,7 +44,7 @@ ServerEvents.recipes((event) => {
     { id: /tfc_ie_addon:cokeoven\/.+/ },
     { id: /immersivegeology:coking\/.+/ },
     //create & addons
-    { id: /create:crafting\/appliances\/.*backtank.*/ },
+    { id: "create:crafting/appliances/copper_backtank" },
     { id: /create:crafting\/appliances\/.*controller.*/ },
     { id: "create:crafting/kinetics/andesite_door" },
     { id: "create:crafting/kinetics/shaft" },
@@ -105,7 +105,7 @@ ServerEvents.recipes((event) => {
     { id: "farmersdelight:cooking/turtle_stew" },
     { id: /farmersrespite:.+\/water_cup/ },
     // AE2 & addons
-    { id: /ae2:tools\/.+/ },
+    { id: /ae2:.*((axe)|(knife)|(shovel)|(hoe)|(sword)).*/ },
     { id: /ae2:transform\/.+/ },
     //Pneumatic Craft\
     { id: "pneumaticcraft:amadron_tablet" },
