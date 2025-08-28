@@ -1,0 +1,10 @@
+{
+  "block.railways.track_switch_andesite": "Track Switch",
+  "block.railways.track_tfc_chestnut": "Train Track",
+  "block.railways.track_tfc_chestnut_wide": "Wide Train Track",
+  "block.railways.track_tfc_chestnut_narrow": "Narrow Train Track",
+
+  "item.railways.track_incomplete_tfc_chestnut": "Incomplete Train Track",
+  "item.railways.track_incomplete_tfc_chestnut_wide": "Incomplete Wide Train Track",
+  "item.railways.track_incomplete_tfc_chestnut_narrow": "Incomplete Narrow Train Track"
+}
