@@ -4,6 +4,7 @@ ServerEvents.recipes((event) => {
     //minecraft
     { id: "minecraft:charcoal" },
     { id: "minecraft:cauldron" },
+    { id: "minecraft:leather" },
     { output: "minecraft:netherrack" },
     { id: "minecraft:sea_lantern" },
     { output: "minecraft:iron_bars" },
@@ -51,6 +52,11 @@ ServerEvents.recipes((event) => {
     { id: "tfc:heating/kaolin_clay" },
     { id: "tfc:crafting/fire_clay" },
     { id: "tfc:crafting/fire_bricks" },
+    { id: /tfc:barrel\/((large)|(medium)|(small))_((soaked)|(prepared))_hide/ },
+    { id: /tfc:barrel\/((large)|(medium)|(small))_leather/ },
+    { id: /firmaciv:barrel\/large_waterproof_hide_.+/ },
+    { id: "firmaciv:crafting/large_waterproof_hide" },
+    { type: "advancedtfctech:beamhouse" },
 
     //immersive & addons
     { type: "immersiveengineering:crusher" },

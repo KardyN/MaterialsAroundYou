@@ -9,6 +9,38 @@ ServerEvents.recipes((event) => {
       ],
       id: "may:crafting/fire_clay",
     },
+    // cutting hides w/ knives
+    {
+      output: "6x minecraft:leather",
+      inputs: ["kubejs:large_waterproof_hide", "#tfc:knives"],
+      id: "may:crafting/large_waterproof_hide_to_leather_with_knives",
+    },
+    {
+      output: "4x minecraft:leather",
+      inputs: ["kubejs:medium_waterproof_hide", "#tfc:knives"],
+      id: "may:crafting/medium_waterproof_hide_to_leather_with_knives",
+    },
+    {
+      output: "2x minecraft:leather",
+      inputs: ["kubejs:small_waterproof_hide", "#tfc:knives"],
+      id: "may:crafting/small_waterproof_hide_to_leather_with_knives",
+    },
+    // cutting hides w/ shears
+    {
+      output: "6x minecraft:leather",
+      inputs: ["kubejs:large_waterproof_hide", "#tfc:shears"],
+      id: "may:crafting/large_waterproof_hide_to_leather_with_shears",
+    },
+    {
+      output: "4x minecraft:leather",
+      inputs: ["kubejs:medium_waterproof_hide", "#tfc:shears"],
+      id: "may:crafting/medium_waterproof_hide_to_leather_with_shears",
+    },
+    {
+      output: "2x minecraft:leather",
+      inputs: ["kubejs:small_waterproof_hide", "#tfc:shears"],
+      id: "may:crafting/small_waterproof_hide_to_leather_with_shears",
+    },
   ];
 
   global.powderList.forEach((powder) => {

@@ -164,5 +164,15 @@
   "tfc.jei.lumber_knapping": "Lumber Knapping Recipe",
 
   "fluid.kubejs.water.boiled": "Boiled Water",
-  "item.kubejs.water.boiled_bucket": "Boiled Water Bucket"
+  "item.kubejs.water.boiled_bucket": "Boiled Water Bucket",
+
+  "item.kubejs.small_clean_hide": "Small Clean Hide",
+  "item.kubejs.medium_clean_hide": "Medium Clean Hide",
+  "item.kubejs.large_clean_hide": "Large Clean Hide",
+  "item.kubejs.small_tanned_hide": "Small Tanned Hide",
+  "item.kubejs.medium_tanned_hide": "Medium Tanned Hide",
+  "item.kubejs.large_tanned_hide": "Large Tanned Hide",
+  "item.kubejs.small_waterproof_hide": "Small Waterproof Hide",
+  "item.kubejs.medium_waterproof_hide": "Medium Waterproof Hide",
+  "item.kubejs.large_waterproof_hide": "Large Waterproof Hide"
 }
