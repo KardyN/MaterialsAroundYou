@@ -2,12 +2,10 @@
 
 const jei = {
   items: { hide: [], add: [] },
-  blocks: { hide: [] },
-  fluids: { hide: [] },
-  gases: { hide: [] },
-  recipes: { hide: [] },
+  //fluids: { hide: [] },
+  //gases: { hide: [] },
+  //recipes: { hide: [] },
   categories: { hide: [] },
-  items: { hide: [] },
 };
 
 jei.items.hide = [
@@ -91,8 +89,6 @@ jei.items.add = [
   "railways:track_tfc_chestnut_wide",
   "railways:track_tfc_chestnut_narrow",
 ];
-
-jei.fluids.hide = [];
 
 jei.categories.hide = [
   "create:automatic_packing",
