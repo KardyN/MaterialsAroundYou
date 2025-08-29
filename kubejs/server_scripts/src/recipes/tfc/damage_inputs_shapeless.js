@@ -8,6 +8,25 @@ ServerEvents.recipes((event) => {
       },
       id: "may:shapeless/wattle",
     },
+    {
+      recipe: {
+        type: "minecraft:crafting_shapeless",
+        ingredients: [{ item: "tfc:wool" }, { tag: "may:spindle" }],
+        result: { item: "tfc:wool_yarn", count: 8 },
+      },
+      id: "may:shapeless/wool_yarn",
+    },
+    {
+      recipe: {
+        type: "minecraft:crafting_shapeless",
+        ingredients: [
+          { item: "firmalife:pineapple_fiber" },
+          { tag: "may:spindle" },
+        ],
+        result: { item: "firmalife:pineapple_yarn", count: 8 },
+      },
+      id: "may:shapeless/pineapple_yarn",
+    },
   ];
 
   global.oreList.forEach((ore) => {

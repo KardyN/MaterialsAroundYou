@@ -23,6 +23,7 @@ jei.items.hide = [
   /minecraft:.*((deepslate)|(sandstone)|(andesite)|(granite)|(diorite)|(nether_brick)|(smooth_stone)|(blackstone)|(end_stone)|(purpur)|(prismarin)|(stone_brick)|(mossy)|(cobblestone)|(basalt)).*/,
   /minecraft:stone(?!cutter).*/,
   /minecraft:((coal)|(iron)|(gold)|(emerald)|(lapis)|(diamond)|(netherite))_block/,
+  /minecraft:((iron)|(golden)|(diamond))_horse_armor/,
 
   //tfc & addons
   /tfc.*:ore\/.+\/.+/,

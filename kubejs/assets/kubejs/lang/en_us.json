@@ -174,5 +174,12 @@
   "item.kubejs.large_tanned_hide": "Large Tanned Hide",
   "item.kubejs.small_waterproof_hide": "Small Waterproof Hide",
   "item.kubejs.medium_waterproof_hide": "Medium Waterproof Hide",
-  "item.kubejs.large_waterproof_hide": "Large Waterproof Hide"
+  "item.kubejs.large_waterproof_hide": "Large Waterproof Hide",
+
+  "item.kubejs.metal.spindle_head.copper": "Copper Spindle Head",
+  "item.kubejs.metal.spindle_head.bronze": "Bronze Spindle Head",
+  "item.kubejs.metal.spindle_head.wrought_iron": "Wrought Iron Spindle Head",
+  "item.kubejs.metal.spindle.copper": "Copper Spindle",
+  "item.kubejs.metal.spindle.bronze": "Bronze Spindle",
+  "item.kubejs.metal.spindle.wrought_iron": "Wrought Iron Spindle"
 }

@@ -49,6 +49,33 @@ StartupEvents.registry("item", (event) => {
   event
     .create("large_waterproof_hide")
     .texture("kubejs:item/hide/large/waterproof");
+  event
+    .create("metal/spindle_head/copper")
+    .texture("kubejs:item/metal/spindle_head/copper")
+    .unstackable();
+  event
+    .create("metal/spindle_head/bronze")
+    .texture("kubejs:item/metal/spindle_head/bronze")
+    .unstackable();
+  event
+    .create("metal/spindle_head/wrought_iron")
+    .texture("kubejs:item/metal/spindle_head/wrought_iron")
+    .unstackable();
+  event
+    .create("metal/spindle/copper")
+    .texture("kubejs:item/metal/spindle/copper")
+    .unstackable()
+    .maxDamage(600);
+  event
+    .create("metal/spindle/bronze")
+    .texture("kubejs:item/metal/spindle/bronze")
+    .unstackable()
+    .maxDamage(1300);
+  event
+    .create("metal/spindle/wrought_iron")
+    .texture("kubejs:item/metal/spindle/wrought_iron")
+    .unstackable()
+    .maxDamage(2200);
 
   /*****************************************************************************
    * Registering osmirite tools

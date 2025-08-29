@@ -11,4 +11,5 @@ ServerEvents.tags("item", (event) => {
   event.add("may:axles", /.fc:wood\/axle\/.+/);
   event.add("may:ropes", "firmaciv:rope_coil");
   event.add("may:bars", /.+bars.*/);
+  event.add("may:spindle", [/kubejs:metal\/spindle\/.+/, "tfc:spindle"]);
 });

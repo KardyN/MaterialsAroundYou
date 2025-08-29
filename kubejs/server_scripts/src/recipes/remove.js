@@ -27,6 +27,7 @@ ServerEvents.recipes((event) => {
       output:
         /minecraft:((coal)|(iron)|(gold)|(emerald)|(lapis)|(diamond)|(netherite))_block/,
     },
+    { input: /minecraft:((iron)|(golden)|(diamond))_horse_armor/ },
 
     //tfc & addons
     { id: /_cut$/ },
@@ -52,6 +53,8 @@ ServerEvents.recipes((event) => {
     { id: "tfc:heating/kaolin_clay" },
     { id: "tfc:crafting/fire_clay" },
     { id: "tfc:crafting/fire_bricks" },
+    { id: "tfc:crafting/wool_yarn" },
+    { id: "firmalife:crafting/pineapple_yarn" },
     { id: /tfc:barrel\/((large)|(medium)|(small))_((soaked)|(prepared))_hide/ },
     { id: /tfc:barrel\/((large)|(medium)|(small))_leather/ },
     { id: /firmaciv:barrel\/large_waterproof_hide_.+/ },
@@ -122,13 +125,16 @@ ServerEvents.recipes((event) => {
     { id: "create:sequenced_assembly/track" },
     { id: "create:sequenced_assembly/precision_mechanism" },
     { id: "create:pressing/copper_ingot" },
+    { id: "create:crushing/leather_horse_armor" },
+    { id: "create:crushing/saddle" },
+    { id: "create:milling/saddle" },
     { output: /create:crushed.*/ },
 
     //mekanism & addons
     { id: "mekanism:charcoal" },
     { id: "mekanism:storage_blocks/charcoal" },
     { id: /mekanism:sawing.+/ },
-    { id: "mekanism:nucleosynthesizing/trident" },
+    { id: /mekanism:nucleosynthesizing\/.+/ },
 
     //farmer's delight & addons
     { id: /farmersdelight:cutting\/.+wood/ },

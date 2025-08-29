@@ -3,7 +3,7 @@
 	#─────────────────────────────────────────────────────────────────────────
 	# Displays temperature in Celsius instead of Fahrenheit
 	# ⌄ 
-	Celsius = false
+	Celsius = true
 	#─────────────────────────────────────────────────────────────────────────
 	# Visually offsets the world temperature to better match the user's definition of "hot" and "cold"
 	# ⌄ 
@@ -48,7 +48,7 @@
 	#─────────────────────────────────────────────────────────────────────────
 	# The position of the body temperature icon relative to default
 	# ⌄ 
-	"Body Temperature Icon Offset" = [0, 0]
+	"Body Temperature Icon Offset" = [0, -7]
 	#─────────────────────────────────────────────────────────────────────────
 	# Enables the body temperature icon above the hotbar
 	# ⌄ 
@@ -56,11 +56,11 @@
 	#─────────────────────────────────────────────────────────────────────────
 	# Moves the body temperature icon to make way for the advanced readout when a thermometer is equipped
 	# ⌄ 
-	"Move Body Icon For Advanced Info" = true
+	"Move Body Icon For Advanced Info" = false
 	#─────────────────────────────────────────────────────────────────────────
 	# The position of the body temperature readout relative to default
 	# ⌄ 
-	"Body Temperature Readout Offset" = [0, 0]
+	"Body Temperature Readout Offset" = [14, -11]
 	#─────────────────────────────────────────────────────────────────────────
 	# Enables the body temperature readout above the hotbar
 	# ⌄ 
@@ -68,7 +68,7 @@
 	#─────────────────────────────────────────────────────────────────────────
 	# The position of the world temperature gauge relative to default
 	# ⌄ 
-	"World Temperature UI Offset" = [0, 0]
+	"World Temperature UI Offset" = [-125, -38]
 	#─────────────────────────────────────────────────────────────────────────
 	# Enables the world temperature gauge next to the hotbar
 	# ⌄ 
@@ -155,7 +155,7 @@
 	#─────────────────────────────────────────────────────────────────────────
 	# The position (offset) of the config button on the screen
 	# ⌄ 
-	"Config Button Position" = [0, 0]
+	"Config Button Position" = [45, 56]
 	#─────────────────────────────────────────────────────────────────────────
 	# Warns the player about a bug that clears armor insulation when in creative mode
 	# ⌄ 
