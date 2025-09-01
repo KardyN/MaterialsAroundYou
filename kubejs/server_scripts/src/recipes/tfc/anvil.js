@@ -42,6 +42,27 @@ ServerEvents.recipes((event) => {
       rules: ["hit_last", "hit_second_last", "hit_third_last"],
       id: "may:anvil/basin",
     },
+    {
+      input: { item: "tfc:metal/rod/wrought_iron" },
+      result: { item: "kubejs:metal/spindle_head/wrought_iron" },
+      tier: 3,
+      rules: ["hit_last", "hit_second_last", "hit_third_last"],
+      id: "may:anvil/spindle_head/wrought_iron",
+    },
+    {
+      input: { item: "tfc:metal/rod/bronze" },
+      result: { item: "kubejs:metal/spindle_head/bronze" },
+      tier: 2,
+      rules: ["hit_last", "hit_second_last", "hit_third_last"],
+      id: "may:anvil/spindle_head/bronze",
+    },
+    {
+      input: { item: "tfc:metal/rod/copper" },
+      result: { item: "kubejs:metal/spindle_head/copper" },
+      tier: 1,
+      rules: ["hit_last", "hit_second_last", "hit_third_last"],
+      id: "may:anvil/spindle_head/copper",
+    },
   ];
 
   recipes.forEach((recipe) => {
