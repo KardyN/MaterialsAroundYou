@@ -1,450 +1,56 @@
 ServerEvents.recipes((event) => {
   let recipes = [
-    {
-      ingredient: {
-        item: "tfc_ie_addon:treated_wood_lumber",
-      },
-      loops: 1,
-      results: [
-        {
-          item: "railways:track_tfc_chestnut",
-        },
-      ],
-      sequence: [
-        {
-          type: "create:deploying",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-            [
-              {
-                tag: "forge:stamens/wrought_iron",
-              },
-            ],
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-        {
-          type: "create:deploying",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-            [
-              {
-                item: "tfc_ie_addon:treated_wood_lumber",
-              },
-            ],
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-        {
-          type: "create:deploying",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-            [
-              {
-                tag: "forge:stamens/wrought_iron",
-              },
-            ],
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-        {
-          type: "create:deploying",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-            [
-              {
-                item: "tfc_items:handful_wrought_iron_screws",
-              },
-            ],
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-        {
-          type: "create:pressing",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-        {
-          type: "create:pressing",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-      ],
-      transitionalItem: {
-        item: "create:incomplete_track",
-      },
-      id: "may:sequenced_assembly/track",
-    },
-    ////////////////////////////////////////////////////////////////////////////
-    {
-      ingredient: {
-        item: "immersiveengineering:treated_wood_horizontal",
-      },
-      loops: 1,
-      results: [
-        {
-          item: "railways:track_tfc_chestnut_wide",
-        },
-      ],
-      sequence: [
-        {
-          type: "create:cutting",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-        {
-          type: "create:deploying",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-            [
-              {
-                tag: "forge:stamens/wrought_iron",
-              },
-            ],
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-        {
-          type: "create:deploying",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-            [
-              {
-                tag: "forge:stamens/wrought_iron",
-              },
-            ],
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-        {
-          type: "create:deploying",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-            [
-              {
-                item: "tfc_items:handful_wrought_iron_screws",
-              },
-            ],
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-        {
-          type: "create:pressing",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-        {
-          type: "create:pressing",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-      ],
-      transitionalItem: {
-        item: "create:incomplete_track",
-      },
-      id: "may:sequenced_assembly/track_wide",
-    },
-    ////////////////////////////////////////////////////////////////////////////
-    {
-      ingredient: {
-        item: "tfc_ie_addon:treated_wood_lumber",
-      },
-      loops: 1,
-      results: [
-        {
-          item: "railways:track_tfc_chestnut_narrow",
-        },
-      ],
-      sequence: [
-        {
-          type: "create:cutting",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-        {
-          type: "create:deploying",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-            [
-              {
-                tag: "forge:stamens/wrought_iron",
-              },
-            ],
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-        {
-          type: "create:deploying",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-            [
-              {
-                tag: "forge:stamens/wrought_iron",
-              },
-            ],
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-        {
-          type: "create:deploying",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-            [
-              {
-                item: "tfc_items:handful_wrought_iron_screws",
-              },
-            ],
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-        {
-          type: "create:pressing",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-        {
-          type: "create:pressing",
-          ingredients: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-          results: [
-            {
-              item: "create:incomplete_track",
-            },
-          ],
-        },
-      ],
-      transitionalItem: {
-        item: "create:incomplete_track",
-      },
-      id: "may:sequenced_assembly/track_narrow",
-    },
-    ////////////////////////////////////////////////////////////////////////////
-    {
-      ingredient: {
-        tag: "forge:sheets/brass",
-      },
-      loops: 1,
-      results: [
-        {
-          item: "create:precision_mechanism",
-        },
-      ],
-      sequence: [
-        {
-          type: "create:pressing",
-          ingredients: [
-            {
-              item: "create:incomplete_precision_mechanism",
-            },
-          ],
-          results: [
-            {
-              item: "create:incomplete_precision_mechanism",
-            },
-          ],
-        },
-        {
-          type: "create:deploying",
-          ingredients: [
-            {
-              item: "create:incomplete_precision_mechanism",
-            },
-            {
-              item: "tfc:brass_mechanisms",
-            },
-          ],
-          results: [
-            {
-              item: "create:incomplete_precision_mechanism",
-            },
-          ],
-        },
-        {
-          type: "create:deploying",
-          ingredients: [
-            {
-              item: "create:incomplete_precision_mechanism",
-            },
-            {
-              item: "tfc:brass_mechanisms",
-            },
-          ],
-          results: [
-            {
-              item: "create:incomplete_precision_mechanism",
-            },
-          ],
-        },
-        {
-          type: "create:deploying",
-          ingredients: [
-            {
-              item: "create:incomplete_precision_mechanism",
-            },
-            {
-              item: "tfc:brass_mechanisms",
-            },
-          ],
-          results: [
-            {
-              item: "create:incomplete_precision_mechanism",
-            },
-          ],
-        },
-        {
-          type: "create:deploying",
-          ingredients: [
-            {
-              item: "create:incomplete_precision_mechanism",
-            },
-            {
-              item: "tfc_items:handful_wrought_iron_screws",
-            },
-          ],
-          results: [
-            {
-              item: "create:incomplete_precision_mechanism",
-            },
-          ],
-        },
-        {
-          type: "create:pressing",
-          ingredients: [
-            {
-              item: "create:incomplete_precision_mechanism",
-            },
-          ],
-          results: [
-            {
-              item: "create:incomplete_precision_mechanism",
-            },
-          ],
-        },
-      ],
-      transitionalItem: {
-        item: "create:incomplete_precision_mechanism",
-      },
-      id: "may:sequenced_assembly/precision_mechanism",
-    },
+    SequencedAssemblyRecipeBuilder()
+      .addId("may:sequenced_assembly/track")
+      .addIngridient("tfc_ie_addon:treated_wood_lumber")
+      .addTransitionalItem("create:incomplete_track")
+      .addSequenceStep("deploying", "#forge:stamens/wrought_iron")
+      .addSequenceStep("deploying", "tfc_ie_addon:treated_wood_lumber")
+      .addSequenceStep("deploying", "#forge:stamens/wrought_iron")
+      .addSequenceStep("deploying", "tfc_items:handful_wrought_iron_screws")
+      .addSequenceStep("pressing")
+      .addSequenceStep("pressing")
+      .addResult("railways:track_tfc_chestnut")
+      .build(),
+
+    SequencedAssemblyRecipeBuilder()
+      .addId("may:sequenced_assembly/track_wide")
+      .addIngridient("immersiveengineering:treated_wood_horizontal")
+      .addTransitionalItem("create:incomplete_track")
+      .addSequenceStep("cutting")
+      .addSequenceStep("deploying", "#forge:stamens/wrought_iron")
+      .addSequenceStep("deploying", "#forge:stamens/wrought_iron")
+      .addSequenceStep("deploying", "tfc_items:handful_wrought_iron_screws")
+      .addSequenceStep("pressing")
+      .addSequenceStep("pressing")
+      .addResult("railways:track_tfc_chestnut_wide")
+      .build(),
+
+    SequencedAssemblyRecipeBuilder()
+      .addId("may:sequenced_assembly/track_narrow")
+      .addIngridient("tfc_ie_addon:treated_wood_lumber")
+      .addTransitionalItem("create:incomplete_track")
+      .addSequenceStep("cutting")
+      .addSequenceStep("deploying", "#forge:stamens/wrought_iron")
+      .addSequenceStep("deploying", "#forge:stamens/wrought_iron")
+      .addSequenceStep("deploying", "tfc_items:handful_wrought_iron_screws")
+      .addSequenceStep("pressing")
+      .addSequenceStep("pressing")
+      .addResult("railways:track_tfc_chestnut_narrow")
+      .build(),
+
+    SequencedAssemblyRecipeBuilder()
+      .addId("may:sequenced_assembly/precision_mechanism")
+      .addIngridient("#forge:sheets/brass")
+      .addTransitionalItem("create:incomplete_precision_mechanism")
+      .addSequenceStep("pressing")
+      .addSequenceStep("deploying", "tfc:brass_mechanisms")
+      .addSequenceStep("deploying", "tfc:brass_mechanisms")
+      .addSequenceStep("deploying", "tfc:brass_mechanisms")
+      .addSequenceStep("deploying", "tfc_items:handful_wrought_iron_screws")
+      .addSequenceStep("pressing")
+      .addResult("create:precision_mechanism")
+      .build(),
   ];
 
   recipes.forEach((recipe) => {
@@ -454,10 +60,10 @@ ServerEvents.recipes((event) => {
 });
 
 function SequencedAssemblyRecipeBuilder() {
-  return {
-    _id: "",
+  let recipe = {
+    _id: "may:sequenced_assembly/test_recipe",
     _ingredient: {},
-    _loops: 0,
+    _loops: 1,
     _transitionalItem: {},
     _sequence: [],
     _results: [],
@@ -484,21 +90,11 @@ function SequencedAssemblyRecipeBuilder() {
       return this;
     },
 
-    addSequenceStep: function (stepType, addedIngridient) {
-      this.addSequenceStep(stepType, addedIngridient, null, null, null);
-      return this;
-    },
-
-    addSequenceStep: function (stepType, amount, fluid, nbt) {
-      this.addSequenceStep(stepType, null, amount, fluid, nbt);
-      return this;
-    },
-
     addSequenceStep: function (stepType, addedIngridient, amount, fluid, nbt) {
       switch (stepType) {
-        case "create:deploying":
-          this._sequence.add({
-            type: "create:deploying",
+        case "deploying":
+          this._sequence.push({
+            type: `create:${stepType}`,
             ingredients: [
               { item: this._transitionalItem.item },
               { item: addedIngridient },
@@ -506,9 +102,9 @@ function SequencedAssemblyRecipeBuilder() {
             results: [{ item: this._transitionalItem.item }],
           });
           break;
-        case "create:filling":
-          this._sequence.add({
-            type: "create:filling",
+        case "filling":
+          this._sequence.push({
+            type: `create:${stepType}`,
             ingredients: [
               { item: this._transitionalItem.item },
               { amount: amount, fluid: fluid, nbt: nbt },
@@ -516,9 +112,10 @@ function SequencedAssemblyRecipeBuilder() {
             results: [{ item: this._transitionalItem.item }],
           });
           break;
-        case "create:pressing":
-          this._sequence.add({
-            type: "create:pressing",
+        case "pressing":
+        case "cutting":
+          this._sequence.push({
+            type: `create:${stepType}`,
             ingredients: [{ item: this._transitionalItem.item }],
             results: [{ item: this._transitionalItem.item }],
           });
@@ -527,10 +124,10 @@ function SequencedAssemblyRecipeBuilder() {
       return this;
     },
 
-    addResult: function (chance, item) {
-      item[0] == "#"
-        ? this._results.add({ chance: chance, tag: item.slice(1) })
-        : this._results.add({ chance: chance, item: item });
+    addResult: function (item, chance) {
+      !chance
+        ? this._results.push({ item: item })
+        : this._results.push({ chance: chance, item: item });
       return this;
     },
 
@@ -541,8 +138,9 @@ function SequencedAssemblyRecipeBuilder() {
         loops: this._loops,
         transitionalItem: this._transitionalItem,
         sequence: this._sequence,
-        result: this._result,
+        results: this._results,
       };
     },
   };
+  return recipe;
 }
