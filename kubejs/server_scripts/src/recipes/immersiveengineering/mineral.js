@@ -1,5 +1,10 @@
 ServerEvents.recipes((event) => {
-  let recipes = [];
+  let recipes = [
+    MineralMixRecipeBuilder()
+      .addId("kubejs:testrecipe")
+      .addOutput(0.5, "minecraft:diamond")
+      .addSpoil(0.5, "minecraft:stone"),
+  ];
 
   recipes.forEach((recipe) => {
     recipe.type = "immersiveengineering:mineral_mix";
@@ -10,8 +15,8 @@ ServerEvents.recipes((event) => {
 function MineralMixRecipeBuilder() {
   let recipe = {
     _id: "",
-    _ores: {},
-    _spoils: {},
+    _ores: [],
+    _spoils: [],
     _weight: 1,
     _fail_chance: 0,
     _dimensions: ["minecraft:overworld"],
@@ -22,13 +27,17 @@ function MineralMixRecipeBuilder() {
       return this;
     },
 
-    addOutput: function (id) {
-      this._id = id;
+    addOutput: function (chance, output) {
+      output[0] == "#"
+        ? this._ores.add({ chance: chance, output: { tag: output.slice(1) } })
+        : this._ores.add({ chance: chance, output: { item: output } });
       return this;
     },
 
-    addSpoil: function (id) {
-      this._id = id;
+    addSpoil: function (chance, spoil) {
+      output[0] == "#"
+        ? this._ores.add({ chance: chance, output: { tag: spoil.slice(1) } })
+        : this._ores.add({ chance: chance, output: { item: spoil } });
       return this;
     },
 
@@ -38,7 +47,7 @@ function MineralMixRecipeBuilder() {
     },
 
     addFailChance: function (failChance) {
-      this._fail_chance = failChance;
+      this._failChance = failChance;
       return this;
     },
 
@@ -51,6 +60,16 @@ function MineralMixRecipeBuilder() {
     //   this._id = id;
     //   return this;
     // },
+    build: function () {
+      return {
+        id: this._id,
+        ores: this._ores,
+        spoils: this._spoils,
+        weight: this._id,
+        failChance: this._fail_chance,
+        dimensions: this._dimensions,
+      };
+    },
   };
   return recipe;
 }

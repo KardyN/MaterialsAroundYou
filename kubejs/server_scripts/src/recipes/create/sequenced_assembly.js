@@ -452,3 +452,97 @@ ServerEvents.recipes((event) => {
     event.custom(recipe).id(recipe.id);
   });
 });
+
+function SequencedAssemblyRecipeBuilder() {
+  return {
+    _id: "",
+    _ingredient: {},
+    _loops: 0,
+    _transitionalItem: {},
+    _sequence: [],
+    _results: [],
+
+    addId: function (id) {
+      this._id = id;
+      return this;
+    },
+
+    addIngridient: function (ingredient) {
+      ingredient[0] == "#"
+        ? (this._ingredient = { tag: ingredient.slice(1) })
+        : (this._ingredient = { item: ingredient });
+      return this;
+    },
+
+    addLoops: function (loops) {
+      this._loops = loops;
+      return this;
+    },
+
+    addTransitionalItem: function (item) {
+      this._transitionalItem = { item: item };
+      return this;
+    },
+
+    addSequenceStep: function (stepType, addedIngridient) {
+      this.addSequenceStep(stepType, addedIngridient, null, null, null);
+      return this;
+    },
+
+    addSequenceStep: function (stepType, amount, fluid, nbt) {
+      this.addSequenceStep(stepType, null, amount, fluid, nbt);
+      return this;
+    },
+
+    addSequenceStep: function (stepType, addedIngridient, amount, fluid, nbt) {
+      switch (stepType) {
+        case "create:deploying":
+          this._sequence.add({
+            type: "create:deploying",
+            ingredients: [
+              { item: this._transitionalItem.item },
+              { item: addedIngridient },
+            ],
+            results: [{ item: this._transitionalItem.item }],
+          });
+          break;
+        case "create:filling":
+          this._sequence.add({
+            type: "create:filling",
+            ingredients: [
+              { item: this._transitionalItem.item },
+              { amount: amount, fluid: fluid, nbt: nbt },
+            ],
+            results: [{ item: this._transitionalItem.item }],
+          });
+          break;
+        case "create:pressing":
+          this._sequence.add({
+            type: "create:pressing",
+            ingredients: [{ item: this._transitionalItem.item }],
+            results: [{ item: this._transitionalItem.item }],
+          });
+          break;
+      }
+      return this;
+    },
+
+    addResult: function (chance, item) {
+      item[0] == "#"
+        ? this._results.add({ chance: chance, tag: item.slice(1) })
+        : this._results.add({ chance: chance, item: item });
+      return this;
+    },
+
+    build: function () {
+      return {
+        id: this._id,
+        ingredient: this._ingredient,
+        loops: this._loops,
+        transitionalItem: this._transitionalItem,
+        sequence: this._sequence,
+        result: this._result,
+      };
+    },
+  };
+}
