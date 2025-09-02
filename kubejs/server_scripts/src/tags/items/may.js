@@ -8,4 +8,8 @@ ServerEvents.tags("item", (event) => {
   event.add("may:heap/sand", /kubejs:pile\/.+sand/);
   event.add("may:blooms", /kubejs:raw.+bloom/);
   event.add("may:encased_axles", /.fc:wood\/encased_axle\/.+/);
+  event.add("may:axles", /.fc:wood\/axle\/.+/);
+  event.add("may:ropes", "firmaciv:rope_coil");
+  event.add("may:bars", /.+bars.*/);
+  event.add("may:spindle", [/kubejs:metal\/spindle\/.+/, "tfc:spindle"]);
 });

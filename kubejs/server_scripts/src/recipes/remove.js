@@ -3,6 +3,32 @@ ServerEvents.recipes((event) => {
   const recipes = [
     //minecraft
     { id: "minecraft:charcoal" },
+    { id: "minecraft:cauldron" },
+    { id: "minecraft:leather" },
+    { output: "minecraft:netherrack" },
+    { id: "minecraft:sea_lantern" },
+    { output: "minecraft:iron_bars" },
+    { output: "minecraft:chain" },
+    { id: "minecraft:heavy_weighted_pressure_plate" },
+    { id: /minecraft:netherite.+smithing/ },
+    { id: /minecraft:.+_nugget_from_.+/ },
+    {
+      output:
+        /minecraft:.*((oak)|(spruce)|(birch)|(jungle)|(acacia)|(mangrove)|(cherry)|(bamboo)|(crimson)|(warped)).+/,
+    },
+    {
+      output:
+        /minecraft:.*((deepslate)|(sandstone)|(andesite)|(granite)|(diorite)|(nether_brick)|(smooth_stone)|(blackstone)|(end_stone)|(purpur)|(prismarin)|(stone_brick)|(mossy)|(cobblestone)|(basalt)).*/,
+    },
+    { output: /minecraft:.*copper(?!_ingot).*/ },
+    { output: /minecraft:stone(?!cutter).*/ },
+    { output: /minecraft:.*ore/ },
+    {
+      output:
+        /minecraft:((coal)|(iron)|(gold)|(emerald)|(lapis)|(diamond)|(netherite))_block/,
+    },
+    { input: /minecraft:((iron)|(golden)|(diamond))_horse_armor/ },
+
     //tfc & addons
     { id: /_cut$/ },
     { id: /heating\/ore/ },
@@ -27,6 +53,14 @@ ServerEvents.recipes((event) => {
     { id: "tfc:heating/kaolin_clay" },
     { id: "tfc:crafting/fire_clay" },
     { id: "tfc:crafting/fire_bricks" },
+    { id: "tfc:crafting/wool_yarn" },
+    { id: "firmalife:crafting/pineapple_yarn" },
+    { id: /tfc:barrel\/((large)|(medium)|(small))_((soaked)|(prepared))_hide/ },
+    { id: /tfc:barrel\/((large)|(medium)|(small))_leather/ },
+    { id: /firmaciv:barrel\/large_waterproof_hide_.+/ },
+    { id: "firmaciv:crafting/large_waterproof_hide" },
+    { type: "advancedtfctech:beamhouse" },
+
     //immersive & addons
     { type: "immersiveengineering:crusher" },
     { type: "immersiveengineering:arc_furnace" },
@@ -37,12 +71,15 @@ ServerEvents.recipes((event) => {
     { id: "immersiveengineering:crafting/coke_to_coal_coke" },
     { id: "immersiveengineering:crafting/coal_coke_to_coke" },
     { id: "immersiveengineering:crafting/fluorescent_tube" },
+    { id: "immersiveengineering:crafting/tinted_glass_lead_wire" },
+    { id: /immersiveengineering:crafting\/.*hammer.*/ },
     { id: /immersiveengineering:crafting\/.*nugget.*/ },
     { id: /tfc_ie_addon:metalpress\/.+/ },
     { id: /tfc_ie_addon:cokeoven\/.+/ },
     { id: /immersivegeology:coking\/.+/ },
+
     //create & addons
-    { id: /create:crafting\/appliances\/.*backtank.*/ },
+    { id: "create:crafting/appliances/copper_backtank" },
     { id: /create:crafting\/appliances\/.*controller.*/ },
     { id: "create:crafting/kinetics/andesite_door" },
     { id: "create:crafting/kinetics/shaft" },
@@ -50,7 +87,7 @@ ServerEvents.recipes((event) => {
     { id: "create:crafting/kinetics/clutch" },
     { id: "create:crafting/kinetics/gearshift" },
     { id: "create:crafting/kinetics/encased_chain_drive" },
-    { id: "create:crafting/kinetics/encased_chain_drive" },
+    { id: "create:crafting/kinetics/encased_chain_drive_from_zinc" },
     { id: "create:crafting/kinetics/adjustable_chain_gearshift" },
     { id: "create:crafting/kinetics/nozzle" },
     { id: "create:crafting/kinetics/turntable" },
@@ -62,15 +99,43 @@ ServerEvents.recipes((event) => {
     { id: "create:crafting/kinetics/depot" },
     { id: "create:crafting/kinetics/chute" },
     { id: "create:crafting/kinetics/smart_chute" },
+    { id: "create:crafting/kinetics/belt_connector" },
+    { id: "create:crafting/kinetics/chain_conveyor" },
+    { id: "create:crafting/kinetics/water_wheel" },
+    { id: "create:crafting/kinetics/large_water_wheel" },
+    { id: "create:crafting/kinetics/metal_bracket" },
+    { id: "create:crafting/kinetics/fluid_pipe" },
+    { id: "create:crafting/kinetics/fluid_pipe_vertical" },
+    { id: "create:crafting/kinetics/smart_fluid_pipe" },
+    { id: "create:crafting/kinetics/fluid_valve" },
+    { id: "create:crafting/kinetics/copper_valve_handle" },
+    { id: "create:crafting/kinetics/fluid_tank" },
+    { id: "create:crafting/kinetics/hose_pulley" },
+    { id: "create:crafting/kinetics/item_drain" },
+    { id: "create:crafting/kinetics/steam_engine" },
+    { id: "create:crafting/kinetics/steam_whistle" },
+    { id: "create:crafting/kinetics/elevator_pulley" },
     { type: "create:mechanical_crafting" },
     { id: /create:crafting\/schematics\/.+/ },
     { id: /create:crafting\/kinetics\/.*cogwheel.*/ },
     { id: /create:deploying\/.*cogwheel/ },
     { id: /create:.+\/andesite_alloy.*/ },
+    { id: /railways:.*locometal.*/ },
+    { id: /railways:sequenced_assembly\/track.+/ },
+    { id: "create:sequenced_assembly/track" },
+    { id: "create:sequenced_assembly/precision_mechanism" },
+    { id: "create:pressing/copper_ingot" },
+    { id: "create:crushing/leather_horse_armor" },
+    { id: "create:crushing/saddle" },
+    { id: "create:milling/saddle" },
+    { output: /create:crushed.*/ },
+
     //mekanism & addons
     { id: "mekanism:charcoal" },
     { id: "mekanism:storage_blocks/charcoal" },
-    { id: /mekanism:sawing.log.+/ },
+    { id: /mekanism:sawing.+/ },
+    { id: /mekanism:nucleosynthesizing\/.+/ },
+
     //farmer's delight & addons
     { id: /farmersdelight:cutting\/.+wood/ },
     { id: /farmersdelight:cutting\/.+log/ },
@@ -79,10 +144,25 @@ ServerEvents.recipes((event) => {
     { id: /farmersdelight:cutting\/.+stem/ },
     { id: /farmersdelight:cutting\/.+hyphae/ },
     { id: /farmersdelight:cutting\/.+block/ },
+    { id: /farmersdelight:cutting\/leather.+/ },
+    { id: /farmersdelight:cutting\/.*bricks/ },
+    { id: "farmersdelight:cutting/gravel" },
+    { id: "farmersdelight:cutting/clay" },
+    { id: "farmersdelight:cutting/stone" },
+    { id: "farmersdelight:cutting/deepslate" },
     { id: "farmersdelight:cooking/turtle_stew" },
     { id: /farmersrespite:.+\/water_cup/ },
+
     // AE2 & addons
-    { id: /ae2:tools\/.+/ },
+    { id: /ae2:.*((axe)|(knife)|(shovel)|(hoe)|(sword)).*/ },
+    { id: /ae2:transform\/.+/ },
+
+    //Pneumatic Craft
+    { id: "pneumaticcraft:amadron_tablet" },
+    { id: /pneumaticcraft:pressure_chamber\/pressure_chamber_.*enchanting/ },
+
+    // Misc
+    { id: "ftbquests:loot_crate_opener" },
   ];
 
   recipes.forEach((recipe) => {

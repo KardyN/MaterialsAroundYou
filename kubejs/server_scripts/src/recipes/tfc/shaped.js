@@ -9,6 +9,33 @@ ServerEvents.recipes((event) => {
       },
       id: "may:shaped/fire_bricks",
     },
+    {
+      output: "kubejs:metal/spindle/wrought_iron",
+      pattern: ["A", "B"],
+      key: {
+        A: "kubejs:metal/spindle_head/wrought_iron",
+        B: "#forge:rods/wooden",
+      },
+      id: "may:shaped/spindle/wrought_iron",
+    },
+    {
+      output: "kubejs:metal/spindle/bronze",
+      pattern: ["A", "B"],
+      key: {
+        A: "kubejs:metal/spindle_head/bronze",
+        B: "#forge:rods/wooden",
+      },
+      id: "may:shaped/spindle/bronze",
+    },
+    {
+      output: "kubejs:metal/spindle/copper",
+      pattern: ["A", "B"],
+      key: {
+        A: "kubejs:metal/spindle_head/copper",
+        B: "#forge:rods/wooden",
+      },
+      id: "may:shaped/spindle/copper",
+    },
   ];
 
   global.woodList.forEach((wood) => {

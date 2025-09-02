@@ -41,5 +41,22 @@ WorldgenEvents.remove((event) => {
     "immersivegeology:wolframite",
     "immersivegeology:zircon",
   ]);
-  //event.printFeatures();
+
+  event.removeFeatureById("surface_structures", [
+    "immersivegeology:carnallite_evaporate",
+    "immersivegeology:rocksalt_evaporate",
+    "immersivegeology:saltpeter_evaporate",
+  ]);
+
+  // event.printFeatures("fluid_springs");
+  // event.printFeatures("lakes");
+  // event.printFeatures("local_modifications");
+  // event.printFeatures("raw_generation");
+  // event.printFeatures("strongholds");
+  // event.printFeatures("surface_structures");
+  // event.printFeatures("top_layer_modification");
+  // event.printFeatures("underground_decoration");
+  // event.printFeatures("underground_ores");
+  // event.printFeatures("underground_structures");
+  // event.printFeatures("vegetal_decoration");
 });

@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
     {
       ingredients: [
         {
-          tag: "tfc:axles",
+          tag: "may:axles",
         },
         {
           item: "create:andesite_alloy",
@@ -51,23 +51,7 @@ ServerEvents.recipes((event) => {
     {
       ingredients: [
         {
-          item: "minecraft:cauldron",
-        },
-        {
-          item: "create:andesite_alloy",
-        },
-      ],
-      results: [
-        {
-          item: "create:basin",
-        },
-      ],
-      id: "may:item_application/basin",
-    },
-    {
-      ingredients: [
-        {
-          item: "minecraft:andesite_casing",
+          item: "create:andesite_casing",
         },
         {
           item: "create:turntable",

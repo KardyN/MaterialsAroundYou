@@ -33,6 +33,50 @@ StartupEvents.registry("item", (event) => {
   //  .texture("kubejs:item/blooms/copper/refined");
   event.create("wooden_gear").texture("kubejs:item/wooden_gear");
   event.create("large_wooden_gear").texture("kubejs:item/large_wooden_gear");
+
+  event.create("small_clean_hide").texture("kubejs:item/hide/small/clean");
+  event.create("medium_clean_hide").texture("kubejs:item/hide/medium/clean");
+  event.create("large_clean_hide").texture("kubejs:item/hide/large/clean");
+  event.create("small_tanned_hide").texture("kubejs:item/hide/small/tanned");
+  event.create("medium_tanned_hide").texture("kubejs:item/hide/medium/tanned");
+  event.create("large_tanned_hide").texture("kubejs:item/hide/large/tanned");
+  event
+    .create("small_waterproof_hide")
+    .texture("kubejs:item/hide/small/waterproof");
+  event
+    .create("medium_waterproof_hide")
+    .texture("kubejs:item/hide/medium/waterproof");
+  event
+    .create("large_waterproof_hide")
+    .texture("kubejs:item/hide/large/waterproof");
+  event
+    .create("metal/spindle_head/copper")
+    .texture("kubejs:item/metal/spindle_head/copper")
+    .unstackable();
+  event
+    .create("metal/spindle_head/bronze")
+    .texture("kubejs:item/metal/spindle_head/bronze")
+    .unstackable();
+  event
+    .create("metal/spindle_head/wrought_iron")
+    .texture("kubejs:item/metal/spindle_head/wrought_iron")
+    .unstackable();
+  event
+    .create("metal/spindle/copper")
+    .texture("kubejs:item/metal/spindle/copper")
+    .unstackable()
+    .maxDamage(600);
+  event
+    .create("metal/spindle/bronze")
+    .texture("kubejs:item/metal/spindle/bronze")
+    .unstackable()
+    .maxDamage(1300);
+  event
+    .create("metal/spindle/wrought_iron")
+    .texture("kubejs:item/metal/spindle/wrought_iron")
+    .unstackable()
+    .maxDamage(2200);
+
   /*****************************************************************************
    * Registering osmirite tools
    ****************************************************************************/

@@ -10,4 +10,5 @@ ServerEvents.tags("item", (event) => {
   event.add("tfc:lumber_knapping", /.*lumber.*/);
   event.add("tfc:any_knapping", /.*lumber.*/);
   event.remove("tfc:axles", /afc:wood\/encased_axle\/.+/);
+  event.add("tfc:usable_on_tool_rack", /kubejs:.+spindle.+/);
 });

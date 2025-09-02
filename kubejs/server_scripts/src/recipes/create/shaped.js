@@ -35,11 +35,39 @@ ServerEvents.recipes((event) => {
       output: "create:encased_chain_drive",
       pattern: ["A", "B", "C"],
       key: {
-        A: "tfc:metal/chain/wrought_iron",
+        A: "#forge:metal/chain",
         B: "create:cogwheel",
         C: "create:andesite_casing",
       },
       id: "may:shaped/encased_chain_drive",
+    },
+    {
+      output: "create:chain_conveyor",
+      pattern: [" A ", "ABA", " A "],
+      key: {
+        A: "create:andesite_casing",
+        B: "create:large_cogwheel",
+      },
+      id: "may:shaped/chain_conveyor",
+    },
+    {
+      output: "create:water_wheel",
+      pattern: ["BBB", "BAB", "BBB"],
+      key: {
+        A: "create:shaft",
+        B: "tfc_ie_addon:treated_wood_lumber",
+      },
+      id: "may:shaped/water_wheel",
+    },
+    {
+      output: "create:large_water_wheel",
+      pattern: ["BCB", "CAC", "BCB"],
+      key: {
+        A: "create:shaft",
+        B: "tfc_ie_addon:treated_wood_lumber",
+        C: "immersiveengineering:treated_wood_horizontal",
+      },
+      id: "may:shaped/large_water_wheel",
     },
     {
       output: "create:nozzle",
@@ -78,6 +106,85 @@ ServerEvents.recipes((event) => {
         C: "tfc:metal/double_ingot/wrought_iron",
       },
       id: "may:shaped/mechanical_press",
+    },
+    {
+      output: Item.of("create:metal_bracket", 4),
+      pattern: ["   ", " A ", "BCB"],
+      key: {
+        A: "#forge:rods",
+        B: "create:andesite_alloy",
+        C: "#forge:ingots",
+      },
+      id: "may:shaped/metal_bracket",
+    },
+    {
+      output: Item.of("create:fluid_pipe", 6),
+      pattern: ["AAA", "   ", "AAA"],
+      key: {
+        A: "tfc:metal/sheet/copper",
+      },
+      id: "may:shaped/fluid_pipe",
+    },
+    {
+      output: Item.of("create:fluid_pipe", 6),
+      pattern: ["A A", "A A", "A A"],
+      key: {
+        A: "tfc:metal/sheet/copper",
+      },
+      id: "may:shaped/fluid_pipe_vertical",
+    },
+    {
+      output: "create:copper_valve_handle",
+      pattern: ["AAA", " B "],
+      key: {
+        A: "tfc:metal/rod/copper",
+        B: "create:shaft",
+      },
+      id: "may:shaped/copper_valve_handle",
+    },
+    {
+      output: "create:fluid_tank",
+      pattern: [" B ", "BAB", " B "],
+      key: {
+        A: "tfc:barrels",
+        B: "tfc:metal/sheet/copper",
+      },
+      id: "may:shaped/fluid_tank",
+    },
+    {
+      output: "create:hose_pulley",
+      pattern: [" B ", "BAB", " B "],
+      key: {
+        A: "create:copper_casing",
+        B: "#afc:ropes",
+      },
+      id: "may:shaped/hose_pulley",
+    },
+    {
+      output: "create:item_drain",
+      pattern: ["A", "B"],
+      key: {
+        A: "#may:bars",
+        B: "create:copper_casing",
+      },
+      id: "may:shaped/item_drain",
+    },
+    {
+      output: "create:belt_connector",
+      pattern: ["AAA", "AAA"],
+      key: {
+        A: "afc:rubber_bar",
+      },
+      id: "may:shaped/belt_connector",
+    },
+    {
+      output: "create:crushing_wheel",
+      pattern: ["AAA", "ABA", "AAA"],
+      key: {
+        A: "tfc:metal/sheet/wrought_iron",
+        B: "create:andesite_casing",
+      },
+      id: "may:shaped/crushing_wheel",
     },
   ];
 

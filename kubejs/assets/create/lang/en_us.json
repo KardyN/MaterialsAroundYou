@@ -1,0 +1,17 @@
+{
+  "block.create.andesite_casing": "Casing",
+  "block.create.andesite_belt_funnel": "Belt Funnel",
+  "block.create.andesite_alloy_block": "Bearing Alloy BLock",
+  "block.create.andesite_bars": "Bearing Alloy Bars",
+  "block.create.andesite_door": "Bearing Alloy Door",
+  "block.create.andesite_encased_cogwheel": "Encased Cogwheel",
+  "block.create.andesite_encased_large_cogwheel": "Encased Large Cogwheel",
+  "block.create.andesite_encased_shaft": "Encased Shaft",
+  "block.create.andesite_funnel": "Funnel",
+  "block.create.andesite_ladder": "Bearing Alloy Ladder",
+  "block.create.andesite_scaffolding": "Bearing Alloy Scaffolding",
+  "block.create.andesite_table_cloth": "Bearing Alloy Table Cover",
+  "block.create.andesite_tunnel": "Tunnel",
+
+  "item.create.andesite_alloy": "Bearing Alloy"
+}
