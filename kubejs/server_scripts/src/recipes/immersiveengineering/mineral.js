@@ -53,13 +53,13 @@ function MineralMixRecipeBuilder() {
       return this;
     },
 
-    // How rare the vein is // ~10 rare - ~30 common
+    // How rare the vein is // 5 rare ~ 15 uncommon ~ 30 common
     addWeight: function (weight) {
       this._weight = weight;
       return this;
     },
 
-    // how likely to yield bad product instead of ore // ~0.05 rich - ~0.15 poor
+    // how likely to yield bad product instead of ore // 0.05 rich ~ 0.15 poor ~ 0.5 trace amount
     addFailChance: function (failChance) {
       this._failChance = failChance;
       return this;
