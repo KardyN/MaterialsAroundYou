@@ -129,6 +129,9 @@ ServerEvents.recipes((event) => {
     { id: "create:crushing/saddle" },
     { id: "create:milling/saddle" },
     { output: /create:crushed.*/ },
+    { input: "createoreexcavation:raw_diamond" },
+    { input: "createoreexcavation:raw_emerald" },
+    { input: "createoreexcavation:raw_redstone" },
 
     //mekanism & addons
     { id: "mekanism:charcoal" },

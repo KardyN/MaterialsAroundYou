@@ -62,6 +62,7 @@ jei.items.hide = [
   /railways:track.*/,
   "create:track",
   /create:crushed.*/,
+  /createoreexcavation:raw.+/,
 
   //mekanism & addons
   "mekanism:creative_fluid_tank",

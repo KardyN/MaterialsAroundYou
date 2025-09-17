@@ -172,6 +172,7 @@
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
+			subtitle: "This modpack is perfectly balanced"
 			tasks: [{
 				count: 15L
 				id: "7CB4B53D85E5B635"
@@ -180,7 +181,7 @@
 			}]
 			title: "Clay"
 			x: 4.5d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2CFE4433B67D7795"]
@@ -294,8 +295,8 @@
 				}
 			]
 			title: "Clay Knapping"
-			x: 6.0d
-			y: 0.0d
+			x: 4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2CFE4433B67D7795"]
@@ -319,8 +320,8 @@
 				type: "item"
 			}]
 			title: "Jug"
-			x: 6.0d
-			y: 1.5d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2CFE4433B67D7795"]
@@ -341,17 +342,11 @@
 				type: "item"
 			}]
 			title: "Large Vessel"
-			x: 6.0d
-			y: -1.5d
+			x: 3.5d
+			y: -3.0d
 		}
 		{
-			dependencies: [
-				"62A464FC854D802D"
-				"05690465F069F363"
-				"4922E265A5E18230"
-				"21F3A0260EB7BA2D"
-				"33F89D27567095DD"
-			]
+			dependencies: ["30AD2E71273A3C00"]
 			dependency_requirement: "one_completed"
 			description: [
 				"Dig up one block pit. Put there items to fire &eusing 'V'&r (by default). You can put up to 4 small or 1 big item in the pit."
@@ -359,14 +354,10 @@
 				"Right-click pit 8 times with straw and then 8 times with logs. Then hold right-click with &3Firestarter&r to light it up!"
 				""
 				"Watch out for spreading fire!"
+				""
+				"This might take awhile."
 			]
-			icon: {
-				Count: 1
-				id: "tfc:firestarter"
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "minecraft:campfire"
 			id: "5088FE89AA482117"
 			tasks: [
 				{
@@ -387,8 +378,8 @@
 				}
 			]
 			title: "Pit Kiln"
-			x: 8.5d
-			y: 0.0d
+			x: 7.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5088FE89AA482117"]
@@ -430,8 +421,8 @@
 				}
 			]
 			title: "Ores Panning"
-			x: 10.0d
-			y: 0.0d
+			x: 9.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2164F89ED1657624"]
@@ -487,11 +478,11 @@
 				type: "item"
 			}]
 			title: "Copper Age"
-			x: 14.0d
+			x: 13.0d
 			y: -1.0d
 		}
 		{
-			dependencies: ["66957E1A37C5468C"]
+			dependencies: ["28EFE456A7B11D06"]
 			description: [
 				"The javelin makes more damage than a knife, has better range and you even can throw it!"
 				"Suits the best for hunting!"
@@ -506,6 +497,7 @@
 				}
 			}
 			id: "412981055399DAAA"
+			subtitle: "Fight for your rights!"
 			tasks: [{
 				id: "5EB0EEA7B93A319E"
 				item: {
@@ -548,8 +540,8 @@
 				type: "item"
 			}]
 			title: "First Tools: Javelin"
-			x: 3.0d
-			y: -3.0d
+			x: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["28EFE456A7B11D06"]
@@ -604,7 +596,7 @@
 			}]
 			title: "First Tools: Shovel"
 			x: 3.0d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["28EFE456A7B11D06"]
@@ -653,7 +645,7 @@
 			}]
 			title: "First Tools: Axe"
 			x: 3.0d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["28EFE456A7B11D06"]
@@ -702,7 +694,7 @@
 			}]
 			title: "First Tools: Knife"
 			x: 3.0d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["09D19F81065B31B8"]
@@ -721,8 +713,8 @@
 				type: "item"
 			}]
 			title: "Straw"
-			x: 6.0d
-			y: -3.0d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["36F88B9D6E0D7A68"]
@@ -749,8 +741,8 @@
 				type: "item"
 			}]
 			title: "Logs"
-			x: 6.0d
-			y: 3.0d
+			x: 4.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["636C659C4A65C556"]
@@ -768,14 +760,11 @@
 				type: "item"
 			}]
 			title: "Copper Powder"
-			x: 11.5d
-			y: 0.0d
+			x: 10.5d
+			y: -1.0d
 		}
 		{
-			dependencies: [
-				"21F3A0260EB7BA2D"
-				"5088FE89AA482117"
-			]
+			dependencies: ["30AD2E71273A3C00"]
 			description: [
 				"Drop &3couple of Logs&r on the ground and some sticks."
 				"Drop &3couple of Sticks&r there too and use a &3Firestarter&r."
@@ -803,8 +792,8 @@
 				type: "checkmark"
 			}]
 			title: "Firepit"
-			x: 8.5d
-			y: 3.0d
+			x: 7.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3C22F23867AB0AFC"]
@@ -821,14 +810,11 @@
 				type: "item"
 			}]
 			title: "Pot"
-			x: 10.0d
-			y: 3.0d
+			x: 9.0d
+			y: 1.0d
 		}
 		{
-			dependencies: [
-				"00796B8B300CF70E"
-				"62A464FC854D802D"
-			]
+			dependencies: ["00796B8B300CF70E"]
 			description: ["Take some boiled water with you, using a &3Jug&r."]
 			icon: {
 				Count: 1
@@ -856,8 +842,8 @@
 				type: "item"
 			}]
 			title: "Boiled Water"
-			x: 11.5d
-			y: 3.0d
+			x: 10.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3C22F23867AB0AFC"]
@@ -879,8 +865,8 @@
 				item: "tfc:torch"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 4.5d
+			x: 7.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["62A464FC854D802D"]
@@ -905,8 +891,8 @@
 				type: "item"
 			}]
 			title: "Mud"
-			x: 10.0d
-			y: 1.5d
+			x: 7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1D8C501B98343EA2"]
@@ -981,8 +967,8 @@
 				}
 			]
 			title: "Bricks"
-			x: 11.5d
-			y: 1.5d
+			x: 9.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["265518059B629EB1"]
@@ -1007,8 +993,8 @@
 				type: "item"
 			}]
 			title: "Mud Bricks"
-			x: 13.0d
-			y: 1.5d
+			x: 10.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["412981055399DAAA"]
@@ -1031,8 +1017,30 @@
 				}
 			]
 			title: "Basic Bed"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"2CFE4433B67D7795"
+				"33F89D27567095DD"
+				"21F3A0260EB7BA2D"
+			]
+			id: "30AD2E71273A3C00"
+			subtitle: "Let the arson commence"
+			tasks: [{
+				id: "2AF512A6F58CA4D5"
+				item: {
+					Count: 1
+					id: "tfc:firestarter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			x: 6.0d
-			y: -4.5d
+			y: 0.0d
 		}
 	]
 	title: "Stone Age"

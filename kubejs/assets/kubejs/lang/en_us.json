@@ -181,5 +181,31 @@
   "item.kubejs.metal.spindle_head.wrought_iron": "Wrought Iron Spindle Head",
   "item.kubejs.metal.spindle.copper": "Copper Spindle",
   "item.kubejs.metal.spindle.bronze": "Bronze Spindle",
-  "item.kubejs.metal.spindle.wrought_iron": "Wrought Iron Spindle"
+  "item.kubejs.metal.spindle.wrought_iron": "Wrought Iron Spindle",
+
+  "item.kubejs.ore.small_erlichmanite": "Small Erlichmanite",
+  "item.kubejs.ore.poor_erlichmanite": "Poor Erlichmanite",
+  "item.kubejs.ore.normal_erlichmanite": "Normal Erlichmanite",
+  "item.kubejs.ore.rich_erlichmanite": "Rich Erlichmanite",
+
+  "vein.may.aikinite": "Aikinite Vein",
+  "vein.may.auricupride": "Auricupride Vein",
+  "vein.may.bituminous_coal": "Bituminous Coal Vein",
+  "vein.may.chalcopyrite": "Chalcopyrite Vein",
+  "vein.may.cinnabar": "Cinnabar Vein",
+  "vein.may.franklinite": "Franklinite Vein",
+  "vein.may.galena": "Galena Vein",
+  "vein.may.laterite": "Laterite Vein",
+  "vein.may.pentlandite": "Pentlandite Vein",
+  "vein.may.quartzite": "Quartzite Vein",
+  "vein.may.stannite": "Stannite Vein",
+  "vein.may.uraninite": "Uraninite Vein",
+  "vein.may.chromite": "Chromite Vein",
+  "vein.may.erlichmanite": "Erlichmanite Vein",
+  "vein.may.purified_water": "Purified Water Well",
+  "vein.may.lava": "Lava Well",
+  "vein.may.oil": "Oil Well",
+
+  "desc.immersiveengineering.info.mineral.chromite": "Chromite",
+  "desc.immersiveengineering.info.mineral.erlichmanite": "Erlichmanite"
 }

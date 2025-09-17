@@ -5,6 +5,11 @@
 	group: ""
 	icon: {
 		Count: 1
+		ForgeCaps: {
+			"cold_sweat:item_insulation": {
+				insulation: [ ]
+			}
+		}
 		id: "minecraft:leather_boots"
 		tag: {
 			Damage: 0

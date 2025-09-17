@@ -23,6 +23,19 @@ StartupEvents.registry("item", (event) => {
   event.create("powder/chromite").texture("kubejs:item/powder/chromite");
   event.create("powder/cryolite").texture("kubejs:item/powder/cryolite");
 
+  event
+    .create("ore/small_erlichmanite")
+    .texture("kubejs:item/ore/small_erlichmanite");
+  event
+    .create("ore/poor_erlichmanite")
+    .texture("kubejs:item/ore/poor_erlichmanite");
+  event
+    .create("ore/normal_erlichmanite")
+    .texture("kubejs:item/ore/normal_erlichmanite");
+  event
+    .create("ore/rich_erlichmanite")
+    .texture("kubejs:item/ore/rich_erlichmanite");
+
   event.create("raw_tin_bloom").texture("kubejs:item/blooms/tin/unrefined");
   //event.create("refined_tin_bloom").texture("kubejs:item/blooms/tin/refined");
   event

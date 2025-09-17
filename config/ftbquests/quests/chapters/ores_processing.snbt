@@ -24,7 +24,10 @@
 				""
 				"Build a &3Quern&r for it."
 			]
+			icon: "tfc:quern"
 			id: "040D411E1996731C"
+			shape: "gear"
+			size: 1.5d
 			tasks: [
 				{
 					id: "3DEB08BAE33D0837"
@@ -54,6 +57,7 @@
 				""
 				"To work, &3Sluice&r needs a flowing water on it's edge. Then simply drop an item on the &3Sluice&r."
 			]
+			icon: "tfc:wood/sluice/ash"
 			id: "13769A224ED6A325"
 			tasks: [{
 				id: "757EDDD23883877E"
@@ -72,7 +76,10 @@
 		}
 		{
 			dependencies: ["040D411E1996731C"]
+			description: ["Wash abtained &3Dirty Dusts&r to separate the contained ore from rocks. "]
+			icon: "kubejs:dirty_dust/native_copper"
 			id: "22CEBF4458C8E6A9"
+			subtitle: "Wash me!"
 			tasks: [{
 				id: "408C0CF343A624ED"
 				item: {
@@ -91,6 +98,7 @@
 		{
 			dependencies: ["13769A224ED6A325"]
 			description: ["Now you have smeltable &3Powders&r."]
+			icon: "tfc:powder/native_copper"
 			id: "6E1399D1E455E2CB"
 			tasks: [{
 				id: "3049007F956F0C11"
@@ -223,7 +231,10 @@
 		}
 		{
 			dependencies: ["4D5B990EA4CE47EA"]
+			description: ["At some point even poiles are too much. To further reduce storage use, press &3Piles&r to abtain &3Briquettes&r. "]
+			icon: "kubejs:briquette/native_copper"
 			id: "2E787B4424D3F01D"
+			subtitle: "Expensive bricks"
 			tasks: [{
 				id: "08FB08F589B9734F"
 				item: {
@@ -236,13 +247,15 @@
 				type: "item"
 			}]
 			title: "Compacting: Briquettes"
-			x: 0.0d
+			x: -1.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["6E1399D1E455E2CB"]
 			description: ["With time you will gather a lot of different &3Powders&r. To reduce storage use, craft &3Powders&r into the &3Piles&r."]
+			icon: "kubejs:pile/native_copper"
 			id: "4D5B990EA4CE47EA"
+			subtitle: "Don't mix"
 			tasks: [{
 				id: "5DA193CA4C736DC2"
 				item: {
@@ -255,7 +268,7 @@
 				type: "item"
 			}]
 			title: "Compacting: Piles"
-			x: 0.0d
+			x: -1.5d
 			y: -3.5d
 		}
 		{
@@ -354,10 +367,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"0D5D250D7D353B29"
-				"0D459C0CC21CF528"
-			]
+			dependencies: ["4E15271405C037C6"]
 			icon: "tfc:crucible"
 			id: "0E47B42D4FBE6480"
 			tasks: [{
@@ -367,35 +377,65 @@
 			}]
 			title: "Crucible"
 			x: 3.0d
-			y: -3.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["4D5B990EA4CE47EA"]
-			icon: "tfc:powder/kaolinite"
+			dependencies: ["6E1399D1E455E2CB"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:kaolin_clay"
+			}
 			id: "0D459C0CC21CF528"
-			tasks: [{
-				count: 5L
-				id: "2D402FA57E7BA16F"
-				item: "tfc:powder/kaolinite"
-				type: "item"
-			}]
-			title: "Kaolinite Powder"
-			x: 1.5d
-			y: -3.0d
+			tasks: [
+				{
+					id: "4C9B500F3182B898"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:kaolin_clay"
+					}
+					type: "item"
+				}
+				{
+					id: "0DC1A567DE268795"
+					item: "tfc:powder/kaolinite"
+					type: "item"
+				}
+			]
+			title: "Kaolinite"
+			x: 0.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["4D5B990EA4CE47EA"]
-			icon: "tfc:powder/graphite"
+			dependencies: ["6E1399D1E455E2CB"]
+			icon: "tfc:ore/graphite"
 			id: "0D5D250D7D353B29"
-			tasks: [{
-				count: 5L
-				id: "2595F7978FEB7DD2"
-				item: "tfc:powder/graphite"
-				type: "item"
-			}]
-			title: "Graphite Powder"
-			x: 1.5d
-			y: -4.0d
+			tasks: [
+				{
+					id: "632B3B806E21CE70"
+					item: "tfc:ore/graphite"
+					type: "item"
+				}
+				{
+					id: "436FF0EA6415BD6C"
+					item: "tfc:powder/graphite"
+					type: "item"
+				}
+			]
+			title: "Graphite"
+			x: 0.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0E47B42D4FBE6480"]
@@ -406,7 +446,7 @@
 				type: "custom"
 			}]
 			x: 4.5d
-			y: -3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -415,28 +455,14 @@
 			]
 			icon: "immersiveengineering:coke_oven"
 			id: "36F2106C10C58AB8"
-			tasks: [
-				{
-					count: 27L
-					id: "50AB5700D44ED557"
-					item: "tfc:fire_bricks"
-					type: "item"
-				}
-				{
-					id: "74DD0AD308803F60"
-					item: {
-						Count: 1
-						id: "immersiveengineering:hammer"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5266F09D6E53463D"
+				title: "Build Coke Oven"
+				type: "checkmark"
+			}]
 			title: "Coke Oven"
-			x: 4.5d
-			y: -2.0d
+			x: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["36F2106C10C58AB8"]
@@ -448,8 +474,8 @@
 				type: "item"
 			}]
 			title: "Efficient Charcoal Production"
-			x: 6.0d
-			y: -1.0d
+			x: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["29B54FAB02DE3E0D"]
@@ -478,8 +504,8 @@
 				item: "immersiveengineering:coal_coke"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.0d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
 			id: "72CB48B63E15378F"
@@ -488,21 +514,93 @@
 				item: "tfc:trip_hammer"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 1.0d
+			x: -7.0d
+			y: 5.0d
 		}
 		{
-			dependencies: ["0D459C0CC21CF528"]
+			dependencies: ["4E15271405C037C6"]
+			icon: "tfc:ceramic/fire_brick"
 			id: "0C55A28662800481"
+			tasks: [
+				{
+					id: "637822B3F4EEC0E8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:ceramic/unfired_fire_brick"
+					}
+					type: "item"
+				}
+				{
+					count: 35L
+					id: "6601377430DE7DE4"
+					item: { Count: 35, id: "tfc:ceramic/fire_brick" }
+					type: "item"
+				}
+				{
+					count: 27L
+					id: "6A98FC4F000AE1E0"
+					item: { Count: 27, id: "tfc:fire_bricks" }
+					type: "item"
+				}
+				{
+					id: "5F340E76FDF3B3F9"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Fire Bricks"
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["13769A224ED6A325"]
+			id: "30012D2317220B76"
 			tasks: [{
-				count: 35L
-				id: "0531CBCC519782CB"
-				item: "tfc:ceramic/fire_brick"
+				id: "04F4F358D1BB7D25"
+				item: "afc:wood/sluice/fig"
 				type: "item"
 			}]
-			title: "Fire Bricks"
-			x: 3.0d
+			title: "Automating Sluice"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"0D459C0CC21CF528"
+				"0D5D250D7D353B29"
+			]
+			id: "4E15271405C037C6"
+			tasks: [{
+				count: 32L
+				id: "1328F46836D4B944"
+				item: "tfc:fire_clay"
+				type: "item"
+			}]
+			x: 1.5d
 			y: -2.0d
+		}
+		{
+			dependencies: ["30012D2317220B76"]
+			id: "11088B61E8DC2073"
+			tasks: [{
+				id: "3028FC30F82CE04E"
+				title: "TODO washing via IG mod"
+				type: "custom"
+			}]
+			x: -3.0d
+			y: 1.0d
 		}
 	]
 	title: "Ores Processing"

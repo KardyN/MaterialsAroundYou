@@ -263,6 +263,7 @@
 		}
 		{
 			dependencies: ["6FE2992AEE98301E"]
+			icon: "tfc:ore/bituminous_coal/granite"
 			id: "1170062E1DCC047B"
 			tasks: [
 				{
@@ -311,6 +312,19 @@
 		}
 		{
 			dependencies: ["29B54FAB02DE3E0D"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/saw/copper"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "62523937EBCC53BF"
 			tasks: [{
 				id: "5EE993AE9D6540DA"
@@ -365,12 +379,15 @@
 				type: "item"
 			}]
 			title: "Saw"
-			x: 2.0d
-			y: -4.0d
+			x: 5.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["62523937EBCC53BF"]
+			icon: "tfc:wood/lumber/ash"
 			id: "11E09B425935ABFE"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				count: 16L
 				id: "0D1DE877D626521A"
@@ -385,8 +402,8 @@
 				type: "item"
 			}]
 			title: "Lumber"
-			x: 3.5d
-			y: -4.0d
+			x: 5.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["11E09B425935ABFE"]
@@ -397,8 +414,8 @@
 				type: "item"
 			}]
 			title: "Wooden Bucket"
-			x: 5.0d
-			y: -5.5d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["11E09B425935ABFE"]
@@ -408,6 +425,7 @@
 				""
 				"Go check &6Farming&r chapther for recipes."
 			]
+			icon: "tfc:wood/barrel/ash"
 			id: "1851DE318031D1D6"
 			tasks: [{
 				id: "5D6E0CE9A288079A"
@@ -422,7 +440,7 @@
 				type: "item"
 			}]
 			title: "Barrel"
-			x: 5.0d
+			x: 7.0d
 			y: -2.5d
 		}
 		{
@@ -432,6 +450,7 @@
 				""
 				"Check out the &6Ores Processing&r chapter for more."
 			]
+			icon: "tfc:wood/sluice/ash"
 			id: "55DE17ECAE51C9EE"
 			tasks: [{
 				id: "771B05438F871F75"
@@ -445,8 +464,8 @@
 				type: "item"
 			}]
 			title: "Sluice"
-			x: 3.5d
-			y: -2.0d
+			x: 4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["76142216D24338FE"]
@@ -653,6 +672,7 @@
 		}
 		{
 			dependencies: ["11E09B425935ABFE"]
+			icon: "tfc:wood/planks/ash_tool_rack"
 			id: "74F00B6BC1917CE3"
 			tasks: [{
 				id: "0C32FEAE4FCE35D8"
@@ -667,8 +687,8 @@
 				type: "item"
 			}]
 			title: "Tool Rack"
-			x: 5.0d
-			y: -4.0d
+			x: 7.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1170062E1DCC047B"]
@@ -760,6 +780,7 @@
 		}
 		{
 			dependencies: ["11E09B425935ABFE"]
+			icon: "tfc:wood/chest/ash"
 			id: "464694061D4896F5"
 			tasks: [{
 				id: "1B4B1920FE8B5C76"
@@ -794,8 +815,8 @@
 				type: "item"
 			}]
 			title: "Chest"
-			x: 3.5d
-			y: -6.0d
+			x: 5.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["6FE2992AEE98301E"]

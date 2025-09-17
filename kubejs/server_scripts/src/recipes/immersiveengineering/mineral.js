@@ -1,11 +1,4 @@
 ServerEvents.recipes((event) => {
-  let recipes = [];
-
-  recipes.forEach((recipe) => {
-    recipe.type = "immersiveengineering:mineral_mix";
-    event.custom(recipe).id(recipe.id);
-  });
-
   let disabledMinerals = [
     { id: "immersiveengineering:mineral/amethyst_crevasse" },
     { id: "immersiveengineering:mineral/ancient_seabed" },
@@ -21,6 +14,50 @@ ServerEvents.recipes((event) => {
 
   disabledMinerals.forEach((disabledRecipe) => {
     event.remove(disabledRecipe);
+  });
+
+  let recipes = [
+    MineralMixRecipeBuilder()
+      .addId("may:mineral/chromite")
+      .addWeight(25)
+      .addFailChance(0.1)
+      .addOutput(0.75, "firmalife:ore/small_chromite")
+      .addOutput(0.6, "firmalife:ore/poor_chromite")
+      .addOutput(0.4, "firmalife:ore/normal_chromite")
+      .addOutput(0.2, "firmalife:ore/rich_chromite")
+      .addOutput(0.3, "tfc:ore/small_magnetite")
+      .addOutput(0.25, "tfc:ore/poor_magnetite")
+      .addOutput(0.2, "tfc:ore/normal_magnetite")
+      .addOutput(0.15, "tfc:ore/rich_magnetite")
+      //
+      .addSpoil(0.5, "tfc:rock/raw/marble")
+      .addSpoil(0.2, "tfc:rock/gravel/marble")
+      .addSpoil(0.5, "tfc:rock/raw/granite")
+      .addSpoil(0.2, "tfc:rock/gravel/granite")
+      .build(),
+    MineralMixRecipeBuilder()
+      .addId("may:mineral/erlichmanite")
+      .addWeight(15)
+      .addFailChance(0.15)
+      .addOutput(0.35, "kubejs:ore/small_erlichmanite")
+      .addOutput(0.25, "kubejs:ore/poor_erlichmanite")
+      .addOutput(0.2, "kubejs:ore/normal_erlichmanite")
+      .addOutput(0.1, "kubejs:ore/rich_erlichmanite")
+      .addOutput(0.35, "firmalife:ore/small_chromite")
+      .addOutput(0.25, "firmalife:ore/poor_chromite")
+      .addOutput(0.15, "firmalife:ore/normal_chromite")
+      .addOutput(0.1, "firmalife:ore/rich_chromite")
+      //
+      .addSpoil(0.5, "tfc:rock/raw/shale")
+      .addSpoil(0.2, "tfc:rock/gravel/shale")
+      .addSpoil(0.5, "tfc:rock/raw/limestone")
+      .addSpoil(0.2, "tfc:rock/gravel/limestone")
+      .build(),
+  ];
+
+  recipes.forEach((recipe) => {
+    recipe.type = "immersiveengineering:mineral_mix";
+    event.custom(recipe).id(recipe.id);
   });
 });
 
@@ -59,7 +96,7 @@ function MineralMixRecipeBuilder() {
       return this;
     },
 
-    // how likely to yield bad product instead of ore // 0.05 rich ~ 0.15 poor ~ 0.5 trace amount
+    // Yield bad product instead of ore // 0.05 rich ~ 0.15 poor ~ 0.5 traces
     addFailChance: function (failChance) {
       this._failChance = failChance;
       return this;
