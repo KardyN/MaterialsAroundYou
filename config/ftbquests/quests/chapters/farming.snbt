@@ -1539,6 +1539,17 @@
 			x: 1.5d
 			y: 2.5d
 		}
+		{
+			dependencies: ["718B387AE62DBE66"]
+			id: "2A53E376CFEF7BDA"
+			tasks: [{
+				id: "28BC0533BA38AEBC"
+				item: "waterflasks:red_steel_flask"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 13.5d
+		}
 	]
 	title: "Farming"
 }

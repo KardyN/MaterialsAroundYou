@@ -420,7 +420,7 @@
 					type: "item"
 				}
 			]
-			title: "Ores Panning"
+			title: "Ore Panning"
 			x: 9.0d
 			y: -1.0d
 		}
