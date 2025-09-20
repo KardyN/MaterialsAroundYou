@@ -10,119 +10,17 @@ ServerEvents.recipes((event) => {
   // salt: 500000 ~ 3000000
   // veinSize: 4-6 large ~ 2-4 normal ~ 1-2 small
 
-  event.recipes.createoreexcavation
-    .vein('{"translate": "vein.may.aikinite"}', "tfc:ore/small_cassiterite")
-    .id("kubejs:veins/aikinite")
-    .placement(128, 16, 714636)
-    .alwaysFinite()
-    .veinSize(2, 4);
-
-  event.recipes.createoreexcavation
-    .vein('{"translate": "vein.may.auricupride"}', "tfc:ore/small_native_gold")
-    .id("kubejs:veins/auricupride")
-    .placement(128, 16, 1414646)
-    .alwaysFinite()
-    .veinSize(1, 2);
-
-  event.recipes.createoreexcavation
-    .vein(
-      '{"translate": "vein.may.bituminous_coal"}',
-      "tfc:ore/bituminous_coal"
-    )
-    .id("kubejs:veins/bituminous_coal")
-    .placement(128, 16, 1736437)
-    .alwaysFinite()
-    .veinSize(4, 6);
-
-  event.recipes.createoreexcavation
-    .vein(
-      '{"translate": "vein.may.chalcopyrite"}',
-      "tfc:ore/small_native_copper"
-    )
-    .id("kubejs:veins/chalcopyrite")
-    .placement(128, 16, 612050)
-    .alwaysFinite()
-    .veinSize(2, 4);
-
-  event.recipes.createoreexcavation
-
-    .vein('{"translate": "vein.may.cinnabar"}', "tfc:ore/cinnabar")
-    .id("kubejs:veins/cinnabar")
-    .placement(128, 16, 2673328)
-    .alwaysFinite()
-    .veinSize(1, 2);
-
-  event.recipes.createoreexcavation
-    .vein('{"translate": "vein.may.franklinite"}', "tfc:ore/small_sphalerite")
-    .id("kubejs:veins/franklinite")
-    .placement(128, 16, 939917)
-    .alwaysFinite()
-    .veinSize(2, 4);
-
-  event.recipes.createoreexcavation
-    .vein('{"translate": "vein.may.galena"}', "tfc_ie_addon:ore/small_galena")
-    .id("kubejs:veins/galena")
-    .placement(128, 16, 2451942)
-    .alwaysFinite()
-    .veinSize(1, 2);
-
-  event.recipes.createoreexcavation
-    .vein('{"translate": "vein.may.laterite"}', "tfc_ie_addon:ore/poor_bauxite")
-    .id("kubejs:veins/laterite")
-    .placement(128, 16, 2928144)
-    .alwaysFinite()
-    .veinSize(2, 4);
-
-  event.recipes.createoreexcavation
-    .vein('{"translate": "vein.may.pentlandite"}', "tfc:ore/small_garnierite")
-    .id("kubejs:veins/pentlandite")
-    .placement(128, 16, 1541942)
-    .alwaysFinite()
-    .veinSize(2, 4);
-
-  event.recipes.createoreexcavation
-    .vein(
-      '{"translate": "vein.may.quartzite"}',
-      "tfc_ie_addon:mineral/quartz_shard"
-    )
-    .id("kubejs:veins/quartzite")
-    .placement(128, 16, 2995423)
-    .alwaysFinite()
-    .veinSize(4, 6);
-
-  event.recipes.createoreexcavation
-    .vein('{"translate": "vein.may.stannite"}', "tfc:ore/small_bismuthinite")
-    .id("kubejs:veins/stannite")
-    .placement(128, 16, 2252746)
-    .alwaysFinite()
-    .veinSize(2, 4);
-
-  event.recipes.createoreexcavation
-    .vein(
-      '{"translate": "vein.may.uraninite"}',
-      "tfc_ie_addon:ore/small_uraninite"
-    )
-    .id("kubejs:veins/uraninite")
-    .placement(256, 32, 2129638)
-    .alwaysFinite()
-    .veinSize(1, 2);
-
-  event.recipes.createoreexcavation
-    .vein('{"translate": "vein.may.chromite"}', "firmalife:ore/small_chromite")
-    .id("kubejs:veins/chromite")
-    .placement(128, 16, 2452761)
-    .alwaysFinite()
-    .veinSize(2, 4);
-
-  event.recipes.createoreexcavation
-    .vein(
-      '{"translate": "vein.may.erlichmanite"}',
-      "kubejs:ore/small_erlichmanite"
-    )
-    .id("kubejs:veins/erlichmanite")
-    .placement(256, 32, 1534597)
-    .alwaysFinite()
-    .veinSize(1, 2);
+  global.mineralVeinsList.forEach((vein) => {
+    event.recipes.createoreexcavation
+      .vein(
+        String('{"translate": "vein.may.' + vein.name + '"}'),
+        vein.ie.ores[0].ore
+      )
+      .id(`kubejs:veins/${vein.name}`)
+      .placement(vein.coe.spacing, vein.coe.separation, vein.coe.salt)
+      .alwaysFinite()
+      .veinSize(vein.coe.size.min, vein.coe.size.max);
+  });
 
   event.recipes.createoreexcavation
     .vein('{"translate": "vein.may.purified_water"}', "minecraft:water_bucket")

@@ -1,14 +1,7 @@
 ServerEvents.recipes((event) => {
   let disabledMinerals = [
-    { id: "immersiveengineering:mineral/amethyst_crevasse" },
-    { id: "immersiveengineering:mineral/ancient_seabed" },
-    { id: "immersiveengineering:mineral/ancient_debris" },
-    { id: "immersiveengineering:mineral/cooled_lava_tube" },
-    { id: "immersiveengineering:mineral/hardened_clay_pan" },
-    { id: "immersiveengineering:mineral/igneous_rock" },
-    { id: "immersiveengineering:mineral/mephitic_quarzite" },
-    { id: "immersiveengineering:mineral/silt" },
-    { id: "immersiveengineering:mineral/nether_silt" },
+    { id: /immersiveengineering:mineral.+/ },
+    { id: /tfc_ie_addon:mineral.+/ },
     { id: "createaddition:compat/immersiveengineering/sphalerite" },
   ];
 
@@ -17,43 +10,42 @@ ServerEvents.recipes((event) => {
   });
 
   let recipes = [
-    MineralMixRecipeBuilder()
-      .addId("may:mineral/chromite")
-      .addWeight(25)
-      .addFailChance(0.1)
-      .addOutput(0.75, "firmalife:ore/small_chromite")
-      .addOutput(0.6, "firmalife:ore/poor_chromite")
-      .addOutput(0.4, "firmalife:ore/normal_chromite")
-      .addOutput(0.2, "firmalife:ore/rich_chromite")
-      .addOutput(0.3, "tfc:ore/small_magnetite")
-      .addOutput(0.25, "tfc:ore/poor_magnetite")
-      .addOutput(0.2, "tfc:ore/normal_magnetite")
-      .addOutput(0.15, "tfc:ore/rich_magnetite")
-      //
-      .addSpoil(0.5, "tfc:rock/raw/marble")
-      .addSpoil(0.2, "tfc:rock/gravel/marble")
-      .addSpoil(0.5, "tfc:rock/raw/granite")
-      .addSpoil(0.2, "tfc:rock/gravel/granite")
-      .build(),
-    MineralMixRecipeBuilder()
-      .addId("may:mineral/erlichmanite")
-      .addWeight(15)
-      .addFailChance(0.15)
-      .addOutput(0.35, "kubejs:ore/small_erlichmanite")
-      .addOutput(0.25, "kubejs:ore/poor_erlichmanite")
-      .addOutput(0.2, "kubejs:ore/normal_erlichmanite")
-      .addOutput(0.1, "kubejs:ore/rich_erlichmanite")
-      .addOutput(0.35, "firmalife:ore/small_chromite")
-      .addOutput(0.25, "firmalife:ore/poor_chromite")
-      .addOutput(0.15, "firmalife:ore/normal_chromite")
-      .addOutput(0.1, "firmalife:ore/rich_chromite")
-      //
-      .addSpoil(0.5, "tfc:rock/raw/shale")
-      .addSpoil(0.2, "tfc:rock/gravel/shale")
-      .addSpoil(0.5, "tfc:rock/raw/limestone")
-      .addSpoil(0.2, "tfc:rock/gravel/limestone")
-      .build(),
+    // MineralMixRecipeBuilder()
+    //   .addId("may:mineral/chromite")
+    //   .addWeight(25)
+    //   .addFailChance(0.1)
+    //   .addOutput(0.75, "firmalife:ore/small_chromite")
+    //   .addOutput(0.6, "firmalife:ore/poor_chromite")
+    //   .addOutput(0.4, "firmalife:ore/normal_chromite")
+    //   .addOutput(0.2, "firmalife:ore/rich_chromite")
+    //   .addOutput(0.3, "tfc:ore/small_magnetite")
+    //   .addOutput(0.25, "tfc:ore/poor_magnetite")
+    //   .addOutput(0.2, "tfc:ore/normal_magnetite")
+    //   .addOutput(0.15, "tfc:ore/rich_magnetite")
+    //   //
+    //   .addSpoil(0.5, "tfc:rock/raw/marble")
+    //   .addSpoil(0.2, "tfc:rock/gravel/marble")
+    //   .addSpoil(0.5, "tfc:rock/raw/granite")
+    //   .addSpoil(0.2, "tfc:rock/gravel/granite")
+    //   .build(),
   ];
+
+  global.mineralVeinsList.forEach((vein) => {
+    recipes.push(
+      MineralMixRecipeBuilder()
+        .addId(`may:mineral/${vein.name}`)
+        .addWeight(vein.ie.weight)
+        .addFailChance(vein.ie.failChance)
+        .addDimensions(
+          Object.prototype.hasOwnProperty(vein.ie, "dimensions")
+            ? vein.ie.dimensions
+            : ["minecraft:overworld"]
+        )
+        .addOreList(vein.ie.ores)
+        .addSpoilList(vein.ie.spoils)
+        .build()
+    );
+  });
 
   recipes.forEach((recipe) => {
     recipe.type = "immersiveengineering:mineral_mix";
@@ -83,10 +75,40 @@ function MineralMixRecipeBuilder() {
       return this;
     },
 
+    addOreList: function (ores) {
+      ores.forEach((entry) => {
+        entry.ore[0] == "#"
+          ? this._ores.push({
+              chance: entry.chance,
+              output: { tag: entry.ore.slice(1) },
+            })
+          : this._ores.push({
+              chance: entry.chance,
+              output: { item: entry.ore },
+            });
+      });
+      return this;
+    },
+
     addSpoil: function (chance, spoil) {
       spoil[0] == "#"
         ? this._spoils.push({ chance: chance, output: { tag: spoil.slice(1) } })
         : this._spoils.push({ chance: chance, output: { item: spoil } });
+      return this;
+    },
+
+    addSpoilList: function (spoils) {
+      spoils.forEach((entry) => {
+        entry.spoil[0] == "#"
+          ? this._spoils.push({
+              chance: entry.chance,
+              output: { tag: entry.spoil.slice(1) },
+            })
+          : this._spoils.push({
+              chance: entry.chance,
+              output: { item: entry.spoil },
+            });
+      });
       return this;
     },
 
