@@ -15,4 +15,8 @@ rotary_kiln_renderer = true
 centrifuge_renderer = true
 #This controls if the animations and special client rendering applies to the Ballmill
 ballmill_renderer = true
+#This controls if the animations and special client rendering applies to the Steam Turbine
+steam_turbine_renderer = true
+#This controls if the animations and special client rendering applies to the Alternator
+alternator_renderer = true
 
