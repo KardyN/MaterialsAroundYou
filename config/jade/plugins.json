@@ -87,6 +87,9 @@
     "block": true,
     "note_block": true
   },
+  "balm": {
+    "jade": true
+  },
   "ae2": {
     "part_icon": true,
     "charger": true,
