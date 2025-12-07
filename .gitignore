@@ -55,3 +55,5 @@ config/fml.toml
 config/oculus.properties
 kubejs/config/probejs.json
 kubejs/config/probejs.json
+fancymenu_data/last_world.fmdata
+/fancymenu_data/buddy

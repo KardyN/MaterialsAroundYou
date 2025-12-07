@@ -2,6 +2,9 @@
 ServerEvents.recipes((event) => {
   const recipes = [
     //minecraft
+    { type: "minecraft:blasting" },
+    { type: "minecraft:smoking" },
+    { type: "minecraft:smelting" },
     { id: "minecraft:charcoal" },
     { id: "minecraft:cauldron" },
     { id: "minecraft:leather" },
@@ -116,6 +119,8 @@ ServerEvents.recipes((event) => {
     { id: "create:crafting/kinetics/steam_whistle" },
     { id: "create:crafting/kinetics/elevator_pulley" },
     { type: "create:mechanical_crafting" },
+    { type: "create:haunting" },
+    { type: "create:splashing" },
     { id: /create:crafting\/schematics\/.+/ },
     { id: /create:crafting\/kinetics\/.*cogwheel.*/ },
     { id: /create:deploying\/.*cogwheel/ },
