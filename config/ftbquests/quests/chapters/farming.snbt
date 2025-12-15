@@ -212,8 +212,8 @@
 				type: "checkmark"
 			}]
 			title: "Tannin"
-			x: 8.0d
-			y: 7.5d
+			x: 7.5d
+			y: 8.0d
 		}
 		{
 			id: "4959DC7914B7F789"
@@ -496,8 +496,8 @@
 				type: "item"
 			}]
 			title: "Composter"
-			x: 6.5d
-			y: -3.0d
+			x: 4.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7F993A4EE39D7AF0"]
@@ -509,8 +509,8 @@
 				type: "item"
 			}]
 			title: "Seed ball"
-			x: 8.0d
-			y: -3.0d
+			x: 6.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["520EC155A25365F1"]
@@ -534,8 +534,8 @@
 				}
 			]
 			title: "Oven"
-			x: 1.5d
-			y: 8.5d
+			x: 3.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["6149CA516931EC96"]
@@ -554,7 +554,7 @@
 			}]
 			title: "Flour"
 			x: 3.5d
-			y: 5.5d
+			y: 5.0d
 		}
 		{
 			id: "28275BBA60478509"
@@ -595,8 +595,8 @@
 				type: "item"
 			}]
 			title: "Fruits and berries"
-			x: 1.5d
-			y: 4.0d
+			x: 2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -611,8 +611,8 @@
 				type: "checkmark"
 			}]
 			title: "Yeast starter"
-			x: 1.5d
-			y: 5.5d
+			x: 2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -633,8 +633,8 @@
 				type: "item"
 			}]
 			title: "Dough"
-			x: 1.5d
-			y: 7.0d
+			x: 3.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["15278CC6AEA26104"]
@@ -677,8 +677,8 @@
 				type: "item"
 			}]
 			title: "Bread"
-			x: 1.5d
-			y: 10.0d
+			x: 3.5d
+			y: 9.5d
 		}
 		{
 			dependency_requirement: "one_completed"
@@ -749,7 +749,7 @@
 			}]
 			title: "Sandwich"
 			x: 5.0d
-			y: 12.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["0D3034BAC522694C"]
@@ -804,7 +804,7 @@
 				type: "item"
 			}]
 			title: "Firepit with Grill"
-			x: -4.5d
+			x: -3.5d
 			y: -1.5d
 		}
 		{
@@ -812,7 +812,7 @@
 			icon: "tfc:firepit"
 			id: "7DC26004B2D800A9"
 			title: "Firepit"
-			x: -3.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
@@ -829,7 +829,7 @@
 				type: "item"
 			}]
 			title: "Pot"
-			x: -4.5d
+			x: -3.5d
 			y: 0.0d
 		}
 		{
@@ -849,7 +849,7 @@
 				type: "item"
 			}]
 			title: "Soup"
-			x: -6.0d
+			x: -5.0d
 			y: -1.5d
 		}
 		{
@@ -979,8 +979,8 @@
 				item: "tfc:jute_fiber"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -3.0d
+			x: 10.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["69D8991DDD18366A"]
@@ -1004,8 +1004,8 @@
 				type: "item"
 			}]
 			title: "Cloth"
-			x: 12.5d
-			y: 3.0d
+			x: 12.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["57450CDA1ABE0DC7"]
@@ -1021,7 +1021,7 @@
 				type: "item"
 			}]
 			title: "Large Vessel"
-			x: 5.0d
+			x: 3.5d
 			y: -3.0d
 		}
 		{
@@ -1069,7 +1069,7 @@
 				type: "custom"
 			}]
 			title: "Kettle"
-			x: -4.5d
+			x: -3.5d
 			y: 1.5d
 		}
 		{
@@ -1092,7 +1092,7 @@
 				type: "item"
 			}]
 			title: "Jam"
-			x: -6.0d
+			x: -5.0d
 			y: 0.0d
 		}
 		{
@@ -1105,8 +1105,8 @@
 				type: "item"
 			}]
 			title: "Fertilizers"
-			x: 6.5d
-			y: -4.5d
+			x: 5.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3686EE1F8D337CFC"]
@@ -1130,8 +1130,8 @@
 				type: "checkmark"
 			}]
 			title: "Alchogol"
-			x: 0.0d
-			y: 5.5d
+			x: 1.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["69D8991DDD18366A"]
@@ -1344,7 +1344,7 @@
 				type: "item"
 			}]
 			title: "Saplings"
-			x: 0.0d
+			x: 1.0d
 			y: 2.5d
 		}
 		{
@@ -1382,8 +1382,8 @@
 				type: "checkmark"
 			}]
 			title: "Pie, pizza and more"
-			x: 0.0d
-			y: 10.0d
+			x: 2.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["24BB2235242CD775"]
@@ -1407,7 +1407,7 @@
 				}
 			]
 			title: "Cookware"
-			x: -6.0d
+			x: -5.0d
 			y: 1.5d
 		}
 		{
@@ -1449,18 +1449,19 @@
 				type: "item"
 			}]
 			title: "Aqueducts"
-			x: 3.5d
-			y: -3.0d
+			x: 2.5d
+			y: -2.5d
 		}
 		{
+			dependencies: ["098BC649D84839B6"]
 			id: "72A33BEB5857E45B"
 			tasks: [{
 				id: "36936653548019BD"
 				item: "firmalife:vat"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 0.0d
+			x: 1.5d
+			y: -6.0d
 		}
 		{
 			id: "4AC5790A541C8990"
@@ -1480,10 +1481,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: [
-				"2C31B21D30B8B7BA"
-				"71FEB557BAFC042C"
-			]
+			dependencies: ["2C31B21D30B8B7BA"]
 			id: "718B387AE62DBE66"
 			tasks: [{
 				id: "2FDDEF3CED041FF8"
@@ -1536,8 +1534,8 @@
 				type: "item"
 			}]
 			title: "Saplings"
-			x: 1.5d
-			y: 2.5d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["718B387AE62DBE66"]

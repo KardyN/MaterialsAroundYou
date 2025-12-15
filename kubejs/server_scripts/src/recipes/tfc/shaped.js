@@ -36,6 +36,14 @@ ServerEvents.recipes((event) => {
       },
       id: "may:shaped/spindle/copper",
     },
+    {
+      output: "tfc:bloomery",
+      pattern: ["A A", "A A", "A A"],
+      key: {
+        A: "tfc:metal/double_sheet/copper",
+      },
+      id: "may:shaped/bloomery",
+    },
   ];
 
   global.woodList.forEach((wood) => {

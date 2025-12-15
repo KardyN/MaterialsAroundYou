@@ -57,6 +57,7 @@ ServerEvents.recipes((event) => {
     { id: "tfc:crafting/fire_clay" },
     { id: "tfc:crafting/fire_bricks" },
     { id: "tfc:crafting/wool_yarn" },
+    { id: "tfc:crafting/bloomery" },
     { id: "firmalife:crafting/pineapple_yarn" },
     { id: /tfc:barrel\/((large)|(medium)|(small))_((soaked)|(prepared))_hide/ },
     { id: /tfc:barrel\/((large)|(medium)|(small))_leather/ },

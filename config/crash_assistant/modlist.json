@@ -88,6 +88,13 @@
     "curseForgeHash": 752547332,
     "modrinthHash": "a6928cb03b7c5f81900d3d3c8e8c8f6a89a51a5b"
   },
+  "carryon-forge-1.20.1-2.1.2.7.jar": {
+    "jarName": "carryon-forge-1.20.1-2.1.2.7.jar",
+    "modId": "carryon",
+    "version": "2.1.2.7",
+    "curseForgeHash": 1899432453,
+    "modrinthHash": "9999714ca3dd2f2401f0396ca44f3b27c3784c4f"
+  },
   "chat_heads-0.14.2-forge-1.20.jar": {
     "jarName": "chat_heads-0.14.2-forge-1.20.jar",
     "modId": "chat_heads",
@@ -95,12 +102,12 @@
     "curseForgeHash": 1586719138,
     "modrinthHash": "0410ab9636c69324e3671012af64c7743f6d6079"
   },
-  "chloride-FORGE-mc1.20.1-v1.7.3.jar": {
-    "jarName": "chloride-FORGE-mc1.20.1-v1.7.3.jar",
+  "chloride-FORGE-mc1.20.1-v1.7.4.jar": {
+    "jarName": "chloride-FORGE-mc1.20.1-v1.7.4.jar",
     "modId": "chloride",
-    "version": "1.7.3",
-    "curseForgeHash": 1195478164,
-    "modrinthHash": "8745614a4343aaff9c5030b3f9cf04990298f6a2"
+    "version": "1.7.4",
+    "curseForgeHash": 2576849919,
+    "modrinthHash": "2774b44a6249e317f970b19cc90e0333b3cfa05c"
   },
   "Clumps-forge-1.20.1-12.0.0.4.jar": {
     "jarName": "Clumps-forge-1.20.1-12.0.0.4.jar",
@@ -109,12 +116,12 @@
     "curseForgeHash": 1243520454,
     "modrinthHash": "97cc669f68dbe812cb77cc3631339334fc28b877"
   },
-  "ColdSweat-2.4-b06c.jar": {
-    "jarName": "ColdSweat-2.4-b06c.jar",
+  "ColdSweat-2.4-b06d.jar": {
+    "jarName": "ColdSweat-2.4-b06d.jar",
     "modId": "cold_sweat",
-    "version": "2.4-b06c",
-    "curseForgeHash": 3796567195,
-    "modrinthHash": "b06b4b203a773c647228e02c02e505e010c0078b"
+    "version": "2.4-b06d",
+    "curseForgeHash": 2103012849,
+    "modrinthHash": "8a5e635e27e709bbb35ee7812c7752443db1c91b"
   },
   "compressedcreativity-1.20.1-0.2.0-all.jar": {
     "jarName": "compressedcreativity-1.20.1-0.2.0-all.jar",
@@ -165,12 +172,12 @@
     "curseForgeHash": 4101757481,
     "modrinthHash": "a4742067cceea47f4f8f7d25822b0ff8a8fa6268"
   },
-  "CrashAssistant-forge-1.19-1.20.1-1.10.25.jar": {
-    "jarName": "CrashAssistant-forge-1.19-1.20.1-1.10.25.jar",
+  "CrashAssistant-forge-1.19-1.20.1-1.10.26.jar": {
+    "jarName": "CrashAssistant-forge-1.19-1.20.1-1.10.26.jar",
     "modId": "crash_assistant",
-    "version": "1.10.25",
-    "curseForgeHash": 3610290716,
-    "modrinthHash": "b7d7dc4f2468376494ba7333c3bda2f893764742"
+    "version": "1.10.26",
+    "curseForgeHash": 3102150280,
+    "modrinthHash": "d5cd735e77ad7ef265cb4f80483a240e62239f5c"
   },
   "create-1.20.1-6.0.8.jar": {
     "jarName": "create-1.20.1-6.0.8.jar",
@@ -340,12 +347,12 @@
     "curseForgeHash": 768472251,
     "modrinthHash": "57d883148f04989128505a1bd8919629440f714f"
   },
-  "ImmediatelyFast-Forge-1.5.2+1.20.4.jar": {
-    "jarName": "ImmediatelyFast-Forge-1.5.2+1.20.4.jar",
+  "ImmediatelyFast-Forge-1.5.3+1.20.4.jar": {
+    "jarName": "ImmediatelyFast-Forge-1.5.3+1.20.4.jar",
     "modId": "immediatelyfast",
-    "version": "1.5.2+1.20.4",
-    "curseForgeHash": 2294782294,
-    "modrinthHash": "2eeca5deb063ed49bb9c6be8b162ca6270202239"
+    "version": "1.5.3+1.20.4",
+    "curseForgeHash": 2056126318,
+    "modrinthHash": "d4695d013e9da7089e2906db3f56bc5398e478e2"
   },
   "ImmersiveEngineering-1.20.1-10.2.0-183.jar": {
     "jarName": "ImmersiveEngineering-1.20.1-10.2.0-183.jar",
@@ -361,12 +368,12 @@
     "curseForgeHash": 1895780983,
     "modrinthHash": "74686608e47b0ea44bb394803cb66778b2c13efa"
   },
-  "ImmersivePetroleum-1.20.1-4.3.0-30.jar": {
-    "jarName": "ImmersivePetroleum-1.20.1-4.3.0-30.jar",
+  "ImmersivePetroleum-1.20.1-4.3.0-31.jar": {
+    "jarName": "ImmersivePetroleum-1.20.1-4.3.0-31.jar",
     "modId": "immersivepetroleum",
-    "version": "4.3.0-30",
-    "curseForgeHash": 2010224288,
-    "modrinthHash": "cfa1fb6e005f3380c1bc1295cf793a9943566814"
+    "version": "4.3.0-31",
+    "curseForgeHash": 1142038136,
+    "modrinthHash": "1c6964a3f7eddb232a671bbd5f33c9247b9bb14c"
   },
   "item-filters-forge-2001.1.0-build.59.jar": {
     "jarName": "item-filters-forge-2001.1.0-build.59.jar",
@@ -494,6 +501,13 @@
     "curseForgeHash": 3001740257,
     "modrinthHash": "d751153e722a4e014691c83f39f5b07c6ec5333c"
   },
+  "NaturesCompass-1.20.1-1.11.2-forge.jar": {
+    "jarName": "NaturesCompass-1.20.1-1.11.2-forge.jar",
+    "modId": "naturescompass",
+    "version": "1.20.1-1.11.2-forge",
+    "curseForgeHash": 3701495044,
+    "modrinthHash": "31ae930cdbb34e8e05e1954cfb2fee3a3813e850"
+  },
   "NoChatReports-FORGE-1.20.1-v2.2.2.jar": {
     "jarName": "NoChatReports-FORGE-1.20.1-v2.2.2.jar",
     "modId": "nochatreports",
@@ -522,12 +536,12 @@
     "curseForgeHash": 3174429337,
     "modrinthHash": "e85f53de2e582a79ce25ff1df1e7b5b5fc08440f"
   },
-  "pneumaticcraft-repressurized-6.0.21+mc1.20.1.jar": {
-    "jarName": "pneumaticcraft-repressurized-6.0.21+mc1.20.1.jar",
+  "pneumaticcraft-repressurized-6.0.22+mc1.20.1.jar": {
+    "jarName": "pneumaticcraft-repressurized-6.0.22+mc1.20.1.jar",
     "modId": "pneumaticcraft",
-    "version": "6.0.21+mc1.20.1",
-    "curseForgeHash": 787908453,
-    "modrinthHash": "a8b887188190f19932bb845ea546169822704c9d"
+    "version": "6.0.22+mc1.20.1",
+    "curseForgeHash": 2025326866,
+    "modrinthHash": "cbe2d3c5df7c2770ac59eb6f02489d8917627c03"
   },
   "precisionprospecting-1.20.1-1.0.0.jar": {
     "jarName": "precisionprospecting-1.20.1-1.0.0.jar",

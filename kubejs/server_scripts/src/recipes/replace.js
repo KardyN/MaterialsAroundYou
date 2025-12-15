@@ -69,4 +69,9 @@ ServerEvents.recipes((event) => {
     "minecraft:copper_ingot",
     "tfc:metal/ingot/copper"
   );
+  // event.replaceInput(
+  //   { input: "minecraft:water" },
+  //   "minecraft:water",
+  //   "tfc:fresh_water"
+  // );
 });

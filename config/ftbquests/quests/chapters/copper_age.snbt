@@ -53,68 +53,20 @@
 			description: ["To work with Copper you will need a &3Hammer&r."]
 			id: "585DD15DB024A3D1"
 			tasks: [{
-				id: "639332535F7465DC"
+				id: "45B7984D8D4879F6"
 				item: {
 					Count: 1
-					id: "itemfilters:or"
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/hammer/copper"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/hammer/copper"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/hammer/bronze"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/hammer/bismuth_bronze"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/hammer/black_bronze"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
+						Damage: 0
 					}
 				}
-				title: "Hammers"
 				type: "item"
 			}]
 			title: "Forge Hammer"
@@ -242,7 +194,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["7BE56F33FA2FF720"]
 			description: [
 				"To make &3Charcoal&r simply gather a lot of &3Logs&r. Then dig a pit. Shift-right-click with &3Logs&r into the pit. Make sure all &3Piles&r are holding &316 Logs&r each. It will affect &3Charcoal&r output. Then cover the pit with dirt, leaving one &3Pile&r visible to you. Use a &3Firestarter&r on it. When the fire has started cover the last &3Pile&r with dirt."
 				""
@@ -258,7 +209,7 @@
 				type: "item"
 			}]
 			title: "Charcoal"
-			x: -1.0d
+			x: 0.5d
 			y: 2.0d
 		}
 		{
@@ -288,11 +239,12 @@
 				}
 			]
 			title: "Forge"
-			x: 0.5d
+			x: 2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["7BE56F33FA2FF720"]
+			icon: "tfc:rock/loose/marble"
 			id: "1F2192C21814F3D0"
 			tasks: [{
 				id: "73CD04C97A9372E6"
@@ -379,7 +331,7 @@
 				type: "item"
 			}]
 			title: "Saw"
-			x: 5.5d
+			x: 5.0d
 			y: -1.5d
 		}
 		{
@@ -402,7 +354,7 @@
 				type: "item"
 			}]
 			title: "Lumber"
-			x: 5.5d
+			x: 5.0d
 			y: -3.5d
 		}
 		{
@@ -414,7 +366,7 @@
 				type: "item"
 			}]
 			title: "Wooden Bucket"
-			x: 4.0d
+			x: 3.5d
 			y: -2.5d
 		}
 		{
@@ -440,7 +392,7 @@
 				type: "item"
 			}]
 			title: "Barrel"
-			x: 7.0d
+			x: 6.5d
 			y: -2.5d
 		}
 		{
@@ -464,132 +416,138 @@
 				type: "item"
 			}]
 			title: "Sluice"
-			x: 4.0d
+			x: 3.5d
 			y: -4.5d
-		}
-		{
-			dependencies: ["76142216D24338FE"]
-			id: "469B4B63209610CE"
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				id: "38C6FAF2F9F8CABE"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/ingot/black_bronze"
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/ingot/bismuth_bronze"
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/ingot/bronze"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "Bronze Age"
-			x: 5.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["392D0D2BE9080CCF"]
-			icon: "tfc:bloomery"
-			id: "023378E10A023AFE"
-			tasks: [
-				{
-					id: "19C4D83DA05F8966"
-					item: "tfc:bloomery"
-					type: "item"
-				}
-				{
-					id: "127D6F96953A7573"
-					item: "minecraft:stone"
-					type: "item"
-				}
-			]
-			title: "Bloomery"
-			x: 9.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["469B4B63209610CE"]
-			id: "392D0D2BE9080CCF"
-			tasks: [{
-				id: "7BD6FAFA62A02206"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/anvil/bismuth_bronze"
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/anvil/bronze"
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/anvil/black_bronze"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "Bronze Anvil"
-			x: 7.5d
-			y: 0.5d
 		}
 		{
 			dependencies: [
 				"023378E10A023AFE"
+				"54AA278A4FB73E8C"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/ingot/bronze"
+			}
+			id: "469B4B63209610CE"
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2D2946457C19764E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "kubejs:raw_tin_bloom"
+					}
+					type: "item"
+				}
+				{
+					id: "2AB6A7BAE94253DF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/tin"
+					}
+					type: "item"
+				}
+				{
+					id: "7B6A8FC4FDD0BDB3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/bronze"
+					}
+					type: "item"
+				}
+			]
+			title: "Bronze Age"
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["76142216D24338FE"]
+			icon: "tfc:bloomery"
+			id: "023378E10A023AFE"
+			tasks: [{
+				id: "19C4D83DA05F8966"
+				item: "tfc:bloomery"
+				type: "item"
+			}]
+			title: "Bloomery"
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["469B4B63209610CE"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/anvil/bronze"
+			}
+			id: "392D0D2BE9080CCF"
+			tasks: [
+				{
+					id: "7BD6FAFA62A02206"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/double_ingot/bronze"
+					}
+					type: "item"
+				}
+				{
+					id: "5288066F749A3381"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/anvil/bronze"
+					}
+					type: "item"
+				}
+			]
+			title: "Bronze Anvil"
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"392D0D2BE9080CCF"
 				"367311D0BC54F698"
 			]
 			icon: {
@@ -600,9 +558,11 @@
 						ticks: 0L
 					}
 				}
-				id: "tfc:raw_iron_bloom"
+				id: "tfc:metal/ingot/wrought_iron"
 			}
 			id: "034F982B448DCCBE"
+			shape: "gear"
+			size: 1.5d
 			tasks: [
 				{
 					id: "30573BEEF51441E2"
@@ -619,7 +579,7 @@
 					type: "item"
 				}
 				{
-					id: "4463C01C5599AFE7"
+					id: "6D0724CDCC8564D8"
 					item: {
 						Count: 1
 						ForgeCaps: {
@@ -632,42 +592,23 @@
 					}
 					type: "item"
 				}
-			]
-			title: "Iron Bloom"
-			x: 10.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["034F982B448DCCBE"]
-			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
-				}
-				id: "tfc:metal/ingot/wrought_iron"
-			}
-			id: "71FEB557BAFC042C"
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				id: "2429FBA60137A31A"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
+				{
+					id: "12FED6E598C339BD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
 						}
+						id: "tfc:metal/ingot/wrought_iron"
 					}
-					id: "tfc:metal/ingot/wrought_iron"
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			title: "Iron Age"
-			x: 13.0d
+			x: 9.5d
 			y: 2.0d
 		}
 		{
@@ -687,7 +628,7 @@
 				type: "item"
 			}]
 			title: "Tool Rack"
-			x: 7.0d
+			x: 6.5d
 			y: -4.5d
 		}
 		{
@@ -703,7 +644,7 @@
 				item: "tfc:bellows"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 3.5d
 			y: 2.0d
 		}
 		{
@@ -719,7 +660,7 @@
 				item: "tfc:crucible"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.0d
 			y: 2.0d
 		}
 		{
@@ -728,6 +669,16 @@
 				"To work with metals you will need a Forge."
 				"It's gonna be quite big, so find a place for it and start your preparations!"
 			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/ingot/copper"
+			}
 			id: "7BE56F33FA2FF720"
 			tasks: [{
 				id: "023D0F289A900000"
@@ -740,6 +691,13 @@
 		}
 		{
 			dependencies: ["5719E48BB80CC88A"]
+			icon: {
+				Count: 1
+				id: "tfc:handstone"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "17527074CEFB9B75"
 			tasks: [
 				{
@@ -760,7 +718,7 @@
 				}
 			]
 			title: "Quern"
-			x: 5.5d
+			x: 0.5d
 			y: 3.5d
 		}
 		{
@@ -775,7 +733,7 @@
 				type: "item"
 			}]
 			title: "Charcoal Powder"
-			x: 9.0d
+			x: 8.0d
 			y: 3.5d
 		}
 		{
@@ -815,11 +773,11 @@
 				type: "item"
 			}]
 			title: "Chest"
-			x: 5.5d
+			x: 5.0d
 			y: -5.5d
 		}
 		{
-			dependencies: ["6FE2992AEE98301E"]
+			dependencies: ["7BE56F33FA2FF720"]
 			id: "5719E48BB80CC88A"
 			tasks: [{
 				id: "13BE9B5D9671B3DB"
@@ -831,15 +789,15 @@
 							ticks: 0L
 						}
 					}
-					id: "tfc:metal/chisel/black_bronze"
+					id: "tfc:metal/chisel/copper"
 					tag: {
 						Damage: 0
 					}
 				}
 				type: "item"
 			}]
-			x: 0.5d
-			y: 3.5d
+			x: -1.0d
+			y: 2.0d
 		}
 	]
 	title: "Copper Age"
