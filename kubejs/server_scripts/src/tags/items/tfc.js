@@ -11,4 +11,11 @@ ServerEvents.tags("item", (event) => {
   event.add("tfc:any_knapping", /.*lumber.*/);
   event.remove("tfc:axles", /afc:wood\/encased_axle\/.+/);
   event.add("tfc:usable_on_tool_rack", /kubejs:.+spindle.+/);
+  event.add("tfc:pileable_ingots", [
+    "mekanism:ingot_osmium",
+    "mekanism:ingot_lead",
+    "mekanism:ingot_uranium",
+  ]);
+  event.add("tfc:metal_item/lead", "mekanism:ingot_lead");
+  event.add("tfc:metal_item/uranium", "mekanism:ingot_uranium");
 });

@@ -1,4 +1,26 @@
 //priority: 1000
+
+global.colorsList = [
+  "white",
+  "light_gray",
+  "dark_gray",
+  "black",
+  "brown",
+  "red",
+  "orange",
+  "yellow",
+  "lime",
+  "green",
+  "cyan",
+  "light_blue",
+  "blue",
+  "purple",
+  "magenta",
+  "pink",
+];
+
+global.floursList = ["barley", "maize", "oat", "rye", "rice", "wheat"];
+
 global.oreList = [
   // opal should drop from graphite and cinnabar
   {

@@ -462,7 +462,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				id: "1E5EFFF347412CE3"
 				item: {
@@ -478,7 +478,7 @@
 				type: "item"
 			}]
 			title: "Copper Age"
-			x: 13.0d
+			x: 12.0d
 			y: -1.0d
 		}
 		{

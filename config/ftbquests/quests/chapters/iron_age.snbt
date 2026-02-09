@@ -18,7 +18,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["034F982B448DCCBE"]
+			dependencies: ["7F8F0061C200056A"]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -61,7 +61,7 @@
 				}
 			]
 			title: "Iron Anvil"
-			x: 6.0d
+			x: 5.5d
 			y: -0.5d
 		}
 		{
@@ -82,7 +82,7 @@
 				type: "item"
 			}]
 			title: "Pig Iron"
-			x: 10.5d
+			x: 9.5d
 			y: -0.5d
 		}
 		{
@@ -105,7 +105,7 @@
 				type: "item"
 			}]
 			title: "Steel Age"
-			x: 13.5d
+			x: 12.5d
 			y: -0.5d
 		}
 		{
@@ -125,13 +125,18 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
+			x: 11.0d
 			y: -0.5d
 		}
 		{
-			dependencies: ["3C03613597117989"]
+			dependencies: [
+				"29C744A139B0170E"
+				"0E47B42D4FBE6480"
+			]
 			icon: "tfc:blast_furnace"
 			id: "030F2596BFF2DCD1"
+			shape: "gear"
+			size: 1.5d
 			tasks: [
 				{
 					id: "44D00726BDF91ABA"
@@ -186,19 +191,244 @@
 				}
 			]
 			title: "Blast Furnace"
-			x: 9.0d
+			x: 7.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["29C744A139B0170E"]
-			id: "3C03613597117989"
+			id: "118CDBA3D7385B94"
 			tasks: [{
-				id: "5B8F552E29A2291A"
-				item: "immersiveengineering:coal_coke"
+				id: "763A4F4C5D2F8514"
+				item: "create:basin"
+				type: "item"
+			}]
+			title: "More machinery"
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["034F982B448DCCBE"]
+			id: "7F8F0061C200056A"
+			tasks: [{
+				id: "7150ACDD330C9F83"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/wrought_iron"
+				}
+				type: "item"
+			}]
+			title: "Iron"
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["030F2596BFF2DCD1"]
+			id: "4DF0DE0DF89342A7"
+			tasks: [{
+				id: "56E9355C0719C3A9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/silver"
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["030F2596BFF2DCD1"]
+			id: "5437E3F8240645E6"
+			tasks: [{
+				id: "0BEC1339766072FD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "immersiveengineering:ingot_lead"
+				}
 				type: "item"
 			}]
 			x: 7.5d
-			y: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["030F2596BFF2DCD1"]
+			id: "454A8A59D99B49DA"
+			tasks: [{
+				id: "2FA71331627D7799"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/zinc"
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["030F2596BFF2DCD1"]
+			id: "396ABE0D3B6475F4"
+			tasks: [{
+				id: "78F02A4963026BC9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/bismuth"
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["454A8A59D99B49DA"]
+			id: "41CDE25983754D7A"
+			tasks: [{
+				id: "4DD6DC649DFE9278"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/brass"
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"454A8A59D99B49DA"
+				"396ABE0D3B6475F4"
+			]
+			id: "1956FE6EFD17D78C"
+			tasks: [{
+				id: "5D5A8F93378907E7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/bismuth_bronze"
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4DF0DE0DF89342A7"]
+			id: "291789FB0116243D"
+			tasks: [{
+				id: "3773A6D3DF2481E2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/rose_gold"
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4DF0DE0DF89342A7"]
+			id: "7CC2080629F2ECC0"
+			tasks: [{
+				id: "7FE1D10D75A58312"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/black_bronze"
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4DF0DE0DF89342A7"]
+			id: "247FE7D1B84828D2"
+			tasks: [{
+				id: "7894AEA1384F61A5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "immersiveengineering:ingot_electrum"
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4DF0DE0DF89342A7"]
+			id: "44D78ECD2735B9EC"
+			tasks: [{
+				id: "4EDDE82710F9767B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/sterling_silver"
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.5d
 		}
 	]
 	title: "Iron Age"

@@ -10,6 +10,7 @@ ServerEvents.recipes((event) => {
     { id: "minecraft:leather" },
     { output: "minecraft:netherrack" },
     { id: "minecraft:sea_lantern" },
+    { id: "minecraft:iron_ingot_from_nuggets" },
     { output: "minecraft:iron_bars" },
     { output: "minecraft:chain" },
     { id: "minecraft:heavy_weighted_pressure_plate" },
@@ -38,6 +39,7 @@ ServerEvents.recipes((event) => {
     { type: "tfc:quern", output: "#may:ore_powders" },
     { type: "tfc:quern", output: "#tfc:gem_powders" },
     { id: "tfc:quern/cryolite" },
+    { id: "tfc:quern/blaze_rod" },
     { type: "tfc:bloomery" },
     { type: "tfc:alloy" },
     { id: /tfc:crafting\/stone\/hammer.+/ },
@@ -64,6 +66,8 @@ ServerEvents.recipes((event) => {
     { id: /firmaciv:barrel\/large_waterproof_hide_.+/ },
     { id: "firmaciv:crafting/large_waterproof_hide" },
     { type: "advancedtfctech:beamhouse" },
+    { id: "tfc_ie_addon:heating/metal/lead_ingot" },
+    { id: "tfc_ie_addon:heating/metal/uranium_ingot" },
 
     //immersive & addons
     { type: "immersiveengineering:crusher" },
@@ -81,6 +85,12 @@ ServerEvents.recipes((event) => {
     { id: /tfc_ie_addon:metalpress\/.+/ },
     { id: /tfc_ie_addon:cokeoven\/.+/ },
     { id: /immersivegeology:coking\/.+/ },
+    { id: "immersivegeology:crafting/get_nuggets_from_steel_ingot" },
+    { id: "immersivegeology:crafting/craft_igtoolkit_0" },
+    { id: "immersivegeology:crafting/craft_steel_geologist_pick" },
+    { id: "immersiveengineering:blastfurnace/steel" },
+    { id: "immersiveengineering:blastfurnace/steel_block" },
+    { type: "immersiveengineering:alloy" },
 
     //create & addons
     { id: "create:crafting/appliances/copper_backtank" },
@@ -122,6 +132,7 @@ ServerEvents.recipes((event) => {
     { type: "create:mechanical_crafting" },
     { type: "create:haunting" },
     { type: "create:splashing" },
+    { type: "create:milling" },
     { id: /create:crafting\/schematics\/.+/ },
     { id: /create:crafting\/kinetics\/.*cogwheel.*/ },
     { id: /create:deploying\/.*cogwheel/ },
@@ -138,12 +149,17 @@ ServerEvents.recipes((event) => {
     { input: "createoreexcavation:raw_diamond" },
     { input: "createoreexcavation:raw_emerald" },
     { input: "createoreexcavation:raw_redstone" },
+    { id: "createoreexcavation:drill" },
+    { id: "createoreexcavation:diamond_drill" },
+    { id: "createaddition:crafting/electrum_nugget" },
+    { id: "createaddition:rolling/copper_ingot" },
 
     //mekanism & addons
     { id: "mekanism:charcoal" },
     { id: "mekanism:storage_blocks/charcoal" },
     { id: /mekanism:sawing.+/ },
     { id: /mekanism:nucleosynthesizing\/.+/ },
+    //{ id: "mekanism:storage_blocks/steel" }, NOT WORKING
 
     //farmer's delight & addons
     { id: /farmersdelight:cutting\/.+wood/ },
@@ -170,8 +186,15 @@ ServerEvents.recipes((event) => {
     { id: "pneumaticcraft:amadron_tablet" },
     { id: /pneumaticcraft:pressure_chamber\/pressure_chamber_.*enchanting/ },
 
+    //ad astra
+    //{ id: "ad_astra:steel_nugget" }, NOT WORKING
+    { id: "ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals" },
+    { id: "ad_astra:compressing/iron_plate_from_compressing_iron_ingot" },
+    { id: "ad_astra:astrodux" },
+
     // Misc
     { id: "ftbquests:loot_crate_opener" },
+    { id: "cold_sweat:thermometer" },
   ];
 
   recipes.forEach((recipe) => {

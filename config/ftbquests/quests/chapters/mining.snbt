@@ -12,7 +12,7 @@
 		}
 	}
 	id: "7D99E0460BFAE9F0"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -475,6 +475,7 @@
 				"0D4FE4E6987A2BA9"
 			]
 			id: "5719C0ACE811AE65"
+			shape: "none"
 			tasks: [{
 				id: "0E4583AEE419321F"
 				title: "excavator info"

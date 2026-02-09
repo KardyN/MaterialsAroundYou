@@ -7,6 +7,212 @@
 	id: "0BCCC21B3A68214E"
 	order_index: 4
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "48F70305C0EA1794"
+			tasks: [{
+				id: "32885C18AEFEA00B"
+				item: "immersiveengineering:fluid_pump"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["48F70305C0EA1794"]
+			id: "00B255437C2F0221"
+			tasks: [{
+				id: "2CE6C6D1929005AA"
+				item: "pneumaticcraft:refinery"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00B255437C2F0221"]
+			id: "1502946446558C03"
+			tasks: [{
+				id: "6ADD122AC23943B9"
+				item: "immersivepetroleum:kerosene_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"00B255437C2F0221"
+				"1502946446558C03"
+				"5C930CA1198A198F"
+				"1723664F36D2D7B7"
+			]
+			dependency_requirement: "one_completed"
+			id: "72383CFEA803BCC0"
+			tasks: [{
+				id: "781A21D2D65B83FF"
+				item: "immersivepetroleum:diesel_sulfur_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00B255437C2F0221"]
+			id: "5C930CA1198A198F"
+			tasks: [{
+				id: "20D4AADAAC17B595"
+				item: "immersivepetroleum:lubricant_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["00B255437C2F0221"]
+			id: "0CC9731CE42206CC"
+			tasks: [{
+				id: "3F04568C680E54A7"
+				item: "immersivepetroleum:naphtha_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["00B255437C2F0221"]
+			id: "1723664F36D2D7B7"
+			tasks: [{
+				id: "53FEFC04EF7744BB"
+				item: "immersivepetroleum:bitumen"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1723664F36D2D7B7"]
+			id: "55143843DCDE08FB"
+			tasks: [{
+				id: "5216698960DB70E0"
+				item: "immersivepetroleum:asphalt"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1723664F36D2D7B7"]
+			id: "4202EFA915DBA1EC"
+			tasks: [{
+				id: "6FCECFE85CC45808"
+				item: "immersivepetroleum:petcoke"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			id: "57FF84252421DC76"
+			tasks: [{
+				id: "03C7943DAD8FD3F0"
+				title: "petcoke powder"
+				type: "custom"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5C930CA1198A198F"]
+			id: "4198BC2D932B83AD"
+			tasks: [{
+				id: "62F721C4DFF637DC"
+				item: "immersivepetroleum:paraffin_wax"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["72383CFEA803BCC0"]
+			id: "02A1E7750B45591D"
+			tasks: [{
+				id: "6A3C96DEF946BEB8"
+				item: "immersivepetroleum:diesel_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1502946446558C03"]
+			id: "76D25225B7B140B4"
+			tasks: [{
+				id: "249AF1846AFF88D9"
+				item: "immersivepetroleum:benzol_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0CC9731CE42206CC"]
+			id: "51D2286E163BB801"
+			tasks: [{
+				id: "70485F844DDE9605"
+				item: "immersivepetroleum:petroleum_gas_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"76D25225B7B140B4"
+				"0CC9731CE42206CC"
+			]
+			id: "5F338E3CE0550C9F"
+			tasks: [{
+				id: "005A0DB755630181"
+				item: "immersivepetroleum:gasoline_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["72383CFEA803BCC0"]
+			id: "637EEF4D28E305EB"
+			tasks: [{
+				id: "178AECEC128F2D93"
+				item: "tfc:powder/sulfur"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["51D2286E163BB801"]
+			id: "3C65CB61FC16F5FC"
+			tasks: [{
+				id: "2E04D30970CD0241"
+				item: "pneumaticcraft:plastic_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["51D2286E163BB801"]
+			id: "6A607D2E3D209A2C"
+			tasks: [{
+				id: "782DF35ACB43D377"
+				item: "immersiveengineering:phenolic_resin_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+	]
 	title: "Oil Age"
 }

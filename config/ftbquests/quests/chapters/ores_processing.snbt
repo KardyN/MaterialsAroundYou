@@ -14,7 +14,7 @@
 		id: "tfc:ore/rich_tetrahedrite"
 	}
 	id: "672DA51081B4C28C"
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -303,26 +303,8 @@
 				}
 			]
 			title: "Mechanical Power"
-			x: -6.0d
+			x: -7.0d
 			y: 2.5d
-		}
-		{
-			dependencies: ["60ED534800A2168D"]
-			id: "2B827812630F8A1A"
-			tasks: [{
-				id: "040AF38B5577F858"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "tfc:default_windmill_blades"
-					}
-				}
-				type: "item"
-			}]
-			title: "Windmill"
-			x: -6.0d
-			y: 4.0d
 		}
 		{
 			dependencies: ["040D411E1996731C"]
@@ -351,6 +333,7 @@
 				"2BD4DFB1CCCB03E2"
 				"1293EE67D4CCBB86"
 			]
+			icon: "tfc:wood/axle/ash"
 			id: "69751D73CC834A6A"
 			tasks: [{
 				id: "4141862E0A35F1E2"
@@ -363,6 +346,7 @@
 				}
 				type: "item"
 			}]
+			title: "Axles"
 			x: -6.0d
 			y: 1.0d
 		}
@@ -439,14 +423,38 @@
 		}
 		{
 			dependencies: ["0E47B42D4FBE6480"]
+			description: ["TODO"]
+			icon: "tfcchannelcasting:channel"
 			id: "75B3CD020A4C68A7"
-			tasks: [{
-				id: "48202187F26AE3FC"
-				title: "TODO: Casting Channels"
-				type: "custom"
-			}]
-			x: 4.5d
-			y: -2.0d
+			tasks: [
+				{
+					id: "72689B50B6E535B2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfcchannelcasting:unfired_channel"
+					}
+					type: "item"
+				}
+				{
+					id: "4FFD848A34EF4258"
+					item: "tfcchannelcasting:channel"
+					type: "item"
+				}
+				{
+					id: "295A778BD112E75A"
+					item: "tfcchannelcasting:mold_table"
+					type: "item"
+				}
+			]
+			title: "Casting with channels"
+			x: 3.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -479,6 +487,19 @@
 		}
 		{
 			dependencies: ["29B54FAB02DE3E0D"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"tfc:item_heat": {
+						heat: 0.0f
+						ticks: 0L
+					}
+				}
+				id: "tfc:metal/chisel/copper"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "3CB5CB6BED5AC720"
 			tasks: [{
 				id: "5853E335E56D7835"
@@ -493,7 +514,7 @@
 				type: "item"
 			}]
 			title: "Chisel"
-			x: -7.5d
+			x: -8.0d
 			y: 1.0d
 		}
 		{
@@ -508,15 +529,15 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["2B827812630F8A1A"]
+			dependencies: ["60ED534800A2168D"]
 			id: "72CB48B63E15378F"
 			tasks: [{
 				id: "1DB6F3047AEB653C"
 				item: "tfc:trip_hammer"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 3.0d
+			x: -6.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4E15271405C037C6"]
@@ -567,11 +588,12 @@
 		}
 		{
 			dependencies: ["13769A224ED6A325"]
+			icon: "tfc:wood/sluice/ash"
 			id: "30012D2317220B76"
 			tasks: [{
-				id: "04F4F358D1BB7D25"
-				item: "afc:wood/sluice/fig"
-				type: "item"
+				id: "0EC48F5461C7C57A"
+				title: "Automating sluice"
+				type: "checkmark"
 			}]
 			title: "Automating Sluice"
 			x: -3.0d
@@ -584,7 +606,6 @@
 			]
 			id: "4E15271405C037C6"
 			tasks: [{
-				count: 32L
 				id: "1328F46836D4B944"
 				item: "tfc:fire_clay"
 				type: "item"
@@ -602,6 +623,48 @@
 			}]
 			x: -3.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["60ED534800A2168D"]
+			icon: "tfc:quern"
+			id: "5C581D3F6EC1BEBB"
+			tasks: [{
+				id: "15ACE6CDC9E57815"
+				title: "Quern automation"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"76655C5D9C25D6EC"
+				"69751D73CC834A6A"
+			]
+			icon: "create:millstone"
+			id: "3A7DEAFE74B527F1"
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "62237CB168E1F51B"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					id: "3DFC3CD36C414045"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					id: "0495B91CD767AD83"
+					item: "create:millstone"
+					type: "item"
+				}
+			]
+			title: "Milling"
+			x: -5.0d
+			y: 2.5d
 		}
 	]
 	title: "Ores Processing"

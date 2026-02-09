@@ -409,6 +409,24 @@
 			x: -0.5d
 			y: 0.0d
 		}
+		{
+			description: [
+				"&3Items\\&Blocks"
+				"&eKeys"
+				"&4Warnings"
+				"&9JEI"
+				"&6Chapters"
+				"&5TFC Guidebook"
+			]
+			id: "52BF5F926D314F95"
+			tasks: [{
+				id: "2C0A3913875CCB18"
+				title: "Colours"
+				type: "custom"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
 	]
 	title: "Hidden"
 }

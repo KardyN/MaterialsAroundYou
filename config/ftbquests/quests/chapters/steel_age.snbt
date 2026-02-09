@@ -18,7 +18,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["4B5CA8330858A42D"]
+			dependencies: ["2E5344B70BA76779"]
 			id: "08C222C28AD196B7"
 			tasks: [{
 				id: "5AE85266126C61F4"
@@ -65,50 +65,11 @@
 				type: "item"
 			}]
 			title: "Black Steel Anvil"
-			x: 1.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6453B529E93D7765"]
-			id: "2FE3AAC8D193324E"
-			tasks: [{
-				id: "07508D67FAC66B8F"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/anvil/blue_steel"
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/anvil/red_steel"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "Best Anvil"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["19A024A02370CF42"]
+			dependencies: ["08EFBA492DD1DE51"]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -135,93 +96,14 @@
 				type: "item"
 			}]
 			title: "Black Steel"
-			x: -0.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2FE3AAC8D193324E"]
-			icon: "tfc:metal/bucket/blue_steel"
-			id: "6ACB836C248DF51B"
-			tasks: [{
-				id: "10E13EBF4DA3B683"
-				item: "tfc:metal/bucket/blue_steel"
-				type: "item"
-			}]
-			title: "Blue Steel Bucket"
-			x: 5.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["2FE3AAC8D193324E"]
-			icon: "tfc:metal/bucket/red_steel"
-			id: "6BDA27D37CD64F22"
-			tasks: [{
-				id: "2639E4F78A706B6D"
-				item: "tfc:metal/bucket/red_steel"
-				type: "item"
-			}]
-			title: "Red Steel Bucket"
-			x: 5.5d
-			y: 0.5d
-		}
-		{
-			dependencies: [
-				"6ACB836C248DF51B"
-				"6BDA27D37CD64F22"
-			]
-			id: "0F0A15242303B871"
-			tasks: [{
-				id: "4E3A8689D9CA1C0E"
-				item: "minecraft:bucket"
-				type: "item"
-			}]
-			x: 7.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6F53637B21404A79"]
-			id: "6453B529E93D7765"
-			tasks: [{
-				id: "1982A0FCFA043480"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/ingot/blue_steel"
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/ingot/red_steel"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "Best Steel"
 			x: 2.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["08EFBA492DD1DE51"]
-			id: "19A024A02370CF42"
+			dependencies: ["1EA7CAA228DC56E4"]
+			id: "08EFBA492DD1DE51"
 			tasks: [{
-				id: "7B0DA7E7DD3ECD82"
+				id: "5048649C0F25C3D6"
 				item: {
 					Count: 1
 					ForgeCaps: {
@@ -230,60 +112,274 @@
 							ticks: 0L
 						}
 					}
-					id: "tfc:metal/ingot/high_carbon_black_steel"
+					id: "tfc:metal/ingot/weak_steel"
 				}
 				type: "item"
 			}]
-			title: "High Carbon Black Steel"
-			x: -2.0d
+			title: "Ferronickel"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B5CA8330858A42D"]
+			id: "2E5344B70BA76779"
+			tasks: [{
+				id: "0BBD1091A335EB61"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/steel"
+				}
+				type: "item"
+			}]
+			x: -6.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["08C222C28AD196B7"]
-			id: "08EFBA492DD1DE51"
-			tasks: [
-				{
-					id: "5048649C0F25C3D6"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
+			id: "39217932ED62102C"
+			tasks: [{
+				id: "0FB577A2E773DE69"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
 						}
-						id: "tfc:metal/ingot/weak_steel"
 					}
-					type: "item"
+					id: "tfc_items:steel_foil"
 				}
-				{
-					id: "1C9CCC1777840CAC"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/ingot/steel"
-					}
-					type: "item"
-				}
-			]
-			title: "Ferronickel"
+				type: "item"
+			}]
 			x: -3.5d
 			y: 0.0d
 		}
 		{
-			id: "43DEB9B70DFCBFEF"
+			dependencies: ["58E4DFAC60C4A524"]
+			id: "4D3E480ECA97B97C"
 			tasks: [{
-				id: "4F4F766BA467E9CE"
-				title: "TODO: What is needed to go Oil Age?"
+				id: "693ABD25C4F267E7"
+				item: "pneumaticcraft:pressure_gauge"
+				type: "item"
+			}]
+			title: "Pneumaticraft"
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6F53637B21404A79"]
+			id: "58E4DFAC60C4A524"
+			tasks: [{
+				id: "648F9F74883F7865"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc_items:black_steel_foil"
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["39217932ED62102C"]
+			id: "68662A1C7F641C1F"
+			tasks: [{
+				id: "11652808C8733884"
+				item: "immersiveengineering:rs_engineering"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["39217932ED62102C"]
+			id: "43BEC35AB7A301FD"
+			tasks: [{
+				id: "77CB769A7E0C6374"
+				item: "immersiveengineering:light_engineering"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"43BEC35AB7A301FD"
+				"68662A1C7F641C1F"
+				"79B15C17E6428C1D"
+				"68C3E6CD17F43BD4"
+				"2C0F3DE8BC4375E6"
+			]
+			icon: "immersiveengineering:arc_furnace"
+			id: "1EA7CAA228DC56E4"
+			tasks: [{
+				id: "4373CCE90F5BE1DA"
+				title: "Arc furnace"
 				type: "custom"
 			}]
 			x: -0.5d
-			y: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["39217932ED62102C"]
+			id: "79B15C17E6428C1D"
+			tasks: [{
+				id: "211E5A5D13F4E303"
+				item: "immersiveengineering:sheetmetal_steel"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["60BAE5EEBFE24BF3"]
+			id: "7E675907085A3615"
+			tasks: [{
+				id: "4A3428AFD5C1F6CE"
+				item: "immersiveengineering:coal_coke"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7E675907085A3615"]
+			id: "68C3E6CD17F43BD4"
+			tasks: [{
+				id: "789221ABA807F1D3"
+				item: "immersiveengineering:dust_coke"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["58E4DFAC60C4A524"]
+			id: "20F6B7CB3EF193D9"
+			tasks: [{
+				id: "1C4DB55EE9EC57F6"
+				item: "immersiveengineering:heavy_engineering"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1EA7CAA228DC56E4"]
+			id: "19CB4EB7C81841D7"
+			tasks: [{
+				id: "7A0CCD3C89878D1B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/weak_blue_steel"
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5630D0719FD506B3"]
+			id: "34418B9488CA4BAB"
+			tasks: [{
+				id: "36462176DD14E46F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "tfc:metal/ingot/weak_red_steel"
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1EA7CAA228DC56E4"]
+			id: "5630D0719FD506B3"
+			tasks: [{
+				id: "301C321807D926D9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "immersiveengineering:ingot_aluminum"
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["19CB4EB7C81841D7"]
+			id: "0732244F96686F24"
+			tasks: [{
+				id: "1FF9792C40649678"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "firmalife:metal/ingot/stainless_steel"
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0C55A28662800481"]
+			id: "2C0F3DE8BC4375E6"
+			tasks: [{
+				id: "76D14E5C86FB787F"
+				item: "tfc:fire_bricks"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"20F6B7CB3EF193D9"
+				"4D3E480ECA97B97C"
+			]
+			id: "6A289097C317952D"
+			tasks: [{
+				id: "2C4C886C7304EDD3"
+				item: "immersivepetroleum:crudeoil_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
 		}
 	]
 	title: "Steel Age"

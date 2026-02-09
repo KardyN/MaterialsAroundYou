@@ -24,20 +24,53 @@ jei.items.hide = [
   /minecraft:stone(?!cutter).*/,
   /minecraft:((coal)|(iron)|(gold)|(emerald)|(lapis)|(diamond)|(netherite))_block/,
   /minecraft:((iron)|(golden)|(diamond))_horse_armor/,
+  "minecraft:gold_ingot",
+  "minecraft:copper_ingot",
+  "minecraft:iron_ingot",
+  /minecraft:*shulker_box/,
+  /minecraft:sculk*/,
+  "minecraft:suspicious_stew",
+  "minecraft:enchanted_book",
+  "minecraft:potion",
+  "minecraft:splash_potion",
+  "minecraft:lingering_potion",
 
-  //tfc & addons
+  // tfc
   /tfc.*:ore\/.+\/.+/,
-  /firmalife:ore\/.+\/.+/,
   /tfc:deposit\/.+\/.+/,
   /tfc:wild_crop\/.+/,
 
-  //immersive & addons
-  /immersivegeology:minecraft.*ore.*/,
-  /immersivegeology:tfc.*ore.*/,
+  // firmalife
+  /firmalife:ore\/.+\/.+/,
+
+  // immersive engineering
   "immersiveengineering:pickaxe_steel",
   "immersiveengineering:shader",
+  "immersiveengineering:ingot_steel",
+  "immersiveengineering:ingot_silver",
+  "immersiveengineering:ingot_nickel",
+  "immersiveengineering:ingot_lead",
+  "immersiveengineering:ingot_uranium",
+  "immersiveengineering:potion_bucket",
+  "immersiveengineering:potion",
+  "immersiveengineering:stick_iron",
+  "immersiveengineering:stick_steel",
+  "immersiveengineering:stick_aluminum",
 
-  //create & addons
+  // immersive geology
+  "immersivegeology:ingot_zinc",
+  "immersivegeology:ingot_bronze",
+  "immersivegeology:ingot_tin",
+  "immersivegeology:ingot_chromium",
+  "immersivegeology:ingot_osmium",
+  "immersivegeology:ingot_stainless_steel",
+  "immersivegeology:ingot_lignite",
+  /immersivegeology:minecraft.*ore.*/,
+  /immersivegeology:tfc.*ore.*/,
+
+  // immersive petroleum
+
+  // create
   /create:.*granite.*/,
   /create:.*diorite.*/,
   /create:cut_andesite.*/,
@@ -58,26 +91,43 @@ jei.items.hide = [
   /create:.*veridium.*/,
   /create:.*window_pane.*/,
   /create:.*window.*/,
-  /railways:.*locometal.*/,
-  /railways:track.*/,
   "create:track",
   /create:crushed.*/,
+  "create:brass_ingot",
+  "create:zinc_ingot",
+
+  // create addition
+  "createaddition:electrum_ingot",
+
+  // railways
+  /railways:track.*/,
+
+  // create ore excavation
   /createoreexcavation:raw.+/,
 
   //mekanism & addons
   "mekanism:creative_fluid_tank",
   "mekanism:creative_chemical_tank",
   /mekanism:.*ore.*/,
+  "mekanism:ingot_steel",
+  "mekanism:ingot_bronze",
+  "mekanism:ingot_tin",
 
-  //farmer's delight & addons
+  // farmer's delight
 
-  // AE2 & addons
+  // ae2
   "ae2:facade",
   /ae2:.*((axe)|(knife)|(shovel)|(hoe)|(sword)).*/,
 
-  //Pneumatic Craft
+  // pneumatic craft
 
-  // Misc
+  // adastra
+  "ad_astra:steel_ingot",
+
+  // misc
+  ///itemfilters:*/,
+
+  ,
 ];
 
 jei.items.add = [

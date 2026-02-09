@@ -70,6 +70,15 @@ ServerEvents.recipes((event) => {
       id: "may:shaped/large_water_wheel",
     },
     {
+      output: "create:large_water_wheel",
+      pattern: [" B ", "BAB", " B "],
+      key: {
+        A: "create:water_wheel",
+        B: "immersiveengineering:treated_wood_horizontal",
+      },
+      id: "may:shaped/large_water_wheel_from_small",
+    },
+    {
       output: "create:nozzle",
       pattern: [" A ", "BBB", " A "],
       key: {

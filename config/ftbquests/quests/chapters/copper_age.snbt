@@ -11,7 +11,7 @@
 				ticks: 0L
 			}
 		}
-		id: "tfc:metal/ingot/copper"
+		id: "tfc:metal/ingot/bronze"
 	}
 	id: "6F18CDD52B46A03E"
 	order_index: 1
@@ -19,6 +19,10 @@
 	quests: [
 		{
 			dependencies: ["7A1F9767F054AC56"]
+			description: [
+				"Now get a few of those &3Copper Double Ingots&f and craft them into an actual anvil."
+				"It allows you to forge copper tools directly from heated ingots, without casting metal, and to create components of &3Bloomery&f, your first ore processing station."
+			]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -174,6 +178,7 @@
 				"1F2192C21814F3D0"
 				"585DD15DB024A3D1"
 			]
+			description: ["Powder used for welding metals together, and producing better materials later in the game."]
 			id: "0D3034BAC522694C"
 			tasks: [{
 				count: 7L
@@ -190,10 +195,12 @@
 				}
 				type: "item"
 			}]
+			title: "Flux"
 			x: 0.5d
 			y: -1.0d
 		}
 		{
+			dependencies: ["29B54FAB02DE3E0D"]
 			description: [
 				"To make &3Charcoal&r simply gather a lot of &3Logs&r. Then dig a pit. Shift-right-click with &3Logs&r into the pit. Make sure all &3Piles&r are holding &316 Logs&r each. It will affect &3Charcoal&r output. Then cover the pit with dirt, leaving one &3Pile&r visible to you. Use a &3Firestarter&r on it. When the fire has started cover the last &3Pile&r with dirt."
 				""
@@ -214,6 +221,7 @@
 		}
 		{
 			dependencies: ["6FE2992AEE98301E"]
+			description: ["TODO"]
 			icon: "tfc:ore/bituminous_coal/granite"
 			id: "1170062E1DCC047B"
 			tasks: [
@@ -244,6 +252,7 @@
 		}
 		{
 			dependencies: ["7BE56F33FA2FF720"]
+			description: ["Source of &3Flux&f powder. "]
 			icon: "tfc:rock/loose/marble"
 			id: "1F2192C21814F3D0"
 			tasks: [{
@@ -331,7 +340,7 @@
 				type: "item"
 			}]
 			title: "Saw"
-			x: 5.0d
+			x: 4.0d
 			y: -1.5d
 		}
 		{
@@ -354,7 +363,7 @@
 				type: "item"
 			}]
 			title: "Lumber"
-			x: 5.0d
+			x: 4.0d
 			y: -3.5d
 		}
 		{
@@ -366,7 +375,7 @@
 				type: "item"
 			}]
 			title: "Wooden Bucket"
-			x: 3.5d
+			x: 2.5d
 			y: -2.5d
 		}
 		{
@@ -392,7 +401,7 @@
 				type: "item"
 			}]
 			title: "Barrel"
-			x: 6.5d
+			x: 5.5d
 			y: -2.5d
 		}
 		{
@@ -416,13 +425,19 @@
 				type: "item"
 			}]
 			title: "Sluice"
-			x: 3.5d
+			x: 2.5d
 			y: -4.5d
 		}
 		{
 			dependencies: [
 				"023378E10A023AFE"
 				"54AA278A4FB73E8C"
+			]
+			description: [
+				"Smithing iron requieres Bronze Anvil. So your next task is aquiring said bronze."
+				"Bronze is an alloy, you can make it in the &3Small Vessel&f, just like you casted copper earlier, but it's going to be tedious. "
+				"Instead, set up your &3Crucible&3 and &3Charcoal Forge&f (see &6Ore Processing&f chapter) and cast in molds inside the crucible."
+				"CHeck &9JEI&f for alloy recipe."
 			]
 			icon: {
 				Count: 1
@@ -487,19 +502,55 @@
 		}
 		{
 			dependencies: ["76142216D24338FE"]
+			description: [
+				"&3BLoomery&f allows for smelting oxygen containing ores. "
+				"Check &9JEI&f for specific amounts of ore. "
+				"TODO short explanation of how it works"
+			]
 			icon: "tfc:bloomery"
 			id: "023378E10A023AFE"
-			tasks: [{
-				id: "19C4D83DA05F8966"
-				item: "tfc:bloomery"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "19C4D83DA05F8966"
+					item: "tfc:bloomery"
+					type: "item"
+				}
+				{
+					id: "2457B7F95DF98321"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "kubejs:raw_tin_bloom"
+					}
+					type: "item"
+				}
+				{
+					id: "5AFB469BBFF1A81E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/tin"
+					}
+					type: "item"
+				}
+			]
 			title: "Bloomery"
 			x: 5.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["469B4B63209610CE"]
+			description: ["Just like with the &3Copper Anvil&f, you know the drill. "]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -513,7 +564,21 @@
 			id: "392D0D2BE9080CCF"
 			tasks: [
 				{
-					id: "7BD6FAFA62A02206"
+					id: "5288066F749A3381"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"tfc:item_heat": {
+								heat: 0.0f
+								ticks: 0L
+							}
+						}
+						id: "tfc:metal/ingot/bronze"
+					}
+					type: "item"
+				}
+				{
+					id: "7BE9367A068C7898"
 					item: {
 						Count: 1
 						ForgeCaps: {
@@ -527,7 +592,7 @@
 					type: "item"
 				}
 				{
-					id: "5288066F749A3381"
+					id: "41885001201AE067"
 					item: {
 						Count: 1
 						ForgeCaps: {
@@ -549,6 +614,10 @@
 			dependencies: [
 				"392D0D2BE9080CCF"
 				"367311D0BC54F698"
+			]
+			description: [
+				"Now, all that is left to do is fire up the &3Bloomery&f with some &3Iron Ore&f, and make it into &3Wrought Iron Ingots&f!"
+				"The process is a bit longer, than with &3Tin Ingots&f, but still pretty easy. "
 			]
 			icon: {
 				Count: 1
@@ -628,11 +697,11 @@
 				type: "item"
 			}]
 			title: "Tool Rack"
-			x: 6.5d
+			x: 5.5d
 			y: -4.5d
 		}
 		{
-			dependencies: ["1170062E1DCC047B"]
+			dependencies: ["54AA278A4FB73E8C"]
 			id: "60A5E12F241F13F8"
 			rewards: [{
 				id: "76C086CF5AB330FB"
@@ -644,11 +713,11 @@
 				item: "tfc:bellows"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 6.5d
 			y: 2.0d
 		}
 		{
-			dependencies: ["60A5E12F241F13F8"]
+			dependencies: ["1170062E1DCC047B"]
 			description: [
 				"&3Crucible&r will allow you to make alloys and ingots easier."
 				""
@@ -691,14 +760,10 @@
 		}
 		{
 			dependencies: ["5719E48BB80CC88A"]
-			icon: {
-				Count: 1
-				id: "tfc:handstone"
-				tag: {
-					Damage: 0
-				}
-			}
+			description: ["Grind whatever you want into dust! Whery time consuming, so automate it ASAP (see &6Ore Processing&f chapter)"]
+			icon: "tfc:quern"
 			id: "17527074CEFB9B75"
+			subtitle: "Very grindy (duh)"
 			tasks: [
 				{
 					id: "0B15B7FCF77057F8"
@@ -724,8 +789,10 @@
 		{
 			dependencies: ["17527074CEFB9B75"]
 			dependency_requirement: "one_completed"
+			description: ["Vital material for ore processing, both early and later in the game."]
 			icon: "tfc:powder/charcoal"
 			id: "367311D0BC54F698"
+			subtitle: "Let's just say - You'll need a lot"
 			tasks: [{
 				count: 4L
 				id: "6E1C95CC273C5B15"
@@ -773,11 +840,12 @@
 				type: "item"
 			}]
 			title: "Chest"
-			x: 5.0d
+			x: 4.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["7BE56F33FA2FF720"]
+			description: ["Useful tool for builders, but also requiered to get your grindstone."]
 			id: "5719E48BB80CC88A"
 			tasks: [{
 				id: "13BE9B5D9671B3DB"
@@ -799,6 +867,33 @@
 			x: -1.0d
 			y: 2.0d
 		}
+		{
+			dependencies: ["469B4B63209610CE"]
+			description: [
+				"&3Bearing Alloy&f is used for moving parts of simple mechanical machines."
+				"Unlocks simple Create automation."
+			]
+			id: "0A764B4B164037AE"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "76655C5D9C25D6EC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:item_heat": {
+							heat: 0.0f
+							ticks: 0L
+						}
+					}
+					id: "create:andesite_alloy"
+				}
+				type: "item"
+			}]
+			title: "Advanced automation"
+			x: 8.0d
+			y: -1.0d
+		}
 	]
-	title: "Copper Age"
+	title: "Bronze Age"
 }
