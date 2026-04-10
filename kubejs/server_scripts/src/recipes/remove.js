@@ -65,7 +65,6 @@ ServerEvents.recipes((event) => {
     { id: /tfc:barrel\/((large)|(medium)|(small))_leather/ },
     { id: /firmaciv:barrel\/large_waterproof_hide_.+/ },
     { id: "firmaciv:crafting/large_waterproof_hide" },
-    { type: "advancedtfctech:beamhouse" },
     { id: "tfc_ie_addon:heating/metal/lead_ingot" },
     { id: "tfc_ie_addon:heating/metal/uranium_ingot" },
 
@@ -91,6 +90,12 @@ ServerEvents.recipes((event) => {
     { id: "immersiveengineering:blastfurnace/steel" },
     { id: "immersiveengineering:blastfurnace/steel_block" },
     { type: "immersiveengineering:alloy" },
+    { id: "immersiveengineering:squeezer/graphite_dust" },
+    { id: "immersivepetroleum:squeezer/graphite_dust" },
+    { id: "immersiveengineering:blueprint/graphite_electrode" },
+    { id: "immersiveengineering:metalpress/electrode" },
+    { id: "tfc_ie_addon:heating/hop_graphite_ingot" },
+    { type: "advancedtfctech:beamhouse" },
 
     //create & addons
     { id: "create:crafting/appliances/copper_backtank" },
@@ -144,7 +149,6 @@ ServerEvents.recipes((event) => {
     { id: "create:pressing/copper_ingot" },
     { id: "create:crushing/leather_horse_armor" },
     { id: "create:crushing/saddle" },
-    { id: "create:milling/saddle" },
     { output: /create:crushed.*/ },
     { input: "createoreexcavation:raw_diamond" },
     { input: "createoreexcavation:raw_emerald" },
@@ -153,6 +157,8 @@ ServerEvents.recipes((event) => {
     { id: "createoreexcavation:diamond_drill" },
     { id: "createaddition:crafting/electrum_nugget" },
     { id: "createaddition:rolling/copper_ingot" },
+    { id: "createaddition:compat/immersiveengineering/crushing/steel_ingot" },
+    { id: "createaddition:crushing/moon_cheese_ore" },
 
     //mekanism & addons
     { id: "mekanism:charcoal" },

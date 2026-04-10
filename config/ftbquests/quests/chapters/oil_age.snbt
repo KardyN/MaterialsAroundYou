@@ -213,6 +213,20 @@
 			x: 6.5d
 			y: -3.5d
 		}
+		{
+			dependencies: [
+				"02A1E7750B45591D"
+				"5F338E3CE0550C9F"
+			]
+			id: "49213E9115063DCF"
+			tasks: [{
+				id: "554F285C6DEEC459"
+				item: "mekanismgenerators:bio_generator"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.0d
+		}
 	]
 	title: "Oil Age"
 }

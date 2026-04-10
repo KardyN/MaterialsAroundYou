@@ -1,1 +1,0 @@
-ServerEvents.tags("item", (event) => {});

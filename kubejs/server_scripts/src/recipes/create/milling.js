@@ -121,7 +121,15 @@ ServerEvents.recipes((event) => {
       id: "may:milling/fluxstone",
     },
   ];
-  let recipes = [];
+
+  let recipes = [
+    {
+      ingredients: [{ item: "immersivepetroleum:petcoke" }],
+      processingTime: 100,
+      results: [{ count: 4, item: "kubejs:powder/petcoke" }],
+      id: "may:milling/petcoke",
+    },
+  ];
 
   recipe_data_list.forEach((recipe_data) => {
     recipes.push({

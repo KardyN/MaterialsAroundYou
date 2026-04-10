@@ -21,6 +21,20 @@ ServerEvents.recipes((event) => {
       result: { item: "tfc:metal/ingot/high_carbon_red_steel" },
       id: "may:welding/high_carbon_red_steel",
     },
+    {
+      first_input: { item: "tfc:metal/ingot/steel" },
+      second_input: { item: "tfc:metal/sheet/steel" },
+      tier: 4,
+      result: { item: "railways:track_incomplete_monorail" },
+      id: "may:welding/track_incomplete_monorail",
+    },
+    {
+      first_input: { item: "railways:track_incomplete_monorail" },
+      second_input: { item: "tfc:metal/sheet/steel" },
+      tier: 4,
+      result: { item: "railways:track_monorail" },
+      id: "may:welding/track_monorail",
+    },
   ];
 
   recipes.forEach((recipe) => {

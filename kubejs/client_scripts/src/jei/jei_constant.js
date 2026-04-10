@@ -69,6 +69,7 @@ jei.items.hide = [
   /immersivegeology:tfc.*ore.*/,
 
   // immersive petroleum
+  "immersivepetroleum:petcoke_dust",
 
   // create
   /create:.*granite.*/,
@@ -124,10 +125,11 @@ jei.items.hide = [
   // adastra
   "ad_astra:steel_ingot",
 
+  // may
+  /kubejs:metal\/*prospector*\/osmirite/,
+
   // misc
   ///itemfilters:*/,
-
-  ,
 ];
 
 jei.items.add = [
@@ -152,4 +154,6 @@ jei.categories.hide = [
   //"immersiveengineering:blast_furnace_fuel",
   "immersivegeology:geo_hint",
   "pneumaticcraft:amadron_trade",
+  "emi:repairing",
+  "emi:grinding",
 ];

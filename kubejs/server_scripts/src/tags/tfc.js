@@ -19,3 +19,7 @@ ServerEvents.tags("item", (event) => {
   event.add("tfc:metal_item/lead", "mekanism:ingot_lead");
   event.add("tfc:metal_item/uranium", "mekanism:ingot_uranium");
 });
+
+ServerEvents.tags("block", (event) => {
+  event.add("tfc:forge_invisible_whitelist", "create:basin");
+});

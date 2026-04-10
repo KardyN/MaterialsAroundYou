@@ -22,6 +22,7 @@ StartupEvents.registry("item", (event) => {
 
   event.create("powder/chromite").texture("kubejs:item/powder/chromite");
   event.create("powder/cryolite").texture("kubejs:item/powder/cryolite");
+  event.create("powder/petcoke").texture("kubejs:item/powder/petcoke");
 
   event
     .create("ore/small_erlichmanite")

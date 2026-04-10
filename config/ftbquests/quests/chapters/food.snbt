@@ -16,6 +16,42 @@
 	id: "0FDE09202F7CF2DD"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			id: "2CC38762D20222F0"
+			tasks: [{
+				id: "0C4D40F2AF66432F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"tfc:food": {
+							creationDate: 172806000L
+							traits: [ ]
+						}
+					}
+					id: "minecraft:apple"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "1D4B7808BE08A1F4"
+			tasks: [{
+				id: "0BAF3A330FF2FEC4"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tfc:foods/dough"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+	]
 	title: "Food"
 }
