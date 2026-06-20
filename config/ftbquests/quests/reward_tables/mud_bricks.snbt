@@ -3,10 +3,49 @@
 	loot_size: 1
 	order_index: 0
 	rewards: [
-		{ count: 32, item: "tfc:mud_bricks/silt" }
-		{ count: 32, item: "tfc:mud_bricks/loam" }
-		{ count: 32, item: "tfc:mud_bricks/sandy_loam" }
-		{ count: 32, item: "tfc:mud_bricks/silty_loam" }
+		{
+			count: 32
+			id: "449365CE331845F6"
+			item: {
+				components: {
+					"ftbquests:missing_item": "tfc:mud_bricks/silt"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 32
+			id: "2A3327621C0DC374"
+			item: {
+				components: {
+					"ftbquests:missing_item": "tfc:mud_bricks/loam"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 32
+			id: "64E63201015416ED"
+			item: {
+				components: {
+					"ftbquests:missing_item": "tfc:mud_bricks/sandy_loam"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
+		{
+			count: 32
+			id: "56D8084D8408F4C3"
+			item: {
+				components: {
+					"ftbquests:missing_item": "tfc:mud_bricks/silty_loam"
+				}
+				count: 1
+				id: "ftbquests:missing_item"
+			}
+		}
 	]
-	title: "Mud Bricks"
 }

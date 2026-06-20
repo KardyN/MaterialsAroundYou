@@ -4,12 +4,8 @@
 	filename: "ores_processing"
 	group: "4973B82BE2AB46A8"
 	icon: {
-		Count: 1
-		ForgeCaps: {
-			"tfc:item_heat": {
-				heat: 0.0f
-				ticks: 0L
-			}
+		components: {
+			"tfc:heat": { }
 		}
 		id: "tfc:ore/rich_tetrahedrite"
 	}
@@ -19,255 +15,76 @@
 	quests: [
 		{
 			dependencies: ["29B54FAB02DE3E0D"]
-			description: [
-				"To increase ores output you need to start with crushing the ore."
-				""
-				"Build a &3Quern&r for it."
-			]
-			icon: "tfc:quern"
 			id: "040D411E1996731C"
 			shape: "gear"
 			size: 1.5d
 			tasks: [
 				{
 					id: "3DEB08BAE33D0837"
-					item: {
-						Count: 1
-						id: "tfc:handstone"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: { count: 1, id: "tfc:handstone" }
 					type: "item"
 				}
 				{
 					id: "5B6BDB63BDA81018"
-					item: "tfc:quern"
+					item: { count: 1, id: "tfc:quern" }
 					type: "item"
 				}
 			]
-			title: "Quern"
 			x: -6.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["22CEBF4458C8E6A9"]
-			description: [
-				"To make profit from &3Dirty Dusts&r you need to clean it first. Use a &3Sluice&r."
-				""
-				"To work, &3Sluice&r needs a flowing water on it's edge. Then simply drop an item on the &3Sluice&r."
-			]
-			icon: "tfc:wood/sluice/ash"
 			id: "13769A224ED6A325"
 			tasks: [{
 				id: "757EDDD23883877E"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "tfc:sluices"
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Sluice"
 			x: -3.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["040D411E1996731C"]
-			description: ["Wash abtained &3Dirty Dusts&r to separate the contained ore from rocks. "]
-			icon: "kubejs:dirty_dust/native_copper"
 			id: "22CEBF4458C8E6A9"
-			subtitle: "Wash me!"
 			tasks: [{
 				id: "408C0CF343A624ED"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "may:dirty_dusts"
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Dirty Dusts"
 			x: -4.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["13769A224ED6A325"]
-			description: ["Now you have smeltable &3Powders&r."]
-			icon: "tfc:powder/native_copper"
 			id: "6E1399D1E455E2CB"
 			tasks: [{
 				id: "3049007F956F0C11"
-				item: {
-					Count: 1
-					id: "itemfilters:and"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "itemfilters:not"
-								tag: {
-									items: [{
-										Count: 1b
-										id: "itemfilters:tag"
-										tag: {
-											value: "tfc:gem_powders"
-										}
-									}]
-								}
-							}
-							{
-								Count: 1b
-								id: "itemfilters:tag"
-								tag: {
-									value: "tfc:powders"
-								}
-							}
-							{
-								Count: 1b
-								id: "itemfilters:not"
-								tag: {
-									items: [{
-										Count: 1b
-										id: "itemfilters:or"
-										tag: {
-											items: [
-												{
-													Count: 1b
-													id: "minecraft:sugar"
-												}
-												{
-													Count: 1b
-													id: "tfc:powder/coke"
-												}
-												{
-													Count: 1b
-													id: "tfc:powder/salt"
-												}
-												{
-													Count: 1b
-													id: "tfc:powder/sylvite"
-												}
-												{
-													Count: 1b
-													id: "tfc:powder/charcoal"
-												}
-												{
-													Count: 1b
-													ForgeCaps: {
-														"tfc:item_heat": {
-															heat: 0.0f
-															ticks: 0L
-														}
-													}
-													id: "tfc:powder/flux"
-												}
-												{
-													Count: 1b
-													id: "tfc:powder/lime"
-												}
-												{
-													Count: 1b
-													id: "tfc:powder/wood_ash"
-												}
-												{
-													Count: 1b
-													id: "tfc:powder/saltpeter"
-												}
-												{
-													Count: 1b
-													id: "tfc:powder/soda_ash"
-												}
-												{
-													Count: 1b
-													id: "minecraft:blaze_powder"
-												}
-												{
-													Count: 1b
-													id: "minecraft:glowstone_dust"
-												}
-												{
-													Count: 1b
-													id: "minecraft:redstone"
-												}
-												{
-													Count: 1b
-													id: "minecraft:gunpowder"
-												}
-												{
-													Count: 1b
-													id: "tfc:powder/sulfur"
-												}
-												{
-													Count: 1b
-													id: "tfc:powder/graphite"
-												}
-												{
-													Count: 1b
-													id: "tfc:powder/kaolinite"
-												}
-												{
-													Count: 1b
-													id: "kubejs:powder/cryolite"
-												}
-											]
-										}
-									}]
-								}
-							}
-						]
-					}
-				}
-				title: "Powders"
+				item: { components: { "ftbquests:missing_item": "itemfilters:and" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Powders"
 			x: -1.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["4D5B990EA4CE47EA"]
-			description: ["At some point even poiles are too much. To further reduce storage use, press &3Piles&r to abtain &3Briquettes&r. "]
-			icon: "kubejs:briquette/native_copper"
 			id: "2E787B4424D3F01D"
-			subtitle: "Expensive bricks"
 			tasks: [{
 				id: "08FB08F589B9734F"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "may:briquettes"
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Compacting: Briquettes"
 			x: -1.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["6E1399D1E455E2CB"]
-			description: ["With time you will gather a lot of different &3Powders&r. To reduce storage use, craft &3Powders&r into the &3Piles&r."]
-			icon: "kubejs:pile/native_copper"
 			id: "4D5B990EA4CE47EA"
-			subtitle: "Don't mix"
 			tasks: [{
 				id: "5DA193CA4C736DC2"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "may:piles"
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Compacting: Piles"
 			x: -1.5d
 			y: -3.5d
 		}
@@ -276,33 +93,19 @@
 				"69751D73CC834A6A"
 				"3CB5CB6BED5AC720"
 			]
-			icon: "tfc:wood/water_wheel/ash"
 			id: "60ED534800A2168D"
 			tasks: [
 				{
 					id: "29D32D65FB826C0A"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "tfc:water_wheels"
-						}
-					}
+					item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "7AE57ADE188021C7"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "tfc:gear_boxes"
-						}
-					}
+					item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]
-			title: "Mechanical Power"
 			x: -7.0d
 			y: 2.5d
 		}
@@ -311,7 +114,7 @@
 			id: "2BD4DFB1CCCB03E2"
 			tasks: [{
 				id: "1325C1803E2871F2"
-				item: "minecraft:paper"
+				item: { count: 1, id: "minecraft:paper" }
 				type: "item"
 			}]
 			x: -6.5d
@@ -322,7 +125,7 @@
 			id: "1293EE67D4CCBB86"
 			tasks: [{
 				id: "01BFA4F82313DE86"
-				item: "tfc:glue"
+				item: { count: 1, id: "tfc:glue" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -333,45 +136,31 @@
 				"2BD4DFB1CCCB03E2"
 				"1293EE67D4CCBB86"
 			]
-			icon: "tfc:wood/axle/ash"
 			id: "69751D73CC834A6A"
 			tasks: [{
 				id: "4141862E0A35F1E2"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "tfc:axles"
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Axles"
 			x: -6.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["4E15271405C037C6"]
-			icon: "tfc:crucible"
 			id: "0E47B42D4FBE6480"
 			tasks: [{
 				id: "3FB87E985B30282F"
-				item: "tfc:crucible"
+				item: { count: 1, id: "tfc:crucible" }
 				type: "item"
 			}]
-			title: "Crucible"
 			x: 3.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["6E1399D1E455E2CB"]
 			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
+				components: {
+					"tfc:heat": { }
 				}
 				id: "tfc:kaolin_clay"
 			}
@@ -379,80 +168,56 @@
 			tasks: [
 				{
 					id: "4C9B500F3182B898"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:kaolin_clay"
-					}
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:kaolin_clay" }
 					type: "item"
 				}
 				{
 					id: "0DC1A567DE268795"
-					item: "tfc:powder/kaolinite"
+					item: { count: 1, id: "tfc:powder/kaolinite" }
 					type: "item"
 				}
 			]
-			title: "Kaolinite"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["6E1399D1E455E2CB"]
-			icon: "tfc:ore/graphite"
 			id: "0D5D250D7D353B29"
 			tasks: [
 				{
 					id: "632B3B806E21CE70"
-					item: "tfc:ore/graphite"
+					item: { count: 1, id: "tfc:ore/graphite" }
 					type: "item"
 				}
 				{
 					id: "436FF0EA6415BD6C"
-					item: "tfc:powder/graphite"
+					item: { count: 1, id: "tfc:powder/graphite" }
 					type: "item"
 				}
 			]
-			title: "Graphite"
 			x: 0.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["0E47B42D4FBE6480"]
-			description: ["TODO"]
-			icon: "tfcchannelcasting:channel"
 			id: "75B3CD020A4C68A7"
 			tasks: [
 				{
 					id: "72689B50B6E535B2"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfcchannelcasting:unfired_channel"
-					}
+					item: { components: { "ftbquests:missing_item": "tfcchannelcasting:unfired_channel" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "4FFD848A34EF4258"
-					item: "tfcchannelcasting:channel"
+					item: { components: { "ftbquests:missing_item": "tfcchannelcasting:channel" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "295A778BD112E75A"
-					item: "tfcchannelcasting:mold_table"
+					item: { components: { "ftbquests:missing_item": "tfcchannelcasting:mold_table" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]
-			title: "Casting with channels"
 			x: 3.0d
 			y: -0.5d
 		}
@@ -461,14 +226,14 @@
 				"25DC366C64A4CE4B"
 				"0C55A28662800481"
 			]
-			icon: "immersiveengineering:coke_oven"
+			icon: {
+				id: "immersiveengineering:coke_oven"
+			}
 			id: "36F2106C10C58AB8"
 			tasks: [{
 				id: "5266F09D6E53463D"
-				title: "Build Coke Oven"
 				type: "checkmark"
 			}]
-			title: "Coke Oven"
 			x: 1.5d
 			y: 1.0d
 		}
@@ -478,42 +243,26 @@
 			tasks: [{
 				count: 64L
 				id: "54AF81642D8F7080"
-				item: "minecraft:charcoal"
+				item: { count: 1, id: "minecraft:charcoal" }
 				type: "item"
 			}]
-			title: "Efficient Charcoal Production"
 			x: 1.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["29B54FAB02DE3E0D"]
 			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
+				components: {
+					"tfc:heat": { }
 				}
 				id: "tfc:metal/chisel/copper"
-				tag: {
-					Damage: 0
-				}
 			}
 			id: "3CB5CB6BED5AC720"
 			tasks: [{
 				id: "5853E335E56D7835"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "tfc:chisels"
-					}
-				}
-				title: "Chisels"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Chisel"
 			x: -8.0d
 			y: 1.0d
 		}
@@ -522,7 +271,7 @@
 			id: "60BAE5EEBFE24BF3"
 			tasks: [{
 				id: "03055DFA3ACA7005"
-				item: "immersiveengineering:coal_coke"
+				item: { count: 1, id: "immersiveengineering:coal_coke" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -533,7 +282,7 @@
 			id: "72CB48B63E15378F"
 			tasks: [{
 				id: "1DB6F3047AEB653C"
-				item: "tfc:trip_hammer"
+				item: { count: 1, id: "tfc:trip_hammer" }
 				type: "item"
 			}]
 			x: -6.5d
@@ -541,61 +290,44 @@
 		}
 		{
 			dependencies: ["4E15271405C037C6"]
-			icon: "tfc:ceramic/fire_brick"
+			icon: {
+				id: "tfc:ceramic/fire_brick"
+			}
 			id: "0C55A28662800481"
 			tasks: [
 				{
 					id: "637822B3F4EEC0E8"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:ceramic/unfired_fire_brick"
-					}
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:ceramic/unfired_fire_brick" }
 					type: "item"
 				}
 				{
 					count: 35L
 					id: "6601377430DE7DE4"
-					item: { Count: 35, id: "tfc:ceramic/fire_brick" }
+					item: { count: 1, id: "tfc:ceramic/fire_brick" }
 					type: "item"
 				}
 				{
 					count: 27L
 					id: "6A98FC4F000AE1E0"
-					item: { Count: 27, id: "tfc:fire_bricks" }
+					item: { count: 1, id: "tfc:fire_bricks" }
 					type: "item"
 				}
 				{
 					id: "5F340E76FDF3B3F9"
-					item: {
-						Count: 1
-						id: "immersiveengineering:hammer"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: { count: 1, id: "immersiveengineering:hammer" }
 					type: "item"
 				}
 			]
-			title: "Fire Bricks"
 			x: 1.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["13769A224ED6A325"]
-			icon: "tfc:wood/sluice/ash"
 			id: "30012D2317220B76"
 			tasks: [{
 				id: "0EC48F5461C7C57A"
-				title: "Automating sluice"
 				type: "checkmark"
 			}]
-			title: "Automating Sluice"
 			x: -3.0d
 			y: -0.5d
 		}
@@ -607,7 +339,7 @@
 			id: "4E15271405C037C6"
 			tasks: [{
 				id: "1328F46836D4B944"
-				item: "tfc:fire_clay"
+				item: { count: 1, id: "tfc:fire_clay" }
 				type: "item"
 			}]
 			x: 1.5d
@@ -618,7 +350,6 @@
 			id: "11088B61E8DC2073"
 			tasks: [{
 				id: "3028FC30F82CE04E"
-				title: "TODO washing via IG mod"
 				type: "custom"
 			}]
 			x: -3.0d
@@ -626,11 +357,9 @@
 		}
 		{
 			dependencies: ["60ED534800A2168D"]
-			icon: "tfc:quern"
 			id: "5C581D3F6EC1BEBB"
 			tasks: [{
 				id: "15ACE6CDC9E57815"
-				title: "Quern automation"
 				type: "checkmark"
 			}]
 			x: -7.5d
@@ -641,31 +370,31 @@
 				"76655C5D9C25D6EC"
 				"69751D73CC834A6A"
 			]
-			icon: "create:millstone"
+			icon: {
+				id: "create:millstone"
+			}
 			id: "3A7DEAFE74B527F1"
 			shape: "gear"
 			size: 1.5d
 			tasks: [
 				{
 					id: "62237CB168E1F51B"
-					item: "create:shaft"
+					item: { count: 1, id: "create:shaft" }
 					type: "item"
 				}
 				{
 					id: "3DFC3CD36C414045"
-					item: "create:cogwheel"
+					item: { count: 1, id: "create:cogwheel" }
 					type: "item"
 				}
 				{
 					id: "0495B91CD767AD83"
-					item: "create:millstone"
+					item: { count: 1, id: "create:millstone" }
 					type: "item"
 				}
 			]
-			title: "Milling"
 			x: -5.0d
 			y: 2.5d
 		}
 	]
-	title: "Ores Processing"
 }

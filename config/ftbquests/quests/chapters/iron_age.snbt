@@ -4,12 +4,8 @@
 	filename: "iron_age"
 	group: "1F7A98B2F2F3E985"
 	icon: {
-		Count: 1
-		ForgeCaps: {
-			"tfc:item_heat": {
-				heat: 0.0f
-				ticks: 0L
-			}
+		components: {
+			"tfc:heat": { }
 		}
 		id: "tfc:metal/ingot/wrought_iron"
 	}
@@ -20,12 +16,8 @@
 		{
 			dependencies: ["7F8F0061C200056A"]
 			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
+				components: {
+					"tfc:heat": { }
 				}
 				id: "tfc:metal/anvil/wrought_iron"
 			}
@@ -33,34 +25,15 @@
 			tasks: [
 				{
 					id: "6A064A69B0B4220D"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/double_ingot/wrought_iron"
-					}
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/double_ingot/wrought_iron" }
 					type: "item"
 				}
 				{
 					id: "484B371DC12BC778"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/anvil/wrought_iron"
-					}
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/anvil/wrought_iron" }
 					type: "item"
 				}
 			]
-			title: "Iron Anvil"
 			x: 5.5d
 			y: -0.5d
 		}
@@ -69,19 +42,9 @@
 			id: "20591F950C3C466E"
 			tasks: [{
 				id: "2B43136FB5D7AAC9"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/pig_iron"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/pig_iron" }
 				type: "item"
 			}]
-			title: "Pig Iron"
 			x: 9.5d
 			y: -0.5d
 		}
@@ -92,19 +55,9 @@
 			size: 1.5d
 			tasks: [{
 				id: "23757F13F274EB65"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/steel"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/steel" }
 				type: "item"
 			}]
-			title: "Steel Age"
 			x: 12.5d
 			y: -0.5d
 		}
@@ -113,16 +66,7 @@
 			id: "0EF3F6DE7C55E445"
 			tasks: [{
 				id: "469B41C93F60FC32"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/high_carbon_steel"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/high_carbon_steel" }
 				type: "item"
 			}]
 			x: 11.0d
@@ -133,64 +77,39 @@
 				"29C744A139B0170E"
 				"0E47B42D4FBE6480"
 			]
-			icon: "tfc:blast_furnace"
 			id: "030F2596BFF2DCD1"
 			shape: "gear"
 			size: 1.5d
 			tasks: [
 				{
 					id: "44D00726BDF91ABA"
-					item: "tfc:blast_furnace"
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:blast_furnace" }
 					type: "item"
 				}
 				{
 					icon: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
+						components: {
+							"tfc:heat": { }
 						}
 						id: "tfc:metal/tuyere/wrought_iron"
-						tag: {
-							Damage: 0
-						}
 					}
 					id: "38D704FF65D1ADB1"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "tfc:tuyeres"
-						}
-					}
-					title: "Tuyere"
+					item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "40392F47FB1FFDD7"
-					item: "tfc:fire_bricks"
+					item: { count: 1, id: "tfc:fire_bricks" }
 					type: "item"
 				}
 				{
 					count: 12L
 					id: "4187C71A68A94A51"
-					item: {
-						Count: 12
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/sheet/wrought_iron"
-					}
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/sheet/wrought_iron" }
 					type: "item"
 				}
 			]
-			title: "Blast Furnace"
 			x: 7.5d
 			y: -0.5d
 		}
@@ -199,10 +118,9 @@
 			id: "118CDBA3D7385B94"
 			tasks: [{
 				id: "763A4F4C5D2F8514"
-				item: "create:basin"
+				item: { count: 1, id: "create:basin" }
 				type: "item"
 			}]
-			title: "More machinery"
 			x: 5.5d
 			y: 1.0d
 		}
@@ -211,19 +129,9 @@
 			id: "7F8F0061C200056A"
 			tasks: [{
 				id: "7150ACDD330C9F83"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/wrought_iron"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/wrought_iron" }
 				type: "item"
 			}]
-			title: "Iron"
 			x: 4.0d
 			y: -0.5d
 		}
@@ -232,16 +140,7 @@
 			id: "4DF0DE0DF89342A7"
 			tasks: [{
 				id: "56E9355C0719C3A9"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/silver"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/silver" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -252,16 +151,7 @@
 			id: "5437E3F8240645E6"
 			tasks: [{
 				id: "0BEC1339766072FD"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "immersiveengineering:ingot_lead"
-				}
+				item: { count: 1, id: "immersiveengineering:ingot_lead" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -272,16 +162,7 @@
 			id: "454A8A59D99B49DA"
 			tasks: [{
 				id: "2FA71331627D7799"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/zinc"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/zinc" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -292,16 +173,7 @@
 			id: "396ABE0D3B6475F4"
 			tasks: [{
 				id: "78F02A4963026BC9"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/bismuth"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/bismuth" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -312,16 +184,7 @@
 			id: "41CDE25983754D7A"
 			tasks: [{
 				id: "4DD6DC649DFE9278"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/brass"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/brass" }
 				type: "item"
 			}]
 			x: 10.5d
@@ -335,16 +198,7 @@
 			id: "1956FE6EFD17D78C"
 			tasks: [{
 				id: "5D5A8F93378907E7"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/bismuth_bronze"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/bismuth_bronze" }
 				type: "item"
 			}]
 			x: 9.0d
@@ -355,16 +209,7 @@
 			id: "291789FB0116243D"
 			tasks: [{
 				id: "3773A6D3DF2481E2"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/rose_gold"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/rose_gold" }
 				type: "item"
 			}]
 			x: 10.5d
@@ -375,16 +220,7 @@
 			id: "7CC2080629F2ECC0"
 			tasks: [{
 				id: "7FE1D10D75A58312"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/black_bronze"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/black_bronze" }
 				type: "item"
 			}]
 			x: 11.0d
@@ -395,16 +231,7 @@
 			id: "247FE7D1B84828D2"
 			tasks: [{
 				id: "7894AEA1384F61A5"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "immersiveengineering:ingot_electrum"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "immersiveengineering:ingot_electrum" }
 				type: "item"
 			}]
 			x: 10.0d
@@ -415,21 +242,11 @@
 			id: "44D78ECD2735B9EC"
 			tasks: [{
 				id: "4EDDE82710F9767B"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/sterling_silver"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/sterling_silver" }
 				type: "item"
 			}]
 			x: 9.0d
 			y: 2.5d
 		}
 	]
-	title: "Iron Age"
 }

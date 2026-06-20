@@ -3,7 +3,12 @@
 	default_quest_shape: ""
 	filename: "about"
 	group: ""
-	icon: "minecraft:end_crystal"
+	icon: {
+		components: {
+			"ftbquests:icon": "betteradvancedtooltips:textures/font/icons/info.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
 	id: "7C06954096A65B2D"
 	order_index: 0
 	quest_links: [ ]
@@ -14,10 +19,8 @@
 			id: "46EC9EF35A235DDA"
 			tasks: [{
 				id: "185131241A36AC39"
-				title: "Let's go!"
 				type: "checkmark"
 			}]
-			title: "Adventure Awaits!"
 			x: 0.5d
 			y: 2.0d
 		}
@@ -26,11 +29,9 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			hide_lock_icon: true
-			icon: "minecraft:sunflower"
 			id: "714B4B2E5D9EB389"
 			tasks: [{
 				id: "6DAFBA0D927D5B08"
-				title: "Weather"
 				type: "checkmark"
 			}]
 			x: 1.5d
@@ -41,11 +42,9 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			hide_lock_icon: true
-			icon: "tfc:rock/raw/gabbro"
 			id: "0A1FCC095368B8F7"
 			tasks: [{
 				id: "56EDA39B5C84EAEB"
-				title: "Generation"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -57,16 +56,11 @@
 			hide_dependent_lines: true
 			hide_lock_icon: true
 			icon: {
-				Count: 1
 				id: "minecraft:potion"
-				tag: {
-					Potion: "minecraft:water"
-				}
 			}
 			id: "78C3DF71CEBBEFD9"
 			tasks: [{
 				id: "687C5ACC2DF3AF57"
-				title: "Vitals"
 				type: "checkmark"
 			}]
 			x: -0.5d
@@ -77,11 +71,9 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			hide_lock_icon: true
-			icon: "minecraft:spyglass"
 			id: "7A03446575BC709D"
 			tasks: [{
 				id: "3F36EE1D74E901CE"
-				title: "Shaders"
 				type: "checkmark"
 			}]
 			x: -1.0d
@@ -92,16 +84,13 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			hide_lock_icon: true
-			icon: "ae2:nether_quartz_wrench"
 			id: "2A23296F76D84ADB"
 			tasks: [{
 				id: "65BE916579F38C65"
-				title: "Troubleshooting"
 				type: "checkmark"
 			}]
 			x: -0.5d
 			y: 3.5d
 		}
 	]
-	title: "About The Modpack"
 }

@@ -3,10 +3,14 @@
 	default_quest_shape: ""
 	filename: "nuclear_age"
 	group: "1F7A98B2F2F3E985"
-	icon: "mekanismgenerators:fission_fuel_assembly"
+	icon: {
+		components: {
+			"tfc:heat": { }
+		}
+		id: "immersiveengineering:storage_uranium"
+	}
 	id: "64B63C5FC5BDB7F4"
 	order_index: 6
 	quest_links: [ ]
 	quests: [ ]
-	title: "Nuclear Age"
 }

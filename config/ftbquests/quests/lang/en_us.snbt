@@ -1,0 +1,516 @@
+{
+	chapter.096F3D1946A90014.title: "Space Age"
+	chapter.097D56C3B930F2B6.title: "Hidden"
+	chapter.0BCCC21B3A68214E.title: "Oil Age"
+	chapter.0FDE09202F7CF2DD.title: "Food"
+	chapter.104737B93B9F2A38.title: "Electronics Age"
+	chapter.12E2517D63A6A46C.title: "Transportation"
+	chapter.1E0AB5800B80C05C.title: "Trees"
+	chapter.53823609F0EA3181.title: "Combat"
+	chapter.613EA7C063B7D4F1.title: "Iron Age"
+	chapter.615435B2725727CF.title: "Stone Age"
+	chapter.64B63C5FC5BDB7F4.title: "Nuclear Age"
+	chapter.64BEA5D9A6E874D5.title: "Forge"
+	chapter.667EF740D374A9B2.title: "Farming"
+	chapter.672DA51081B4C28C.title: "Ores Processing"
+	chapter.6F18CDD52B46A03E.title: "Bronze Age"
+	chapter.71846D5FCAEB49B7.title: "Steel Age"
+	chapter.761236C27A39A0B0.title: "Exploration"
+	chapter.7C06954096A65B2D.title: "About The Modpack"
+	chapter.7D99E0460BFAE9F0.title: "Mining"
+	chapter.7E1A15410188A2FA.title: "Information Age"
+	chapter_group.154A008FBDFC4739.title: "Collections"
+	chapter_group.1F7A98B2F2F3E985.title: "Progression Stages"
+	chapter_group.4973B82BE2AB46A8.title: "Common"
+	quest.00796B8B300CF70E.quest_desc: [
+		"To make drinkable water that won't poison you, you will need a &3Pot&r."
+		""
+		"Place it on the &3Firepit&r, put some water into the &3Pot&r and start boiling."
+	]
+	quest.00796B8B300CF70E.title: "Pot"
+	quest.023378E10A023AFE.quest_desc: [
+		"&3BLoomery&f allows for smelting oxygen containing ores. "
+		"Check &9JEI&f for specific amounts of ore. "
+		"TODO short explanation of how it works"
+	]
+	quest.023378E10A023AFE.title: "Bloomery"
+	quest.02C6B8106CA895B0.quest_desc: [
+		"You can also cook more dishes like apple or pumpkin pies or even pizzas!"
+		"Go check &6Collections: Food&r chapter"
+	]
+	quest.02C6B8106CA895B0.title: "Pie, pizza and more"
+	quest.02DE14F0E3F5083A.quest_desc: [
+		"There are a lot of &3Berries Bushes&r and &3Fruit Trees&r in the world."
+		""
+		"To collect sapling from &3Fruit Trees&r, chop the branches with leaves and leave the roots be. It will grow new branches then."
+		""
+		"To collect &3Bushes&r simply use a Knife."
+	]
+	quest.02DE14F0E3F5083A.title: "Saplings"
+	quest.030F2596BFF2DCD1.title: "Blast Furnace"
+	quest.034F982B448DCCBE.quest_desc: [
+		"Now, all that is left to do is fire up the &3Bloomery&f with some &3Iron Ore&f, and make it into &3Wrought Iron Ingots&f!"
+		"The process is a bit longer, than with &3Tin Ingots&f, but still pretty easy. "
+	]
+	quest.034F982B448DCCBE.title: "Iron Age"
+	quest.040D411E1996731C.quest_desc: [
+		"To increase ores output you need to start with crushing the ore."
+		""
+		"Build a &3Quern&r for it."
+	]
+	quest.040D411E1996731C.title: "Quern"
+	quest.04992CC4E70D15F6.title: "Seed ball"
+	quest.05690465F069F363.quest_desc: ["Holds some items inside.\\nMay be sealed, so the food will spoil slower!"]
+	quest.05690465F069F363.title: "Large Vessel"
+	quest.068265674F1A47D9.quest_desc: [
+		"To breed animals you will need at least two species. Young male and young female (old animals won't breed)."
+		""
+		"Keep feeding them each day. It will raise their &5Familiarity&r (check WAILA while looking at animal)."
+		""
+		"With increased Familiarity you will be able to milk, shear and breed animals."
+	]
+	quest.068265674F1A47D9.title: "Breeding"
+	quest.0856F166D8DCD855.quest_desc: [
+		"You can find a lot of &3Wild Crops&r around. Not good, but at least it is edible."
+		""
+		"Use a Knife to harvest crops faster."
+	]
+	quest.0856F166D8DCD855.title: "Wild Crops"
+	quest.08EFBA492DD1DE51.title: "Ferronickel"
+	quest.098BC649D84839B6.title: "Beeswax"
+	quest.09A640EEC11D129E.title: "Basic Prospecting"
+	quest.09D19F81065B31B8.quest_desc: ["To gather &3Straw&r you will need a &3Knife&r."]
+	quest.09D19F81065B31B8.title: "First Tools: Knife"
+	quest.09F863F516839226.title: "Bread"
+	quest.0A764B4B164037AE.quest_desc: [
+		"&3Bearing Alloy&f is used for moving parts of simple mechanical machines."
+		"Unlocks simple Create automation."
+	]
+	quest.0A764B4B164037AE.title: "Advanced automation"
+	quest.0BAE632A8F83D914.title: "Cheesecloth"
+	quest.0C55A28662800481.title: "Fire Bricks"
+	quest.0D3034BAC522694C.quest_desc: ["Powder used for welding metals together, and producing better materials later in the game."]
+	quest.0D3034BAC522694C.title: "Flux"
+	quest.0D459C0CC21CF528.title: "Kaolinite"
+	quest.0D5D250D7D353B29.title: "Graphite"
+	quest.0DBC4C69CCAA97AF.title: "Yeast starter"
+	quest.0E47B42D4FBE6480.title: "Crucible"
+	quest.0EC6E0059F86A38E.quest_desc: [
+		"If you are struggling with leading water to the crops, try to use &3Aqueducts&r."
+		""
+		"They require full water block in the beginning and then you can lead water as far as you want. Just leave empty block on the end."
+		"But keep in mind, that you can only pour water down from &3Aqueducts&r. Not raise it up."
+	]
+	quest.0EC6E0059F86A38E.title: "Aqueducts"
+	quest.1170062E1DCC047B.quest_desc: ["TODO"]
+	quest.1170062E1DCC047B.title: "Forge"
+	quest.118CDBA3D7385B94.title: "More machinery"
+	quest.11E09B425935ABFE.title: "Lumber"
+	quest.1372A70AAFB595AD.title: "Cutting board"
+	quest.13769A224ED6A325.quest_desc: [
+		"To make profit from &3Dirty Dusts&r you need to clean it first. Use a &3Sluice&r."
+		""
+		"To work, &3Sluice&r needs a flowing water on it's edge. Then simply drop an item on the &3Sluice&r."
+	]
+	quest.13769A224ED6A325.title: "Sluice"
+	quest.13F48469301627C2.title: "Hidden: Farming unlock"
+	quest.1407604CA40BA83F.title: "Hidden: Trees unlock"
+	quest.14AADB481BAD9AAD.title: "Treated Lumber"
+	quest.14F05677B34D854A.quest_desc: [
+		"If you seal the &3Large Vessel&r, it will slow down food spoiling."
+		""
+		"A good way to store some food for the winter."
+	]
+	quest.14F05677B34D854A.title: "Large Vessel"
+	quest.15278CC6AEA26104.title: "Oven"
+	quest.17527074CEFB9B75.quest_desc: ["Grind whatever you want into dust! Whery time consuming, so automate it ASAP (see &6Ore Processing&f chapter)"]
+	quest.17527074CEFB9B75.quest_subtitle: "Very grindy (duh)"
+	quest.17527074CEFB9B75.title: "Quern"
+	quest.183BAD6A404E9605.quest_desc: [
+		"First bed will allow you to set the spawnpoint."
+		"Simply place two &3Thatches&r on the ground and click with a &3Large Raw Hide&r on it."
+	]
+	quest.183BAD6A404E9605.title: "Basic Bed"
+	quest.1851DE318031D1D6.quest_desc: [
+		"&3Barrels&r can store any fluids."
+		"Also it can be sealed with some recipe to convert fluids into another fluids!"
+		""
+		"Go check &6Farming&r chapther for recipes."
+	]
+	quest.1851DE318031D1D6.title: "Barrel"
+	quest.18742141311ECFB7.quest_desc: [
+		"Breaking all adjacent blocks, causes &3Raw Stone&r to drop. Gather one &3Raw Igneous Stone&r, bring it to the base and right-click with a &3Hammer&r."
+		""
+		"That's your first &3Anvil&r!"
+		""
+		"&8TIP: you can search $igneous in JEI to find suitable rocks.&r"
+	]
+	quest.18742141311ECFB7.title: "Stone Anvil"
+	quest.196FF566FA99B5DC.title: "Planters"
+	quest.198AE5FF20802FAC.title: "Modern Greenhouse"
+	quest.19D13398DCC33807.title: "Leather"
+	quest.1BE9AF9854820893.title: "Loom"
+	quest.1D05FD2F398DB37E.title: "Hidden: Collections/Forge unlock"
+	quest.1D8C501B98343EA2.quest_desc: [
+		"Due to physics you can't just build a shelter with &3Dirt.&r It will fall!"
+		"Meanwhile, &3Logs&r are hard to get and we have too little to waste it on the shelter."
+		"&3Planks&r will be obtainable much later."
+		""
+		"Hence, to build a basic shelter you will need to get some &3Mud&r."
+	]
+	quest.1D8C501B98343EA2.title: "Mud"
+	quest.1F2192C21814F3D0.quest_desc: ["Source of &3Flux&f powder. "]
+	quest.1F2192C21814F3D0.title: "Flux Stones"
+	quest.20591F950C3C466E.title: "Pig Iron"
+	quest.2164F89ED1657624.quest_desc: [
+		"You need &3100mb of Copper&r to make a copper tool. So, go pan some copper powder!"
+		""
+		"&8TIP: you can try to find some other ores to make bronze tools right away.&r"
+	]
+	quest.2164F89ED1657624.title: "Copper Powder"
+	quest.21F3A0260EB7BA2D.quest_desc: ["How much wood would a woodchuck chuck if a woodchuck could chuck wood?"]
+	quest.21F3A0260EB7BA2D.title: "Logs"
+	quest.22CEBF4458C8E6A9.quest_desc: ["Wash abtained &3Dirty Dusts&r to separate the contained ore from rocks. "]
+	quest.22CEBF4458C8E6A9.quest_subtitle: "Wash me!"
+	quest.22CEBF4458C8E6A9.title: "Dirty Dusts"
+	quest.23021FFF79D2E260.quest_desc: ["Simple food from accessible ingredients."]
+	quest.23021FFF79D2E260.title: "Soup"
+	quest.2339DF6F33663E5D.quest_desc: ["Finally you can make some decent blocks, that won't fall, crushing your head!"]
+	quest.2339DF6F33663E5D.title: "Mud Bricks"
+	quest.2430CD512F1CF76B.title: "First Tools: Shovel"
+	quest.24BB2235242CD775.title: "Kettle"
+	quest.265518059B629EB1.quest_desc: [
+		"Make some &3Wet Bricks&r and leave them to dry."
+		"Just click RMB with a brick on the ground."
+		""
+		"Then collect &3Dried Bricks&r."
+	]
+	quest.265518059B629EB1.title: "Bricks"
+	quest.28275BBA60478509.title: "Mixing Bowl"
+	quest.28EFE456A7B11D06.quest_desc: [
+		"Now, try to knap some basic tools heads."
+		"Click in the air with at least &32 Rocks&r in the hand. Check recipes in the JEI."
+	]
+	quest.28EFE456A7B11D06.title: "First Tools"
+	quest.29A6D2FE4F3AD73A.title: "Wooden Bucket"
+	quest.29B54FAB02DE3E0D.quest_desc: [
+		"Grab a multiple of &3100mb of Copper&r, put it into the &3Vessel&r (depending on the count of items you want to make). Put the &3Vessel&r into the &3Pit Kiln&r, fill and fire it up!"
+		""
+		"Don't forget about a pit! Molten metal will lose it's temperature with time after the pit goes out. So, grab the &3Vessel&r as soon as the pit is done, open it's interface via RMB. Place any &3Fired Mold&r in the Vessel slot and watch the metal flow!"
+		""
+		"Congrats, now you have your &cfirst pickaxe&r!"
+		""
+		"&8TIP: if you want to proceed with Bronze tools - you can just melt the pickaxe or it's head alone to get your 100mb of Copper back.&r"
+	]
+	quest.29B54FAB02DE3E0D.title: "Copper Age"
+	quest.29C744A139B0170E.title: "Iron Anvil"
+	quest.2A6F12150A407BDE.quest_desc: [
+		"Processing &3Sticks&r in the &3Firepit&r gives you &3Torches&r."
+		""
+		"But keep in mind, they will go out!"
+		"To light them up, use a Firestarter."
+	]
+	quest.2C31B21D30B8B7BA.title: "Flask"
+	quest.2CDC1A97777826E0.title: "Fertilizers"
+	quest.2CFE4433B67D7795.quest_desc: [
+		"&3Clay&r is essential resource for early-game tools crafting."
+		""
+		"Try to find some on the hillsides, rivers shores, or try look on WAILA or minimap! "
+	]
+	quest.2CFE4433B67D7795.quest_subtitle: "This modpack is perfectly balanced"
+	quest.2CFE4433B67D7795.title: "Clay"
+	quest.2E787B4424D3F01D.quest_desc: ["At some point even poiles are too much. To further reduce storage use, press &3Piles&r to abtain &3Briquettes&r. "]
+	quest.2E787B4424D3F01D.quest_subtitle: "Expensive bricks"
+	quest.2E787B4424D3F01D.title: "Compacting: Briquettes"
+	quest.2E9234AB8D446E0B.title: "Sandwich"
+	quest.2EE6F0C9673CF606.title: "Wool"
+	quest.30012D2317220B76.title: "Automating Sluice"
+	quest.3032913896F28827.title: "Support Beams"
+	quest.30AD2E71273A3C00.quest_subtitle: "Let the arson commence"
+	quest.32B956D275843CED.title: "Prepared Hide"
+	quest.33F89D27567095DD.title: "Straw"
+	quest.343A88B9B1BC4832.title: "Meat"
+	quest.34883B45EFAAB45B.title: "Scraped Hide"
+	quest.367311D0BC54F698.quest_desc: ["Vital material for ore processing, both early and later in the game."]
+	quest.367311D0BC54F698.quest_subtitle: "Let's just say - You'll need a lot"
+	quest.367311D0BC54F698.title: "Charcoal Powder"
+	quest.3686EE1F8D337CFC.quest_desc: [
+		"You can plant collected sapling to provide some food on your base."
+		"But mind the seasons. &3Bushes and Trees&r have different periods of growth and fruiting."
+		""
+		"Check out the &5TFC Guidebook: The World&r."
+	]
+	quest.3686EE1F8D337CFC.title: "Fruits and berries"
+	quest.36F2106C10C58AB8.title: "Coke Oven"
+	quest.36F88B9D6E0D7A68.quest_desc: ["To cut trees you need an &3Axe&r."]
+	quest.36F88B9D6E0D7A68.title: "First Tools: Axe"
+	quest.377E276A6CF6BC69.title: "Cheese"
+	quest.392D0D2BE9080CCF.quest_desc: ["Just like with the &3Copper Anvil&f, you know the drill. "]
+	quest.392D0D2BE9080CCF.title: "Bronze Anvil"
+	quest.3A04CF4E38B05335.title: "Pickaxe"
+	quest.3A7DEAFE74B527F1.title: "Milling"
+	quest.3C22F23867AB0AFC.quest_desc: [
+		"Drop &3couple of Logs&r on the ground and some sticks."
+		"Drop &3couple of Sticks&r there too and use a &3Firestarter&r."
+		""
+		"Didn't work? Check that it is enough &3Logs and Sticks&r are on the same block and keep trying!"
+		""
+		"&8TIP: Add some Straw to increase chances.&r"
+	]
+	quest.3C22F23867AB0AFC.title: "Firepit"
+	quest.3CB5CB6BED5AC720.title: "Chisel"
+	quest.3CE5DCE2933B192B.title: "Flour"
+	quest.3E49EDC4AB73AA8A.title: "Eggs"
+	quest.3EA00398B1131C35.title: "Cellar Capacity"
+	quest.412981055399DAAA.quest_desc: [
+		"The javelin makes more damage than a knife, has better range and you even can throw it!"
+		"Suits the best for hunting!"
+		""
+		"But watch out for predators!"
+	]
+	quest.412981055399DAAA.quest_subtitle: "Fight for your rights!"
+	quest.412981055399DAAA.title: "First Tools: Javelin"
+	quest.4163F9F208F4E3F5.quest_desc: [
+		"&3Sealed Jam Bottles&r will keep contains fresh for a long period."
+		""
+		"It's a good way to store some food."
+	]
+	quest.4163F9F208F4E3F5.title: "Jam"
+	quest.4191E5DBEFF72CA7.title: "Cellar"
+	quest.43D1B5A5E07B09E3.quest_desc: [
+		"There are a lot of &3Berries Bushes&r and &3Fruit Trees&r in the world."
+		""
+		"To collect sapling from &3Fruit Trees&r, chop the branches with leaves and leave the roots be. It will grow new branches then."
+		""
+		"To collect &3Bushes&r simply use a Knife."
+	]
+	quest.43D1B5A5E07B09E3.title: "Saplings"
+	quest.464694061D4896F5.title: "Chest"
+	quest.469B4B63209610CE.quest_desc: [
+		"Smithing iron requieres Bronze Anvil. So your next task is aquiring said bronze."
+		"Bronze is an alloy, you can make it in the &3Small Vessel&f, just like you casted copper earlier, but it's going to be tedious. "
+		"Instead, set up your &3Crucible&3 and &3Charcoal Forge&f (see &6Ore Processing&f chapter) and cast in molds inside the crucible."
+		"CHeck &9JEI&f for alloy recipe."
+	]
+	quest.469B4B63209610CE.title: "Bronze Age"
+	quest.46EC9EF35A235DDA.title: "Adventure Awaits!"
+	quest.47F60096BF7F28A9.quest_desc: [
+		"&3Grill&r helps you handle more items at a time. Useful in preparing large amounts if meat."
+		""
+		"Click on the&3 Firepit&r to set up."
+	]
+	quest.47F60096BF7F28A9.title: "Firepit with Grill"
+	quest.4922E265A5E18230.quest_desc: ["To make some decent tool for early game, you will need &3Clay Molds&r to pour melted metal in."]
+	quest.4922E265A5E18230.title: "Clay Knapping"
+	quest.4959DC7914B7F789.title: "Barrel"
+	quest.4A7243D195C655B0.title: "Raw Hide"
+	quest.4A7CF8B0A6445EC1.title: "Basic Greenhouse"
+	quest.4AC5790A541C8990.title: "Stomping Barrel"
+	quest.4B5CA8330858A42D.title: "Steel Age"
+	quest.4CC184167C863601.title: "Honey"
+	quest.4D3E480ECA97B97C.title: "Pneumaticraft"
+	quest.4D5B990EA4CE47EA.quest_desc: ["With time you will gather a lot of different &3Powders&r. To reduce storage use, craft &3Powders&r into the &3Piles&r."]
+	quest.4D5B990EA4CE47EA.quest_subtitle: "Don't mix"
+	quest.4D5B990EA4CE47EA.title: "Compacting: Piles"
+	quest.4EB1F97A5E162BF3.title: "Mineral Prospecting"
+	quest.5088FE89AA482117.quest_desc: [
+		"Dig up one block pit. Put there items to fire &eusing 'V'&r (by default). You can put up to 4 small or 1 big item in the pit."
+		""
+		"Right-click pit 8 times with straw and then 8 times with logs. Then hold right-click with &3Firestarter&r to light it up!"
+		""
+		"Watch out for spreading fire!"
+		""
+		"This might take awhile."
+	]
+	quest.5088FE89AA482117.title: "Pit Kiln"
+	quest.520EC155A25365F1.title: "Dough"
+	quest.52BF5F926D314F95.quest_desc: [
+		"&3Items\\&Blocks"
+		"&eKeys"
+		"&4Warnings"
+		"&9JEI"
+		"&6Chapters"
+		"&5TFC Guidebook"
+	]
+	quest.54AA278A4FB73E8C.quest_desc: [
+		"&3Crucible&r will allow you to make alloys and ingots easier."
+		""
+		"Go check &6Ores Processing&r chapter for more detailed guide."
+	]
+	quest.55DE17ECAE51C9EE.quest_desc: [
+		"&3Sluice&r is essential when speaking of increasing ores output."
+		""
+		"Check out the &6Ores Processing&r chapter for more."
+	]
+	quest.55DE17ECAE51C9EE.title: "Sluice"
+	quest.5719E48BB80CC88A.quest_desc: ["Useful tool for builders, but also requiered to get your grindstone."]
+	quest.57450CDA1ABE0DC7.quest_desc: [
+		"When starting a farm pay attention to crops growth seasons and nutrients."
+		""
+		"Check &5TFC Guidebook: Advanced Mechanics: Crops&r for more."
+	]
+	quest.585DD15DB024A3D1.quest_desc: ["To work with Copper you will need a &3Hammer&r."]
+	quest.585DD15DB024A3D1.title: "Forge Hammer"
+	quest.58C5C9159AD2857C.title: "Advanced Greenhouse"
+	quest.59AB2052786BDD0D.title: "Soaked Hide"
+	quest.5CA51E7897A991A0.title: "Need to go deeper"
+	quest.5CBBEC476938C210.title: "Horse riding"
+	quest.5D1AFCC878A2E274.title: "Cookware"
+	quest.60ED534800A2168D.title: "Mechanical Power"
+	quest.6149CA516931EC96.quest_desc: [
+		"&3Raw Cereals&r will spoil very soon. To prevent it, just use the &3Knife&r to get &3Grains and Straw&r."
+		""
+		"&3Grains&r will spoil very slow especially if you put them into &3sealed Large Vessel&r."
+	]
+	quest.6149CA516931EC96.title: "Grain"
+	quest.62523937EBCC53BF.title: "Saw"
+	quest.62A464FC854D802D.quest_desc: [
+		"&3Jug&r is useful to keep with you and drink from."
+		"It holds some water for you not to thirst!"
+	]
+	quest.62A464FC854D802D.title: "Jug"
+	quest.636C659C4A65C556.quest_desc: [
+		"We still cannot mine an ore. But there are some &3Ore Powders&r in the common &3Gravel&r!"
+		"Try use a &3Pan&r to obtain &3Ore Powder&r!"
+		""
+		"Find some water and some &3Gravel&r or better - &3Ore Deposits&r in the river."
+		"Click a block with a &3Pan&r, then hold RMB while standing in the water."
+		""
+	]
+	quest.636C659C4A65C556.title: "Ore Panning"
+	quest.64A7506BC6E0F53B.title: "Sewing"
+	quest.650979F04DA06D44.quest_desc: ["Take some boiled water with you, using a &3Jug&r."]
+	quest.650979F04DA06D44.title: "Boiled Water"
+	quest.66957E1A37C5468C.quest_desc: [
+		"Actually, there are a lot of useful resources just around you!"
+		"Firstly, take a look under your feet. It could be something we can use right now!"
+	]
+	quest.66957E1A37C5468C.title: "Materials Around You"
+	quest.692C1AA2F56FDBF6.title: "Milk"
+	quest.69751D73CC834A6A.title: "Axles"
+	quest.699BA015E84655F0.quest_desc: ["Probably it's a good idea to start a farm and store some food before the winter comes."]
+	quest.699BA015E84655F0.title: "First Tools: Hoe"
+	quest.69D8991DDD18366A.title: "Beehive"
+	quest.6ACF90697DC24FAB.title: "Efficient Charcoal Production"
+	quest.6BE00EB7B28338F2.title: "Hidden: Stone Age unlock"
+	quest.6E1399D1E455E2CB.quest_desc: ["Now you have smeltable &3Powders&r."]
+	quest.6E1399D1E455E2CB.title: "Powders"
+	quest.6F53637B21404A79.title: "Black Steel Anvil"
+	quest.6FE2992AEE98301E.quest_desc: [
+		"To make &3Charcoal&r simply gather a lot of &3Logs&r. Then dig a pit. Shift-right-click with &3Logs&r into the pit. Make sure all &3Piles&r are holding &316 Logs&r each. It will affect &3Charcoal&r output. Then cover the pit with dirt, leaving one &3Pile&r visible to you. Use a &3Firestarter&r on it. When the fire has started cover the last &3Pile&r with dirt."
+		""
+		"Wait some time until dirt goes down. You will find &3Charcoal Piles&r there. Use a hand or a shovel to collect it."
+		""
+		"See &5TFC Guidebook: Advanced Mechanics: Charcoal Pit&r for more."
+	]
+	quest.6FE2992AEE98301E.title: "Charcoal"
+	quest.724670BA4D4C19B6.title: "Cloth"
+	quest.731AA11C29588B3C.title: "Nest Box"
+	quest.74F00B6BC1917CE3.title: "Tool Rack"
+	quest.75B3CD020A4C68A7.quest_desc: ["TODO"]
+	quest.75B3CD020A4C68A7.title: "Casting with channels"
+	quest.76142216D24338FE.quest_desc: [
+		"Now get a few of those &3Copper Double Ingots&f and craft them into an actual anvil."
+		"It allows you to forge copper tools directly from heated ingots, without casting metal, and to create components of &3Bloomery&f, your first ore processing station."
+	]
+	quest.76142216D24338FE.title: "Copper Anvil"
+	quest.77BBADAAEA3CDEF0.title: "Watering Can"
+	quest.784B47D80E379B1E.title: "Silk Cloth"
+	quest.798D00CFC7A33E4C.quest_desc: [
+		"&3Pot&r will allow you to cook a few complex dishes on the &3Firepit&r."
+		""
+		"Click on the Firepit to set it up."
+	]
+	quest.798D00CFC7A33E4C.title: "Pot"
+	quest.7A1F9767F054AC56.quest_desc: [
+		"For progression you need a better anvil. For better anvil you need double ingots."
+		""
+		"Heat ingots up to \"Can Weld\" state, then put them into the anvil and shift-right-click with a hammer."
+		"You also need flux in the anvil for welding."
+	]
+	quest.7A95E44400530D7B.quest_desc: [
+		"Using collected fruits, berries and vegetables you can make alchogol."
+		""
+		"Go check &6Collections: Food&r chapter for recipes."
+	]
+	quest.7A95E44400530D7B.title: "Alchogol"
+	quest.7AF7C2AB916080AF.title: "Tannin"
+	quest.7BE56F33FA2FF720.quest_desc: [
+		"To work with metals you will need a Forge."
+		"It's gonna be quite big, so find a place for it and start your preparations!"
+	]
+	quest.7BE56F33FA2FF720.title: "Working with Metals"
+	quest.7C5B8804776D5A3A.title: "Black Steel"
+	quest.7DC26004B2D800A9.title: "Firepit"
+	quest.7E29EAC162DD477A.title: "Limewater"
+	quest.7F8F0061C200056A.title: "Iron"
+	quest.7F993A4EE39D7AF0.title: "Composter"
+	task.00DE51D9B3CC7D99.title: "Dried Bricks"
+	task.023D0F289A900000.title: "Got it!"
+	task.026A794041186863.title: "Got it!"
+	task.06C00AA4B1001A4F.title: "Charcoal"
+	task.08B3185540CF3467.title: "Livestock"
+	task.097379C422606363.title: "Axes"
+	task.0ADF56A0620BE36A.title: "Got it!"
+	task.0B750FEFDF2A7225.title: "Seeding"
+	task.0BD9835D79CD7FE0.title: "Wet Bricks"
+	task.0C32FEAE4FCE35D8.title: "Tool racks"
+	task.0D1DE877D626521A.title: "Lumber"
+	task.0DA2687C88AC2E77.title: "Breeding"
+	task.0E4583AEE419321F.title: "excavator info"
+	task.0EC48F5461C7C57A.title: "Automating sluice"
+	task.0F8AC40B94BA44A5.title: "Pan"
+	task.1144BB311432658D.title: "Support beams"
+	task.15ACE6CDC9E57815.title: "Quern automation"
+	task.17A620E691DC5B8F.title: "Knives"
+	task.185131241A36AC39.title: "Let's go!"
+	task.1BE66B4ECFA7F876.title: "8x Logs"
+	task.1D3F692F20932160.title: "Sticks"
+	task.2697CC6BEE2B51DE.title: "Hoes"
+	task.26A3D511339F4C68.title: "Grains"
+	task.2C0A3913875CCB18.title: "Colours"
+	task.2DB04CA845D606E3.title: "Doughs"
+	task.3028FC30F82CE04E.title: "TODO washing via IG mod"
+	task.3049007F956F0C11.title: "Powders"
+	task.323E26BFD9DF5AD0.title: "Ore Depositst"
+	task.329C29D3BA57C503.title: "Fishing Rod"
+	task.38C142992C689D4E.title: "Raw Stones"
+	task.38D704FF65D1ADB1.title: "Tuyere"
+	task.391A59BE0DB8B16A.title: "Rocks"
+	task.39E6D64ADC25786B.title: "Charcoal"
+	task.3A21E6847139E97A.title: "Mud"
+	task.3B552AB1BAA0F542.title: "TODO: Trees saplings"
+	task.3E33C92828478D85.title: "Breads"
+	task.3F36EE1D74E901CE.title: "Shaders"
+	task.4373CCE90F5BE1DA.title: "Arc furnace"
+	task.472C29B95C049AA0.title: "Got it!"
+	task.4B01EACA700115AC.title: "Seeds"
+	task.4FB796F32E966EFE.title: "Kettle"
+	task.5266F09D6E53463D.title: "Build Coke Oven"
+	task.53FDD0D779D8A652.title: "Aqueducts"
+	task.54B31B5F0489339B.title: "Shovels"
+	task.55462CD70DCF77D0.title: "Other clay molds"
+	task.56EDA39B5C84EAEB.title: "Generation"
+	task.5853E335E56D7835.title: "Chisels"
+	task.598EDBB3F2B8E081.title: "Got it!"
+	task.59CADEBE16AE3E93.title: "Prospecting tools"
+	task.59D9A265BC832F33.title: "Mineral prospecting tools"
+	task.5AB54C20DFB480EC.title: "Got it!"
+	task.5C49CC8C7D7C1882.title: "Tool heads"
+	task.5D6E0CE9A288079A.title: "Barrel"
+	task.5EB0EEA7B93A319E.title: "Javelins"
+	task.5EE993AE9D6540DA.title: "Saw"
+	task.6269700479FB3596.title: "Pickaxes"
+	task.65128314E633691F.title: "TODO: Drills?"
+	task.6596EB2F0E2DB9F5.title: "Mud Bricks"
+	task.65BE916579F38C65.title: "Troubleshooting"
+	task.665407044DC90CE2.title: "Barrels"
+	task.687C5ACC2DF3AF57.title: "Vitals"
+	task.6DAFBA0D927D5B08.title: "Weather"
+	task.6E2CD4BD98B1A95C.title: "Got it!"
+	task.6FCE45E68A89DFFE.title: "Soups"
+	task.70A9AB402FA71AB1.title: "Flours"
+	task.73CD04C97A9372E6.title: "Flux stones"
+	task.7A7560FEDD9F7B04.title: "Got it!"
+	task.7E2ED74724C212C6.title: "Meats"
+}

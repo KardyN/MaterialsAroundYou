@@ -3,10 +3,11 @@
 	default_quest_shape: ""
 	filename: "space_age"
 	group: "1F7A98B2F2F3E985"
-	icon: "ad_astra:rocket_nose_cone"
+	icon: {
+		id: "minecraft:firework_rocket"
+	}
 	id: "096F3D1946A90014"
 	order_index: 8
 	quest_links: [ ]
 	quests: [ ]
-	title: "Space Age"
 }

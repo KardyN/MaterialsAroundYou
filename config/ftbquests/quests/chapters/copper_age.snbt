@@ -4,12 +4,8 @@
 	filename: "copper_age"
 	group: "1F7A98B2F2F3E985"
 	icon: {
-		Count: 1
-		ForgeCaps: {
-			"tfc:item_heat": {
-				heat: 0.0f
-				ticks: 0L
-			}
+		components: {
+			"tfc:heat": { }
 		}
 		id: "tfc:metal/ingot/bronze"
 	}
@@ -19,117 +15,40 @@
 	quests: [
 		{
 			dependencies: ["7A1F9767F054AC56"]
-			description: [
-				"Now get a few of those &3Copper Double Ingots&f and craft them into an actual anvil."
-				"It allows you to forge copper tools directly from heated ingots, without casting metal, and to create components of &3Bloomery&f, your first ore processing station."
-			]
 			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
+				components: {
+					"tfc:heat": { }
 				}
 				id: "tfc:metal/anvil/copper"
 			}
 			id: "76142216D24338FE"
 			tasks: [{
 				id: "2EC8F0B548FD37C2"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/anvil/copper"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/anvil/copper" }
 				type: "item"
 			}]
-			title: "Copper Anvil"
 			x: 3.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["7BE56F33FA2FF720"]
-			description: ["To work with Copper you will need a &3Hammer&r."]
 			id: "585DD15DB024A3D1"
 			tasks: [{
 				id: "45B7984D8D4879F6"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/hammer/copper"
-					tag: {
-						Damage: 0
-					}
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/hammer/copper" }
 				type: "item"
 			}]
-			title: "Forge Hammer"
 			x: -1.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["585DD15DB024A3D1"]
-			description: [
-				"Breaking all adjacent blocks, causes &3Raw Stone&r to drop. Gather one &3Raw Igneous Stone&r, bring it to the base and right-click with a &3Hammer&r."
-				""
-				"That's your first &3Anvil&r!"
-				""
-				"&8TIP: you can search $igneous in JEI to find suitable rocks.&r"
-			]
-			icon: "tfc:rock/raw/andesite"
 			id: "18742141311ECFB7"
 			tasks: [{
 				id: "36812695FE554121"
-				item: {
-					Count: 1
-					id: "itemfilters:and"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "itemfilters:tag"
-								tag: {
-									value: "forge:stone"
-								}
-							}
-							{
-								Count: 1b
-								id: "itemfilters:or"
-								tag: {
-									items: [
-										{
-											Count: 1b
-											id: "itemfilters:tag"
-											tag: {
-												value: "tfc:igneous_intrusive_items"
-											}
-										}
-										{
-											Count: 1b
-											id: "itemfilters:tag"
-											tag: {
-												value: "tfc:igneous_extrusive_items"
-											}
-										}
-									]
-								}
-							}
-						]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "itemfilters:and" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Stone Anvil"
 			x: 0.5d
 			y: 0.5d
 		}
@@ -139,35 +58,16 @@
 				"1170062E1DCC047B"
 				"18742141311ECFB7"
 			]
-			description: [
-				"For progression you need a better anvil. For better anvil you need double ingots."
-				""
-				"Heat ingots up to \"Can Weld\" state, then put them into the anvil and shift-right-click with a hammer."
-				"You also need flux in the anvil for welding."
-			]
 			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
+				components: {
+					"tfc:heat": { }
 				}
 				id: "tfc:metal/double_ingot/copper"
 			}
 			id: "7A1F9767F054AC56"
 			tasks: [{
 				id: "67281A0EC27BC9D3"
-				item: {
-					Count: 7
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/double_ingot/copper"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/double_ingot/copper" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -178,191 +78,86 @@
 				"1F2192C21814F3D0"
 				"585DD15DB024A3D1"
 			]
-			description: ["Powder used for welding metals together, and producing better materials later in the game."]
 			id: "0D3034BAC522694C"
 			tasks: [{
 				count: 7L
 				id: "581A2967592DE67C"
-				item: {
-					Count: 7
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:powder/flux"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:powder/flux" }
 				type: "item"
 			}]
-			title: "Flux"
 			x: 0.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["29B54FAB02DE3E0D"]
-			description: [
-				"To make &3Charcoal&r simply gather a lot of &3Logs&r. Then dig a pit. Shift-right-click with &3Logs&r into the pit. Make sure all &3Piles&r are holding &316 Logs&r each. It will affect &3Charcoal&r output. Then cover the pit with dirt, leaving one &3Pile&r visible to you. Use a &3Firestarter&r on it. When the fire has started cover the last &3Pile&r with dirt."
-				""
-				"Wait some time until dirt goes down. You will find &3Charcoal Piles&r there. Use a hand or a shovel to collect it."
-				""
-				"See &5TFC Guidebook: Advanced Mechanics: Charcoal Pit&r for more."
-			]
 			id: "6FE2992AEE98301E"
 			tasks: [{
 				id: "39E6D64ADC25786B"
-				item: "minecraft:charcoal"
-				title: "Charcoal"
+				item: { count: 1, id: "minecraft:charcoal" }
 				type: "item"
 			}]
-			title: "Charcoal"
 			x: 0.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["6FE2992AEE98301E"]
-			description: ["TODO"]
-			icon: "tfc:ore/bituminous_coal/granite"
 			id: "1170062E1DCC047B"
 			tasks: [
 				{
 					count: 7L
 					id: "06C00AA4B1001A4F"
-					item: "minecraft:charcoal"
-					title: "Charcoal"
+					item: { count: 1, id: "minecraft:charcoal" }
 					type: "item"
 				}
 				{
 					count: 5L
 					id: "38C142992C689D4E"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "tfc:rock/raw"
-						}
-					}
-					title: "Raw Stones"
+					item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]
-			title: "Forge"
 			x: 2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["7BE56F33FA2FF720"]
-			description: ["Source of &3Flux&f powder. "]
-			icon: "tfc:rock/loose/marble"
 			id: "1F2192C21814F3D0"
 			tasks: [{
 				id: "73CD04C97A9372E6"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "tfc:fluxstone"
-					}
-				}
-				title: "Flux stones"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Flux Stones"
 			x: -1.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["29B54FAB02DE3E0D"]
 			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
+				components: {
+					"tfc:heat": { }
 				}
 				id: "tfc:metal/saw/copper"
-				tag: {
-					Damage: 0
-				}
 			}
 			id: "62523937EBCC53BF"
 			tasks: [{
 				id: "5EE993AE9D6540DA"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/saw/copper"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/saw/bismuth_bronze"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/saw/black_bronze"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
-					}
-				}
-				title: "Saw"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Saw"
 			x: 4.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["62523937EBCC53BF"]
-			icon: "tfc:wood/lumber/ash"
 			id: "11E09B425935ABFE"
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				count: 16L
 				id: "0D1DE877D626521A"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "tfc:lumber"
-					}
-				}
-				title: "Lumber"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Lumber"
 			x: 4.0d
 			y: -3.5d
 		}
@@ -371,60 +166,31 @@
 			id: "29A6D2FE4F3AD73A"
 			tasks: [{
 				id: "21D48EBEC29C11D5"
-				item: "tfc:wooden_bucket"
+				item: { count: 1, id: "tfc:wooden_bucket" }
 				type: "item"
 			}]
-			title: "Wooden Bucket"
 			x: 2.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["11E09B425935ABFE"]
-			description: [
-				"&3Barrels&r can store any fluids."
-				"Also it can be sealed with some recipe to convert fluids into another fluids!"
-				""
-				"Go check &6Farming&r chapther for recipes."
-			]
-			icon: "tfc:wood/barrel/ash"
 			id: "1851DE318031D1D6"
 			tasks: [{
 				id: "5D6E0CE9A288079A"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "tfc:barrels"
-					}
-				}
-				title: "Barrel"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Barrel"
 			x: 5.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["11E09B425935ABFE"]
-			description: [
-				"&3Sluice&r is essential when speaking of increasing ores output."
-				""
-				"Check out the &6Ores Processing&r chapter for more."
-			]
-			icon: "tfc:wood/sluice/ash"
 			id: "55DE17ECAE51C9EE"
 			tasks: [{
 				id: "771B05438F871F75"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "tfc:sluices"
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Sluice"
 			x: 2.5d
 			y: -4.5d
 		}
@@ -433,19 +199,9 @@
 				"023378E10A023AFE"
 				"54AA278A4FB73E8C"
 			]
-			description: [
-				"Smithing iron requieres Bronze Anvil. So your next task is aquiring said bronze."
-				"Bronze is an alloy, you can make it in the &3Small Vessel&f, just like you casted copper earlier, but it's going to be tedious. "
-				"Instead, set up your &3Crucible&3 and &3Charcoal Forge&f (see &6Ore Processing&f chapter) and cast in molds inside the crucible."
-				"CHeck &9JEI&f for alloy recipe."
-			]
 			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
+				components: {
+					"tfc:heat": { }
 				}
 				id: "tfc:metal/ingot/bronze"
 			}
@@ -455,109 +211,51 @@
 			tasks: [
 				{
 					id: "2D2946457C19764E"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "kubejs:raw_tin_bloom"
-					}
+					item: { count: 1, id: "kubejs:raw_tin_bloom" }
 					type: "item"
 				}
 				{
 					id: "2AB6A7BAE94253DF"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/ingot/tin"
-					}
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/tin" }
 					type: "item"
 				}
 				{
 					id: "7B6A8FC4FDD0BDB3"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/ingot/bronze"
-					}
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/bronze" }
 					type: "item"
 				}
 			]
-			title: "Bronze Age"
 			x: 6.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["76142216D24338FE"]
-			description: [
-				"&3BLoomery&f allows for smelting oxygen containing ores. "
-				"Check &9JEI&f for specific amounts of ore. "
-				"TODO short explanation of how it works"
-			]
-			icon: "tfc:bloomery"
 			id: "023378E10A023AFE"
 			tasks: [
 				{
 					id: "19C4D83DA05F8966"
-					item: "tfc:bloomery"
+					item: { count: 1, id: "tfc:bloomery" }
 					type: "item"
 				}
 				{
 					id: "2457B7F95DF98321"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "kubejs:raw_tin_bloom"
-					}
+					item: { count: 1, id: "kubejs:raw_tin_bloom" }
 					type: "item"
 				}
 				{
 					id: "5AFB469BBFF1A81E"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/ingot/tin"
-					}
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/tin" }
 					type: "item"
 				}
 			]
-			title: "Bloomery"
 			x: 5.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["469B4B63209610CE"]
-			description: ["Just like with the &3Copper Anvil&f, you know the drill. "]
 			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
+				components: {
+					"tfc:heat": { }
 				}
 				id: "tfc:metal/anvil/bronze"
 			}
@@ -565,48 +263,20 @@
 			tasks: [
 				{
 					id: "5288066F749A3381"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/ingot/bronze"
-					}
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/bronze" }
 					type: "item"
 				}
 				{
 					id: "7BE9367A068C7898"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/double_ingot/bronze"
-					}
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/double_ingot/bronze" }
 					type: "item"
 				}
 				{
 					id: "41885001201AE067"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/anvil/bronze"
-					}
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/anvil/bronze" }
 					type: "item"
 				}
 			]
-			title: "Bronze Anvil"
 			x: 8.0d
 			y: 0.5d
 		}
@@ -615,17 +285,9 @@
 				"392D0D2BE9080CCF"
 				"367311D0BC54F698"
 			]
-			description: [
-				"Now, all that is left to do is fire up the &3Bloomery&f with some &3Iron Ore&f, and make it into &3Wrought Iron Ingots&f!"
-				"The process is a bit longer, than with &3Tin Ingots&f, but still pretty easy. "
-			]
 			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
+				components: {
+					"tfc:heat": { }
 				}
 				id: "tfc:metal/ingot/wrought_iron"
 			}
@@ -635,68 +297,31 @@
 			tasks: [
 				{
 					id: "30573BEEF51441E2"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:raw_iron_bloom"
-					}
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:raw_iron_bloom" }
 					type: "item"
 				}
 				{
 					id: "6D0724CDCC8564D8"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:refined_iron_bloom"
-					}
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:refined_iron_bloom" }
 					type: "item"
 				}
 				{
 					id: "12FED6E598C339BD"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"tfc:item_heat": {
-								heat: 0.0f
-								ticks: 0L
-							}
-						}
-						id: "tfc:metal/ingot/wrought_iron"
-					}
+					item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/wrought_iron" }
 					type: "item"
 				}
 			]
-			title: "Iron Age"
 			x: 9.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["11E09B425935ABFE"]
-			icon: "tfc:wood/planks/ash_tool_rack"
 			id: "74F00B6BC1917CE3"
 			tasks: [{
 				id: "0C32FEAE4FCE35D8"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "tfc:tool_racks"
-					}
-				}
-				title: "Tool racks"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Tool Rack"
 			x: 5.5d
 			y: -4.5d
 		}
@@ -705,12 +330,15 @@
 			id: "60A5E12F241F13F8"
 			rewards: [{
 				id: "76C086CF5AB330FB"
-				item: "tfc:bellows"
+				item: {
+					count: 1
+					id: "tfc:bellows"
+				}
 				type: "item"
 			}]
 			tasks: [{
 				id: "44EA2C08A5E90067"
-				item: "tfc:bellows"
+				item: { count: 1, id: "tfc:bellows" }
 				type: "item"
 			}]
 			x: 6.5d
@@ -718,15 +346,10 @@
 		}
 		{
 			dependencies: ["1170062E1DCC047B"]
-			description: [
-				"&3Crucible&r will allow you to make alloys and ingots easier."
-				""
-				"Go check &6Ores Processing&r chapter for more detailed guide."
-			]
 			id: "54AA278A4FB73E8C"
 			tasks: [{
 				id: "39A45765D468C72B"
-				item: "tfc:crucible"
+				item: { count: 1, id: "tfc:crucible" }
 				type: "item"
 			}]
 			x: 5.0d
@@ -734,134 +357,68 @@
 		}
 		{
 			dependencies: ["29B54FAB02DE3E0D"]
-			description: [
-				"To work with metals you will need a Forge."
-				"It's gonna be quite big, so find a place for it and start your preparations!"
-			]
 			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
+				components: {
+					"tfc:heat": { }
 				}
 				id: "tfc:metal/ingot/copper"
 			}
 			id: "7BE56F33FA2FF720"
 			tasks: [{
 				id: "023D0F289A900000"
-				title: "Got it!"
 				type: "checkmark"
 			}]
-			title: "Working with Metals"
 			x: -2.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["5719E48BB80CC88A"]
-			description: ["Grind whatever you want into dust! Whery time consuming, so automate it ASAP (see &6Ore Processing&f chapter)"]
-			icon: "tfc:quern"
 			id: "17527074CEFB9B75"
-			subtitle: "Very grindy (duh)"
 			tasks: [
 				{
 					id: "0B15B7FCF77057F8"
-					item: "tfc:quern"
+					item: { count: 1, id: "tfc:quern" }
 					type: "item"
 				}
 				{
 					id: "08E249BA4EDD14E2"
-					item: {
-						Count: 1
-						id: "tfc:handstone"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: { count: 1, id: "tfc:handstone" }
 					type: "item"
 				}
 			]
-			title: "Quern"
 			x: 0.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["17527074CEFB9B75"]
 			dependency_requirement: "one_completed"
-			description: ["Vital material for ore processing, both early and later in the game."]
-			icon: "tfc:powder/charcoal"
 			id: "367311D0BC54F698"
-			subtitle: "Let's just say - You'll need a lot"
 			tasks: [{
 				count: 4L
 				id: "6E1C95CC273C5B15"
-				item: "tfc:powder/charcoal"
+				item: { count: 1, id: "tfc:powder/charcoal" }
 				type: "item"
 			}]
-			title: "Charcoal Powder"
 			x: 8.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["11E09B425935ABFE"]
-			icon: "tfc:wood/chest/ash"
 			id: "464694061D4896F5"
 			tasks: [{
 				id: "1B4B1920FE8B5C76"
-				item: {
-					Count: 1
-					id: "itemfilters:and"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "itemfilters:tag"
-								tag: {
-									value: "forge:chests/wooden"
-								}
-							}
-							{
-								Count: 1b
-								id: "itemfilters:not"
-								tag: {
-									items: [{
-										Count: 1b
-										id: "itemfilters:tag"
-										tag: {
-											value: "forge:chests/trapped"
-										}
-									}]
-								}
-							}
-						]
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "itemfilters:and" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Chest"
 			x: 4.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["7BE56F33FA2FF720"]
-			description: ["Useful tool for builders, but also requiered to get your grindstone."]
 			id: "5719E48BB80CC88A"
 			tasks: [{
 				id: "13BE9B5D9671B3DB"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/chisel/copper"
-					tag: {
-						Damage: 0
-					}
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/chisel/copper" }
 				type: "item"
 			}]
 			x: -1.0d
@@ -869,31 +426,16 @@
 		}
 		{
 			dependencies: ["469B4B63209610CE"]
-			description: [
-				"&3Bearing Alloy&f is used for moving parts of simple mechanical machines."
-				"Unlocks simple Create automation."
-			]
 			id: "0A764B4B164037AE"
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
 				id: "76655C5D9C25D6EC"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "create:andesite_alloy"
-				}
+				item: { count: 1, id: "create:andesite_alloy" }
 				type: "item"
 			}]
-			title: "Advanced automation"
 			x: 8.0d
 			y: -1.0d
 		}
 	]
-	title: "Bronze Age"
 }

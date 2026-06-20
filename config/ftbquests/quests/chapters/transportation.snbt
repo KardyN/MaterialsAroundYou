@@ -3,7 +3,6 @@
 	default_quest_shape: ""
 	filename: "transportation"
 	group: "4973B82BE2AB46A8"
-	icon: "astikorcarts:wheel"
 	id: "12E2517D63A6A46C"
 	order_index: 2
 	quest_links: [ ]
@@ -11,11 +10,10 @@
 		id: "0C46A42A8076CB68"
 		tasks: [{
 			id: "2D2E1FD78256B8B6"
-			item: "railways:track_tfc_chestnut"
+			item: { count: 1, id: "railways:track_tfc_chestnut" }
 			type: "item"
 		}]
 		x: 0.0d
 		y: 0.0d
 	}]
-	title: "Transportation"
 }

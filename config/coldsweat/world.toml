@@ -1,4 +1,3 @@
-
 #─────────────────────────────────────────────────────────────────────────
 # Anywhere that uses IDs, such as blocks, biomes, dimensions, and structures, also supports:
 # • Tags (e.g. "#minecraft:is_underground")
@@ -51,33 +50,37 @@
 	# • *units: The units of the temperature ("f", "c", or "mc"). Defaults to Minecraft units (mc))
 	# • *waterTemp: The temperature of water in the biome
 	"Biome Temperatures" = [
+	    ["minecraft:dark_forest", 53, 80, "F"],
+	    ["minecraft:birch_forest", 47, 77, "F"],
 	    ["minecraft:soul_sand_valley", 53, 53, "F"],
 	    ["minecraft:old_growth_birch_forest", 58, 72, "F"],
 	    ["minecraft:river", 59, 82, "F"],
-	    ["minecraft:swamp", 72, 84, "F"],
+	    ["minecraft:swamp", 72, 84, "F", -5],
 	    ["minecraft:savanna", 70, 95, "F"],
 	    ["minecraft:savanna_plateau", 76, 98, "F"],
 	    ["minecraft:windswept_savanna", 67, 90, "F"],
 	    ["minecraft:taiga", 44, 62, "F"],
-	    ["minecraft:snowy_taiga", 19, 48, "F"],
+	    ["minecraft:snowy_taiga", 8, 30, "F", -15],
+	    ["minecraft:snowy_plains", 8, 30, "F", -15],
 	    ["minecraft:old_growth_pine_taiga", 48, 62, "F"],
 	    ["minecraft:old_growth_spruce_taiga", 48, 62, "F"],
 	    ["minecraft:desert", 48, 115, "F"],
 	    ["minecraft:stony_shore", 50, 64, "F"],
-	    ["minecraft:snowy_beach", 38, 52, "F"],
-	    ["minecraft:snowy_slopes", 24, 38, "F"],
+	    ["minecraft:snowy_beach", 8, 30, "F", -15],
+	    ["minecraft:snowy_slopes", 24, 32, "F", -15],
 	    ["minecraft:windswept_forest", 48, 66, "F"],
-	    ["minecraft:frozen_peaks", 15, 33, "F"],
-	    ["minecraft:warm_ocean", 67, 76, "F"],
-	    ["minecraft:deep_frozen_ocean", 56, 65, "F"],
-	    ["minecraft:jungle", 76, 87, "F"],
+	    ["minecraft:frozen_peaks", 15, 31, "F", -18],
+	    ["minecraft:warm_ocean", 67, 76, "F", 5],
+	    ["minecraft:frozen_river", 8, 31, "F", -25],
+	    ["minecraft:frozen_ocean", 20, 31, "F", -25],
+	    ["minecraft:deep_frozen_ocean", 20, 31, "F", -20],
+	    ["minecraft:jungle", 76, 89, "F"],
 	    ["minecraft:bamboo_jungle", 76, 87, "F"],
-	    ["minecraft:badlands", 84, 120, "F"],
-	    ["minecraft:wooded_badlands", 80, 108, "F"],
-	    ["minecraft:eroded_badlands", 88, 120, "F"],
+	    ["minecraft:badlands", 84, 120, "F", -5],
+	    ["minecraft:wooded_badlands", 80, 108, "F", -5],
+	    ["minecraft:eroded_badlands", 88, 120, "F", -5],
 	    ["minecraft:deep_dark", 63, 63, "F"],
-	    ["minecraft:dripstone_caves", "disable"],
-	    ["minecraft:plains", 59, 82, "F"]
+	    ["minecraft:dripstone_caves", "disable"]
 	]
 
 [Blocks]
@@ -96,24 +99,28 @@
 	# • *tempLimit: The maximum world temperature at which this block temp will have any effect.
 	#   (Represents the minimum temp if the block temp is negative)
 	"Block Temperatures" = [
-	    ["cold_sweat:boiler", 0.27, 7, "mc", 0.88, "lit=true", "", 4],
-	    ["cold_sweat:icebox", -0.27, 7, "mc", 0.88, "frosted=true", "", 0],
-	    ["minecraft:lava", 0.3, 7, "mc", 6, "", "", 21.5, true],
-	    ["#minecraft:fire", 0.476, 7, "mc", 0.9, "", "", 8],
-	    ["#minecraft:campfires", 0.476, 7, "mc", 0.9, "lit=true", " ", 8],
-	    ["minecraft:magma_block", 0.25, 3, "mc", 1.0],
-	    ["minecraft:lava_cauldron", 0.5, 7, "mc", 1.5],
-	    ["minecraft:ice", -0.15, 4, "mc", 0.3, "", "", 0.05],
-	    ["minecraft:packed_ice", -0.25, 4, "mc", 1.0, "", "", -0.3],
-	    ["minecraft:blue_ice", -0.35, 4, "mc", 1.4, "", "", -0.7],
-	    ["#minecraft:ice", -0.15, 4, "mc", 0.6, "", "", -0.7],
-	    ["create:blaze_burner", 5, 3, "f", 30, "blaze=smouldering", "", 400]
+	    ["cold_sweat:boiler", 12, 7, "f", 36, "lit=true", "", 212],
+	    ["cold_sweat:icebox", -12, 7, "f", 36, "frosted=true", "", 32],
+	    ["minecraft:lava", 20, 7, "f", 200, "", "", 1000, true],
+	    ["#minecraft:fire", 15, 7, "f", 45, "", "", 400],
+	    ["#minecraft:campfires", 15, 7, "f", 45, "lit=true", " ", 400],
+	    ["minecraft:magma_block", 12, 3, "f", 48],
+	    ["minecraft:lava_cauldron", 20, 7, "f", 200, "", "", 1000, true],
+	    ["minecraft:ice", -6, 4, "f", 24, "", "", 33],
+	    ["minecraft:packed_ice", -12, 4, "f", 48, "", "", 16],
+	    ["minecraft:blue_ice", -16, 4, "f", 64, "", "", 0],
+	    ["#minecraft:ice", -6, 4, "f", 27, "", "", 33],
+	    ["create:blaze_burner", 5, 3, "f", 30, "blaze=smouldering", "", 400],
+	    ["create:blaze_burner", 10, 4, "f", 30, "blaze=fading", "", 400],
+	    ["create:blaze_burner", 15, 5, "f", 45, "blaze=kindled", "", 400],
+	    ["create:blaze_burner", 20, 6, "f", 60, "blaze=seething", "", 400]
 	]
 	#─────────────────────────────────────────────────────────────────────────
 	# The maximum range of blocks' area of effect
 	# - Note: This will not change anything unless blocks are configured to utilize the expanded range
 	# - This value is limited to 16 for performance reasons
-	#Range: 1 ~ 16
+	# Default: 7
+	# Range: 1 ~ 16
 	"Block Range" = 7
 	#─────────────────────────────────────────────────────────────────────────
 	# When set to true, uses Cold Sweat's temperature system to determine water freezing behavior
@@ -123,23 +130,27 @@
 	"Custom Ice Drops" = true
 	#─────────────────────────────────────────────────────────────────────────
 	# The speed at which wet players dry off
-	#Range: 0.0 ~ Infinity
+	# Default: 0.0015
+	# Range: 0.0 ~ Infinity
 	"Dryoff Speed" = 0.0015
 	#─────────────────────────────────────────────────────────────────────────
 	# The speed at which players become soaked when in water
-	#Range: 0.0 ~ Infinity
+	# Default: 0.1
+	# Range: 0.0 ~ Infinity
 	"Water Soak Speed" = 0.1
 	#─────────────────────────────────────────────────────────────────────────
 	# The speed at which players become soaked when in rain
-	#Range: 0.0 ~ Infinity
+	# Default: 0.0125
+	# Range: 0.0 ~ Infinity
 	"Rain Soak Speed" = 0.0125
 	#─────────────────────────────────────────────────────────────────────────
 	# The default temperature of water
 	# └── Format: [temperature, *units]
-	"Default Water Temperature" = [-10, "f"]
+	"Default Water Temperature" = [-10.0, "f"]
 	#─────────────────────────────────────────────────────────────────────────
 	# The maximum soak level a player can reach from rain alone (0.0 - 1.0)
-	#Range: 0.0 ~ Infinity
+	# Default: 0.2
+	# Range: 0.0 ~ Infinity
 	"Max Rain Soak" = 0.2
 
 [Structures]
@@ -162,6 +173,10 @@
 
 [Misc]
 	#─────────────────────────────────────────────────────────────────────────
+	# A temperature offset applied when in complete shade or when the sky is overcast
+	# └── Format: [offset, *units]
+	"Shade Temperature Offset" = [-9, "f"]
+	#─────────────────────────────────────────────────────────────────────────
 	# List of blocks that will allow the player to sleep on them, regardless of the "Prevent Sleep When in Danger" setting
 	# Use this list if the player is not getting the temperature effect from sleeping on particular blocks
 	"Sleep Check Override Blocks" = []
@@ -172,16 +187,13 @@
 	# Converts damage dealt by Soul Fire to cold damage (default: true)
 	# Does not affect the block's temperature
 	"Cold Soul Fire" = true
-	#─────────────────────────────────────────────────────────────────────────
-	# A temperature offset applied when in complete shade or when the sky is overcast
-	# └── Format: [offset, *units]
-	"Shade Temperature Offset" = [-9, "f"]
 
 #"Thermal sources" are blocks that have a smokestack and give frigidness/warmth. like the hearth, boiler, and iceobx
 ["Thermal Sources"]
 	#─────────────────────────────────────────────────────────────────────────
 	# How effective thermal sources are at normalizing temperature
-	#Range: 0.0 ~ 1.0
+	# Default: 0.75
+	# Range: 0.0 ~ 1.0
 	"Thermal Source Strength" = 0.75
 	#─────────────────────────────────────────────────────────────────────────
 	# List of additional blocks that thermal sources can spread through
@@ -199,28 +211,34 @@
 		"Automatic Hearth" = false
 		#─────────────────────────────────────────────────────────────────────────
 		# The distance the hearth's air will travel from a source, like the hearth itself or the end of a pipe
-		#Range: > 0
+		# Default: 20
+		# Range: > 0
 		"Hearth Range" = 20
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum distance that air can be piped away from the hearth
-		#Range: > 0
+		# Default: 96
+		# Range: > 0
 		"Max Hearth Range" = 96
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum volume of the hearth's area of effect
-		#Range: > 1
+		# Default: 12000
+		# Range: > 1
 		"Hearth Volume" = 12000
 		#─────────────────────────────────────────────────────────────────────────
 		# The time it takes for the hearth to be fully functional after being placed
-		#Range: > 0
+		# Default: 1200
+		# Range: > 0
 		"Hearth Warm-Up Time" = 1200
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum amount of insulation that the hearth can provide
-		#Range: 0 ~ 10
+		# Default: 10
+		# Range: 0 ~ 10
 		"Hearth Effect Strength" = 10
 		#─────────────────────────────────────────────────────────────────────────
 		# How often the hearth consumes fuel (in ticks)
 		# Lower numbers cause fuel to be consumed faster. Setting to 0 disables fuel consumption
-		#Range: > 0
+		# Default: 40
+		# Range: > 0
 		"Hearth Fuel Consumption Interval" = 40
 
 	["Thermal Sources".Boiler]
@@ -230,28 +248,34 @@
 		"Automatic Boiler" = false
 		#─────────────────────────────────────────────────────────────────────────
 		# The distance the boiler's air will travel from a source, like the boiler itself or the end of a pipe
-		#Range: > 0
+		# Default: 16
+		# Range: > 0
 		"Boiler Range" = 16
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum distance that air can be piped away from the boiler
-		#Range: > 0
+		# Default: 96
+		# Range: > 0
 		"Max Boiler Range" = 96
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum volume of the boiler's area of effect
-		#Range: > 1
+		# Default: 2000
+		# Range: > 1
 		"Boiler Volume" = 2000
 		#─────────────────────────────────────────────────────────────────────────
 		# The time it takes for the boiler to be fully functional after being placed
-		#Range: > 0
+		# Default: 1200
+		# Range: > 0
 		"Boiler Warm-Up Time" = 1200
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum amount of insulation that the boiler can provide
-		#Range: 0 ~ 10
+		# Default: 5
+		# Range: 0 ~ 10
 		"Boiler Warmth Strength" = 5
 		#─────────────────────────────────────────────────────────────────────────
 		# How often the boiler consumes fuel (in ticks)
 		# Lower numbers cause fuel to be consumed faster. Setting to 0 disables fuel consumption
-		#Range: > 0
+		# Default: 40
+		# Range: > 0
 		"Boiler Fuel Consumption Interval" = 40
 
 	["Thermal Sources".Icebox]
@@ -261,27 +285,32 @@
 		"Automatic Icebox" = false
 		#─────────────────────────────────────────────────────────────────────────
 		# The distance the icebox's air will travel from a source, like the icebox itself or the end of a pipe
-		#Range: > 0
+		# Default: 16
+		# Range: > 0
 		"Icebox Range" = 16
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum distance that air can be piped away from the icebox
-		#Range: > 0
+		# Default: 96
+		# Range: > 0
 		"Max Icebox Range" = 96
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum volume of the icebox's area of effect
-		#Range: > 1
+		# Default: 2000
+		# Range: > 1
 		"Icebox Volume" = 2000
 		#─────────────────────────────────────────────────────────────────────────
 		# The time it takes for the icebox to be fully functional after being placed
-		#Range: > 0
+		# Default: 1200
+		# Range: > 0
 		"Icebox Warm-Up Time" = 1200
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum amount of insulation that the icebox can provide
-		#Range: 0 ~ 10
+		# Default: 5
+		# Range: 0 ~ 10
 		"Icebox Chill Strength" = 5
 		#─────────────────────────────────────────────────────────────────────────
 		# How often the icebox consumes fuel (in ticks)
 		# Lower numbers cause fuel to be consumed faster. Setting to 0 disables fuel consumption
-		#Range: > 0
+		# Default: 40
+		# Range: > 0
 		"Icebox Fuel Consumption Interval" = 40
-

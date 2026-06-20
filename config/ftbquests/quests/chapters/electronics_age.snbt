@@ -3,10 +3,11 @@
 	default_quest_shape: ""
 	filename: "electronics_age"
 	group: "1F7A98B2F2F3E985"
-	icon: "pneumaticcraft:printed_circuit_board"
+	icon: {
+		id: "immersiveengineering:logic_circuit"
+	}
 	id: "104737B93B9F2A38"
 	order_index: 5
 	quest_links: [ ]
 	quests: [ ]
-	title: "Electronics Age"
 }

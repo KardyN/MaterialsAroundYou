@@ -4,12 +4,8 @@
 	filename: "steel_age"
 	group: "1F7A98B2F2F3E985"
 	icon: {
-		Count: 1
-		ForgeCaps: {
-			"tfc:item_heat": {
-				heat: 0.0f
-				ticks: 0L
-			}
+		components: {
+			"tfc:heat": { }
 		}
 		id: "tfc:metal/ingot/steel"
 	}
@@ -22,16 +18,7 @@
 			id: "08C222C28AD196B7"
 			tasks: [{
 				id: "5AE85266126C61F4"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/anvil/steel"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/anvil/steel" }
 				type: "item"
 			}]
 			x: -5.0d
@@ -40,62 +27,34 @@
 		{
 			dependencies: ["7C5B8804776D5A3A"]
 			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
+				components: {
+					"tfc:heat": { }
 				}
 				id: "tfc:metal/anvil/black_steel"
 			}
 			id: "6F53637B21404A79"
 			tasks: [{
 				id: "6793BB3888A57859"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/anvil/black_steel"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/anvil/black_steel" }
 				type: "item"
 			}]
-			title: "Black Steel Anvil"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["08EFBA492DD1DE51"]
 			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
+				components: {
+					"tfc:heat": { }
 				}
 				id: "tfc:metal/ingot/black_steel"
 			}
 			id: "7C5B8804776D5A3A"
 			tasks: [{
 				id: "36AF35AADA5B2A89"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/black_steel"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/black_steel" }
 				type: "item"
 			}]
-			title: "Black Steel"
 			x: 2.5d
 			y: 0.0d
 		}
@@ -104,19 +63,9 @@
 			id: "08EFBA492DD1DE51"
 			tasks: [{
 				id: "5048649C0F25C3D6"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/weak_steel"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/weak_steel" }
 				type: "item"
 			}]
-			title: "Ferronickel"
 			x: 1.0d
 			y: 0.0d
 		}
@@ -125,16 +74,7 @@
 			id: "2E5344B70BA76779"
 			tasks: [{
 				id: "0BBD1091A335EB61"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/steel"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/steel" }
 				type: "item"
 			}]
 			x: -6.5d
@@ -145,16 +85,7 @@
 			id: "39217932ED62102C"
 			tasks: [{
 				id: "0FB577A2E773DE69"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc_items:steel_foil"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc_items:steel_foil" }
 				type: "item"
 			}]
 			x: -3.5d
@@ -165,28 +96,24 @@
 			id: "4D3E480ECA97B97C"
 			tasks: [{
 				id: "693ABD25C4F267E7"
-				item: "pneumaticcraft:pressure_gauge"
+				item: { count: 1, id: "pneumaticcraft:pressure_gauge" }
 				type: "item"
 			}]
-			title: "Pneumaticraft"
 			x: 6.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["6F53637B21404A79"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/sheet/black_steel"
+			}
 			id: "58E4DFAC60C4A524"
 			tasks: [{
 				id: "648F9F74883F7865"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc_items:black_steel_foil"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/sheet/black_steel" }
 				type: "item"
 			}]
 			x: 5.5d
@@ -197,7 +124,7 @@
 			id: "68662A1C7F641C1F"
 			tasks: [{
 				id: "11652808C8733884"
-				item: "immersiveengineering:rs_engineering"
+				item: { count: 1, id: "immersiveengineering:rs_engineering" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -208,7 +135,7 @@
 			id: "43BEC35AB7A301FD"
 			tasks: [{
 				id: "77CB769A7E0C6374"
-				item: "immersiveengineering:light_engineering"
+				item: { count: 1, id: "immersiveengineering:light_engineering" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -222,11 +149,9 @@
 				"68C3E6CD17F43BD4"
 				"2C0F3DE8BC4375E6"
 			]
-			icon: "immersiveengineering:arc_furnace"
 			id: "1EA7CAA228DC56E4"
 			tasks: [{
 				id: "4373CCE90F5BE1DA"
-				title: "Arc furnace"
 				type: "custom"
 			}]
 			x: -0.5d
@@ -237,7 +162,7 @@
 			id: "79B15C17E6428C1D"
 			tasks: [{
 				id: "211E5A5D13F4E303"
-				item: "immersiveengineering:sheetmetal_steel"
+				item: { count: 1, id: "immersiveengineering:sheetmetal_steel" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -248,7 +173,7 @@
 			id: "7E675907085A3615"
 			tasks: [{
 				id: "4A3428AFD5C1F6CE"
-				item: "immersiveengineering:coal_coke"
+				item: { count: 1, id: "immersiveengineering:coal_coke" }
 				type: "item"
 			}]
 			x: -3.5d
@@ -259,7 +184,7 @@
 			id: "68C3E6CD17F43BD4"
 			tasks: [{
 				id: "789221ABA807F1D3"
-				item: "immersiveengineering:dust_coke"
+				item: { count: 1, id: "immersiveengineering:dust_coke" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -270,7 +195,7 @@
 			id: "20F6B7CB3EF193D9"
 			tasks: [{
 				id: "1C4DB55EE9EC57F6"
-				item: "immersiveengineering:heavy_engineering"
+				item: { count: 1, id: "immersiveengineering:heavy_engineering" }
 				type: "item"
 			}]
 			x: 6.5d
@@ -281,16 +206,7 @@
 			id: "19CB4EB7C81841D7"
 			tasks: [{
 				id: "7A0CCD3C89878D1B"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/weak_blue_steel"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/weak_blue_steel" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -301,16 +217,7 @@
 			id: "34418B9488CA4BAB"
 			tasks: [{
 				id: "36462176DD14E46F"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/ingot/weak_red_steel"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/ingot/weak_red_steel" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -321,16 +228,7 @@
 			id: "5630D0719FD506B3"
 			tasks: [{
 				id: "301C321807D926D9"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "immersiveengineering:ingot_aluminum"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "immersiveengineering:ingot_aluminum" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -341,16 +239,7 @@
 			id: "0732244F96686F24"
 			tasks: [{
 				id: "1FF9792C40649678"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "firmalife:metal/ingot/stainless_steel"
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "firmalife:metal/ingot/stainless_steel" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -361,7 +250,7 @@
 			id: "2C0F3DE8BC4375E6"
 			tasks: [{
 				id: "76D14E5C86FB787F"
-				item: "tfc:fire_bricks"
+				item: { count: 1, id: "tfc:fire_bricks" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -375,12 +264,11 @@
 			id: "6A289097C317952D"
 			tasks: [{
 				id: "2C4C886C7304EDD3"
-				item: "immersivepetroleum:crudeoil_bucket"
+				item: { count: 1, id: "immersivepetroleum:crudeoil_bucket" }
 				type: "item"
 			}]
 			x: 7.5d
 			y: 0.0d
 		}
 	]
-	title: "Steel Age"
 }

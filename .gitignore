@@ -57,3 +57,6 @@ kubejs/config/probejs.json
 kubejs/config/probejs.json
 fancymenu_data/last_world.fmdata
 /fancymenu_data/buddy
+.probe
+command_history.txt
+/.github

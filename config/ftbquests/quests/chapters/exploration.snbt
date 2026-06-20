@@ -4,20 +4,10 @@
 	filename: "exploration"
 	group: ""
 	icon: {
-		Count: 1
-		ForgeCaps: {
-			"cold_sweat:item_insulation": {
-				insulation: [ ]
-			}
-		}
 		id: "minecraft:leather_boots"
-		tag: {
-			Damage: 0
-		}
 	}
 	id: "761236C27A39A0B0"
 	order_index: 1
 	quest_links: [ ]
 	quests: [ ]
-	title: "Exploration"
 }

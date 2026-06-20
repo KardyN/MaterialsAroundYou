@@ -5,11 +5,7 @@
 	group: "4973B82BE2AB46A8"
 	hide_quest_until_deps_complete: true
 	icon: {
-		Count: 1
 		id: "immersiveengineering:pickaxe_steel"
-		tag: {
-			Damage: 0
-		}
 	}
 	id: "7D99E0460BFAE9F0"
 	order_index: 0
@@ -18,85 +14,17 @@
 		{
 			dependencies: ["29B54FAB02DE3E0D"]
 			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
+				components: {
+					"tfc:heat": { }
 				}
 				id: "tfc:metal/pickaxe/copper"
-				tag: {
-					Damage: 0
-				}
 			}
 			id: "3A04CF4E38B05335"
 			tasks: [{
 				id: "6269700479FB3596"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/pickaxe/copper"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/pickaxe/bronze"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/pickaxe/bismuth_bronze"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								ForgeCaps: {
-									"tfc:item_heat": {
-										heat: 0.0f
-										ticks: 0L
-									}
-								}
-								id: "tfc:metal/pickaxe/black_bronze"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
-					}
-				}
-				title: "Pickaxes"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Pickaxe"
 			x: -11.5d
 			y: -1.0d
 		}
@@ -109,19 +37,7 @@
 			id: "3D534BAD84F020F8"
 			tasks: [{
 				id: "7FE3337C2DD52C5B"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/pickaxe/wrought_iron"
-					tag: {
-						Damage: 0
-					}
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/pickaxe/wrought_iron" }
 				type: "item"
 			}]
 			x: -8.0d
@@ -132,19 +48,7 @@
 			id: "6BC371F49FDBE07F"
 			tasks: [{
 				id: "06F0842C4CC2CE4E"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/pickaxe/steel"
-					tag: {
-						Damage: 0
-					}
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/pickaxe/steel" }
 				type: "item"
 			}]
 			x: -6.5d
@@ -155,87 +59,19 @@
 			id: "01C5826D92F96EBC"
 			tasks: [{
 				id: "7BA0C84C6FB24C75"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/pickaxe/black_steel"
-					tag: {
-						Damage: 0
-					}
-				}
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/pickaxe/black_steel" }
 				type: "item"
 			}]
 			x: -5.0d
 			y: -1.0d
 		}
 		{
-			dependencies: ["6BC371F49FDBE07F"]
-			id: "360AC78070C7BEF5"
-			tasks: [{
-				id: "3F0714CCD72AE078"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/pickaxe/blue_steel"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -5.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["6BC371F49FDBE07F"]
-			id: "5A483E70210EA483"
-			tasks: [{
-				id: "4F512849D90DA742"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:item_heat": {
-							heat: 0.0f
-							ticks: 0L
-						}
-					}
-					id: "tfc:metal/pickaxe/red_steel"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -5.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"5A483E70210EA483"
-				"360AC78070C7BEF5"
-				"01C5826D92F96EBC"
-			]
+			dependencies: ["01C5826D92F96EBC"]
 			dependency_requirement: "one_completed"
 			id: "2F2AA5C78E8498CD"
 			tasks: [{
 				id: "4703CA9E459728C3"
-				item: {
-					Count: 1
-					id: "kubejs:metal/pickaxe/osmirite"
-					tag: {
-						Damage: 0
-					}
-				}
+				item: { count: 1, id: "kubejs:metal/pickaxe/osmirite" }
 				type: "item"
 			}]
 			x: -3.5d
@@ -245,54 +81,17 @@
 			dependencies: ["3A04CF4E38B05335"]
 			dependency_requirement: "one_completed"
 			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
+				components: {
+					"tfc:heat": { }
 				}
 				id: "tfc:metal/propick/copper"
-				tag: {
-					Damage: 0
-				}
 			}
 			id: "09A640EEC11D129E"
 			tasks: [{
 				id: "59CADEBE16AE3E93"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "itemfilters:tag"
-								tag: {
-									value: "tfc:propicks"
-								}
-							}
-							{
-								Count: 1b
-								id: "itemfilters:tag"
-								tag: {
-									value: "precisionprospecting:prospector_drills"
-								}
-							}
-							{
-								Count: 1b
-								id: "itemfilters:tag"
-								tag: {
-									value: "precisionprospecting:prospector_hammers"
-								}
-							}
-						]
-					}
-				}
-				title: "Prospecting tools"
+				item: { components: { "ftbquests:missing_item": "itemfilters:or" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Basic Prospecting"
 			x: -9.5d
 			y: -1.5d
 		}
@@ -302,54 +101,30 @@
 				"11E09B425935ABFE"
 			]
 			dependency_requirement: "one_completed"
-			icon: "tfc:wood/support/oak"
 			id: "3032913896F28827"
 			tasks: [{
 				count: 32L
 				id: "1144BB311432658D"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "tfc:support_beams"
-					}
-				}
-				title: "Support beams"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Support Beams"
 			x: -9.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["09A640EEC11D129E"]
 			icon: {
-				Count: 1
-				ForgeCaps: {
-					"tfc:item_heat": {
-						heat: 0.0f
-						ticks: 0L
-					}
+				components: {
+					"tfc:heat": { }
 				}
 				id: "precisionprospecting:metal/mineral_prospector/copper"
-				tag: {
-					Damage: 0
-				}
 			}
 			id: "4EB1F97A5E162BF3"
 			tasks: [{
 				id: "59D9A265BC832F33"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "precisionprospecting:mineral_prospectors"
-					}
-				}
-				title: "Mineral prospecting tools"
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
-			title: "Mineral Prospecting"
 			x: -9.5d
 			y: -3.0d
 		}
@@ -360,10 +135,9 @@
 			tasks: [{
 				count: 16L
 				id: "0385A873B3B4605D"
-				item: { Count: 16, id: "minecraft:ladder" }
+				item: { count: 1, id: "minecraft:ladder" }
 				type: "item"
 			}]
-			title: "Need to go deeper"
 			x: -9.5d
 			y: 0.5d
 		}
@@ -373,7 +147,6 @@
 			invisible: true
 			tasks: [{
 				id: "65128314E633691F"
-				title: "TODO: Drills?"
 				type: "custom"
 			}]
 			x: -2.0d
@@ -384,7 +157,7 @@
 			id: "795E2C648D530659"
 			tasks: [{
 				id: "41ED9CB0AC6B3025"
-				item: "createoreexcavation:drilling_machine"
+				item: { count: 1, id: "createoreexcavation:drilling_machine" }
 				type: "item"
 			}]
 			x: -8.5d
@@ -395,7 +168,7 @@
 			id: "4290A415CF29A4F1"
 			tasks: [{
 				id: "53A0BF09324CD5EB"
-				item: "createoreexcavation:extractor"
+				item: { count: 1, id: "createoreexcavation:extractor" }
 				type: "item"
 			}]
 			x: -8.5d
@@ -406,7 +179,7 @@
 			id: "0D4FE4E6987A2BA9"
 			tasks: [{
 				id: "3DE36B596E78A7D5"
-				item: "immersiveengineering:bucket_wheel"
+				item: { count: 1, id: "immersiveengineering:bucket_wheel" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -417,7 +190,7 @@
 			id: "51D2972BF2BC0A8C"
 			tasks: [{
 				id: "468780101E2FCF2C"
-				item: "immersiveengineering:excavator"
+				item: { count: 1, id: "immersiveengineering:excavator" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -430,28 +203,18 @@
 			]
 			dependency_requirement: "one_completed"
 			icon: {
-				Count: 1
 				id: "immersiveengineering:survey_tools"
-				tag: {
-					Damage: 0
-				}
 			}
 			id: "37C40BF7D7905B8D"
 			tasks: [
 				{
 					id: "16B7849C6B69C951"
-					item: {
-						Count: 1
-						id: "immersiveengineering:survey_tools"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: { count: 1, id: "immersiveengineering:survey_tools" }
 					type: "item"
 				}
 				{
 					id: "52A3B3E40A0328CD"
-					item: "immersiveengineering:sample_drill"
+					item: { count: 1, id: "immersiveengineering:sample_drill" }
 					type: "item"
 				}
 			]
@@ -463,7 +226,7 @@
 			id: "4005D962A4408E38"
 			tasks: [{
 				id: "5D8B88E9FA28E34E"
-				item: "createoreexcavation:drill"
+				item: { count: 1, id: "createoreexcavation:drill" }
 				type: "item"
 			}]
 			x: -10.0d
@@ -478,12 +241,10 @@
 			shape: "none"
 			tasks: [{
 				id: "0E4583AEE419321F"
-				title: "excavator info"
 				type: "checkmark"
 			}]
 			x: -4.0d
 			y: 2.5d
 		}
 	]
-	title: "Mining"
 }

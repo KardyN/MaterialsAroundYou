@@ -1,6 +1,6 @@
 {
-  "configVersion": 7,
-  "renderNametagsThroughWalls": false,
+  "configVersion": 8,
+  "renderNametagsThroughWalls": true,
   "blockEntityWhitelist": [
     "create:rope_pulley",
     "botania:flame_ring",
@@ -20,8 +20,7 @@
   "sleepDelay": 10,
   "hitboxLimit": 50,
   "captureRate": 5,
-  "skipMarkerArmorStands": true,
-  "tickCulling": false,
+  "tickCulling": true,
   "tickCullingWhitelist": [
     "minecraft:block_display",
     "alexscaves:gum_worm",
@@ -59,9 +58,20 @@
     "create:carriage_contraption",
     "minecraft:pale_oak_chest_boat",
     "minecraft:bamboo_chest_raft",
-    "minecraft:mangrove_chest_boat"
+    "minecraft:mangrove_chest_boat",
+    "voidscape:corrupted_pawn",
+    "cinematiccataclysm:scylla_cutscene",
+    "cinematiccataclysm:maledictus_cutscene",
+    "cinematiccataclysm:leviathan_cutscene",
+    "cinematiccataclysm:ancient_remnant_cutscene",
+    "createbigcannons:cannon_carriage",
+    "createbigcannons:pitch_contraption",
+    "cinematiccataclysm:ignis_cutscene"
   ],
-  "disableF3": true,
+  "disableF3": false,
   "skipEntityCulling": false,
-  "skipBlockEntityCulling": false
+  "skipBlockEntityCulling": false,
+  "blockEntityFrustumCulling": true,
+  "forceDisplayCulling": false,
+  "solidLeaves": false
 }

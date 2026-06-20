@@ -4,21 +4,13 @@
 	filename: "combat"
 	group: "4973B82BE2AB46A8"
 	icon: {
-		Count: 1
-		ForgeCaps: {
-			"tfc:item_heat": {
-				heat: 0.0f
-				ticks: 0L
-			}
+		components: {
+			"tfc:heat": { }
 		}
 		id: "tfc:metal/sword/wrought_iron"
-		tag: {
-			Damage: 0
-		}
 	}
 	id: "53823609F0EA3181"
 	order_index: 4
 	quest_links: [ ]
 	quests: [ ]
-	title: "Combat"
 }

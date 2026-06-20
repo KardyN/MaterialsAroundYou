@@ -4,11 +4,9 @@
 	filename: "food"
 	group: "154A008FBDFC4739"
 	icon: {
-		Count: 1
-		ForgeCaps: {
+		components: {
 			"tfc:food": {
-				creationDate: -9223372036854775808L
-				traits: [ ]
+				creation_date: 273600L
 			}
 		}
 		id: "farmersdelight:chicken_sandwich"
@@ -21,16 +19,7 @@
 			id: "2CC38762D20222F0"
 			tasks: [{
 				id: "0C4D40F2AF66432F"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"tfc:food": {
-							creationDate: 172806000L
-							traits: [ ]
-						}
-					}
-					id: "minecraft:apple"
-				}
+				item: { components: { "tfc:food": { creation_date: 273600L } }, count: 1, id: "minecraft:apple" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -40,18 +29,11 @@
 			id: "1D4B7808BE08A1F4"
 			tasks: [{
 				id: "0BAF3A330FF2FEC4"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "tfc:foods/dough"
-					}
-				}
+				item: { components: { "ftbquests:missing_item": "itemfilters:tag" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.5d
 			y: 0.0d
 		}
 	]
-	title: "Food"
 }
