@@ -3,36 +3,33 @@ name: Bug report
 about: Create a report to help us fix the issue
 title: "[BUG]"
 labels: bug
-assignees: ''
-
+assignees: KardyN
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+Please check older bug reports first before making Your own. Maybe the problem You have experienced was already resolved!
 
-**To Reproduce**
+**Description**
+A clear and concise description of what the problem is.
+
+**Steps To Reproduce**
 Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+
+1. Launch modpack version '...'
+2. Enter 'singleplayer/multiplayer' world
+3. Use '....'
+4. See crash/issue
 
 **Expected behavior**
 A clear and concise description of what you expected to happen.
 
 **Screenshots**
-If applicable, add screenshots to help explain your problem.
+If applicable, add screenshots to help explain your issue.
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+**Crash Report**
+If applicable, add crash report related to your issue.
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+**Latest Log**
+If applicable, add latest log to help us determine the issue.
 
-**Additional context**
-Add any other context about the problem here.
+**Modpack Modification**
+Have You modified the modpack? If "Yes", please describe all mopdifications You have made.
