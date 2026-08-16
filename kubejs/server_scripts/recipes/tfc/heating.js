@@ -25,6 +25,27 @@ ServerEvents.recipes((event) => {
       temperature: 1080,
       id: "may:heating/raw_copper_bloom",
     },
+    // {
+    //   type: "tfc:heating",
+    //   ingredient: { tag: "c:ingots/osmirite" },
+    //   result_fluid: { amount: 100, id: "kubejs:metal/osmirite" },
+    //   temperature: 2000.0,
+    //   id: "may:heating/metal/ingot/osmirite",
+    // },
+    // {
+    //   type: "tfc:heating",
+    //   ingredient: { tag: "c:double_ingots/osmirite" },
+    //   result_fluid: { amount: 200, id: "kubejs:metal/osmirite" },
+    //   temperature: 2000.0,
+    //   id: "may:heating/metal/double_ingot/osmirite",
+    // },
+    // {
+    //   type: "tfc:heating",
+    //   ingredient: { tag: "c:sheets/osmirite" },
+    //   result_fluid: { amount: 200, id: "kubejs:metal/osmirite" },
+    //   temperature: 2000.0,
+    //   id: "may:heating/metal/sheet/osmirite",
+    // },
   ];
 
   let oreList = [

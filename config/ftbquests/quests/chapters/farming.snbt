@@ -7,7 +7,8 @@
 	icon: {
 		components: {
 			"tfc:food": {
-				creation_date: 273600L
+				creation_date: 0L
+				traits: ["tfc:never_expires"]
 			}
 		}
 		id: "tfc:food/wheat"
@@ -24,7 +25,8 @@
 				icon: {
 					components: {
 						"tfc:food": {
-							creation_date: 273600L
+							creation_date: 0L
+							traits: ["tfc:never_expires"]
 						}
 					}
 					id: "tfc:food/wheat_grain"
@@ -188,7 +190,8 @@
 			icon: {
 				components: {
 					"tfc:food": {
-						creation_date: 273600L
+						creation_date: 0L
+						traits: ["tfc:never_expires"]
 					}
 					"tfc:heat": { }
 				}
@@ -219,7 +222,7 @@
 			id: "3E49EDC4AB73AA8A"
 			tasks: [{
 				id: "7BA8D7C75ADE8D89"
-				item: { components: { "tfc:food": { creation_date: 273600L }, "tfc:heat": { } }, count: 1, id: "minecraft:egg" }
+				item: { components: { "tfc:food": { creation_date: 0L, traits: ["tfc:never_expires"] }, "tfc:heat": { } }, count: 1, id: "minecraft:egg" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -322,7 +325,7 @@
 			id: "3686EE1F8D337CFC"
 			tasks: [{
 				id: "0E0F4AE2C6D67F46"
-				item: { components: { "tfc:food": { creation_date: 273600L } }, count: 1, id: "tfc:food/red_apple" }
+				item: { components: { "tfc:food": { creation_date: 0L, traits: ["tfc:never_expires"] } }, count: 1, id: "tfc:food/red_apple" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -360,7 +363,8 @@
 			icon: {
 				components: {
 					"tfc:food": {
-						creation_date: 273600L
+						creation_date: 0L
+						traits: ["tfc:never_expires"]
 					}
 					"tfc:heat": { }
 				}
@@ -394,7 +398,8 @@
 			icon: {
 				components: {
 					"tfc:food": {
-						creation_date: 273600L
+						creation_date: 0L
+						traits: ["tfc:never_expires"]
 					}
 				}
 				id: "tfc:food/barley_bread_sandwich"
@@ -402,7 +407,7 @@
 			id: "2E9234AB8D446E0B"
 			tasks: [{
 				id: "07C4AB862FB9E148"
-				item: { components: { "tfc:food": { creation_date: 273600L } }, count: 1, id: "tfc:food/barley_bread_sandwich" }
+				item: { components: { "tfc:food": { creation_date: 0L, traits: ["tfc:never_expires"] } }, count: 1, id: "tfc:food/barley_bread_sandwich" }
 				type: "item"
 			}]
 			x: 5.0d
@@ -768,7 +773,8 @@
 			icon: {
 				components: {
 					"tfc:food": {
-						creation_date: 273600L
+						creation_date: 0L
+						traits: ["tfc:never_expires"]
 					}
 				}
 				id: "firmalife:food/cooked_pizza"
@@ -874,6 +880,15 @@
 			}]
 			x: 6.5d
 			y: 13.5d
+		}
+		{
+			id: "5798472270BB4A96"
+			tasks: [{
+				id: "5FB7A3F96A3FA6E5"
+				type: "custom"
+			}]
+			x: -3.0d
+			y: 4.0d
 		}
 	]
 }

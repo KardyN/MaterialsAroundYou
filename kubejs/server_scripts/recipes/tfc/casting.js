@@ -14,6 +14,13 @@ ServerEvents.recipes((event) => {
       break_chance: 0.01,
       id: "may:casting/bearing_alloy_fire_ingot",
     },
+    {
+      mold: { item: "tfc:ceramic/fire_ingot_mold" },
+      fluid: { fluid: "kubejs:metal/osmirite", amount: 100 },
+      result: { id: "kubejs:metal/ingot/osmirite" },
+      break_chance: 0.01,
+      id: "may:casting/osmirite_fire_ingot",
+    },
   ];
 
   recipes.forEach((recipe) => {

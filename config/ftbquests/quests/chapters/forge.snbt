@@ -315,6 +315,9 @@
 		}
 		{
 			dependencies: ["1D05FD2F398DB37E"]
+			icon: {
+				id: "tfc:gem/sapphire"
+			}
 			id: "74BD993D889DFFF2"
 			tasks: [
 				{
@@ -333,6 +336,9 @@
 		}
 		{
 			dependencies: ["1D05FD2F398DB37E"]
+			icon: {
+				id: "tfc:gem/lapis_lazuli"
+			}
 			id: "405D392C81221474"
 			tasks: [
 				{
@@ -351,6 +357,9 @@
 		}
 		{
 			dependencies: ["1D05FD2F398DB37E"]
+			icon: {
+				id: "tfc:gem/amethyst"
+			}
 			id: "52248E609F9F895E"
 			tasks: [
 				{
@@ -369,6 +378,9 @@
 		}
 		{
 			dependencies: ["1D05FD2F398DB37E"]
+			icon: {
+				id: "tfc:gem/diamond"
+			}
 			id: "29F1584E88008D0E"
 			tasks: [
 				{
@@ -387,6 +399,9 @@
 		}
 		{
 			dependencies: ["1D05FD2F398DB37E"]
+			icon: {
+				id: "tfc:gem/emerald"
+			}
 			id: "141B5D5B939DA0D8"
 			tasks: [
 				{
@@ -405,6 +420,9 @@
 		}
 		{
 			dependencies: ["1D05FD2F398DB37E"]
+			icon: {
+				id: "tfc:gem/opal"
+			}
 			id: "1AF914A598A3D22C"
 			tasks: [
 				{
@@ -423,6 +441,9 @@
 		}
 		{
 			dependencies: ["1D05FD2F398DB37E"]
+			icon: {
+				id: "tfc:gem/pyrite"
+			}
 			id: "48F70BB976A4A5A4"
 			tasks: [
 				{
@@ -441,6 +462,9 @@
 		}
 		{
 			dependencies: ["1D05FD2F398DB37E"]
+			icon: {
+				id: "tfc:gem/ruby"
+			}
 			id: "3A43A6687910A0FC"
 			tasks: [
 				{
@@ -459,6 +483,9 @@
 		}
 		{
 			dependencies: ["1D05FD2F398DB37E"]
+			icon: {
+				id: "tfc:gem/topaz"
+			}
 			id: "431512E09DE4E8E0"
 			tasks: [
 				{

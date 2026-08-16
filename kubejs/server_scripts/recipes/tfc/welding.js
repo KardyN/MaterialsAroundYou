@@ -35,6 +35,21 @@ ServerEvents.recipes((event) => {
       result: { id: "railways:track_monorail" },
       id: "may:welding/track_monorail",
     },
+    {
+      first_input: { item: "kubejs:metal/knife_head/osmirite" },
+      second_input: { item: "kubejs:metal/knife_head/osmirite" },
+      tier: 5,
+      result: { id: "kubejs:metal/shears/osmirite" },
+      id: "may:welding/metal/shears/osmirite",
+    },
+    {
+      type: "tfc:welding",
+      first_input: { tag: "c:ingots/osmirite" },
+      result: { id: "kubejs:metal/double_ingot/osmirite" },
+      second_input: { tag: "c:ingots/osmirite" },
+      tier: 5,
+      id: "may:welding/metal/double_ingot/osmirite",
+    },
   ];
 
   recipes.forEach((recipe) => {

@@ -15,12 +15,23 @@ ServerEvents.tags("item", (event) => {
     "immersiveengineering:ingot_nickel",
     "mekanism:ingot_bronze",
     "mekanism:ingot_tin",
+    "mekanism:ingot_steel",
     "immersiveengineering:ingot_lead",
     "immersiveengineering:ingot_uranium",
     "minecraft:iron_ingot",
     "immersiveengineering:stick_iron",
     "immersiveengineering:stick_steel",
     "immersiveengineering:stick_aluminum",
+    "minecraft:grass_block",
+    "minecraft:podzol",
+    "minecraft:mycelium",
+    "minecraft:dirt_path",
+    "minecraft:dirt",
+    "minecraft:coarse_dirt",
+    "minecraft:rooted_dirt",
+    "minecraft:farmland",
+    /^createaddition:.+_rod$/,
+    "immersiveengineering:stick_netherite",
   ];
 
   removeAllItemTags.forEach((item) => {

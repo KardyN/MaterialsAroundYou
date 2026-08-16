@@ -19,6 +19,20 @@ global.colorsList = [
   "pink",
 ];
 
+global.sheetmetalList = [
+  { name: "copper", mod: "tfc" },
+  { name: "aluminum", mod: "kubejs" },
+  { name: "lead", mod: "kubejs" },
+  { name: "silver", mod: "tfc" },
+  { name: "nickel", mod: "tfc" },
+  { name: "uranium", mod: "kubejs" },
+  { name: "constantan", mod: "kubejs" },
+  { name: "electrum", mod: "kubejs" },
+  { name: "steel", mod: "tfc" },
+  { name: "iron", mod: "tfc" },
+  { name: "gold", mod: "tfc" },
+];
+
 global.floursList = ["barley", "maize", "oat", "rye", "rice", "wheat"];
 
 global.oreList = [
@@ -133,6 +147,13 @@ global.oreList = [
     gems: ["ruby", "sapphire"],
     color: "#9da3a5",
   },
+  {
+    name: "cinnabar",
+    mod: "tfc",
+    sand: "pink",
+    gems: ["pyrite", "opal"],
+    color: "#D63838",
+  },
 ];
 
 global.powderList = [
@@ -220,15 +241,15 @@ global.sandColors = [
 
 global.metalToolHeads = [
   "pickaxe_head",
-  "sword_blade",
+  "sword_head",
   "axe_head",
   "shovel_head",
   "hoe_head",
   "chisel_head",
   "hammer_head",
-  "saw_blade",
-  "knife_blade",
-  "scythe_blade",
+  "saw_head",
+  "knife_head",
+  "scythe_head",
   "javelin_head",
   "propick_head",
   "mace_head",
@@ -259,7 +280,7 @@ global.toolList = [
   "mineral_prospector",
 ];
 
-global.newToolMaterialList = ["osmirite"];
+global.newToolMaterialList = ["osmirite", "composite"];
 
 global.gemList = [
   "amethyst",
@@ -305,7 +326,7 @@ global.woodList = [
   "afc:ironwood",
   "afc:ipe",
 ];
-//panning doesn't include deep ores and minerals for obvious (hopefully) reasons
+
 global.panningList = [
   //SEDIMENTARY
   {

@@ -431,7 +431,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "76655C5D9C25D6EC"
-				item: { count: 1, id: "create:andesite_alloy" }
+				item: { components: { "tfc:heat": { } }, count: 1, id: "create:andesite_alloy" }
 				type: "item"
 			}]
 			x: 8.0d

@@ -13,6 +13,10 @@ ServerEvents.tags("item", (event) => {
   event.add("may:bars", /.+bars.*/);
   event.add("may:stripped_log", /.+stripped_log.*/);
   event.add("may:spindle", [/kubejs:metal\/spindle\/.+/, "tfc:spindle"]);
+  event.add("may:locometal", [/^railways:.*locometal.*$/]);
+  event.add("may:carved_pumpkin", [/^firmalife:carved_pumpkin.*$/]);
+  event.add("may:warning_sign", [/^immersiveengineering:warning_sign.*$/]);
+  event.add("may:alabaster", [/^tfc:alabaster.*$/]);
 
   // Makes_X_Dye
   event.add("may:makes_white_dye", [

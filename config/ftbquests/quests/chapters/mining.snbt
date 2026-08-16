@@ -143,11 +143,15 @@
 		}
 		{
 			dependencies: ["2F2AA5C78E8498CD"]
+			icon: {
+				id: "kubejs:metal/pickaxe/composite"
+			}
 			id: "6F3A2D0962A56135"
 			invisible: true
 			tasks: [{
-				id: "65128314E633691F"
-				type: "custom"
+				id: "01A78A2E764BC97F"
+				item: { count: 1, id: "kubejs:metal/pickaxe/composite" }
+				type: "item"
 			}]
 			x: -2.0d
 			y: -1.0d
@@ -160,7 +164,7 @@
 				item: { count: 1, id: "createoreexcavation:drilling_machine" }
 				type: "item"
 			}]
-			x: -8.5d
+			x: -8.0d
 			y: 2.0d
 		}
 		{
@@ -171,7 +175,7 @@
 				item: { count: 1, id: "createoreexcavation:extractor" }
 				type: "item"
 			}]
-			x: -8.5d
+			x: -8.0d
 			y: 3.0d
 		}
 		{
@@ -182,7 +186,7 @@
 				item: { count: 1, id: "immersiveengineering:bucket_wheel" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -5.0d
 			y: 2.0d
 		}
 		{
@@ -193,7 +197,7 @@
 				item: { count: 1, id: "immersiveengineering:excavator" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -5.0d
 			y: 3.0d
 		}
 		{
@@ -218,7 +222,7 @@
 					type: "item"
 				}
 			]
-			x: -7.0d
+			x: -6.5d
 			y: 2.5d
 		}
 		{
@@ -229,7 +233,7 @@
 				item: { count: 1, id: "createoreexcavation:drill" }
 				type: "item"
 			}]
-			x: -10.0d
+			x: -9.5d
 			y: 2.5d
 		}
 		{
@@ -237,14 +241,35 @@
 				"51D2972BF2BC0A8C"
 				"0D4FE4E6987A2BA9"
 			]
-			id: "5719C0ACE811AE65"
-			shape: "none"
+			id: "7F4E003A6A2EA575"
 			tasks: [{
-				id: "0E4583AEE419321F"
+				id: "2E30B6203C2F2A76"
 				type: "checkmark"
 			}]
-			x: -4.0d
+			x: -3.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["09A640EEC11D129E"]
+			id: "5010CD2B5354371F"
+			tasks: [{
+				id: "2C86CE98F7733363"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "precisionprospecting:metal/prospector_drill/copper" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["09A640EEC11D129E"]
+			id: "369F22571F3CA7E3"
+			tasks: [{
+				id: "4D748314A10C47CC"
+				item: { components: { "tfc:heat": { } }, count: 1, id: "precisionprospecting:metal/prospector_hammer/copper" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: -2.5d
 		}
 	]
 }

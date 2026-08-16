@@ -179,7 +179,7 @@
 				item: {
 					components: {
 						"tfc:food": {
-							creation_date: 273600L
+							creation_date: -4L
 						}
 					}
 					count: 1
@@ -209,7 +209,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["28EFE456A7B11D06"]
@@ -429,7 +429,7 @@
 				}
 			]
 			x: 1.5d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [

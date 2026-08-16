@@ -16,6 +16,12 @@
 		{
 			hide_dependency_lines: true
 			hide_dependent_lines: true
+			icon: {
+				components: {
+					"ftbquests:icon": "ftblibrary:icons/controller"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "46EC9EF35A235DDA"
 			tasks: [{
 				id: "185131241A36AC39"
@@ -29,6 +35,12 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			hide_lock_icon: true
+			icon: {
+				components: {
+					"ftbquests:icon": "ftblibrary:icons/toggle_rain"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "714B4B2E5D9EB389"
 			tasks: [{
 				id: "6DAFBA0D927D5B08"
@@ -42,6 +54,12 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			hide_lock_icon: true
+			icon: {
+				components: {
+					"ftbquests:icon": "ftblibrary:icons/globe"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "0A1FCC095368B8F7"
 			tasks: [{
 				id: "56EDA39B5C84EAEB"
@@ -56,7 +74,10 @@
 			hide_dependent_lines: true
 			hide_lock_icon: true
 			icon: {
-				id: "minecraft:potion"
+				components: {
+					"ftbquests:icon": "ftblibrary:icons/heart"
+				}
+				id: "ftbquests:custom_icon"
 			}
 			id: "78C3DF71CEBBEFD9"
 			tasks: [{
@@ -71,6 +92,12 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			hide_lock_icon: true
+			icon: {
+				components: {
+					"ftbquests:icon": "ftblibrary:icons/camera"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "7A03446575BC709D"
 			tasks: [{
 				id: "3F36EE1D74E901CE"
@@ -84,12 +111,34 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			hide_lock_icon: true
+			icon: {
+				id: "ae2:nether_quartz_wrench"
+			}
 			id: "2A23296F76D84ADB"
 			tasks: [{
 				id: "65BE916579F38C65"
 				type: "checkmark"
 			}]
 			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["46EC9EF35A235DDA"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_lock_icon: true
+			id: "5C42480FDB4A98B5"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "ftblibrary:icons/info_gray"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "1AFDA6372E63F21A"
+				type: "custom"
+			}]
+			x: 1.0d
 			y: 3.5d
 		}
 	]

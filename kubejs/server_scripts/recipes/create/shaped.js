@@ -118,11 +118,9 @@ ServerEvents.recipes((event) => {
     },
     {
       output: Item.of("create:metal_bracket", 4),
-      pattern: ["   ", " A ", "BCB"],
+      pattern: [" A ", "AAA"],
       key: {
-        A: "#c:rods",
-        B: "create:andesite_alloy",
-        C: "#c:ingots",
+        A: "create:andesite_alloy",
       },
       id: "may:shaped/metal_bracket",
     },

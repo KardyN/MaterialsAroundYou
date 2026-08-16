@@ -62,8 +62,8 @@ ServerEvents.recipes((event) => {
     },
     {
       ingredients: [{ item: "tfc:ore/cinnabar" }],
-      result: "minecraft:redstone",
-      count: 4,
+      result: "kubejs:dirty_dust/cinnabar",
+      count: 1,
       id: "may:milling/cinnabar",
     },
     {
@@ -217,20 +217,21 @@ ServerEvents.recipes((event) => {
   });
 
   global.oreList.forEach((ore) => {
-    recipes.push({
-      ingredients: [
-        {
-          item: `${ore.mod}:ore/small_${ore.name}`,
-        },
-      ],
-      results: [
-        {
-          count: 1,
-          id: `kubejs:dirty_dust/${ore.name}`,
-        },
-      ],
-      id: `may:milling/${ore.name}`,
-    });
+    ore.name != "cinnabar" &&
+      recipes.push({
+        ingredients: [
+          {
+            item: `${ore.mod}:ore/small_${ore.name}`,
+          },
+        ],
+        results: [
+          {
+            count: 1,
+            id: `kubejs:dirty_dust/${ore.name}`,
+          },
+        ],
+        id: `may:milling/${ore.name}`,
+      });
   });
 
   recipes.forEach((recipe) => {

@@ -82,10 +82,16 @@
 		}
 		{
 			dependencies: ["08C222C28AD196B7"]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:metal/rod/steel"
+			}
 			id: "39217932ED62102C"
 			tasks: [{
 				id: "0FB577A2E773DE69"
-				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc_items:steel_foil" }
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/rod/steel" }
 				type: "item"
 			}]
 			x: -3.5d
@@ -108,12 +114,12 @@
 				components: {
 					"tfc:heat": { }
 				}
-				id: "tfc:metal/sheet/black_steel"
+				id: "tfc:metal/rod/black_steel"
 			}
 			id: "58E4DFAC60C4A524"
 			tasks: [{
 				id: "648F9F74883F7865"
-				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/sheet/black_steel" }
+				item: { components: { "tfc:heat": { } }, count: 1, id: "tfc:metal/rod/black_steel" }
 				type: "item"
 			}]
 			x: 5.5d
@@ -149,11 +155,12 @@
 				"68C3E6CD17F43BD4"
 				"2C0F3DE8BC4375E6"
 			]
+			icon: {
+				id: "immersiveengineering:arc_furnace"
+			}
 			id: "1EA7CAA228DC56E4"
-			tasks: [{
-				id: "4373CCE90F5BE1DA"
-				type: "custom"
-			}]
+			shape: "gear"
+			size: 1.5d
 			x: -0.5d
 			y: 0.0d
 		}

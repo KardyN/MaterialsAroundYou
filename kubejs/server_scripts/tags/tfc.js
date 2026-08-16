@@ -6,7 +6,7 @@ ServerEvents.tags("item", (event) => {
     event.add("tfc:metal_item/osmirite", `kubejs:metal/${tool}/osmirite`);
   });
   event.removeAllTagsFrom(/tfc:stone\/hammer\/.+/);
-  event.add("tfc:lumber", /.+treated_wood_lumber/);
+  event.add("tfc:lumber", /.+treated.+lumber/);
   event.add("tfc:lumber_knapping", /.*lumber.*/);
   event.add("tfc:any_knapping", /.*lumber.*/);
   event.remove("tfc:axles", /afc:wood\/encased_axle\/.+/);
@@ -18,6 +18,12 @@ ServerEvents.tags("item", (event) => {
   ]);
   event.add("tfc:metal_item/lead", "mekanism:ingot_lead");
   event.add("tfc:metal_item/uranium", "mekanism:ingot_uranium");
+  event.add("tfc:blast_furnace_tuyeres", [
+    "kubejs:metal/tuyere/osmirite",
+    "kubejs:metal/tuyere/composite",
+  ]);
+  event.add("tfc:tools/osmirite", ["kubejs:metal/tuyere/osmirite"]);
+  event.add("tfc:tools/composite", ["kubejs:metal/tuyere/composite"]);
 });
 
 ServerEvents.tags("block", (event) => {

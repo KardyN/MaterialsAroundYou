@@ -1,0 +1,6 @@
+{
+  "id": "may.corals",
+  "type": "emixx:regex",
+  "regex": ".*:.*coral.*",
+  "name": "Corals"
+}

@@ -1,6 +1,10 @@
 [*]
 background:          ftblibrary:textures/gui/background_squares.png; color=#DCFFFFFF; tile_size=64
+chapter_panel_background:          hollow_rectangle:{{widget_border}}; round_edges + {{background}}; color=#B4B4B4; padding=1
+key_reference_background:          ftblibrary:textures/gui/background_squares.png; color=#DCFFFFFF; tile_size=64
 extra_quest_shapes:  diamond, pentagon, hexagon, octagon, heart, gear
+selected_chapter_highlight_1: #60999999
+selected_chapter_highlight_2: #28999999
 
 text_color:          #FFFFFF
 hover_text_color:    #FFFFA0
@@ -30,8 +34,8 @@ wiki_icon:            ftbquests:textures/gui/info.png
 wiki_url:             -
 pin_icon_on:          ftbquests:textures/gui/pin.png; color=#F8BD1C
 pin_icon_off:         ftbquests:textures/gui/pin.png; color=#DBDBDB
-editor_icon_on:       ftbquests:textures/gui/editor.png; color=#F8BD1C
-editor_icon_off:      ftbquests:textures/gui/editor.png; color=#DBDBDB
+editor_icon_on:       ftbquests:textures/gui/editor.png
+editor_icon_off:      ftbquests:textures/gui/editor_white.png
 hidden_icon:          ftbquests:textures/gui/hidden.png; color=#DBDBDB
 link_icon:            ftbquests:textures/gui/link.png; color=#DBDBDB
 save_icon:            ftbquests:textures/gui/save.png
@@ -67,6 +71,7 @@ quest_locked_color:                 #FF999999
 dependency_line_texture:            ftbquests:textures/gui/dependency.png
 dependency_line_completed_color:    #64DC64
 dependency_line_uncompleted_color:  #B4CCA3A3
+dependency_line_unavailable_color:  #64CCA3A3
 dependency_line_requires_color:     #00C8C8
 dependency_line_required_for_color: #C8C800
 dependency_line_selected_speed:     1.0

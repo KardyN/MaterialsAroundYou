@@ -89,6 +89,15 @@ ServerEvents.recipes((event) => {
         ["tfc:metal/nickel", 0.35, 0.45],
       ],
     },
+    {
+      result: "kubejs:metal/osmirite",
+      contents: [
+        ["kubejs:metal/osmium", 0.6, 0.7],
+        ["tfc_ie_addon:metal/lead", 0.25, 0.35],
+        ["tfc:metal/nickel", 0.05, 0.1],
+        ["firmalife:metal/chromium", 0.05, 0.1],
+      ],
+    },
   ];
 
   const jsonBuilder = (alloy) => {

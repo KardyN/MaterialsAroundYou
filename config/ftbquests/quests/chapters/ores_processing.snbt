@@ -182,6 +182,9 @@
 		}
 		{
 			dependencies: ["6E1399D1E455E2CB"]
+			icon: {
+				id: "tfc:ore/graphite"
+			}
 			id: "0D5D250D7D353B29"
 			tasks: [
 				{
@@ -344,16 +347,6 @@
 			}]
 			x: 1.5d
 			y: -2.0d
-		}
-		{
-			dependencies: ["30012D2317220B76"]
-			id: "11088B61E8DC2073"
-			tasks: [{
-				id: "3028FC30F82CE04E"
-				type: "custom"
-			}]
-			x: -3.0d
-			y: 1.0d
 		}
 		{
 			dependencies: ["60ED534800A2168D"]

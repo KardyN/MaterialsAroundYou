@@ -3,6 +3,7 @@
 ServerEvents.recipes((event) => {
   const recipes = [
     //minecraft
+    { id: "minecraft:repair_item" },
     { type: "minecraft:blasting" },
     { type: "minecraft:smoking" },
     { type: "minecraft:smelting" },
@@ -38,12 +39,12 @@ ServerEvents.recipes((event) => {
     { id: /_cut$/ },
     { id: /heating\/ore/ },
     {
-      id: /^tfc:quern\/powder\/((amethyst)|(diamond)|(emerald)|(lapis_lazuli)|(opal)|(pyrite)|(ruby)|(sapphire)|(topaz))$/,
+      id: /^tfc:quern\/powder\/((amethyst)|(diamond)|(emerald)|(lapis_lazuli)|(opal)|(pyrite)|(ruby)|(sapphire)|(topaz)|(cryolite)|(sylvite)|(salt)|(charcoal)|(sulfur)|(saltpeter)|(flux_from_borax))$/,
     },
     {
       id: /^tfc:quern\/powder\/.+((small)|(poor)|(normal)|(rich))$/,
     },
-    { id: "tfc:quern/cryolite" },
+    { id: "tfc:quern/redstone" },
     { id: "tfc:quern/blaze_rod" },
     { type: "tfc:bloomery" },
     { type: "tfc:alloy" },
@@ -77,6 +78,8 @@ ServerEvents.recipes((event) => {
     { type: "immersiveengineering:crusher" },
     { type: "immersiveengineering:arc_furnace" },
     { id: /immersiveengineering:crafting\/cokebrick.*/ },
+    { id: /immersiveengineering:crafting\/.+_engineering/ },
+    { id: /immersiveengineering:crafting\/sheetmetal_[a-z]+$/ },
     { id: "immersiveengineering:cokeoven/coke" },
     { id: "immersiveengineering:cokeoven/coke_block" },
     { id: "tfc_ie_addon:cokeoven/lignite" },
@@ -88,6 +91,7 @@ ServerEvents.recipes((event) => {
     { id: /immersiveengineering:crafting\/.*nugget.*/ },
     { id: /tfc_ie_addon:metalpress\/.+/ },
     { id: /tfc_ie_addon:cokeoven\/.+/ },
+    { id: /tfc_ie_addon:quern\/.+/ },
     { id: "immersiveengineering:blastfurnace/steel" },
     { id: "immersiveengineering:blastfurnace/steel_block" },
     { type: "immersiveengineering:alloy" },
@@ -96,10 +100,14 @@ ServerEvents.recipes((event) => {
     { id: "immersiveengineering:blueprint/graphite_electrode" },
     { id: "immersiveengineering:metalpress/electrode" },
     { id: "tfc_ie_addon:heating/hop_graphite_ingot" },
+    { id: "immersiveengineering:metalpress/rod_netherite" },
     { type: "advancedtfctech:beamhouse" },
 
     //create & addons
     { id: "create:crafting/appliances/copper_backtank" },
+    { id: "create:crafting/appliances/netherite_backtank" },
+    { id: "create:crafting/appliances/netherite_diving_boots" },
+    { id: "create:crafting/appliances/netherite_diving_helmet" },
     { id: /create:crafting\/appliances\/.*controller.*/ },
     { id: "create:crafting/kinetics/andesite_door" },
     { id: "create:crafting/kinetics/shaft" },
@@ -160,15 +168,19 @@ ServerEvents.recipes((event) => {
     { id: "createaddition:rolling/copper_ingot" },
     { id: "createaddition:compat/immersiveengineering/crushing/steel_ingot" },
     { id: "createaddition:crushing/moon_cheese_ore" },
+    { type: "createaddition:charging" },
 
     //mekanism & addons
     { id: "mekanism:charcoal" },
     { id: "mekanism:storage_blocks/charcoal" },
     { id: /mekanism:sawing.+/ },
     { id: /mekanism:nucleosynthesizing\/.+/ },
-    //{ id: "mekanism:storage_blocks/steel" }, NOT WORKING
+    { id: /mekanism:storage_blocks\/.+/ },
+    { id: /mekanism:nuggets\/.+/ },
     { id: "mekanism:crushing/biofuel/hay_block" },
     { id: /mekanism:processing\/.+\/from_ore/ },
+    { id: /mekanism:processing\/.+\/nugget\/from_ingot/ },
+    { id: /mekanism:processing\/.+\/storage_blocks\/from_ingots/ },
 
     //farmer's delight & addons
     { id: /farmersdelight:cutting\/.+wood/ },
@@ -186,14 +198,18 @@ ServerEvents.recipes((event) => {
     { id: "farmersdelight:cutting/deepslate" },
     { id: "farmersdelight:cooking/turtle_stew" },
     { id: /farmersrespite:.+\/water_cup/ },
+    { id: "farmersdelight:netherite_knife_smithing" },
 
     // AE2 & addons
     { id: /ae2:.*((axe)|(knife)|(shovel)|(hoe)|(sword)).*/ },
     { id: /ae2:transform\/.+/ },
+    { id: "ae2:network/parts/cable_anchor" },
 
     //Pneumatic Craft
     { id: "pneumaticcraft:amadron_tablet" },
     { id: /pneumaticcraft:pressure_chamber\/pressure_chamber_.*enchanting/ },
+    { id: "pneumaticcraft:compressed_iron_block_from_ingot" },
+    { id: "pneumaticcraft:compressed_iron_ingot_from_block" },
 
     // Misc
     { id: "ftbquests:loot_crate_opener" },

@@ -77,6 +77,12 @@
 				"29C744A139B0170E"
 				"0E47B42D4FBE6480"
 			]
+			icon: {
+				components: {
+					"tfc:heat": { }
+				}
+				id: "tfc:blast_furnace"
+			}
 			id: "030F2596BFF2DCD1"
 			shape: "gear"
 			size: 1.5d

@@ -6,7 +6,7 @@
 	icon: {
 		components: {
 			"tfc:food": {
-				creation_date: 273600L
+				creation_date: -4L
 			}
 		}
 		id: "farmersdelight:chicken_sandwich"
@@ -19,7 +19,7 @@
 			id: "2CC38762D20222F0"
 			tasks: [{
 				id: "0C4D40F2AF66432F"
-				item: { components: { "tfc:food": { creation_date: 273600L } }, count: 1, id: "minecraft:apple" }
+				item: { components: { "tfc:food": { creation_date: -4L } }, count: 1, id: "minecraft:apple" }
 				type: "item"
 			}]
 			x: 0.0d
